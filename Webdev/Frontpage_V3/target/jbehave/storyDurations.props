@@ -1,0 +1,6 @@
+#org.jbehave.core.embedder.StoryManager
+#Fri Jan 10 21:52:46 IST 2020
+stories/test.story=944000
+total=944000
+threadAverage=944000
+threads=1

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Rewards update" skipped="0" tests="1" time="71.98" timestamp="2019-08-21 12:37:39"><testcase name="Create the full reg user and verify the rewards update"><failure message="Expected enabled element was not enabled" type="net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException">Expected enabled element was not enabled</failure><system-err>Expected enabled element was not enabled&#13;
+com.pch.automation.pages.RegistrationPage.registerUserWithOptins(RegistrationPage.java:79)&#13;
+com.pch.automation.steps.RegistrationSteps.registerUserWithOptins(RegistrationSteps.java:25)&#13;
+com.pch.automation.stepdefinitions.RegistrationScenarioSteps.registerUserWithOptins(RegistrationScenarioSteps.java:33)&#13;
+</system-err></testcase></testsuite>

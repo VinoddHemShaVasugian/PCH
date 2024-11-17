@@ -1,0 +1,60 @@
+<html>
+<head>
+<title>stories.Frontpage-Automation.Login.Login</title>
+<style type="text/css" media="all">
+@import url( "./style/jbehave-core.css" );
+</style>
+</head>
+<body>
+<div class="story">
+<h1></h1>
+<div class="path">stories/Frontpage-Automation/Login/Login.story</div>
+<div class="narrative"><h2>Narrative:</h2>
+<div class="element inOrderTo"><span class="keyword inOrderTo">In order to</span> Verify user's successful login</div>
+<div class="element asA"><span class="keyword asA">As a</span> tester</div>
+<div class="element iWantTo"><span class="keyword iWantTo">I want to</span> test the sign in and check user's profile bar</div>
+</div>
+<div class="scenario">
+<h2>Scenario: I want to test the sign in and check user's profile bar</h2>
+<div class="step successful">Given Go to FrontPage Home Page</div>
+<div class="step successful">When Navigate to SignIn Page</div>
+<div class="step successful">And Enter the valid credentials in SignIn page
+<span class="step parameter"><table>
+<thead>
+<tr>
+<th>user_name</th><th>password</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>vinstg01@pchmail.com</td><td>pch123</td></tr>
+</tbody>
+</table>
+</span></div>
+<div class="step successful">Then Verify the FP successful login</div>
+<div class="step successful">And Welcome &lt;first name&gt; &lt;last name&gt; is displayed on the profile bar on the site</div>
+</div>
+</div>
+
+</body>
+<!--  SyntaxHighlighter resources:  should be included at end of body -->
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shCore.css"/>
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shThemeRDark.css"/>
+<script language="javascript" src="./js/sh-3.0.83/shCore.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushBash.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushCss.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushDiff.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushGroovy.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJava.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJScript.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPlain.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPython.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushRuby.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushScala.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushXml.js"></script>
+<script language="javascript" src="./js/shBrushBdd.js"></script>
+<script type="text/javascript">
+    SyntaxHighlighter.defaults['gutter'] = false;
+    SyntaxHighlighter.defaults['toolbar'] = false;    
+    SyntaxHighlighter.all();
+</script>
+</html>

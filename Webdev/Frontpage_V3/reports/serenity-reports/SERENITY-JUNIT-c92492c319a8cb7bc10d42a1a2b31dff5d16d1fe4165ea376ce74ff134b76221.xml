@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="Scratchpath" skipped="0" tests="1" time="258.59" timestamp="2019-08-20 10:47:22"><testcase name="Play daily bonus game and verify Scratchpath scenarios."><error message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;div#div-gpt-ad-bottom&gt;div&gt;iframe&quot;}&#10;  (Session info: chrome=76.0.3809.100)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'VSANKAR2', ip: '10.37.0.15', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '11.0.2'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.100, chrome: {chromedriverVersion: 76.0.3809.68 (420c9498db8ce..., userDataDir: C:\Users\vsankar\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:60693}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept}&#10;Session ID: db9c5d4936847e3e58e38c6a7021ae87&#10;*** Element info: {Using=css selector, value=div#div-gpt-ad-bottom&gt;div&gt;iframe}" type="org.openqa.selenium.NoSuchElementException">no such element: Unable to locate element: {"method":"css selector","selector":"div#div-gpt-ad-bottom&gt;div&gt;iframe"}
+  (Session info: chrome=76.0.3809.100)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'VSANKAR2', ip: '10.37.0.15', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '11.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.100, chrome: {chromedriverVersion: 76.0.3809.68 (420c9498db8ce..., userDataDir: C:\Users\vsankar\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:60693}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept}
+Session ID: db9c5d4936847e3e58e38c6a7021ae87
+*** Element info: {Using=css selector, value=div#div-gpt-ad-bottom&gt;div&gt;iframe}</error><system-err>no such element: Unable to locate element: {"method":"css selector","selector":"div#div-gpt-ad-bottom&gt;div&gt;iframe"}
+  (Session info: chrome=76.0.3809.100)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'VSANKAR2', ip: '10.37.0.15', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '11.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.100, chrome: {chromedriverVersion: 76.0.3809.68 (420c9498db8ce..., userDataDir: C:\Users\vsankar\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:60693}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept}
+Session ID: db9c5d4936847e3e58e38c6a7021ae87
+*** Element info: {Using=css selector, value=div#div-gpt-ad-bottom&gt;div&gt;iframe}&#13;
+com.pch.automation.pages.fp.AdsPage.getSizeOfInlineGptAd(AdsPage.java:186)&#13;
+com.pch.automation.steps.fp.AdSteps.verifyInlineAd(AdSteps.java:40)&#13;
+com.pch.automation.stepdefinitions.fp.AdScenarioSteps.verifyInlineAd(AdScenarioSteps.java:33)&#13;
+</system-err></testcase></testsuite>

@@ -1,0 +1,4 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Contest entry","Verify Registration and First search contest entry for Fully registered user","FAILURE","2019-08-20T21:30:44.481+05:30[Asia/Calcutta]","0.0","173.62"
+"Contest entry","Verify Registration and First search contest entry for social user","FAILURE","2019-08-20T21:36:41.569+05:30[Asia/Calcutta]","0.0","77.1"
+"Contest entry","Verify when user makes multiple searches with different contest entry","FAILURE","2019-08-20T21:37:58.819+05:30[Asia/Calcutta]","0.0","45.79"

@@ -1,0 +1,6 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"High risk","Verify the display of the Rapid search light box","FAILURE","2019-08-20T21:46:50.278+05:30[Asia/Calcutta]","0.0","190.46"
+"High risk","Verify the display of the 26th max search light box","SUCCESS","2019-08-20T21:50:00.894+05:30[Asia/Calcutta]","0.0","83.6"
+"High risk","Verify the display of the 40th warning light box","SUCCESS","2019-08-20T21:51:24.639+05:30[Asia/Calcutta]","0.0","61.33"
+"High risk","Verify the display of the 75th search warning light box","SUCCESS","2019-08-20T21:52:26.301+05:30[Asia/Calcutta]","0.0","70.75"
+"High risk","Verify the display of the 500th disable search light box","SUCCESS","2019-08-20T21:53:37.199+05:30[Asia/Calcutta]","0.0","56.11"

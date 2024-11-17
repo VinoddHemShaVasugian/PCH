@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="2" name="Silver reg" skipped="0" tests="2" time="431.88" timestamp="2019-08-21 12:45:09"><testcase name="Verify the complete registration functionality for Silver user type"><failure message="Frontpage Homepage is not displayed" type="java.lang.AssertionError">Frontpage Homepage is not displayed</failure><system-err>Frontpage Homepage is not displayed&#13;
+com.pch.automation.stepdefinitions.CommonScenarioSteps.verifyUserLandingOnHomepage(CommonScenarioSteps.java:201)&#13;
+</system-err></testcase><testcase name="Do a search and verify the complete registration functionality for Silver user type"><failure message="Frontpage Homepage is not displayed" type="java.lang.AssertionError">Frontpage Homepage is not displayed</failure><system-err>Frontpage Homepage is not displayed&#13;
+com.pch.automation.stepdefinitions.CommonScenarioSteps.verifyUserLandingOnHomepage(CommonScenarioSteps.java:201)&#13;
+</system-err></testcase></testsuite>

@@ -1,0 +1,90 @@
+<html>
+<head>
+<title>stories.test</title>
+<style type="text/css" media="all">
+@import url( "./style/jbehave-core.css" );
+</style>
+</head>
+<body>
+ 
+<script type="syntaxhighlighter" class="brush: xml"><![CDATA[
+<story path="stories/test.story" title="">
+<meta>
+<property keyword="@" name="TestingType" value="Regression"/>
+</meta>
+<narrative keyword="Narrative:">
+  <inOrderTo keyword="In order to">verify Segid tokens on website</inOrderTo>
+  <asA keyword="As a">Tester</asA>
+  <iWantTo keyword="I want to">retrive the values from &quot;Tokens / LinkPromotion&quot; joomla article and validate on site.
+
+Meta:
+@TestingType Regression</iWantTo>
+</narrative>
+<givenStories keyword="GivenStories:">
+<givenStory parameters="{}">stories/fp/jm/FpAdmin.story#{id:TokensLinkPromotion}</givenStory>
+</givenStories>
+<story path="stories/fp/jm/FpAdmin.story" title="">
+<meta>
+<property keyword="@" name="TestingType" value="Sanity Regression"/>
+</meta>
+<narrative keyword="Narrative:">
+  <inOrderTo keyword="In order to">verify the Frontpage functionality</inOrderTo>
+  <asA keyword="As a">user</asA>
+  <iWantTo keyword="I want to">modify/retrieve the value from the Frontpage joomla admin application
+
+Meta:
+@TestingType Sanity Regression</iWantTo>
+</narrative>
+<scenario keyword="Scenario:" title="Retrive the values from Tokens / LinkPromotion article">
+<meta>
+<property keyword="@" name="id" value="TokensLinkPromotion"/>
+</meta>
+<step outcome="successful">Given Login to the Frontpage Admin</step>
+<step outcome="successful">And Do a search for an article &apos;Tokens / Link Promotion / SegId 111814-021815&apos;</step>
+<step outcome="successful">And Retrieve the description,notice,tokens,condition info from the article &apos;1&apos;</step>
+</scenario>
+</story>
+<scenario keyword="Scenario:" title="Verify segid tokens for incremental emails for Fully registered user">
+<meta>
+<property keyword="@" name="TestingType" value="Sanity"/>
+</meta>
+<step outcome="successful">Given Register a fully registered user through RF and login to the site</step>
+<step outcome="successful">When User redirect to the Frontpage application &apos;conditions&apos;</step>
+<step outcome="successful">Then Do a search and Verify SERP page</step>
+<step outcome="successful">And Navigate to Token History Page</step>
+<step outcome="successful">And Verify token transaction details based on admin configured article &apos;tokens&apos;,&apos;description&apos;,&apos;1&apos;</step>
+<step outcome="successful">And Login to the Frontpage Admin</step>
+<step outcome="successful">And Do a search for an article &apos;Tokens / Link Promotion / SegId 111814-021815&apos;</step>
+<step outcome="successful">And Retrieve the description,notice,tokens,condition info from the article &apos;2&apos;</step>
+<step outcome="successful">And Login to the FP Application as recent user</step>
+<step outcome="successful">And User redirect to the Frontpage application &apos;conditions&apos;</step>
+<step outcome="successful">And Do a search and Verify SERP page</step>
+<step outcome="successful">And Navigate to Token History Page</step>
+<step outcome="successful">And Verify token transaction details based on admin configured article &apos;tokens&apos;,&apos;description&apos;,&apos;1&apos;</step>
+</scenario>
+</story>
+
+]]></script>
+</body>
+<!--  SyntaxHighlighter resources:  should be included at end of body -->
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shCore.css"/>
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shThemeRDark.css"/>
+<script language="javascript" src="./js/sh-3.0.83/shCore.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushBash.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushCss.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushDiff.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushGroovy.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJava.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJScript.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPlain.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPython.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushRuby.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushScala.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushXml.js"></script>
+<script language="javascript" src="./js/shBrushBdd.js"></script>
+<script type="text/javascript">
+    SyntaxHighlighter.defaults['gutter'] = false;
+    SyntaxHighlighter.defaults['toolbar'] = false;    
+    SyntaxHighlighter.all();
+</script>
+</html>

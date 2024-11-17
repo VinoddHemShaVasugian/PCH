@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Homepage" skipped="0" tests="3" time="255.67" timestamp="2019-08-20 10:30:39"><testcase name="Verify the Homepage categories"/><testcase name="Verify the our picks section"/><testcase name="verify the info pages"><failure message="Expected enabled element was not enabled" type="net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException">Expected enabled element was not enabled</failure><system-err>Expected enabled element was not enabled&#13;
+com.pch.automation.pages.RegistrationPage.registerUserWithOptins(RegistrationPage.java:79)&#13;
+com.pch.automation.steps.RegistrationSteps.registerUserWithOptins(RegistrationSteps.java:25)&#13;
+com.pch.automation.stepdefinitions.RegistrationScenarioSteps.registerUserWithOptins(RegistrationScenarioSteps.java:33)&#13;
+</system-err></testcase></testsuite>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="Seg id tokens" skipped="0" tests="1" time="0.39" timestamp="2019-02-21 08:34:52"><testcase name="Verify the token scenario for Seg Id user."><error message="The page object class com.pch.frontpage.pageObjects.JoomlaConfigPage looks dodgy:&#10;This page object does not appear have a constructor that takes a WebDriver parameter" type="net.thucydides.core.pages.WrongPageError">The page object class com.pch.frontpage.pageObjects.JoomlaConfigPage looks dodgy:
+This page object does not appear have a constructor that takes a WebDriver parameter</error><system-err>The page object class com.pch.frontpage.pageObjects.JoomlaConfigPage looks dodgy:
+This page object does not appear have a constructor that takes a WebDriver parameter&#13;
+</system-err></testcase></testsuite>

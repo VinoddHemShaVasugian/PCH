@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="Segid tokens" skipped="0" tests="1" time="309.13" timestamp="2019-08-21 12:22:38"><testcase name="Verify segid tokens for Fully registered user"><error message="timeout&#10;  (Session info: chrome=76.0.3809.100)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'VSANKAR2', ip: '10.37.0.15', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '11.0.2'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.100, chrome: {chromedriverVersion: 76.0.3809.68 (420c9498db8ce..., userDataDir: C:\Users\vsankar\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:53940}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept}&#10;Session ID: a0392be3379067c920c74d5cc6d82cd4&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'VSANKAR2', ip: '10.37.0.15', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '11.0.2'&#10;Driver info: driver.version: unknown" type="org.openqa.selenium.TimeoutException">timeout
+  (Session info: chrome=76.0.3809.100)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'VSANKAR2', ip: '10.37.0.15', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '11.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.100, chrome: {chromedriverVersion: 76.0.3809.68 (420c9498db8ce..., userDataDir: C:\Users\vsankar\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:53940}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept}
+Session ID: a0392be3379067c920c74d5cc6d82cd4
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'VSANKAR2', ip: '10.37.0.15', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '11.0.2'
+Driver info: driver.version: unknown</error><system-err>timeout
+  (Session info: chrome=76.0.3809.100)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'VSANKAR2', ip: '10.37.0.15', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '11.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.100, chrome: {chromedriverVersion: 76.0.3809.68 (420c9498db8ce..., userDataDir: C:\Users\vsankar\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:53940}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept}
+Session ID: a0392be3379067c920c74d5cc6d82cd4
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'VSANKAR2', ip: '10.37.0.15', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '11.0.2'
+Driver info: driver.version: unknown&#13;
+com.pch.automation.steps.NavigationSteps.goToFPApplication(NavigationSteps.java:47)&#13;
+com.pch.automation.stepdefinitions.CommonScenarioSteps.beforeScenario(CommonScenarioSteps.java:46)&#13;
+</system-err></testcase></testsuite>

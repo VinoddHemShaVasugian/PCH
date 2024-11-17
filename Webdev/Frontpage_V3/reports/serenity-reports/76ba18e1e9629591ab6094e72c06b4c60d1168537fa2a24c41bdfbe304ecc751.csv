@@ -1,0 +1,7 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"NFSP validation","Verify default NFSP","SUCCESS","2019-08-20T23:44:23.129+05:30[Asia/Calcutta]","0.0","121.45"
+"NFSP validation","Verify the algo NFSP value for UnRecognised User","SUCCESS","2019-08-20T23:46:24.706+05:30[Asia/Calcutta]","0.0","65.63"
+"NFSP validation","Verify the algo NFSP value for Recognised User","SUCCESS","2019-08-20T23:47:30.465+05:30[Asia/Calcutta]","0.0","61.49"
+"NFSP validation","Verify algo NFSP value for algo only segmented users","SUCCESS","2019-08-20T23:48:32.103+05:30[Asia/Calcutta]","0.0","114.37"
+"NFSP validation","Verify segmented NFSP value for segmented users","SUCCESS","2019-08-20T23:50:26.72+05:30[Asia/Calcutta]","0.0","144.22"
+"NFSP validation","Verify NFSP value by passing NFSP in URL","SUCCESS","2019-08-20T23:52:51.052+05:30[Asia/Calcutta]","0.0","98.41"

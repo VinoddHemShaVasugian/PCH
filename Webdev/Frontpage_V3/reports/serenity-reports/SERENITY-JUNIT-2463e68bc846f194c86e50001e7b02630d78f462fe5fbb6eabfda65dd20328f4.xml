@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="3" name="Contest entry" skipped="0" tests="6" time="876.6" timestamp="2019-08-20 09:30:44"><testcase name="Verify Registration and First search contest entry for Fully registered user"><failure message="Expected enabled element was not enabled" type="net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException">Expected enabled element was not enabled</failure><system-err>Expected enabled element was not enabled&#13;
+com.pch.automation.pages.RegistrationPage.registerUserWithOptins(RegistrationPage.java:79)&#13;
+com.pch.automation.steps.RegistrationSteps.registerUserWithOptins(RegistrationSteps.java:25)&#13;
+com.pch.automation.stepdefinitions.RegistrationScenarioSteps.registerUserWithOptins(RegistrationScenarioSteps.java:33)&#13;
+</system-err></testcase><testcase name="Verify Registration and First search contest entry for mini reg user"/><testcase name="Verify Registration and First search contest entry for silver user"/><testcase name="Verify Registration and First search contest entry for social user"><failure message="Expected enabled element was not enabled" type="net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException">Expected enabled element was not enabled</failure><system-err>Expected enabled element was not enabled&#13;
+com.pch.automation.pages.RegistrationPage.compelteSocialUser(RegistrationPage.java:247)&#13;
+com.pch.automation.steps.fp.SocialRegSteps.fullReg(SocialRegSteps.java:16)&#13;
+com.pch.automation.stepdefinitions.fp.SocialRegScenarioSteps.socialRegtoFullreg(SocialRegScenarioSteps.java:22)&#13;
+</system-err></testcase><testcase name="Verify when user makes multiple searches with different contest entry"><failure message="Expected enabled element was not enabled" type="net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException">Expected enabled element was not enabled</failure><system-err>Expected enabled element was not enabled&#13;
+com.pch.automation.pages.RegistrationPage.registerUserWithOptins(RegistrationPage.java:79)&#13;
+com.pch.automation.steps.RegistrationSteps.registerUserWithOptins(RegistrationSteps.java:25)&#13;
+com.pch.automation.stepdefinitions.RegistrationScenarioSteps.registerUserWithOptins(RegistrationScenarioSteps.java:33)&#13;
+</system-err></testcase><testcase name="Verify failed contest entries"/></testsuite>

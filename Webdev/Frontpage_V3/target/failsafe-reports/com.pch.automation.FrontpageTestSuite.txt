@@ -1,0 +1,23 @@
+-------------------------------------------------------------------------------
+Test set: com.pch.automation.FrontpageTestSuite
+-------------------------------------------------------------------------------
+Tests run: 26, Failures: 1, Errors: 1, Skipped: 17, Time elapsed: 576.581 s <<< FAILURE! - in com.pch.automation.FrontpageTestSuite
+When Verify the daily bonus game info window(com.pch.automation.stepdefinitions.fp.ScratchpathScenarioSteps)  Time elapsed: 306.098 s  <<< FAILURE!
+java.lang.AssertionError: Failed to display bonus game info window.
+	at com.pch.automation.stepdefinitions.fp.ScratchpathScenarioSteps.verifyBonusGameInfoWindow(ScratchpathScenarioSteps.java:99)
+
+When Navigate to scratchcard page(com.pch.automation.stepdefinitions.fp.ScratchpathScenarioSteps)  Time elapsed: 56.106 s  <<< ERROR!
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.cssSelector: img.progress-bar-sticky__play-now (tried for 25 second(s) with 500 milliseconds interval)
+	at com.pch.automation.stepdefinitions.fp.ScratchpathScenarioSteps.navigateToScratchcardPage(ScratchpathScenarioSteps.java:166)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"img.progress-bar-sticky__play-now"}
+  (Session info: chrome=77.0.3865.90)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'VSANKAR2', ip: '10.37.0.75', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.90, chrome: {chromedriverVersion: 76.0.3809.68 (420c9498db8ce..., userDataDir: C:\Users\vsankar\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:61466}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept}
+Session ID: e3f22fc494671b6f0fc299ff8347b0ea
+*** Element info: {Using=css selector, value=img.progress-bar-sticky__play-now}
+	at com.pch.automation.stepdefinitions.fp.ScratchpathScenarioSteps.navigateToScratchcardPage(ScratchpathScenarioSteps.java:166)
+

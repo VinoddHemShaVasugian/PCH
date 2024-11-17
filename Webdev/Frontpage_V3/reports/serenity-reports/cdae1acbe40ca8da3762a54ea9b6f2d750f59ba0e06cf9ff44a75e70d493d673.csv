@@ -1,0 +1,4 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Homepage","Verify the Homepage categories","SUCCESS","2019-08-20T22:30:39.089+05:30[Asia/Calcutta]","0.0","133.57"
+"Homepage","Verify the our picks section","SUCCESS","2019-08-20T22:32:52.838+05:30[Asia/Calcutta]","0.0","75.21"
+"Homepage","verify the info pages","FAILURE","2019-08-20T22:34:08.167+05:30[Asia/Calcutta]","0.0","46.89"

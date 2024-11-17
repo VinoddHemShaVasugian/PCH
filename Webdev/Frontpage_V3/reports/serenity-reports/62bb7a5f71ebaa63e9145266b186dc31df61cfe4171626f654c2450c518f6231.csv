@@ -1,0 +1,5 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Videos","Verify the video page redirection and claimed tokens by playing video.","SUCCESS","2019-08-20T23:05:16.485+05:30[Asia/Calcutta]","0.0","348.4"
+"Videos","Verify the video details on video_log table for Full Reg user","SUCCESS","2019-08-20T23:11:05.119+05:30[Asia/Calcutta]","0.0","965.43"
+"Videos","Verify the video details on video_log table for Mini reg user type","SUCCESS","2019-08-20T23:27:10.755+05:30[Asia/Calcutta]","0.0","386.87"
+"Videos","Verify the video details on video_log table for Silver user type","SUCCESS","2019-08-20T23:38:01.015+05:30[Asia/Calcutta]","0.0","380.56"

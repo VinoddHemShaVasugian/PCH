@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Test" skipped="1" tests="2" time="539.46" timestamp="2020-01-08 09:17:25"><testcase name="Verify segid tokens for Fully registered user"/><testcase name="Verify segid tokens for incremental emails for Fully registered user"><skipped/></testcase></testsuite>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="6" failures="0" name="Ads" skipped="0" tests="8" time="1172.87" timestamp="2019-08-20 10:11:03"><testcase name="Verify ads on Homepage"/><testcase name="Verify ads on Category pages"/><testcase name="Verify ads on Video page"><error message="timeout&#10;  (Session info: chrome=76.0.3809.100)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'VSANKAR2', ip: '10.37.0.15', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '11.0.2'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.100, chrome: {chromedriverVersion: 76.0.3809.68 (420c9498db8ce..., userDataDir: C:\Users\vsankar\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:57049}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept}&#10;Session ID: 418f764d4ab5d9c30929cabe2db78e12" type="org.openqa.selenium.TimeoutException">timeout
+  (Session info: chrome=76.0.3809.100)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'VSANKAR2', ip: '10.37.0.15', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '11.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.100, chrome: {chromedriverVersion: 76.0.3809.68 (420c9498db8ce..., userDataDir: C:\Users\vsankar\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:57049}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept}
+Session ID: 418f764d4ab5d9c30929cabe2db78e12</error><system-err>timeout
+  (Session info: chrome=76.0.3809.100)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'VSANKAR2', ip: '10.37.0.15', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '11.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.100, chrome: {chromedriverVersion: 76.0.3809.68 (420c9498db8ce..., userDataDir: C:\Users\vsankar\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:57049}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept}
+Session ID: 418f764d4ab5d9c30929cabe2db78e12&#13;
+com.pch.automation.pages.fp.HomePage.jsClick(HomePage.java:412)&#13;
+com.pch.automation.pages.fp.HomePage.clickFirstVideoLink(HomePage.java:490)&#13;
+com.pch.automation.steps.HomepageSteps.clickFirstVideoLink(HomepageSteps.java:158)&#13;
+com.pch.automation.stepdefinitions.fp.VideoScenarioSteps.verifyVideolandingPage(VideoScenarioSteps.java:38)&#13;
+</system-err></testcase><testcase name="Verify ads on Weather page"><error message="Timed out after 25000 milliseconds: Expecting element is displayed: By.cssSelector: div#div-gpt-ad-box&gt; div&gt;iframe&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'VSANKAR2', ip: '10.37.0.15', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '11.0.2'&#10;Driver info: driver.version: unknown" type="org.openqa.selenium.TimeoutException">Timed out after 25000 milliseconds: Expecting element is displayed: By.cssSelector: div#div-gpt-ad-box&gt; div&gt;iframe
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'VSANKAR2', ip: '10.37.0.15', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '11.0.2'
+Driver info: driver.version: unknown</error><system-err>Timed out after 25000 milliseconds: Expecting element is displayed: By.cssSelector: div#div-gpt-ad-box&gt; div&gt;iframe
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'VSANKAR2', ip: '10.37.0.15', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '11.0.2'
+Driver info: driver.version: unknown&#13;
+com.pch.automation.pages.fp.AdsPage.getSizeOfRightRailGptAd(AdsPage.java:228)&#13;
+com.pch.automation.steps.fp.AdSteps.verifyRightRailAd(AdSteps.java:30)&#13;
+com.pch.automation.stepdefinitions.fp.AdScenarioSteps.verifyRightRailAd(AdScenarioSteps.java:28)&#13;
+</system-err></testcase><testcase name="Verify ads on Lottery page"><error message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;div#div-gpt-ad-bottom&gt;div&gt;iframe&quot;}&#10;  (Session info: chrome=76.0.3809.100)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'VSANKAR2', ip: '10.37.0.15', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '11.0.2'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.100, chrome: {chromedriverVersion: 76.0.3809.68 (420c9498db8ce..., userDataDir: C:\Users\vsankar\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:57049}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept}&#10;Session ID: 418f764d4ab5d9c30929cabe2db78e12&#10;*** Element info: {Using=css selector, value=div#div-gpt-ad-bottom&gt;div&gt;iframe}" type="org.openqa.selenium.NoSuchElementException">no such element: Unable to locate element: {"method":"css selector","selector":"div#div-gpt-ad-bottom&gt;div&gt;iframe"}
+  (Session info: chrome=76.0.3809.100)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'VSANKAR2', ip: '10.37.0.15', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '11.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.100, chrome: {chromedriverVersion: 76.0.3809.68 (420c9498db8ce..., userDataDir: C:\Users\vsankar\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:57049}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept}
+Session ID: 418f764d4ab5d9c30929cabe2db78e12
+*** Element info: {Using=css selector, value=div#div-gpt-ad-bottom&gt;div&gt;iframe}</error><system-err>no such element: Unable to locate element: {"method":"css selector","selector":"div#div-gpt-ad-bottom&gt;div&gt;iframe"}
+  (Session info: chrome=76.0.3809.100)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'VSANKAR2', ip: '10.37.0.15', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '11.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.100, chrome: {chromedriverVersion: 76.0.3809.68 (420c9498db8ce..., userDataDir: C:\Users\vsankar\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:57049}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept}
+Session ID: 418f764d4ab5d9c30929cabe2db78e12
+*** Element info: {Using=css selector, value=div#div-gpt-ad-bottom&gt;div&gt;iframe}&#13;
+com.pch.automation.pages.fp.AdsPage.getSizeOfInlineGptAd(AdsPage.java:186)&#13;
+com.pch.automation.steps.fp.AdSteps.verifyInlineAd(AdSteps.java:40)&#13;
+com.pch.automation.stepdefinitions.fp.AdScenarioSteps.verifyInlineAd(AdScenarioSteps.java:33)&#13;
+</system-err></testcase><testcase name="Verify ads on Sub category pages"><error message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;div#div-gpt-ad-bottom&gt;div&gt;iframe&quot;}&#10;  (Session info: chrome=76.0.3809.100)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'VSANKAR2', ip: '10.37.0.15', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '11.0.2'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.100, chrome: {chromedriverVersion: 76.0.3809.68 (420c9498db8ce..., userDataDir: C:\Users\vsankar\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:57049}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept}&#10;Session ID: 418f764d4ab5d9c30929cabe2db78e12&#10;*** Element info: {Using=css selector, value=div#div-gpt-ad-bottom&gt;div&gt;iframe}" type="org.openqa.selenium.NoSuchElementException">no such element: Unable to locate element: {"method":"css selector","selector":"div#div-gpt-ad-bottom&gt;div&gt;iframe"}
+  (Session info: chrome=76.0.3809.100)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'VSANKAR2', ip: '10.37.0.15', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '11.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.100, chrome: {chromedriverVersion: 76.0.3809.68 (420c9498db8ce..., userDataDir: C:\Users\vsankar\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:57049}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept}
+Session ID: 418f764d4ab5d9c30929cabe2db78e12
+*** Element info: {Using=css selector, value=div#div-gpt-ad-bottom&gt;div&gt;iframe}</error><system-err>no such element: Unable to locate element: {"method":"css selector","selector":"div#div-gpt-ad-bottom&gt;div&gt;iframe"}
+  (Session info: chrome=76.0.3809.100)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'VSANKAR2', ip: '10.37.0.15', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '11.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.100, chrome: {chromedriverVersion: 76.0.3809.68 (420c9498db8ce..., userDataDir: C:\Users\vsankar\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:57049}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept}
+Session ID: 418f764d4ab5d9c30929cabe2db78e12
+*** Element info: {Using=css selector, value=div#div-gpt-ad-bottom&gt;div&gt;iframe}&#13;
+com.pch.automation.pages.fp.AdsPage.getSizeOfInlineGptAd(AdsPage.java:186)&#13;
+com.pch.automation.steps.fp.AdSteps.verifyInlineAd(AdSteps.java:40)&#13;
+com.pch.automation.stepdefinitions.fp.AdScenarioSteps.verifyInlineAd(AdScenarioSteps.java:33)&#13;
+</system-err></testcase><testcase name="Verify ads on Article page"><error message="Timed out after 25000 milliseconds: Expecting element is displayed: By.cssSelector: div#div-gpt-ad-box&gt; div&gt;iframe&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'VSANKAR2', ip: '10.37.0.15', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '11.0.2'&#10;Driver info: driver.version: unknown" type="org.openqa.selenium.TimeoutException">Timed out after 25000 milliseconds: Expecting element is displayed: By.cssSelector: div#div-gpt-ad-box&gt; div&gt;iframe
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'VSANKAR2', ip: '10.37.0.15', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '11.0.2'
+Driver info: driver.version: unknown</error><system-err>Timed out after 25000 milliseconds: Expecting element is displayed: By.cssSelector: div#div-gpt-ad-box&gt; div&gt;iframe
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'VSANKAR2', ip: '10.37.0.15', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '11.0.2'
+Driver info: driver.version: unknown&#13;
+com.pch.automation.pages.fp.AdsPage.getSizeOfRightRailGptAd(AdsPage.java:228)&#13;
+com.pch.automation.steps.fp.AdSteps.verifyRightRailAd(AdSteps.java:30)&#13;
+com.pch.automation.stepdefinitions.fp.AdScenarioSteps.verifyRightRailAd(AdScenarioSteps.java:28)&#13;
+</system-err></testcase><testcase name="verify the Interstitial ads while navigating to different articles"><error message="Expected condition failed: waiting for presence of element located by: By.cssSelector: div.countDownBtn.skipMe (tried for 25 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException">Expected condition failed: waiting for presence of element located by: By.cssSelector: div.countDownBtn.skipMe (tried for 25 second(s) with 500 milliseconds interval)</error><system-err>Expected condition failed: waiting for presence of element located by: By.cssSelector: div.countDownBtn.skipMe (tried for 25 second(s) with 500 milliseconds interval)&#13;
+com.pch.automation.pages.fp.AdsPage.clickNextArticleOnInterstitialAd(AdsPage.java:239)&#13;
+com.pch.automation.steps.fp.AdSteps.clickNextArticleOnInterstitialAd(AdSteps.java:110)&#13;
+com.pch.automation.stepdefinitions.fp.AdScenarioSteps.verifyInterstitialad(AdScenarioSteps.java:67)&#13;
+</system-err></testcase></testsuite>

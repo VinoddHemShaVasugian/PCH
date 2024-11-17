@@ -1,0 +1,138 @@
+<html>
+<head>
+<title>stories.fp.miscellaneous.Scratchpath</title>
+<style type="text/css" media="all">
+@import url( "./style/jbehave-core.css" );
+</style>
+</head>
+<body>
+ 
+<script type="syntaxhighlighter" class="brush: xml"><![CDATA[
+<story path="stories/fp/miscellaneous/Scratchpath.story" title="">
+<meta>
+<property keyword="@" name="TestingType" value="Regression"/>
+</meta>
+<narrative keyword="Narrative:">
+  <inOrderTo keyword="In order to">verify scratchpath game</inOrderTo>
+  <asA keyword="As a">Tester</asA>
+  <iWantTo keyword="I want to">retrive scratchcard article details from admin and read/watch articles and video in Frontpage site.
+
+Meta: 
+@TestingType Regression</iWantTo>
+</narrative>
+<lifecycle keyword="Lifecycle:">
+<before keyword="Before:">
+<scope keyword="Scope:" value="STORY">
+<step>Given Register a fully registered user through RF and login to the site</step>
+<step>When Verify the daily bonus game info window</step>
+<step>Then Do a search and verify daily bonus game progress bar</step>
+<step>And Read articles and verify daily bonus game progress bar</step>
+<step>And Claim Horoscope tokens and verify daily bonus game progress bar</step>
+<step>And Claim Lottery tokens and verify daily bonus game progress bar</step>
+<step>And Claim Weather tokens and verify daily bonus game progress bar</step>
+<step>And Verify the presence of play bonus game icon</step>
+<step>And Verify the play bonus game property on database &apos;1&apos;</step>
+</scope>
+</before>
+</lifecycle>
+<step outcome="successful">Given Register a fully registered user through RF and login to the site</step>
+<step outcome="failed" keyword="FAILED">When Verify the daily bonus game info window<failure>java.lang.AssertionError: Failed to display bonus game info window.</failure></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then Do a search and verify daily bonus game progress bar</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And Read articles and verify daily bonus game progress bar</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And Claim Horoscope tokens and verify daily bonus game progress bar</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And Claim Lottery tokens and verify daily bonus game progress bar</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And Claim Weather tokens and verify daily bonus game progress bar</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And Verify the presence of play bonus game icon</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And Verify the play bonus game property on database &apos;1&apos;</step>
+<scenario keyword="Scenario:" title="Play daily bonus game and verify Scratchpath scenarios.">
+<meta>
+<property keyword="@" name="TestingType" value="Sanity"/>
+</meta>
+<givenStories keyword="GivenStories:">
+<givenStory parameters="{}">stories/fp/jm/FpAdmin.story#{id:Scratchcard}</givenStory>
+</givenStories>
+<story path="stories/fp/jm/FpAdmin.story" title="">
+<meta>
+<property keyword="@" name="TestingType" value="Sanity Regression"/>
+</meta>
+<narrative keyword="Narrative:">
+  <inOrderTo keyword="In order to">verify the Frontpage functionality</inOrderTo>
+  <asA keyword="As a">user</asA>
+  <iWantTo keyword="I want to">modify/retrieve the value from the Frontpage joomla admin application
+
+Meta:
+@TestingType Sanity Regression</iWantTo>
+</narrative>
+<scenario keyword="Scenario:" title="Retrive the values from Scratchpath Redirect article">
+<meta>
+<property keyword="@" name="id" value="Scratchcard"/>
+</meta>
+<step outcome="successful">Given Login to the Frontpage Admin</step>
+<step outcome="successful">And Do a search for an article &apos;Tokens / Bonus Scratchcard Completion&apos;</step>
+<step outcome="successful">And Retrieve the description,notice,tokens,condition info from the article</step>
+</scenario>
+</story>
+<step outcome="successful">Given Login to the FP Application as recent user</step>
+<step outcome="failed" keyword="FAILED">When Navigate to scratchcard page<failure>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.cssSelector: img.progress-bar-sticky__play-now (tried for 25 second(s) with 500 milliseconds interval)</failure></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then Verify the application redirected to Scratchcard page</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And Verify right rail ad &apos;300&apos;,&apos;250&apos;</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And Verify inline ad &apos;728&apos;,&apos;90&apos;</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And Verify right rail multiple ad &apos;300&apos;,&apos;600&apos;,&apos;300&apos;,&apos;250&apos;</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And Play and verify scratchpath games</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And Verify the application redirected to homepage instead of scratchcard page</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And Verify the absence of play bonus game icon</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And Navigate to Token History Page</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And Verify token transaction details based on admin configured article &apos;tokens&apos;,&apos;description&apos;,&apos;1&apos;</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And Verify the play bonus game property on database &apos;2&apos;</step>
+<failure>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.cssSelector: img.progress-bar-sticky__play-now (tried for 25 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at net.serenitybdd.core.pages.RenderedPageObjectView.waitForPresenceOf(RenderedPageObjectView.java:188)
+	at net.serenitybdd.core.pages.PageObject.waitForRenderedElementsToBePresent(PageObject.java:343)
+	at com.pch.automation.pages.fp.HomePage.clickDailyBonusGamePlayIcon(HomePage.java:403)
+	at com.pch.automation.steps.fp.ScratchpathSteps.clickPlayBGicon(ScratchpathSteps.java:97)
+	at com.pch.automation.steps.fp.ScratchpathSteps$$EnhancerByCGLIB$$8fa42b60.CGLIB$clickPlayBGicon$5(&lt;generated&gt;)
+	at com.pch.automation.steps.fp.ScratchpathSteps$$EnhancerByCGLIB$$8fa42b60$$FastClassByCGLIB$$7f4b349d.invoke(&lt;generated&gt;)
+	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:478)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:463)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:438)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:179)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:166)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:72)
+	at com.pch.automation.steps.fp.ScratchpathSteps$$EnhancerByCGLIB$$8fa42b60.clickPlayBGicon(&lt;generated&gt;)
+	at com.pch.automation.stepdefinitions.fp.ScratchpathScenarioSteps.navigateToScratchcardPage(ScratchpathScenarioSteps.java:166)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:790)
+	at org.jbehave.core.embedder.PerformableTree$FineSoFar.run(PerformableTree.java:349)
+...</failure>
+</scenario>
+</story>
+
+]]></script>
+</body>
+<!--  SyntaxHighlighter resources:  should be included at end of body -->
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shCore.css"/>
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shThemeRDark.css"/>
+<script language="javascript" src="./js/sh-3.0.83/shCore.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushBash.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushCss.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushDiff.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushGroovy.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJava.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJScript.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPlain.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPython.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushRuby.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushScala.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushXml.js"></script>
+<script language="javascript" src="./js/shBrushBdd.js"></script>
+<script type="text/javascript">
+    SyntaxHighlighter.defaults['gutter'] = false;
+    SyntaxHighlighter.defaults['toolbar'] = false;    
+    SyntaxHighlighter.all();
+</script>
+</html>

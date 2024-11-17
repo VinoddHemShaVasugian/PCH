@@ -1,0 +1,97 @@
+<html>
+<head>
+<title>stories.test</title>
+<style type="text/css" media="all">
+@import url( "./style/jbehave-core.css" );
+</style>
+</head>
+<body>
+<div class="story">
+<h1></h1>
+<div class="path">stories/test.story</div>
+<div class="meta">
+<div class="keyword">Meta:</div>
+<div class="property">@TestingType Regression</div>
+</div>
+<div class="narrative"><h2>Narrative:</h2>
+<div class="element inOrderTo"><span class="keyword inOrderTo">In order to</span> verify Segid tokens on website</div>
+<div class="element asA"><span class="keyword asA">As a</span> Tester</div>
+<div class="element iWantTo"><span class="keyword iWantTo">I want to</span> retrive the values from &quot;Tokens / LinkPromotion&quot; joomla article and validate on site.
+
+Meta:
+@TestingType Regression</div>
+</div>
+<div class="givenStories">GivenStories:
+<div class="givenStory">stories/fp/jm/FpAdmin.story#{id:TokensLinkPromotion} {}</div>
+</div>
+<div class="story">
+<h1></h1>
+<div class="path">stories/fp/jm/FpAdmin.story</div>
+<div class="meta">
+<div class="keyword">Meta:</div>
+<div class="property">@TestingType Sanity Regression</div>
+</div>
+<div class="narrative"><h2>Narrative:</h2>
+<div class="element inOrderTo"><span class="keyword inOrderTo">In order to</span> verify the Frontpage functionality</div>
+<div class="element asA"><span class="keyword asA">As a</span> user</div>
+<div class="element iWantTo"><span class="keyword iWantTo">I want to</span> modify/retrieve the value from the Frontpage joomla admin application
+
+Meta:
+@TestingType Sanity Regression</div>
+</div>
+<div class="scenario">
+<h2>Scenario: Retrive the values from Tokens / LinkPromotion article</h2>
+<div class="meta">
+<div class="keyword">Meta:</div>
+<div class="property">@id TokensLinkPromotion</div>
+</div>
+<div class="step successful">Given Login to the Frontpage Admin</div>
+<div class="step successful">And Do a search for an article 'Tokens / Link Promotion / SegId 111814-021815'</div>
+<div class="step successful">And Retrieve the description,notice,tokens,condition info from the article '1'</div>
+</div>
+</div>
+<div class="scenario">
+<h2>Scenario: Verify segid tokens for incremental emails for Fully registered user</h2>
+<div class="meta">
+<div class="keyword">Meta:</div>
+<div class="property">@TestingType Sanity</div>
+</div>
+<div class="step successful">Given Register a fully registered user through RF and login to the site</div>
+<div class="step successful">When User redirect to the Frontpage application 'conditions'</div>
+<div class="step successful">Then Do a search and Verify SERP page</div>
+<div class="step successful">And Navigate to Token History Page</div>
+<div class="step successful">And Verify token transaction details based on admin configured article 'tokens','description','1'</div>
+<div class="step successful">And Login to the Frontpage Admin</div>
+<div class="step successful">And Do a search for an article 'Tokens / Link Promotion / SegId 111814-021815'</div>
+<div class="step successful">And Retrieve the description,notice,tokens,condition info from the article '2'</div>
+<div class="step successful">And Login to the FP Application as recent user</div>
+<div class="step successful">And User redirect to the Frontpage application 'conditions'</div>
+<div class="step successful">And Do a search and Verify SERP page</div>
+<div class="step successful">And Navigate to Token History Page</div>
+<div class="step successful">And Verify token transaction details based on admin configured article 'tokens','description','1'</div>
+</div>
+</div>
+
+</body>
+<!--  SyntaxHighlighter resources:  should be included at end of body -->
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shCore.css"/>
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shThemeRDark.css"/>
+<script language="javascript" src="./js/sh-3.0.83/shCore.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushBash.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushCss.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushDiff.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushGroovy.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJava.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJScript.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPlain.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPython.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushRuby.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushScala.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushXml.js"></script>
+<script language="javascript" src="./js/shBrushBdd.js"></script>
+<script type="text/javascript">
+    SyntaxHighlighter.defaults['gutter'] = false;
+    SyntaxHighlighter.defaults['toolbar'] = false;    
+    SyntaxHighlighter.all();
+</script>
+</html>

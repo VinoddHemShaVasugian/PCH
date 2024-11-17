@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="2" name="Social reg" skipped="0" tests="2" time="362.77" timestamp="2019-08-21 12:52:22"><testcase name="Verify the complete registration functionality for Social user type"><failure message="Expected enabled element was not enabled" type="net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException">Expected enabled element was not enabled</failure><system-err>Expected enabled element was not enabled&#13;
+com.pch.automation.pages.RegistrationPage.compelteSocialUser(RegistrationPage.java:247)&#13;
+com.pch.automation.steps.fp.SocialRegSteps.fullReg(SocialRegSteps.java:16)&#13;
+com.pch.automation.stepdefinitions.fp.SocialRegScenarioSteps.socialRegtoFullreg(SocialRegScenarioSteps.java:22)&#13;
+</system-err></testcase><testcase name="Do a search and verify the complete registration functionality for Social user type"><failure message="Expected enabled element was not enabled" type="net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException">Expected enabled element was not enabled</failure><system-err>Expected enabled element was not enabled&#13;
+com.pch.automation.pages.RegistrationPage.compelteSocialUser(RegistrationPage.java:247)&#13;
+com.pch.automation.steps.fp.SocialRegSteps.CompleteRegLbtofullReg(SocialRegSteps.java:25)&#13;
+com.pch.automation.stepdefinitions.fp.SocialRegScenarioSteps.doCompleteRegFromcomregLB(SocialRegScenarioSteps.java:32)&#13;
+</system-err></testcase></testsuite>

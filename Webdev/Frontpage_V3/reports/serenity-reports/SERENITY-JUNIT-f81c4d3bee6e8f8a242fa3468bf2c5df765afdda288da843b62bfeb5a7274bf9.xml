@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Sweep stakes" skipped="0" tests="1" time="227.43" timestamp="2019-08-20 10:53:26"><testcase name="Play and verify sweepstakes on Homepage."><failure message="Sweeps entry is mismatched" type="java.lang.AssertionError">Sweeps entry is mismatched</failure><system-err>Sweeps entry is mismatched&#13;
+com.pch.automation.stepdefinitions.fp.SweepstakesScenarioSteps.completeSweeps(SweepstakesScenarioSteps.java:47)&#13;
+</system-err></testcase></testsuite>

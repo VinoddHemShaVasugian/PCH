@@ -1,0 +1,4 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Contest entry","Verify Registration and First search contest entry for mini reg user","SUCCESS","2019-08-20T21:33:38.267+05:30[Asia/Calcutta]","0.0","86.6"
+"Contest entry","Verify Registration and First search contest entry for silver user","SUCCESS","2019-08-20T21:35:04.998+05:30[Asia/Calcutta]","0.0","96.42"
+"Contest entry","Verify failed contest entries","SUCCESS","2019-08-20T21:38:44.738+05:30[Asia/Calcutta]","0.0","397.07"

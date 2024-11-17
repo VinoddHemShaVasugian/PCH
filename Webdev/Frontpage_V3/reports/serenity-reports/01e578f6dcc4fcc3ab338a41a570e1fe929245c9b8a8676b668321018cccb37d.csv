@@ -1,0 +1,4 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Articles page","verify the Article page by claiming the tokens","FAILURE","2019-08-20T21:14:42.296+05:30[Asia/Calcutta]","0.0","308.88"
+"Articles page","Verify the story details on story_log table for Social user type","FAILURE","2019-08-20T21:26:31.76+05:30[Asia/Calcutta]","0.0","105.51"
+"Articles page","Verify the story details on story_log table for Silver user type","FAILURE","2019-08-20T21:28:17.404+05:30[Asia/Calcutta]","0.0","145.03"

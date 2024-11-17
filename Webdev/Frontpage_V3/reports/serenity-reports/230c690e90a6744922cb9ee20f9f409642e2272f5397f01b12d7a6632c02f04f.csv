@@ -1,0 +1,3 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Silver reg","Verify the complete registration functionality for Silver user type","FAILURE","2019-08-21T00:45:09.485+05:30[Asia/Calcutta]","0.0","271.91"
+"Silver reg","Do a search and verify the complete registration functionality for Silver user type","FAILURE","2019-08-21T00:49:41.523+05:30[Asia/Calcutta]","0.0","159.96"

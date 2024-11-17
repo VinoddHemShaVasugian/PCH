@@ -1,0 +1,6 @@
+#org.jbehave.core.embedder.StoryManager
+#Thu Feb 21 20:34:53 IST 2019
+total=1000
+threadAverage=1000
+threads=1
+stories/Frontpage-Automation/awardtokens/SegIdTokens.story=1000

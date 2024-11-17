@@ -1,0 +1,36 @@
+<story path="stories/Frontpage-Automation/awardtokens/SegIdTokens.story" title="">
+<step outcome="failed" keyword="FAILED">com.util.BrowserStackSerenityTest.setUp()<failure>org.jbehave.core.failures.BeforeOrAfterFailed: Method setUp (annotated with @BeforeStory in class com.util.BrowserStackSerenityTest) failed: java.lang.ExceptionInInitializerError</failure></step>
+<step outcome="failed" keyword="FAILED">com.util.BrowserStackSerenityTest.setUp()<failure>org.jbehave.core.failures.BeforeOrAfterFailed: Method setUp (annotated with @BeforeStory in class com.util.BrowserStackSerenityTest) failed: net.serenitybdd.jbehave.SerenityStepInitializationError: java.lang.IllegalAccessException: class net.serenitybdd.jbehave.SerenityStepContext cannot access a member of class com.pch.frontpage.pageObjects.JoomlaConfigPage with modifiers &quot;private&quot;</failure></step>
+<scenario keyword="Scenario:" title="Verify the token scenario for Seg Id user.">
+<step outcome="failed" keyword="FAILED">Given Navigate to Joomla Admin application to getSeg Id Token value <parameter>&quot;user_name&quot; &quot;password&quot;
+|user_name| password  |
+|vsankar </parameter> <parameter>|testing1234|</parameter><failure>net.thucydides.core.pages.WrongPageError: The page object class com.pch.frontpage.pageObjects.JoomlaConfigPage looks dodgy:
+This page object does not appear have a constructor that takes a WebDriver parameter</failure></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When Create a Full Reg user from CS page</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And Login to the application with the Seg Id and do a first search</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then Verify the Seg Id token value for the same user second time</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And Update the Daily search count and verify the Seg Id tokens for the same user</step>
+<failure>net.thucydides.core.pages.WrongPageError: The page object class com.pch.frontpage.pageObjects.JoomlaConfigPage looks dodgy:
+This page object does not appear have a constructor that takes a WebDriver parameter
+	at net.thucydides.core.pages.Pages.thisPageObjectLooksDodgy(Pages.java:293)
+	at net.thucydides.core.pages.Pages.getCurrentPageOfType(Pages.java:215)
+	at net.thucydides.core.pages.Pages.getPage(Pages.java:90)
+	at net.thucydides.core.steps.PageObjectDependencyInjector.instantiatePageObjectIfNotAssigned(PageObjectDependencyInjector.java:55)
+	at net.thucydides.core.steps.PageObjectDependencyInjector.injectDependenciesInto(PageObjectDependencyInjector.java:33)
+	at net.thucydides.core.steps.StepFactory.injectOtherDependenciesInto(StepFactory.java:166)
+	at net.thucydides.core.steps.StepFactory.instantiateNewStepLibraryFor(StepFactory.java:156)
+	at net.thucydides.core.steps.StepFactory.instantiateNewStepLibraryFor(StepFactory.java:139)
+	at net.thucydides.core.steps.StepFactory.getNewStepLibraryFor(StepFactory.java:86)
+	at net.thucydides.core.steps.IndividualInstancesByDefaultStepCreationStrategy.initiateStepsFor(IndividualInstancesByDefaultStepCreationStrategy.java:16)
+	at net.thucydides.core.steps.StepAnnotations.instantiateAnyUnitiaializedSteps(StepAnnotations.java:76)
+	at net.thucydides.core.steps.StepAnnotations.instanciateScenarioStepFields(StepAnnotations.java:60)
+	at net.thucydides.core.steps.StepAnnotations.injectScenarioStepsInto(StepAnnotations.java:42)
+	at net.serenitybdd.jbehave.SerenityStepFactory.createInstanceOfType(SerenityStepFactory.java:73)
+	at org.jbehave.core.steps.StepCreator.stepsInstance(StepCreator.java:97)
+	at org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:782)
+	at org.jbehave.core.embedder.PerformableTree$FineSoFar.run(PerformableTree.java:350)
+...</failure>
+</scenario>
+<step outcome="failed" keyword="FAILED">com.util.BrowserStackSerenityTest.tearDown()<failure>org.jbehave.core.failures.BeforeOrAfterFailed: Method tearDown (annotated with @AfterStory in class com.util.BrowserStackSerenityTest) failed: java.lang.NoClassDefFoundError: Could not initialize class com.pch.frontpage.pageObjects.AccountsSignInPage</failure></step>
+<step outcome="failed" keyword="FAILED">com.util.BrowserStackSerenityTest.tearDown()<failure>org.jbehave.core.failures.BeforeOrAfterFailed: Method tearDown (annotated with @AfterStory in class com.util.BrowserStackSerenityTest) failed: net.serenitybdd.jbehave.SerenityStepInitializationError: java.lang.IllegalAccessException: class net.serenitybdd.jbehave.SerenityStepContext cannot access a member of class com.pch.frontpage.pageObjects.JoomlaConfigPage with modifiers &quot;private&quot;</failure></step>
+</story>

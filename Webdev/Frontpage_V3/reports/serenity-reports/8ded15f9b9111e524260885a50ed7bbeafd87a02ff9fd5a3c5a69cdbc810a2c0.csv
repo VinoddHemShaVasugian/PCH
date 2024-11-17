@@ -1,0 +1,3 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Videos","Verify video page for guest user","ERROR","2019-08-20T22:57:15.363+05:30[Asia/Calcutta]","0.0","480.99"
+"Videos","Verify the video details on video_log table for Social user type","FAILURE","2019-08-20T23:33:37.738+05:30[Asia/Calcutta]","0.0","263.15"

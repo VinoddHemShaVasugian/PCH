@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Sams banner" skipped="0" tests="2" time="330.54" timestamp="2019-08-20 10:34:56"><testcase name="Verify the SAMS banner on homepage"><failure message="SAMS banner is not displayed" type="java.lang.AssertionError">SAMS banner is not displayed</failure><system-err>SAMS banner is not displayed&#13;
+com.pch.automation.stepdefinitions.CommonScenarioSteps.verifySamsBanner(CommonScenarioSteps.java:267)&#13;
+</system-err></testcase><testcase name="Verify the fallback banner instead of SAMS banner on homepage"/></testsuite>

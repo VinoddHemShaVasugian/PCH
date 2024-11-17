@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="2" name="Lottery" skipped="0" tests="4" time="549.19" timestamp="2019-08-20 10:01:52"><testcase name="Verify Lottery page and cliam tokens scenario."/><testcase name="Verify future drawing and different locations for lottery results"/><testcase name="Verify Lottery Past Results page"><failure message="Failed to redirect to Lottery Past Result page" type="java.lang.AssertionError">Failed to redirect to Lottery Past Result page</failure><system-err>Failed to redirect to Lottery Past Result page&#13;
+com.pch.automation.stepdefinitions.fp.LotteryScenarioSteps.verifyPastResultPage(LotteryScenarioSteps.java:42)&#13;
+</system-err></testcase><testcase name="Verify Lottery Pay Results page"><failure message="Failed to redirect to Lottery Past Result page" type="java.lang.AssertionError">Failed to redirect to Lottery Past Result page</failure><system-err>Failed to redirect to Lottery Past Result page&#13;
+com.pch.automation.stepdefinitions.fp.LotteryScenarioSteps.verifyPayoutPage(LotteryScenarioSteps.java:50)&#13;
+</system-err></testcase></testsuite>
