@@ -1,0 +1,477 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml">
+<head><meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>ArticleTestsTestReport</title>
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'/>
+<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300' rel='stylesheet' type='text/css'/>
+<style>
+* { margin:0; padding:0; }
+body { background-color:#FFFFFF; }
+#shell { margin:0; min-width:1000px; }
+#header { width:100%; height:112px; background-color:#1c8888; background-position:right; background-repeat:no-repeat; }
+#header-left { float:left; margin-left:20px; margin-top:38px; }
+#header-left p { font-size:17px; color:#FFFFFF; font-family: 'Roboto', sans-serif; }
+.module-report { font-size:36px; font-family: 'Open Sans', sans-serif; font-weight:600; color:#fbc815; text-transform:uppercase; }
+#header-inner { float:left; margin-left:20px; margin-top:33px; }
+.consolidate-report { font-size:36px; font-family: 'Open Sans', sans-serif; font-weight:600; color:#fbc815; text-transform:uppercase; }
+#logo { float:right; margin-right:85px; margin-top:15px; }
+img { height:20px; width:20px; }
+.content { min-height:527px; height:527px; height:auto !important; }
+#table-datas { margin-left:2%; margin-right:2%; width:96%; margin-top:2%; margin-bottom:2%; float:left; }
+#table-datas table tr th, #table-datas table tr td { border-bottom:1px solid #dddddd; border-right:1px solid #dddddd; }
+#table-datas table { border:1px solid #dddddd; border-right:none; border-bottom:none; }
+#table-datas table tr th { background-color:#5c5c5c; height:33px; color:#FFFFFF; font-size:14px; font-weight:normal; font-family: 'Roboto', sans-serif; }
+#table-datas table tr td { height:24px; }
+.active-color { background-color:#efefef; font-size:13px; font-weight:300; font-family: 'Roboto', sans-serif; }
+.active-color td { padding-left:10px; }
+.inactive-color { background-color:#ffffff; font-size:13px; font-weight:300; font-family: 'Roboto', sans-serif; }
+.inactive-color td { padding-left:10px; }
+.heading { font-size:14px; font-weight:500; color:#179c9c; font-family: 'Roboto', sans-serif; }
+#left-table { float:left; width:47%; margin-left:2%; margin-top:2%; }
+#left-table table tr td { border-bottom:1px solid #dddddd; border-right:1px solid #dddddd; }
+#left-table table { border:1px solid #dddddd; border-right:none; border-bottom:none; }
+#right-piereport { float:right; width:47%; margin-left:2%; margin-top:2%;}
+.left-active-color { background-color:#efefef; height:35px; width:55%; padding-left:20px; font-family: 'Roboto', sans-serif; font-size:13px; color:#000000; font-weight:700; }
+.right-active-color { background-color:#ffffff; height:35px; width:45%; padding-left:20px; font-family: 'Roboto', sans-serif; font-size:13px; color:#2e2e2e; font-weight:400; }
+.results { text-align:center; padding-left:0px !important; }
+#report div.show-exception { background: transparent; display: block;}
+#report div.up { background-position: 0 0;}
+#report tr.exception{ background-color:#FBFBF9;white-space: pre-wrap;font-size:12px;}
+#exception-filters { margin-left:2%; margin-right:2%; width:96%; float:left; margin-top:2%;}
+#exception-left-table { float:left; width:30%; margin-left:2%; margin-top:2%; }
+#exception-left-table table tr td { border-bottom:1px solid #dddddd; border-right:1px solid #dddddd; }
+#exception-left-table table { border:1px solid #dddddd; border-right:none; border-bottom:none; }
+#exception-right-piereport { float:right; width:64%; margin-left:2%; margin-top:2%;}
+.exception-left-active-color { background-color:#efefef; height:35px; width:40%; padding-left:20px; font-family: 'Roboto', sans-serif; font-size:13px; color:#000000; font-weight:700; }
+.exception-right-active-color { background-color:#ffffff; height:35px; width:15%; padding-left:20px; font-family: 'Roboto', sans-serif; font-size:13px; color:#2e2e2e; font-weight:400;}
+#footer { background-color:#2e2e2e; height:35px; }
+#footer-text { width:1000px; margin:0 auto; padding-top:8px; text-align:center; }
+#footer-text span { font-size:12px; color:#FFFFFF; font-weight:300; font-family: 'Roboto', sans-serif; }
+#footer-text span a { color:#FFFFFF;}
+.clearfix:after {	content: "."; display: block;	clear: both; visibility: hidden; line-height: 0; height: 0; }
+.clearfix 		{	display: inline-block; }
+html[xmlns] .clearfix {	display: block; }
+* html .clearfix { height: 1%; }
+</style>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js">
+</script>
+<script type="text/javascript">
+$(document).ready(function(){
+$('.exception').hide();  
+ $("#report tr.exception").prev().find('td:last div').click(function(e){
+$tr = $(e.target).parents('tr')
+$tr.next("tr.exception").toggle();
+$tr.find(".show-exception").toggleClass("up");
+});});
+</script>
+<script type="text/javascript">
+function ExceptionToggle(elm) {
+var ischecked = elm.checked;
+$target = $('table#report tbody tr#' + elm.id);
+ $target.toggle(ischecked);}
+</script>
+<script type="text/javascript">
+function setImage(ele, image) {
+element = $(ele);
+if(element){
+element.attr('src', image);
+};}
+</script>
+<script type="text/javascript">
+$(document).ready(function(){
+var screenshotImage = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OEEzNTRERjM5M0JEMTFFMzkzOUVBNTQxREM2MjRGRjMiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OEEzNTRERjQ5M0JEMTFFMzkzOUVBNTQxREM2MjRGRjMiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4QTM1NERGMTkzQkQxMUUzOTM5RUE1NDFEQzYyNEZGMyIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4QTM1NERGMjkzQkQxMUUzOTM5RUE1NDFEQzYyNEZGMyIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PgtWeGoAAADqSURBVHjaYvz//z8DJYAFROyPZ/QCUi1QPjEmMgLxHyCuYYEKlAPxeSCuI8GAJpA+mAFMQLzVceH/p8Q6HejqrUCqkAnK/wfE7CR6H6T+HxMDhYCqBvwlUe9fZANAocpHogEg9YywWABFXQMwZK3RFP0E4kdArADErGhyrkB8F2bAGyC2A+IENEUvgDgHiFtxuOIkzIB6IH4HxMJIkiBXfQdidSBeCsScUK/CwFsgnsiIKy8AvZMFpOKh8Q3yyjRgQluINS/gABZAbIbEPwPEC4lKB0DbbYGUNhDfR8JmQHFDjExBaXYGCDAA5lE4o7fbs/IAAAAASUVORK5CYII=';
+var passImage ='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NDVBQ0M1MDk5M0JDMTFFMzgxQ0FCMUQyRTRFM0IwNDMiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NDVBQ0M1MEE5M0JDMTFFMzgxQ0FCMUQyRTRFM0IwNDMiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo0NUFDQzUwNzkzQkMxMUUzODFDQUIxRDJFNEUzQjA0MyIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo0NUFDQzUwODkzQkMxMUUzODFDQUIxRDJFNEUzQjA0MyIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PhT6+EIAAAEgSURBVHjaxNO/S4JBGMDxe3+AYlP+ACUhGqxdcGkRmiRIXSOXIGhsSYj+hYZAcFCw6Z1CcGqKhqJFCkc3da2EELfAOr8nRyjW2xsO3suH47j3nvd5nuM1pJRikWGKBYe9dhv4z/sxHCELHy5t+eW5hCQusKPXDtoE8HQ4gxIS6OAc15MSPGSwh4pOv4VjPH/3QH66BtjFFcK4xyF6M00kgM0cwgcGU3tp1PThO+yjP3eNciRP0MUNNiH0XEEUTRTQ13szTDJYRwDbKCKGMrbQwQFeVKk/MYKOtUEmT7oMVd8rUhgijwe3Jln+nDEUUqwgjVXEYeIUdaF67MLkGtXTwEhdqeagOrX+leXLTiK94w0RPOIMg7++rhhL/xvHAgwAT63teIFlPMEAAAAASUVORK5CYII=';
+var failImage = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NDFEQ0U3M0U5M0JEMTFFM0E2MjVBRjkzNURBOUE1NTMiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NDFEQ0U3M0Y5M0JEMTFFM0E2MjVBRjkzNURBOUE1NTMiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo0MURDRTczQzkzQkQxMUUzQTYyNUFGOTM1REE5QTU1MyIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo0MURDRTczRDkzQkQxMUUzQTYyNUFGOTM1REE5QTU1MyIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PvYjEN4AAAGQSURBVHjafNPLK0RRHAfwczlYoZTSjA2rCTULOxak8VYsbCxQ7kbKLJRHbJUNFpSyYxb8BxaEhVAWLBRKkZRiQbGZ+5i5vr87v5tzTzN+9ek87nndc3/XcExzQgiRFLl4hBl4FYWjCYahC9JSZDImKnF+SOUTzBeY3AaT0A41kJXCdVu0QXO8C53snftqYYknB3ELC1I4ziEfR40+uIZOiMAeVCvPZ2ENPOnZ9igqKejWFqGJF1ABBvfRiWj8UTBICtv+QNkDvbAOMWWRSi49OIExeFN3MexEItSGRVjWTuNCK1zptyqFZalt2qk+z+1L2OJFQhOkF15gg28/XzTDKkyHjmzFgxTw329Xm0RJVQYrSl8/HPwtEPPvrJE/W6ky8B4auJ7i26d45v50cAclKPe1yVkYUdqUreUwBHUwDtu5E0SjHSiPtaNvKv9HEFXwwAl1x9nqJ1JEG/jNaavHJwxyctEr0C9wXoRUPoMvECwJP0pbdQk7XB+gkn6mF/6+lIk3cCr+jynevZgavwIMAHdffyFa7zUMAAAAAElFTkSuQmCC';
+var skipImage = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAI/ElEQVR4Xu2cX2xTVRzHe29vK8EQuuITPhgFU4MmSzbXMQaJM4w+4ZhzBnAhoPRO4pYtQU1kWzUL2yIGIy6G7JY/EWLEGRYXhLRbxkICC6E8kBgFFnVZGMSEB8WAou2915zSM++6/u9p7zk9vyZ72r2/nvP7fs7vnHub31ewwIfrDAhczx4mbwEAOIcAAAAAOM8A59OHCgAAcJ4BzqcPFQAA4DwDnE8fKgAAwHkGOJ8+VAAAgPMMcD59qAAAAOcZ4Hz6UAEAAM4zwPn0oQIAAJxngPPpQwUAADjPAOfThwoAANCTAV3XRYvFgv7wRxUEQc91hKTj5ToOmu+jpgIgsQRB0OKTpeu6kAsEKeIl/B6aRSrk2KgAAIs1PDxcefbs2S23b992bNiw4ZrX6/165cqVfyUTM1li8PWBQOD5U6dOvTY3N/dERUXF9dbW1q9WrVp1L9t4hRTA7NimA4DF2LNnz9uHDx/+wrgFOJ3Oa4FA4BW3231L13WrIAhquoTheHv37t128ODB4xaL5TF8j9PpvBkMBhuqqqpu6rouCYIQSRev1P9vKgBYrGAw+JzH4/lRkiS0/4dR2RdFUQ+HwzaHwzE9Nja2MRMIcLypqakn161bN221WpcKgrAgXllZ2a1AILCxurp6GiCwmNsYggXo6up6d2Bg4BNRFMORSMSGV53Vao2oqiplCgGO19vbu9Pn8x2XJCkSiUSk+HgAwf91zewKEC3DPp/vo/379/eIoqgZBUPDFEUxomlaRhBgALq7u9v7+/s/SxJP1TTNChA8gsBsAKL7uqIoHlmWAzabLRIOh+dXLOY0UwjwFjA6OvpiQ0NDSJIkNRKJWOP3cVEUAYJYUkwFAI0h9qxuqa6uHrly5UqDJEkLtoFcIVi7du2xy5cv70oRDyAwuwLEAIhCODc3t6SxsfG7q1evborfu7OBAB0gY/MS3W73N6FQ6NUU8biHwPQKgCFAL3tmZmaWNDc3jxKCIHqEcLvdwwBB8odZKgDAWwF6E0gQAvRIiV4jAwQpXmZQAwBAYM4rJ6oAAAiKDwF1AAAExYWASgAAguJBQC0AAEFxIKAaAICg8BBQDwBAUFgImAAAICgcBMwAABAUBgKmAAAIyEPAHAAAAVkImAQAICAHAbMAAARkIGAaAIAgfwiYBwAgyA+CkgAAIMgdgpIBACDIDYKSAgAgyB6CkgMAIMgOgpIEACDIHIKSBQAgyAyCkgYAIEgPQckDABCkhoALAACC5BBwAwClEGRkepG+kOd+BVcA5APB+fPnN1VUVMzG28vEmluz7kA6d+6cp6am5rrZdjXcAZArBGVlZTPj4+MvVVZW3kLNp0ZDqxwh+C0YDG6sqqr6KT5e7us5+zu5BCAZBMhQQtM0o01dNKO4xXz9+vUjFy9ebEq0ahNBkCJe1LnE5XJduHHjRh0AkD24RO7AQt65c2dpS0vLycnJyUbUpRwPQcymTl+2bNkfMzMzT69YseLPRPZ1Bgik+vr6oxMTEy2J4qGmVVEUEVj/hEKhZ8vLy+fM2gq4rQCYIF3X7YIg/CvL8j5FUfqsVquqquoCVxEkoq7rluXLl9+bnZ19xuFw/J7Mv9AQr01RlMFE8WIACJqmhScnJ9fU1dX9DAAQWdPZBcGeQrt379535MiRvmQlG5lVIZ+i1atXh6anp2uQgElMLaOeR16vt93v938ei4cNK+YHhyxqUNu60+n89e7du2uQM1ouZpjZzTbx1dxWACy+1+v9wO/39yfzE0JCi0gxVVVPnz5d39TUNJnIsxDHk2U5uvIlSUKGV4vER/DYbDYtHA5bBwcHX29vb/82Uw9EEoLHx+ASgATio0MZKvsL8mEQ/6GiKM2yLH+f5AAYXfkG8ZE5FTpMxudXlyRJR//zer1v+f3+Y2aKj2DgDoBcxB8aGmpobW0dS2QsmWDlpxVfluWdiqJ8SYNRJVcA5Cm+DbmOGktonuIvileIEp8uJjcA5Cn+Il/hPMWnxqeYCwBAfI5/DALxOf45GMRPdwIo4acAED+9+CX7GAjiZyZ+SQIA4mcufskBAOJnJ35JAQDiZy9+yQAA4ucmfkkAAOLnLj7zAID4+YnPNAAgfv7iMwsAiE9GfCYBAPHJic8cACA+WfGZAgDEJy8+MwCA+IURnwkAQPzCiU89ACB+YcWnGgAQv/DiUwsAiF8c8akEAMQvnvjUAQDiF1d8qgAA8YsvPjUA4P44Q6Nm2l69NO1aUe+dbHr1aGrXKiYKpjeGYPFlWX5PUZQDNpstgjpnUzVqphFfRE2dHR0d3kOHDik2m00Nh8MpGzV5Fd/0CoA7bYPB4Asej+eHWIv2IrGMXbqZiH/p0qWnamtrb0qSZFdVFZk7xNu+zHfp8iw+DQBEe+S6urreHxgY+FgUxah3jrEEZio+ugefI3p7e9/0+XxHJUlaFA9dhlu0eRefGgC6u7s/7O/v9yFHDSMA2YhvBKCnp6etr68POXSgVm0jUMicQUdbAoj/aJmZegbA+/+JEyde3rFjx4Tdbg8j8wTkvxOzUbGpqvowVdk3Vgu8pZw5c6Z88+bN1+x2O6oAyOAHxdMEQUAlBsQ3JM1UAGKrFu3Pem1t7cmpqak34k7Afw8NDW1JZs6Q6LSMIaivrx8cHx9vi7tGl2V5Fy3mDMU87Sf7LhoAwGOwyrLcGQwGm+/fv/+4y+W63tHRcWDr1q2hbJw00GrHvnudnZ3vjIyMbHvw4IHD5XL90tbW9un27dsvmG3LQoPweAymA5BkFc976JKwTzMKTiIeTQLmOxZqAIitXLQdoL0aPbqhdwEJ7dgynXQsBo4XfbxEL4gyvZ+H66gBIO4wh4RCBsxEPslMHYkEZzwIlQAwnlOmhg8AMCUX+cECAORzylREAIApucgPFgAgn1OmIgIATMlFfrAAAPmcMhURAGBKLvKDBQDI55SpiAAAU3KRHywAQD6nTEUEAJiSi/xgAQDyOWUqIgDAlFzkBwsAkM8pUxEBAKbkIj9YAIB8TpmKCAAwJRf5wQIA5HPKVEQAgCm5yA8WACCfU6YiAgBMyUV+sAAA+ZwyFfE/MCaYYrKxl20AAAAASUVORK5CYII=';
+var passSrc = $(".pass");
+setImage(passSrc, passImage);
+var failSrc = $(".fail");
+setImage(failSrc, failImage);
+var skipSrc = $(".skip");
+setImage(skipSrc, skipImage);
+var screenshotSrc = $(".screenshot");
+setImage(screenshotSrc, screenshotImage);
+});</script>
+</head>
+<body><div id="shell"><div id="header"><div id="header-left"><span class="module-report">Test Wise Report</span><p>Test Name :  ArticleTests TestReport</p></div>
+</div>
+<div class="content clearfix">
+<div id="table-datas"><table id= "report" width="100%" border="0" cellspacing="0" cellpadding="0" >
+<tr><th width="15%"><strong>Test Name</strong></td>
+<th width="35%"><strong>Description</strong></td>
+<th width="10%"><strong>QC Test ID</strong></td>
+<th width="7%"><strong>Result</strong></td>
+<th width="8%"><strong>Screenshot</strong></td>
+<th width="25%"><strong>Log</strong></td>
+</tr>
+<tr class="inactive-color">
+<td>verify_ads_on_article_page</td><td>Verify display of Article page Ad's</td><td>RT-04391:[D/T] FP: Verify ads in across the site</td>
+<td class="results"><img id="pass" class="pass" src=></td><td class="results"></td><td></td></tr>
+<tr class="active-color">
+<td>verify_article_page</td><td>Verify the Article page</td><td>RT-04273:[D/T/M] : FP Article page integration</td>
+<td class="results"><img id="fail" class="fail" src=></td>
+<td class="results"><a href="./Screenshots/verify_article_page.png" target="_blank"><img class="screenshot" src= style="cursor: pointer;"/></a></td>
+<td><div class="show-exception">org.openqa.selenium.TimeoutException: timeout
+</div></td></tr>
+<tr class="exception">
+<td colspan="5">
+org.openqa.selenium.TimeoutException: timeout
+  (Session info: chrome=72.0.3626.121)
+  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'VSANKAR2', ip: '10.37.0.236', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '11.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.46.628402 (536cd7adbad73a..., userDataDir: C:\Windows\TEMP\scoped_dir1...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:56320}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 72.0.3626.121, webStorageEnabled: true}
+Session ID: 1492e66dbc1f6ff876be2d7591344465
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:489)
+	at com.util.WrapperFunctions.button(WrapperFunctions.java:927)
+	at com.pageobjects.HomePage.click_first_article_link(HomePage.java:510)
+	at com.miscellaneous.ArticleTests.verify_article_page(ArticleTests.java:76)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray2(ReflectionUtils.java:186)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:161)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:84)
+	at org.apache.maven.plugin.surefire.InPluginVMSurefireStarter.runSuitesInProcess(InPluginVMSurefireStarter.java:87)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeProvider(AbstractSurefireMojo.java:1144)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:1002)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:848)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:137)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:210)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:156)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:148)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:117)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:81)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:56)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:305)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:192)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:105)
+	at org.jvnet.hudson.maven3.launcher.Maven35Launcher.main(Maven35Launcher.java:130)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at jenkins.maven3.agent.Maven35Main.launch(Maven35Main.java:176)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at hudson.maven.Maven3Builder.call(Maven3Builder.java:139)
+	at hudson.maven.Maven3Builder.call(Maven3Builder.java:70)
+	at hudson.remoting.UserRequest.perform(UserRequest.java:212)
+	at hudson.remoting.UserRequest.perform(UserRequest.java:54)
+	at hudson.remoting.Request$2.run(Request.java:369)
+	at hudson.remoting.InterceptingExecutorService$1.call(InterceptingExecutorService.java:72)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+</td></tr>
+<tr class="inactive-color">
+<td>verify_article_page_bottom_dfp_ad</td><td>Verify the Bottom DFP ad on article page</td><td>RT-04391:[D/T] FP: Verify ads in across the site</td>
+<td class="results"><img id="pass" class="pass" src=></td><td class="results"></td><td></td></tr>
+<tr class="active-color">
+<td>verify_article_page_teads_ad</td><td>Verify the Teads ad on article page</td><td>RT-04391:[D/T] FP: Verify ads in across the site</td>
+<td class="results"><img id="pass" class="pass" src=></td><td class="results"></td><td></td></tr>
+<tr class="inactive-color">
+<td>verify_story_details_on_story_log_for_full_reg</td><td>Verify the Story details on Story log table after reads the story for Full Reg user</td><td>RT-04233:RT-04233 : Create Local Tables for Video and Story Logs [D/T/M]</td>
+<td class="results"><img id="pass" class="pass" src=></td><td class="results"></td><td></td></tr>
+<tr class="active-color">
+<td>verify_story_details_on_story_log_for_mini_reg</td><td>Verify the Story details on Story log table after reads the story for Mini Reg user</td><td>RT-04233:RT-04233 : Create Local Tables for Video and Story Logs [D/T/M]</td>
+<td class="results"><img id="fail" class="fail" src=></td>
+<td class="results"><a href="./Screenshots/verify_story_details_on_story_log_for_mini_reg.png" target="_blank"><img class="screenshot" src= style="cursor: pointer;"/></a></td>
+<td><div class="show-exception">java.lang.AssertionError: expected [1] but found [0]
+</div></td></tr>
+<tr class="exception">
+<td colspan="5">
+java.lang.AssertionError: expected [1] but found [0]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at com.util.WrapperFunctions.assertEquals(WrapperFunctions.java:1580)
+	at com.miscellaneous.ArticleTests.verify_story_details_on_story_log_for_mini_reg(ArticleTests.java:466)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray2(ReflectionUtils.java:186)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:161)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:84)
+	at org.apache.maven.plugin.surefire.InPluginVMSurefireStarter.runSuitesInProcess(InPluginVMSurefireStarter.java:87)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeProvider(AbstractSurefireMojo.java:1144)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:1002)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:848)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:137)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:210)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:156)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:148)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:117)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:81)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:56)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:305)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:192)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:105)
+	at org.jvnet.hudson.maven3.launcher.Maven35Launcher.main(Maven35Launcher.java:130)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at jenkins.maven3.agent.Maven35Main.launch(Maven35Main.java:176)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at hudson.maven.Maven3Builder.call(Maven3Builder.java:139)
+	at hudson.maven.Maven3Builder.call(Maven3Builder.java:70)
+	at hudson.remoting.UserRequest.perform(UserRequest.java:212)
+	at hudson.remoting.UserRequest.perform(UserRequest.java:54)
+	at hudson.remoting.Request$2.run(Request.java:369)
+	at hudson.remoting.InterceptingExecutorService$1.call(InterceptingExecutorService.java:72)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+</td></tr>
+<tr class="inactive-color">
+<td>verify_story_details_on_story_log_for_silver_user</td><td>Verify the Story details on Story log table after reads the story for Silver user</td><td>RT-04233:RT-04233 : Create Local Tables for Video and Story Logs [D/T/M]</td>
+<td class="results"><img id="fail" class="fail" src=></td>
+<td class="results"><a href="./Screenshots/verify_story_details_on_story_log_for_silver_user.png" target="_blank"><img class="screenshot" src= style="cursor: pointer;"/></a></td>
+<td><div class="show-exception">java.lang.NullPointerException
+</div></td></tr>
+<tr class="exception">
+<td colspan="5">
+java.lang.NullPointerException
+	at com.util.WrapperFunctions.assertEquals(WrapperFunctions.java:1580)
+	at com.miscellaneous.ArticleTests.verify_story_details_on_story_log_for_silver_user(ArticleTests.java:578)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray2(ReflectionUtils.java:186)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:161)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:84)
+	at org.apache.maven.plugin.surefire.InPluginVMSurefireStarter.runSuitesInProcess(InPluginVMSurefireStarter.java:87)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeProvider(AbstractSurefireMojo.java:1144)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:1002)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:848)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:137)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:210)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:156)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:148)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:117)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:81)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:56)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:305)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:192)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:105)
+	at org.jvnet.hudson.maven3.launcher.Maven35Launcher.main(Maven35Launcher.java:130)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at jenkins.maven3.agent.Maven35Main.launch(Maven35Main.java:176)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at hudson.maven.Maven3Builder.call(Maven3Builder.java:139)
+	at hudson.maven.Maven3Builder.call(Maven3Builder.java:70)
+	at hudson.remoting.UserRequest.perform(UserRequest.java:212)
+	at hudson.remoting.UserRequest.perform(UserRequest.java:54)
+	at hudson.remoting.Request$2.run(Request.java:369)
+	at hudson.remoting.InterceptingExecutorService$1.call(InterceptingExecutorService.java:72)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+</td></tr>
+<tr class="active-color">
+<td>verify_story_details_on_story_log_for_social_user</td><td>Verify the Story details on Story log table after reads the story for Social user</td><td>RT-04233:RT-04233 : Create Local Tables for Video and Story Logs [D/T/M]</td>
+<td class="results"><img id="fail" class="fail" src=></td>
+<td class="results"><a href="./Screenshots/verify_story_details_on_story_log_for_social_user.png" target="_blank"><img class="screenshot" src= style="cursor: pointer;"/></a></td>
+<td><div class="show-exception">java.lang.AssertionError: expected [1] but found [0]
+</div></td></tr>
+<tr class="exception">
+<td colspan="5">
+java.lang.AssertionError: expected [1] but found [0]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at com.util.WrapperFunctions.assertEquals(WrapperFunctions.java:1580)
+	at com.miscellaneous.ArticleTests.verify_story_details_on_story_log_for_social_user(ArticleTests.java:691)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray2(ReflectionUtils.java:186)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:161)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:84)
+	at org.apache.maven.plugin.surefire.InPluginVMSurefireStarter.runSuitesInProcess(InPluginVMSurefireStarter.java:87)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeProvider(AbstractSurefireMojo.java:1144)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:1002)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:848)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:137)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:210)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:156)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:148)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:117)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:81)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:56)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:305)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:192)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:105)
+	at org.jvnet.hudson.maven3.launcher.Maven35Launcher.main(Maven35Launcher.java:130)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at jenkins.maven3.agent.Maven35Main.launch(Maven35Main.java:176)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at hudson.maven.Maven3Builder.call(Maven3Builder.java:139)
+	at hudson.maven.Maven3Builder.call(Maven3Builder.java:70)
+	at hudson.remoting.UserRequest.perform(UserRequest.java:212)
+	at hudson.remoting.UserRequest.perform(UserRequest.java:54)
+	at hudson.remoting.Request$2.run(Request.java:369)
+	at hudson.remoting.InterceptingExecutorService$1.call(InterceptingExecutorService.java:72)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+</td></tr>
+</table></div></div>
+</body></html>

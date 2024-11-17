@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="RegressionSuiteForMobile" thread-count="2" parallel="tests"
+	verbose="10" preserve-order="true">
+	<listeners>
+		<listener class-name="com.util.ReporterListener" />
+		<listener class-name="com.util.PriorityListener" />
+	</listeners>
+	<test name="MobileRegression" verbose="10" preserve-order="true"
+		group-by-instances="true">
+		<!-- For browser_name = Chrome, Firefox, IE, Tablet_IOS, Tablet_Android, 
+			Mobile_ios, Mobile_Andriod -->
+		<parameter name="browser_name" value="" />
+		<parameter name="grid_url" value="" />
+		<classes>
+			<!-- Miscellaneous related scenario's -->
+			<class name="com.miscellanous.SubCategoryTests" />
+			<class name="com.miscellanous.ErrorHandlingTests" />
+			<class name="com.miscellanous.HomeTests" />
+			<class name="com.miscellanous.FooterTests" />
+			<class name="com.miscellanous.EcParameterTests" />
+			<class name="com.miscellanous.InfoTests" />
+			<!-- Scratch Path related scenario's -->
+			<class name="com.miscellanous.ScratchPathTests" />
+			<!-- User Type related scenario's -->
+			<class name="com.usertype.MiniRegUserTests" />
+			<!-- Light Box related scenario's -->
+			<class name="com.lightbox.CompleteRegistrationLightboxTests" />
+			<class name="com.lightbox.WelcomeLightBoxTests" />
+			<class name="com.lightbox.HighRiskLightboxTests" />
+			<class name="com.lightbox.OptinLightboxTests" />
+			<class name="com.lightbox.ProgressBarLightBox" />
+			<!-- SERP & NFSP related scenario's -->
+			<class name="com.search.SearchTests" />
+			<class name="com.miscellanous.NFSPTests" />
+			<!-- Category Page related scenario's -->
+			<class name="com.weather.WeatherTests" />
+			<class name="com.lottery.LotteryTests" />
+			<class name="com.video.VideoTests" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

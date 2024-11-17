@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="RegressionSuiteForDesktopAndTablet" verbose="10" preserve-order="true">
+	<listeners>
+		<listener class-name="com.util.ReporterListener" />
+		<listener class-name="com.util.PriorityListener" />
+	</listeners>
+	<test name="Light Box related scenarios"> <!-- Light Box related scenarios -->
+		<classes>
+			<class name="com.lightbox.WelcomeLightBoxTests" /> <!-- 0:18:0 -->
+			<class name="com.lightbox.HighRiskLightboxTests" /> <!-- 0:20:0 -->
+			<class name="com.lightbox.OptinLightboxTests" /> <!-- 0:12:0 -->
+			<class name="com.lightbox.CompleteRegistrationLightboxTests" /> <!-- 0:8:0 -->
+			<class name="com.lightbox.SignInRegisterLightboxTests" /> <!-- 0:8:0 -->
+		</classes>
+	</test>
+	<test name="SERP, Lottery and Weather related scenarios"> <!-- SERP, Lottery and Weather related scenarios -->
+		<classes>
+			<class name="com.lottery.LotteryTests" /> <!-- 0:9:0 -->
+			<class name="com.weather.WeatherTests" /> <!-- 0:11:0 -->
+			<class name="com.search.SearchTests" /> <!-- 0:18:0 -->
+		</classes>
+	</test>
+	<test name="User types related scenarios"> <!-- User types related scenarios -->
+		<classes>
+			<class name="com.usertypes.UserTests" /> <!-- 0:34:0 -->
+		</classes>
+	</test>
+	<test name="VIP and Sweepstakes related scenarios"> <!-- VIP and Sweepstakes related scenarios -->
+		<classes>
+			<class name="com.vip.VipTests" /> <!-- 0:37:0 -->
+			<class name="com.sweepstakes.Sweepstakes" /> <!-- 0:37:0 -->
+		</classes>
+	</test>
+	<test name="NFSP related scenarios"> <!-- NFSP related scenarios -->
+		<classes>
+			<class name="com.nfsp.NFSPSegmentTests" /> <!-- 1:0:0 -->
+			<class name="com.nfsp.NFSPTests" /> <!-- 0:8:0 -->
+		</classes>
+	</test>
+	<test name="Contest Entry related scenarios"> <!-- Contest Entry related scenarios -->
+		<classes>
+			<class name="com.contestentry.ContestEntryTests" /> <!-- 0:44:0 -->
+		</classes>
+	</test>
+	<test name="Token Awarding and CategoryMenus related scenarios"> <!-- Token Awarding and CategoryMenus related scenarios -->
+		<classes>
+			<class name="com.miscellaneous.CategoryMenuTests" /> <!-- 0:13:0 -->
+			<class name="com.miscellaneous.SubCategoryMenuTests" /> <!-- 0:10:0 -->
+			<class name="com.awardtokens.SegIdTokens" /> <!-- 0:7:0 -->
+			<class name="com.awardtokens.TokenQueueTests" /> <!-- 0:4:0 -->
+			<class name="com.awardtokens.BirthdayTests" /> <!-- 0:7:0 -->
+		</classes>
+	</test>
+	<test name="Article page related scenarios"> <!-- Article page related scenarios -->
+		<classes>
+			<class name="com.miscellaneous.ArticleTests" /> <!-- 0:41:0 -->
+		</classes>
+	</test>
+	<test name="Miscellaneous related scenarios"> <!-- Miscellaneous related scenarios -->
+		<classes>
+			<class name="com.miscellaneous.OurPicksTests" /> <!-- 0:4:0 -->
+			<class name="com.miscellaneous.EcParameterTests" /> <!-- 0:4:0 -->
+			<class name="com.miscellaneous.ScratchPathTests" /> <!-- 0:15:0 -->
+			<class name="com.miscellaneous.ErrorHandlingTests" /> <!-- 0:7:0 -->
+		</classes>
+	</test>
+		<test name="Videos related scenarios"> <!-- Videos related scenarios -->
+		<classes>
+			<class name="com.miscellaneous.VideoTests" /> <!-- 0:30:0 -->
+		</classes>
+	</test>
+</suite>

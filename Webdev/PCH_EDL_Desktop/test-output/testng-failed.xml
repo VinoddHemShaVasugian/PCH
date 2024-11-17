@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test verbose="2" name="Default test">
+    <classes>
+      <class name="com.nfsp.NFSPTests"/>
+    </classes>
+  </test> <!-- Default test -->
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.nfsp.NFSPTests">
+        <methods>
+          <include name="setup"/>
+          <include name="close"/>
+          <include name="nfsp_priority_over_segmentation"/>
+          <include name="get_nfsp_from_admin"/>
+          <include name="deleteBrowserCookies"/>
+          <include name="notify_method_completes"/>
+        </methods>
+      </class> <!-- com.nfsp.NFSPTests -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="RegressionSuiteForDesktopAndTablet" thread-count="6"
+	verbose="10" preserve-order="true" parallel="tests">
+	<listeners>
+		<listener class-name="com.util.ReporterListener" />
+		<listener class-name="com.util.PriorityListener" />
+	</listeners>
+	<test name="Regression01"> <!-- 1:32:0 -->
+		<classes>
+			<class name="com.search.SearchTests" /> <!-- 0:18:0 -->
+			<class name="com.lightbox.WelcomeLightBoxTests" /> <!-- 0:18:0 -->
+			<class name="com.lightbox.HighRiskLightboxTests" /> <!-- 0:20:0 -->
+			<class name="com.lightbox.OptinLightboxTests" /> <!-- 0:12:0 -->
+			<class name="com.lightbox.CompleteRegistrationLightboxTests" /> <!-- 0:8:0 -->
+			<class name="com.lightbox.SignInRegisterLightboxTests" /> <!-- 0:8:0 -->
+			<class name="com.nfsp.NFSPTests" /> <!-- 0:8:0 -->
+		</classes>
+	</test> 
+	<test name="Regression02"> <!-- 1:22:0 -->
+		<classes>
+			<class name="com.miscellaneous.SubCategoryMenuTests" /> <!-- 0:10:0 -->
+			<class name="com.miscellaneous.CategoryMenuTests" /> <!-- 0:13:0 -->
+			<class name="com.miscellaneous.ArticleTests" /> <!-- 0:41:0 -->
+			<class name="com.awardtokens.SegIdTokens" /> <!-- 0:7:0 -->
+			<class name="com.awardtokens.TokenQueueTests" /> <!-- 0:4:0 -->
+			<class name="com.awardtokens.BirthdayTests" /> <!-- 0:7:0 -->
+		</classes>
+	</test>
+	<test name="Regression03"> <!-- 1:09:0 -->
+		<classes>
+			<class name="com.usertypes.SilveruserTests" /> <!-- 0:10:0 -->
+			<class name="com.usertypes.FBUserTests" /> <!-- 0:14:0 -->
+			<class name="com.usertypes.MinireguserTests" /> <!-- 0:10:0 -->
+			<class name="com.lottery.LotteryTests" /> <!-- 0:9:0 -->
+			<class name="com.weather.WeatherTests" /> <!-- 0:11:0 -->
+			<class name="com.miscellaneous.EcParameterTests" /> <!-- 0:4:0 -->
+			<class name="com.miscellaneous.OurPicksTests" /> <!-- 0:4:0 -->
+			<class name="com.miscellaneous.ErrorHandlingTests" /> <!-- 0:7:0 -->
+		</classes>
+	</test>
+		<test name="Regression04"> <!-- 1:14:0 -->
+		<classes>
+			<class name="com.vip.VipTests" /> <!-- 0:37:0 -->
+			<class name="com.sweepstakes.Sweepstakes" /> <!-- 0:37:0 -->
+		</classes>
+	</test>
+		<test name="Regression05"> <!-- 1:15:0 -->
+		<classes>
+			<class name="com.nfsp.NFSPSegmentTests" /> <!-- 1:0:0 -->
+			<class name="com.miscellaneous.ScratchPathTests" /> <!-- 0:15:0 -->
+		</classes>
+	</test>
+			<test name="Regression06"> <!-- 1:14:0 -->
+		<classes>
+			<class name="com.contestentry.ContestEntryTests" /> <!-- 0:44:0 -->
+			<class name="com.miscellaneous.VideoTests" /> <!-- 0:30:0 -->
+		</classes>
+	</test>
+</suite>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="RegressionSuiteForDesktopAndTablet" thread-count="3"
+	verbose="10" preserve-order="true" parallel="false">
+	<listeners>
+		<listener class-name="com.util.ReporterListener" />
+		<listener class-name="com.util.PriorityListener" />
+	</listeners>
+	<test name="Regression01">
+		<classes>
+			<!-- Miscellaneous related scenarios -->
+			<class name="com.miscellaneous.ArticleTests" />
+			<class name="com.miscellaneous.VideoTests" />
+			<class name="com.awardtokens.SegIdTokens" />
+			<class name="com.lottery.LotteryTests" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

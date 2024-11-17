@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="RegressionSuiteForDesktopAndTablet" thread-count="2"
+	parallel="tests" verbose="10" preserve-order="true">
+	<listeners>
+		<listener class-name="com.util.ReporterListener" />
+		<listener class-name="com.util.PriorityListener" />
+	</listeners>
+	<test name="DesktopRegression" verbose="10" preserve-order="true"
+		group-by-instances="true">
+		<!-- For browser_name = Chrome, Firefox, IE, Tablet_IOS, Tablet_Android -->
+		<parameter name="browser_name" value="" />
+		<parameter name="grid_url" value="" />
+		<classes>
+			<!-- Token Awarding related scenarios -->
+			<class name="com.comic.ComicTests" />
+								
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

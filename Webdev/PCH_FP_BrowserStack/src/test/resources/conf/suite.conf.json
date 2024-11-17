@@ -1,0 +1,26 @@
+{
+  "server": "hub-cloud.browserstack.com",
+  "user": "vinothkumar67",
+  "key": "BhtTXqRzp1ryUseD1DEW",
+
+  "capabilities": {
+    "build": "testng-browserstack",
+    "name": "suite_test",
+    "browserstack.debug": true
+  },
+
+  "environments": {
+    "chrome": {
+      "browser": "chrome"
+    },
+    "firefox": {
+      "browser": "firefox"
+    },
+    "safari": {
+      "browser": "safari"
+    },
+    "ie": {
+      "browser": "internet explorer"
+    }
+  }
+}

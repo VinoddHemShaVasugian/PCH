@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="8" passed="8">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="1502047" started-at="2019-01-23T13:13:49Z" finished-at="2019-01-23T13:38:51Z">
+    <groups>
+      <group name="SANITY">
+        <method signature="SearchTests.verify_collapse_search_box_rec_user()[pri:4, instance:com.search.SearchTests@4f6ee6e4]" name="verify_collapse_search_box_rec_user" class="com.search.SearchTests"/>
+        <method signature="SearchTests.verify_openx_banner_rec_user()[pri:6, instance:com.search.SearchTests@4f6ee6e4]" name="verify_openx_banner_rec_user" class="com.search.SearchTests"/>
+      </group> <!-- SANITY -->
+      <group name="DESKTOP">
+        <method signature="SearchTests.verify_collapse_search_box_rec_user()[pri:4, instance:com.search.SearchTests@4f6ee6e4]" name="verify_collapse_search_box_rec_user" class="com.search.SearchTests"/>
+        <method signature="SearchTests.verify_collapse_search_box_unrec_user()[pri:5, instance:com.search.SearchTests@4f6ee6e4]" name="verify_collapse_search_box_unrec_user" class="com.search.SearchTests"/>
+        <method signature="SearchTests.verify_inhouse_ads()[pri:3, instance:com.search.SearchTests@4f6ee6e4]" name="verify_inhouse_ads" class="com.search.SearchTests"/>
+        <method signature="SearchTests.verify_openx_banner_rec_user()[pri:6, instance:com.search.SearchTests@4f6ee6e4]" name="verify_openx_banner_rec_user" class="com.search.SearchTests"/>
+        <method signature="SearchTests.verify_openx_banner_unrec_user()[pri:7, instance:com.search.SearchTests@4f6ee6e4]" name="verify_openx_banner_unrec_user" class="com.search.SearchTests"/>
+        <method signature="SearchTests.verify_search_box_redirection()[pri:1, instance:com.search.SearchTests@4f6ee6e4]" name="verify_search_box_redirection" class="com.search.SearchTests"/>
+        <method signature="SearchTests.verify_serp_pagination_carousel_shopping()[pri:2, instance:com.search.SearchTests@4f6ee6e4]" name="verify_serp_pagination_carousel_shopping" class="com.search.SearchTests"/>
+        <method signature="SearchTests.verify_tokens_for_consecutive_search_for_same_keyword()[pri:8, instance:com.search.SearchTests@4f6ee6e4]" name="verify_tokens_for_consecutive_search_for_same_keyword" class="com.search.SearchTests"/>
+      </group> <!-- DESKTOP -->
+      <group name="TABLET">
+        <method signature="SearchTests.verify_collapse_search_box_rec_user()[pri:4, instance:com.search.SearchTests@4f6ee6e4]" name="verify_collapse_search_box_rec_user" class="com.search.SearchTests"/>
+        <method signature="SearchTests.verify_collapse_search_box_unrec_user()[pri:5, instance:com.search.SearchTests@4f6ee6e4]" name="verify_collapse_search_box_unrec_user" class="com.search.SearchTests"/>
+        <method signature="SearchTests.verify_inhouse_ads()[pri:3, instance:com.search.SearchTests@4f6ee6e4]" name="verify_inhouse_ads" class="com.search.SearchTests"/>
+        <method signature="SearchTests.verify_openx_banner_rec_user()[pri:6, instance:com.search.SearchTests@4f6ee6e4]" name="verify_openx_banner_rec_user" class="com.search.SearchTests"/>
+        <method signature="SearchTests.verify_openx_banner_unrec_user()[pri:7, instance:com.search.SearchTests@4f6ee6e4]" name="verify_openx_banner_unrec_user" class="com.search.SearchTests"/>
+        <method signature="SearchTests.verify_search_box_redirection()[pri:1, instance:com.search.SearchTests@4f6ee6e4]" name="verify_search_box_redirection" class="com.search.SearchTests"/>
+        <method signature="SearchTests.verify_serp_pagination_carousel_shopping()[pri:2, instance:com.search.SearchTests@4f6ee6e4]" name="verify_serp_pagination_carousel_shopping" class="com.search.SearchTests"/>
+        <method signature="SearchTests.verify_tokens_for_consecutive_search_for_same_keyword()[pri:8, instance:com.search.SearchTests@4f6ee6e4]" name="verify_tokens_for_consecutive_search_for_same_keyword" class="com.search.SearchTests"/>
+      </group> <!-- TABLET -->
+    </groups>
+    <test name="Default test" duration-ms="1502047" started-at="2019-01-23T13:13:49Z" finished-at="2019-01-23T13:38:51Z">
+      <class name="com.search.SearchTests">
+        <test-method status="PASS" signature="setup(org.testng.ITestContext)[pri:0, instance:com.search.SearchTests@4f6ee6e4]" name="setup" is-config="true" duration-ms="228919" started-at="2019-01-23T18:43:49Z" finished-at="2019-01-23T18:47:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@50ba19df]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="deleteBrowserCookies(java.lang.reflect.Method)[pri:0, instance:com.search.SearchTests@4f6ee6e4]" name="deleteBrowserCookies" is-config="true" duration-ms="13652" started-at="2019-01-23T18:47:38Z" finished-at="2019-01-23T18:47:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.search.SearchTests.verify_search_box_redirection() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteBrowserCookies -->
+        <test-method status="PASS" signature="verify_search_box_redirection()[pri:1, instance:com.search.SearchTests@4f6ee6e4]" name="verify_search_box_redirection" duration-ms="244918" started-at="2019-01-23T18:47:52Z" description="Verify the Search Box redirection URL by altering in the Joomla admin" finished-at="2019-01-23T18:51:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_search_box_redirection -->
+        <test-method status="PASS" signature="notify_method_completes(java.lang.reflect.Method)[pri:0, instance:com.search.SearchTests@4f6ee6e4]" name="notify_method_completes" is-config="true" duration-ms="0" started-at="2019-01-23T18:51:57Z" finished-at="2019-01-23T18:51:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.search.SearchTests.verify_search_box_redirection() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- notify_method_completes -->
+        <test-method status="PASS" signature="deleteBrowserCookies(java.lang.reflect.Method)[pri:0, instance:com.search.SearchTests@4f6ee6e4]" name="deleteBrowserCookies" is-config="true" duration-ms="17337" started-at="2019-01-23T18:51:57Z" finished-at="2019-01-23T18:52:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.search.SearchTests.verify_serp_pagination_carousel_shopping() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteBrowserCookies -->
+        <test-method status="PASS" signature="verify_serp_pagination_carousel_shopping()[pri:2, instance:com.search.SearchTests@4f6ee6e4]" name="verify_serp_pagination_carousel_shopping" duration-ms="82912" started-at="2019-01-23T18:52:14Z" description="Verify the Serp page Pagination links, Shopping carousel and In-line shopping Ads" finished-at="2019-01-23T18:53:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_serp_pagination_carousel_shopping -->
+        <test-method status="PASS" signature="notify_method_completes(java.lang.reflect.Method)[pri:0, instance:com.search.SearchTests@4f6ee6e4]" name="notify_method_completes" is-config="true" duration-ms="0" started-at="2019-01-23T18:53:37Z" finished-at="2019-01-23T18:53:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.search.SearchTests.verify_serp_pagination_carousel_shopping() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- notify_method_completes -->
+        <test-method status="PASS" signature="deleteBrowserCookies(java.lang.reflect.Method)[pri:0, instance:com.search.SearchTests@4f6ee6e4]" name="deleteBrowserCookies" is-config="true" duration-ms="4967" started-at="2019-01-23T18:53:37Z" finished-at="2019-01-23T18:53:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.search.SearchTests.verify_inhouse_ads() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteBrowserCookies -->
+        <test-method status="PASS" signature="verify_inhouse_ads()[pri:3, instance:com.search.SearchTests@4f6ee6e4]" name="verify_inhouse_ads" duration-ms="330364" started-at="2019-01-23T18:53:42Z" description="Verify the In House Ads on SERP page" finished-at="2019-01-23T18:59:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_inhouse_ads -->
+        <test-method status="PASS" signature="notify_method_completes(java.lang.reflect.Method)[pri:0, instance:com.search.SearchTests@4f6ee6e4]" name="notify_method_completes" is-config="true" duration-ms="0" started-at="2019-01-23T18:59:12Z" finished-at="2019-01-23T18:59:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.search.SearchTests.verify_inhouse_ads() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- notify_method_completes -->
+        <test-method status="PASS" signature="deleteBrowserCookies(java.lang.reflect.Method)[pri:0, instance:com.search.SearchTests@4f6ee6e4]" name="deleteBrowserCookies" is-config="true" duration-ms="4880" started-at="2019-01-23T18:59:12Z" finished-at="2019-01-23T18:59:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.search.SearchTests.verify_collapse_search_box_rec_user() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteBrowserCookies -->
+        <test-method status="PASS" signature="verify_collapse_search_box_rec_user()[pri:4, instance:com.search.SearchTests@4f6ee6e4]" name="verify_collapse_search_box_rec_user" duration-ms="148586" started-at="2019-01-23T18:59:17Z" description="Verify the Collapse Search box on all the Site Pages for Recognised User" finished-at="2019-01-23T19:01:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_collapse_search_box_rec_user -->
+        <test-method status="PASS" signature="notify_method_completes(java.lang.reflect.Method)[pri:0, instance:com.search.SearchTests@4f6ee6e4]" name="notify_method_completes" is-config="true" duration-ms="0" started-at="2019-01-23T19:01:46Z" finished-at="2019-01-23T19:01:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.search.SearchTests.verify_collapse_search_box_rec_user() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- notify_method_completes -->
+        <test-method status="PASS" signature="deleteBrowserCookies(java.lang.reflect.Method)[pri:0, instance:com.search.SearchTests@4f6ee6e4]" name="deleteBrowserCookies" is-config="true" duration-ms="4849" started-at="2019-01-23T19:01:46Z" finished-at="2019-01-23T19:01:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.search.SearchTests.verify_collapse_search_box_unrec_user() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteBrowserCookies -->
+        <test-method status="PASS" signature="verify_collapse_search_box_unrec_user()[pri:5, instance:com.search.SearchTests@4f6ee6e4]" name="verify_collapse_search_box_unrec_user" duration-ms="40206" started-at="2019-01-23T19:01:51Z" description="Verify the Collapse Search box on all the Site Pages for UnRecognised User" finished-at="2019-01-23T19:02:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_collapse_search_box_unrec_user -->
+        <test-method status="PASS" signature="notify_method_completes(java.lang.reflect.Method)[pri:0, instance:com.search.SearchTests@4f6ee6e4]" name="notify_method_completes" is-config="true" duration-ms="0" started-at="2019-01-23T19:02:31Z" finished-at="2019-01-23T19:02:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.search.SearchTests.verify_collapse_search_box_unrec_user() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- notify_method_completes -->
+        <test-method status="PASS" signature="deleteBrowserCookies(java.lang.reflect.Method)[pri:0, instance:com.search.SearchTests@4f6ee6e4]" name="deleteBrowserCookies" is-config="true" duration-ms="4704" started-at="2019-01-23T19:02:31Z" finished-at="2019-01-23T19:02:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.search.SearchTests.verify_openx_banner_rec_user() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteBrowserCookies -->
+        <test-method status="PASS" signature="verify_openx_banner_rec_user()[pri:6, instance:com.search.SearchTests@4f6ee6e4]" name="verify_openx_banner_rec_user" duration-ms="125579" started-at="2019-01-23T19:02:36Z" description="Verify the OpenX banner on all the Site Pages for Recognised User" finished-at="2019-01-23T19:04:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_openx_banner_rec_user -->
+        <test-method status="PASS" signature="notify_method_completes(java.lang.reflect.Method)[pri:0, instance:com.search.SearchTests@4f6ee6e4]" name="notify_method_completes" is-config="true" duration-ms="0" started-at="2019-01-23T19:04:41Z" finished-at="2019-01-23T19:04:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.search.SearchTests.verify_openx_banner_rec_user() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- notify_method_completes -->
+        <test-method status="PASS" signature="deleteBrowserCookies(java.lang.reflect.Method)[pri:0, instance:com.search.SearchTests@4f6ee6e4]" name="deleteBrowserCookies" is-config="true" duration-ms="4688" started-at="2019-01-23T19:04:41Z" finished-at="2019-01-23T19:04:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.search.SearchTests.verify_openx_banner_unrec_user() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteBrowserCookies -->
+        <test-method status="PASS" signature="verify_openx_banner_unrec_user()[pri:7, instance:com.search.SearchTests@4f6ee6e4]" name="verify_openx_banner_unrec_user" duration-ms="20257" started-at="2019-01-23T19:04:46Z" description="Verify the OpenX banner and search box on all the Site Pages for UnRecognised User" finished-at="2019-01-23T19:05:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_openx_banner_unrec_user -->
+        <test-method status="PASS" signature="notify_method_completes(java.lang.reflect.Method)[pri:0, instance:com.search.SearchTests@4f6ee6e4]" name="notify_method_completes" is-config="true" duration-ms="0" started-at="2019-01-23T19:05:06Z" finished-at="2019-01-23T19:05:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.search.SearchTests.verify_openx_banner_unrec_user() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- notify_method_completes -->
+        <test-method status="PASS" signature="deleteBrowserCookies(java.lang.reflect.Method)[pri:0, instance:com.search.SearchTests@4f6ee6e4]" name="deleteBrowserCookies" is-config="true" duration-ms="5003" started-at="2019-01-23T19:05:06Z" finished-at="2019-01-23T19:05:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.search.SearchTests.verify_tokens_for_consecutive_search_for_same_keyword() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteBrowserCookies -->
+        <test-method status="PASS" signature="verify_tokens_for_consecutive_search_for_same_keyword()[pri:8, instance:com.search.SearchTests@4f6ee6e4]" name="verify_tokens_for_consecutive_search_for_same_keyword" duration-ms="218663" started-at="2019-01-23T19:05:11Z" description="Verify the Token amount for consecutive search for the same keyword" finished-at="2019-01-23T19:08:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_tokens_for_consecutive_search_for_same_keyword -->
+        <test-method status="PASS" signature="notify_method_completes(java.lang.reflect.Method)[pri:0, instance:com.search.SearchTests@4f6ee6e4]" name="notify_method_completes" is-config="true" duration-ms="0" started-at="2019-01-23T19:08:50Z" finished-at="2019-01-23T19:08:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.search.SearchTests.verify_tokens_for_consecutive_search_for_same_keyword() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- notify_method_completes -->
+        <test-method status="PASS" signature="close()[pri:0, instance:com.search.SearchTests@4f6ee6e4]" name="close" is-config="true" duration-ms="1491" started-at="2019-01-23T19:08:50Z" finished-at="2019-01-23T19:08:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- com.search.SearchTests -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

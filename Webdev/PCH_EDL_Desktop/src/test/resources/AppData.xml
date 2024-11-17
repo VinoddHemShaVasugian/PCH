@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Datapropeties.xml -->
+
+
+<FrontPage>
+	<QA>
+		<BaseURL>https://frontpage.qa.pch.com/everydaylife/</BaseURL>
+		<FrontPageURL>https://frontpage.qa.pch.com/</FrontPageURL>
+		<JoomlaURL>http://frontpage-newadmin.qa.pch.com/administrator/
+		</JoomlaURL>
+		<IweURL>https://adminiwe.qa.pch.com/iwe/</IweURL>
+		<Iwe_Service_URL>https://iwe.qa.pch.com/iwe/</Iwe_Service_URL>
+		<Cust_service_Login>https://www.qa.pch.com/custsvc
+		</Cust_service_Login>
+		<SegmentationURL>http://centralservices.qa.pch.com/segmentationapi/admin/SegmentsMembership.aspx
+		</SegmentationURL>
+		<CentralServicesPageURL>http://centralservices.qa.pch.com/RFApi_V9/Svc/TestPage.aspx
+		</CentralServicesPageURL>
+		<OAMTool>http://oam.qa.pch.com/
+		</OAMTool>
+		<GSAdmin_URL>http://gsadmin.qa.pch.com/admin
+		</GSAdmin_URL>
+
+		<login_accounts_url>https://accounts.qa.pch.com/login
+		</login_accounts_url>
+		<login_FP_url>https://frontpage.qa.pch.com/login</login_FP_url>
+		<logout_accounts_url>https://accounts.qa.pch.com/logout
+		</logout_accounts_url>
+		<logout_FP_url>https://frontpage.qa.pch.com/logout</logout_FP_url>
+		<register_accounts_url>https://accounts.qa.pch.com/register
+		</register_accounts_url>
+		<register_FP_url>https://frontpage.qa.pch.com/register
+		</register_FP_url>
+
+		<OAMTool_username>classic%5Cyzaman
+		</OAMTool_username>
+		<OAMTool_password>Winter2018
+		</OAMTool_password>
+		<GSAdmin_Username>npoojari@pch.com
+		</GSAdmin_Username>
+		<GSAdmin_Password>A9NO8E0rYA
+		</GSAdmin_Password>
+
+		<IpMailUsername>drtest@pchmail.com</IpMailUsername>
+		<fp_email>am1@pchmail.com</fp_email>
+		<IpMailPassword>Pch2012</IpMailPassword>
+
+		<ValidUserName>am@pchmail.com</ValidUserName>
+		<ValidUserName1>yereddy@pch.com</ValidUserName1>
+		<ValidUserName2>am2@pchmail.com</ValidUserName2>
+		<ValidUserName3>am3@pchmail.com</ValidUserName3>
+		<ValidUserName4>am4@pch.com</ValidUserName4>
+		<ValidUserName5>am5@pchmail.com</ValidUserName5>
+		<ValidPassword>pch1234</ValidPassword>
+
+		<ValidJoomlaUserName>mperumal</ValidJoomlaUserName>
+		<ValidJoomlaPassword>testing123</ValidJoomlaPassword>
+
+		<IweLogin_Username>npiwe1</IweLogin_Username>
+		<IweLogin_Password>Summer2016</IweLogin_Password>
+		<LoginCookie>QaSSO</LoginCookie>
+		<DeleteCookie>QaSSOa</DeleteCookie>
+		<LoginCookiec>QaSSoc</LoginCookiec>
+		<LoginCookiep>QaSSOp</LoginCookiep>
+
+		<DB_uri>jdbc:mysql://frontv2db.qa.pch.com:3306/frontv2_qa</DB_uri>
+		<DB_username>SearchAutomation</DB_username>
+		<DB_password>SearchAutomation</DB_password>
+
+		<Title>Mr.</Title>
+		<FirstName>Marsh</FirstName>
+		<LastName>Marsh</LastName>
+		<Street>101 Channel Dr</Street>
+		<Street1>382 Channel Dr</Street1>
+		<City>Port Washington</City>
+		<State>New York</State>
+		<Zip>11050</Zip>
+		<DayinDOB>20</DayinDOB>
+		<MonthinDOB>August</MonthinDOB>
+		<YearinDOB>1981</YearinDOB>
+		<InvalidDOB>2015</InvalidDOB>
+
+		<About_FP>https://frontpage.qa.pch.com/about</About_FP>
+		<BBB_Url>https://www.bbb.org/new-york-city/business-reviews/marketing-programs/publishers-clearing-house-llc-in-jericho-ny-22145#bbbonlineclick
+		</BBB_Url>
+		<TRUSTe_Url>http://privacy.truste.com/privacy-seal/validation?rid=6c68c1fd-0e45-4e30-a5c5-9e86439f1bdb
+		</TRUSTe_Url>
+		<FP_content_stories>http://fpcontent-int.qa.pch.com/stories/
+		</FP_content_stories>
+		<app_clear_cache>https://frontpage.qa.pch.com/cache
+		</app_clear_cache>
+		<app_update_cache_content>https://frontpage.qa.pch.com/command/pch:updatecachecontent
+		</app_update_cache_content>
+		<app_import_site_pages>https://frontpage.qa.pch.com/command/pch:importsitepage
+		</app_import_site_pages>
+		<app_import_tokens>https://frontpage.qa.pch.com/command/pch:importtokens
+		</app_import_tokens>
+		<app_import_menus>https://frontpage.qa.pch.com/command/pch:importmenus
+		</app_import_menus>
+		<app_import_contest_keys>https://frontpage.qa.pch.com/command/pch:importcontestkeys
+		</app_import_contest_keys>
+		<app_run_contest_keys_cron>https://frontpage.qa.pch.com/command/contest-entry-api:process-entries
+		</app_run_contest_keys_cron>
+		<app_run_bmh_cron>https://frontpage.qa.pch.com/command/pch:bmhqueueprocess
+		</app_run_bmh_cron>
+		<app_run_token_cron>https://frontpage.qa.pch.com/command/prizemachine:tokens-credit-queue
+		</app_run_token_cron>
+		<app_build_category_pages>https://frontpage.qa.pch.com/command/pch:buildcategorypages
+		</app_build_category_pages>
+	</QA>
+	<STG>
+		<BaseURL>https://frontpage.stg.pch.com/everydaylife/</BaseURL>
+		<FrontPageURL>https://frontpage.qa.pch.com/</FrontPageURL>
+		<JoomlaURL>http://frontpage-newadmin.stg.pch.com/administrator/index.php
+		</JoomlaURL>
+		<IweURL>https://adminiwe.stg.pch.com/iwe/</IweURL>
+		<Iwe_Service_URL>https://iwe.qa.pch.com/iwe/</Iwe_Service_URL>
+		<Cust_service_Login>https://www.qa.pch.com/custsvc
+		</Cust_service_Login>
+		<SegmentationURL>http://centralservices.stg.pch.com/segmentationapi/admin/SegmentsMembership.aspx
+		</SegmentationURL>
+		<CentralServicesPageURL>http://centralservices.stg.pch.com/RFApi_V9/Svc/TestPage.aspx
+		</CentralServicesPageURL>
+		<OAMTool>http://oam.stg.pch.com/
+		</OAMTool>
+		<GSAdmin_URL>http://gsadmin.stg.pch.com/admin
+		</GSAdmin_URL>
+
+		<login_accounts_url>https://accounts.stg.pch.com/login
+		</login_accounts_url>
+		<login_FP_url>https://frontpage.stg.pch.com/login</login_FP_url>
+		<logout_accounts_url>https://accounts.stg.pch.com/logout
+		</logout_accounts_url>
+		<logout_FP_url>https://frontpage.stg.pch.com/logout
+		</logout_FP_url>
+		<register_accounts_url>https://accounts.stg.pch.com/register
+		</register_accounts_url>
+		<register_FP_url>https://frontpage.stg.pch.com/register
+		</register_FP_url>
+
+		<OAMTool_username>classic%5Cmperumal
+		</OAMTool_username>
+		<OAMTool_password>Oct102017
+		</OAMTool_password>
+		<GSAdmin_Username>npoojari@pch.com
+		</GSAdmin_Username>
+		<GSAdmin_Password>A9NO8E0rYA
+		</GSAdmin_Password>
+
+		<IpMailUsername>drtest@pchmail.com</IpMailUsername>
+		<fp_email>am1@pchmail.com</fp_email>
+		<IpMailPassword>Pch2012</IpMailPassword>
+
+		<ValidUserName>am@pchmail.com</ValidUserName>
+		<ValidUserName1>yereddy@pch.com</ValidUserName1>
+		<ValidUserName2>am2@pchmail.com</ValidUserName2>
+		<ValidUserName3>am3@pchmail.com</ValidUserName3>
+		<ValidUserName4>am4@pch.com</ValidUserName4>
+		<ValidUserName5>am5@pchmail.com</ValidUserName5>
+		<ValidPassword>pch1234</ValidPassword>
+
+		<ValidJoomlaUserName>mperumal</ValidJoomlaUserName>
+		<ValidJoomlaPassword>testing123</ValidJoomlaPassword>
+
+		<IweLogin_Username>npiwe1</IweLogin_Username>
+		<IweLogin_Password>Summer2016</IweLogin_Password>
+		<LoginCookie>QaSSO</LoginCookie>
+		<DeleteCookie>QaSSOa</DeleteCookie>
+		<LoginCookiec>QaSSoc</LoginCookiec>
+		<LoginCookiep>QaSSOp</LoginCookiep>
+
+		<DB_uri>jdbc:mysql://frontv2db.stg.pch.com/frontv2_stg</DB_uri>
+		<DB_username>FPAutomation</DB_username>
+		<DB_password>FPAutomation</DB_password>
+
+		<Title>Mr.</Title>
+		<FirstName>Marsh</FirstName>
+		<LastName>Marsh</LastName>
+		<Street>101 Channel Dr</Street>
+		<Street1>382 Channel Dr</Street1>
+		<City>Port Washington</City>
+		<State>New York</State>
+		<Zip>11050</Zip>
+		<DayinDOB>20</DayinDOB>
+		<MonthinDOB>August</MonthinDOB>
+		<YearinDOB>1981</YearinDOB>
+		<InvalidDOB>2015</InvalidDOB>
+
+		<About_FP>http://frontpage.stg.pch.com/about</About_FP>
+		<BBB_Url>https://www.bbb.org/new-york-city/business-reviews/marketing-programs/publishers-clearing-house-llc-in-jericho-ny-22145#bbbonlineclick
+		</BBB_Url>
+		<TRUSTe_Url>https://privacy.truste.com/privacy-seal/validation?rid=6c68c1fd-0e45-4e30-a5c5-9e86439f1bdb
+		</TRUSTe_Url>
+		<FP_content_stories>http://fpcontent-int.stg.pch.com/stories/
+		</FP_content_stories>
+		<app_clear_cache>https://frontpage.stg.pch.com/cache
+		</app_clear_cache>
+		<app_update_cache_content>https://frontpage.stg.pch.com/command/pch:updatecachecontent
+		</app_update_cache_content>
+		<app_import_site_pages>https://frontpage.stg.pch.com/command/pch:importsitepage
+		</app_import_site_pages>
+		<app_import_tokens>https://frontpage.stg.pch.com/command/pch:importtokens
+		</app_import_tokens>
+		<app_import_menus>https://frontpage.stg.pch.com/command/pch:importmenus
+		</app_import_menus>
+		<app_import_contest_keys>https://frontpage.stg.pch.com/command/pch:importcontestkeys
+		</app_import_contest_keys>
+		<app_run_contest_keys_cron>https://frontpage.stg.pch.com/command/contest-entry-api:process-entries
+		</app_run_contest_keys_cron>
+		<app_run_bmh_cron>https://frontpage.stg.pch.com/command/pch:bmhqueueprocess
+		</app_run_bmh_cron>
+		<app_run_token_cron>https://frontpage.stg.pch.com/command/prizemachine:tokens-credit-queue
+		</app_run_token_cron>
+		<app_build_category_pages>https://frontpage.stg.pch.com/command/pch:buildcategorypages
+		</app_build_category_pages>
+	</STG>
+</FrontPage>

@@ -1,0 +1,207 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 107, Failures: 38, Errors: 0, Skipped: 1, Time elapsed: 4,039.745 s <<< FAILURE! - in TestSuite
+verify_entry_message_on_latest_activity_tab(com.miscellaneous.EcParameterTests)  Time elapsed: 102.167 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at com.miscellaneous.EcParameterTests.verify_entry_message_on_latest_activity_tab(EcParameterTests.java:34)
+
+verify_contest_entry_full_reg(com.contestentry.ContestEntryTests)  Time elapsed: 69.062 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at com.contestentry.ContestEntryTests.verify_contest_entry_full_reg(ContestEntryTests.java:102)
+
+verify_nfsp_for_algo_only_segment_gold_user(com.nfsp.NFSPSegmentTests)  Time elapsed: 70.247 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at com.nfsp.NFSPSegmentTests.searchAndVerifyNFSP(NFSPSegmentTests.java:82)
+	at com.nfsp.NFSPSegmentTests.verify_nfsp_for_algo_only_segment_gold_user(NFSPSegmentTests.java:124)
+
+verify_article_page(com.miscellaneous.ArticleTests)  Time elapsed: 0.81 s  <<< FAILURE!
+java.lang.AssertionError: By.cssSelector: p.uninav__msg__desc NoSuchElementException NOT FOUND. TEST FAILED.
+	at com.miscellaneous.ArticleTests.verify_article_page(ArticleTests.java:89)
+
+verify_bonus_game_bar(com.miscellaneous.ScratchPathTests)  Time elapsed: 8.003 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at com.miscellaneous.ScratchPathTests.verify_bonus_game_bar(ScratchPathTests.java:63)
+
+verify_claim_button_on_all_pages_for_social_user(com.usertypes.UserTests)  Time elapsed: 2.885 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at com.usertypes.UserTests.verify_claim_button_on_all_pages_for_social_user(UserTests.java:76)
+
+verify_tokens_seg_id(com.awardtokens.SegIdTokens)  Time elapsed: 8.939 s  <<< FAILURE!
+java.lang.AssertionError: expected [1] but found [0]
+	at com.awardtokens.SegIdTokens.verify_tokens_seg_id(SegIdTokens.java:73)
+
+verify_video_details_on_video_log_for_mini_reg(com.miscellaneous.VideoTests)  Time elapsed: 85.951 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at com.miscellaneous.VideoTests.verify_video_details_on_video_log_for_mini_reg(VideoTests.java:355)
+
+verify_credit_token_queue(com.awardtokens.TokenQueueTests)  Time elapsed: 32.509 s  <<< FAILURE!
+java.lang.AssertionError: expected [FRONTPAGE] but found [PCHREWARDS]
+	at com.awardtokens.TokenQueueTests.verify_credit_token_queue(TokenQueueTests.java:65)
+
+verify_the_registration_form_for_social_user(com.usertypes.UserTests)  Time elapsed: 36.022 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at com.usertypes.UserTests.verify_the_registration_form_for_social_user(UserTests.java:123)
+
+verify_lottery_page_recognized_user(com.lottery.LotteryTests)  Time elapsed: 23.741 s  <<< FAILURE!
+java.lang.NumberFormatException: For input string: "Loading..."
+	at com.lottery.LotteryTests.verify_lottery_page_recognized_user(LotteryTests.java:125)
+
+verify_contest_entry_mini_reg(com.contestentry.ContestEntryTests)  Time elapsed: 19.758 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at com.contestentry.ContestEntryTests.verify_contest_entry_mini_reg(ContestEntryTests.java:199)
+
+verify_error_msg_cache_content_on_pages(com.miscellaneous.ErrorHandlingTests)  Time elapsed: 24.607 s  <<< FAILURE!
+java.lang.AssertionError: By.id: art_state LISTBOX NOT FOUND. TEST FAILED.
+	at com.miscellaneous.ErrorHandlingTests.verify_error_msg_cache_content_on_pages(ErrorHandlingTests.java:249)
+
+verify_video_details_on_video_log_for_silver_user(com.miscellaneous.VideoTests)  Time elapsed: 25.008 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at com.miscellaneous.VideoTests.verify_video_details_on_video_log_for_silver_user(VideoTests.java:468)
+
+birthday_tokens(com.awardtokens.BirthdayTests)  Time elapsed: 73.942 s  <<< FAILURE!
+java.lang.AssertionError: expected [1] but found [0]
+	at com.awardtokens.BirthdayTests.birthday_tokens(BirthdayTests.java:64)
+
+verify_hourly_forecast_details(com.weather.WeatherTests)  Time elapsed: 0.89 s  <<< FAILURE!
+java.lang.AssertionError: By.cssSelector: input.weather-locationAndZip__zip_submit NoSuchElementException NOT FOUND. TEST FAILED.
+	at com.weather.WeatherTests.verify_hourly_forecast_details(WeatherTests.java:179)
+
+verify_video_details_on_video_log_for_social_user(com.miscellaneous.VideoTests)  Time elapsed: 8.092 s  <<< FAILURE!
+java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
+	at com.miscellaneous.VideoTests.verify_video_details_on_video_log_for_social_user(VideoTests.java:580)
+
+verify_error_msg_on_fpcontent_down(com.miscellaneous.ErrorHandlingTests)  Time elapsed: 9.662 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at com.miscellaneous.ErrorHandlingTests.verify_error_msg_on_fpcontent_down(ErrorHandlingTests.java:81)
+
+verify_claim_button_on_all_pages_for_mini_reg_user(com.usertypes.UserTests)  Time elapsed: 33.688 s  <<< FAILURE!
+org.openqa.selenium.ScriptTimeoutException: 
+timeout
+  (Session info: chrome=71.0.3578.80)
+  (Driver info: chromedriver=2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90),platform=Windows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 200.24 seconds
+Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 17:00:58'
+System info: host: '207-254-10-161', ip: '207.254.10.161', os.name: 'windows', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:2543}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90), userDataDir=C:\Windows\proxy\scoped_dir6316_42}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=71.0.3578.80, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: ccef8b987ab9ccd0b1175c5a3ed386e1
+Command duration or timeout: 0 milliseconds
+	at com.usertypes.UserTests.verify_claim_button_on_all_pages_for_mini_reg_user(UserTests.java:148)
+Caused by: org.openqa.selenium.remote.ScreenshotException: Screen shot has been taken
+	at com.usertypes.UserTests.verify_claim_button_on_all_pages_for_mini_reg_user(UserTests.java:148)
+Caused by: org.openqa.selenium.TimeoutException: 
+timeout
+  (Session info: chrome=71.0.3578.80)
+  (Driver info: chromedriver=2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90),platform=Windows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 200.24 seconds
+Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 17:00:58'
+System info: host: '207-254-10-161', ip: '207.254.10.161', os.name: 'windows', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:2543}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90), userDataDir=C:\Windows\proxy\scoped_dir6316_42}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=71.0.3578.80, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: ccef8b987ab9ccd0b1175c5a3ed386e1
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'VSANKAR2', ip: '10.37.0.236', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '11.0.2'
+Driver info: driver.version: EventFiringWebDriver
+
+verify_contest_entry_silver_user(com.contestentry.ContestEntryTests)  Time elapsed: 31.205 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at com.contestentry.ContestEntryTests.verify_contest_entry_silver_user(ContestEntryTests.java:294)
+
+verify_promotion_campaign_email(com.miscellaneous.EcParameterTests)  Time elapsed: 38.049 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at com.miscellaneous.EcParameterTests.verify_promotion_campaign_email(EcParameterTests.java:74)
+
+verify_ad_refresh_on_video_page(com.miscellaneous.VideoTests)  Time elapsed: 25.02 s  <<< FAILURE!
+java.lang.AssertionError: null
+	at com.miscellaneous.VideoTests.verify_ad_refresh_on_video_page(VideoTests.java:768)
+
+verify_contest_entry_social_user(com.contestentry.ContestEntryTests)  Time elapsed: 1.468 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at com.contestentry.ContestEntryTests.verify_contest_entry_social_user(ContestEntryTests.java:392)
+
+verify_claim_button_on_all_pages_for_silver_user(com.usertypes.UserTests)  Time elapsed: 7.046 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at com.usertypes.UserTests.verify_claim_button_on_all_pages_for_silver_user(UserTests.java:254)
+
+verify_inhouse_ads(com.search.SearchTests)  Time elapsed: 38.398 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at com.search.SearchTests.verify_inhouse_ads(SearchTests.java:188)
+
+verify_ads_on_video_page(com.miscellaneous.VideoTests)  Time elapsed: 44.477 s  <<< FAILURE!
+org.openqa.selenium.ScriptTimeoutException: 
+timeout
+  (Session info: chrome=71.0.3578.80)
+  (Driver info: chromedriver=2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 200.09 seconds
+Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 17:00:58'
+System info: host: '208-52-164-82', ip: '208.52.164.82', os.name: 'windows', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:2502}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90), userDataDir=C:\Windows\proxy\scoped_dir4592_13773}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=71.0.3578.80, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 18cee9e79dd2e6119c0d453796dbb973
+Command duration or timeout: 0 milliseconds
+	at com.miscellaneous.VideoTests.verify_ads_on_video_page(VideoTests.java:838)
+Caused by: org.openqa.selenium.remote.ScreenshotException: Screen shot has been taken
+	at com.miscellaneous.VideoTests.verify_ads_on_video_page(VideoTests.java:838)
+Caused by: org.openqa.selenium.TimeoutException: 
+timeout
+  (Session info: chrome=71.0.3578.80)
+  (Driver info: chromedriver=2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 200.09 seconds
+Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 17:00:58'
+System info: host: '208-52-164-82', ip: '208.52.164.82', os.name: 'windows', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:2502}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90), userDataDir=C:\Windows\proxy\scoped_dir4592_13773}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=71.0.3578.80, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 18cee9e79dd2e6119c0d453796dbb973
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'VSANKAR2', ip: '10.37.0.236', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '11.0.2'
+Driver info: driver.version: EventFiringWebDriver
+
+verify_contest_entry_with_tc_v_without_ck(com.contestentry.ContestEntryTests)  Time elapsed: 21.207 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at com.contestentry.ContestEntryTests.verify_contest_entry_with_tc_v_without_ck(ContestEntryTests.java:467)
+
+verify_contest_entry_with_ck_without_tc_v(com.contestentry.ContestEntryTests)  Time elapsed: 6.818 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at com.contestentry.ContestEntryTests.verify_contest_entry_with_ck_without_tc_v(ContestEntryTests.java:528)
+
+verify_contest_entry_with_mulitple_ck(com.contestentry.ContestEntryTests)  Time elapsed: 81.268 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at com.contestentry.ContestEntryTests.verify_contest_entry_with_mulitple_ck(ContestEntryTests.java:583)
+
+verify_ads_on_weather_page(com.weather.WeatherTests)  Time elapsed: 29.915 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at com.weather.WeatherTests.verify_ads_on_weather_page(WeatherTests.java:346)
+
+verify_failed_contest_entry(com.contestentry.ContestEntryTests)  Time elapsed: 2.41 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at com.contestentry.ContestEntryTests.verify_failed_contest_entry(ContestEntryTests.java:703)
+
+verify_vip_activity(com.vip.VipTests)  Time elapsed: 4.153 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at com.vip.VipTests.verify_vip_activity(VipTests.java:259)
+
+verify_contest_entry_invalid_ck_on_admin_valid_on_url(com.contestentry.ContestEntryTests)  Time elapsed: 2.079 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at com.contestentry.ContestEntryTests.verify_contest_entry_invalid_ck_on_admin_valid_on_url(ContestEntryTests.java:788)
+
+verify_tokens_for_consecutive_search_for_same_keyword(com.search.SearchTests)  Time elapsed: 22.961 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at com.search.SearchTests.verify_tokens_for_consecutive_search_for_same_keyword(SearchTests.java:414)
+
+verify_contest_entry_invalid_ck_on_url_valid_on_admin(com.contestentry.ContestEntryTests)  Time elapsed: 104.296 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at com.contestentry.ContestEntryTests.verify_contest_entry_invalid_ck_on_url_valid_on_admin(ContestEntryTests.java:853)
+
+verify_contest_entry_invalid_tc_on_url_valid_ck_on_admin(com.contestentry.ContestEntryTests)  Time elapsed: 110.971 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at com.contestentry.ContestEntryTests.verify_contest_entry_invalid_tc_on_url_valid_ck_on_admin(ContestEntryTests.java:899)
+
+verify_contest_entry_queue(com.contestentry.ContestEntryTests)  Time elapsed: 0.236 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at com.contestentry.ContestEntryTests.verify_contest_entry_queue(ContestEntryTests.java:958)
+
+verify_bmh_queue(com.contestentry.ContestEntryTests)  Time elapsed: 118.81 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at com.contestentry.ContestEntryTests.verify_bmh_queue(ContestEntryTests.java:1063)
+

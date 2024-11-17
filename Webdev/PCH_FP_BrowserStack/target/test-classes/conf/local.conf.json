@@ -1,0 +1,18 @@
+{
+  "server": "hub-cloud.browserstack.com",
+  "user": "vinothkumar67",
+  "key": "BhtTXqRzp1ryUseD1DEW",
+
+  "capabilities": {
+    "build": "testng-browserstack",
+    "name": "local_test",
+    "browserstack.debug": true,
+    "browserstack.local": true
+  },
+
+  "environments": {
+    "chrome": {
+      "browser": "chrome"
+    }
+  }
+}

@@ -1,0 +1,918 @@
+<html>
+<head>
+<title>TestNG:  Regression01</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Regression01</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>47/7/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Jan 22 21:48:41 IST 2019</td>
+</tr>
+<tr><td>Total time:</td><td>13851 seconds (13851036 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.awardtokens.BirthdayTests.birthday_tokens()'><b>birthday_tokens</b><br>Test class: com.awardtokens.BirthdayTests<br>Test method: Verify the Birthday token scenarios</td>
+<td><div><pre>java.lang.AssertionError: expected [2] but found [1]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:389)
+	at org.testng.Assert.assertEquals(Assert.java:399)
+	at com.util.WrapperFunctions.assertEqualsInt(WrapperFunctions.java:1623)
+	at com.awardtokens.BirthdayTests.birthday_tokens(BirthdayTests.java:84)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1541717620", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1541717620'><pre>java.lang.AssertionError: expected [2] but found [1]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:389)
+	at org.testng.Assert.assertEquals(Assert.java:399)
+	at com.util.WrapperFunctions.assertEqualsInt(WrapperFunctions.java:1623)
+	at com.awardtokens.BirthdayTests.birthday_tokens(BirthdayTests.java:84)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>432</td>
+<td>com.awardtokens.BirthdayTests@2286778</td></tr>
+<tr>
+<td title='com.miscellaneous.FooterTests.footer_menu_navigation()'><b>footer_menu_navigation</b><br>Test class: com.miscellaneous.FooterTests<br>Test method: Verify the Footer Menu Category navigations</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: timeout
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;VSANKAR2&apos;, ip: &apos;10.37.0.236&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600210 (68dcf5eebde371..., userDataDir: C:\Users\vsankar\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:58969}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: 06b11c94f4107b507732503831508c07
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:485)
+	at com.util.WrapperFunctions.button(WrapperFunctions.java:927)
+	at com.pageobjects.HomePage.click_first_video_link(HomePage.java:519)
+	at com.miscellaneous.FooterTests.footer_menu_navigation(FooterTests.java:96)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace438324100", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace438324100'><pre>org.openqa.selenium.TimeoutException: timeout
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;VSANKAR2&apos;, ip: &apos;10.37.0.236&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600210 (68dcf5eebde371..., userDataDir: C:\Users\vsankar\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:58969}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: 06b11c94f4107b507732503831508c07
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:485)
+	at com.util.WrapperFunctions.button(WrapperFunctions.java:927)
+	at com.pageobjects.HomePage.click_first_video_link(HomePage.java:519)
+	at com.miscellaneous.FooterTests.footer_menu_navigation(FooterTests.java:96)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>546</td>
+<td>com.miscellaneous.FooterTests@18eed359</td></tr>
+<tr>
+<td title='com.miscellaneous.FooterTests.verify_TRUSTe_logo()'><b>verify_TRUSTe_logo</b><br>Test class: com.miscellaneous.FooterTests<br>Test method: Verify the TRUSTe logo redirection from Footer</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: timeout
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;VSANKAR2&apos;, ip: &apos;10.37.0.236&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600210 (68dcf5eebde371..., userDataDir: C:\Users\vsankar\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:58969}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: 06b11c94f4107b507732503831508c07
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:485)
+	at com.util.WrapperFunctions.button(WrapperFunctions.java:927)
+	at com.pageobjects.HomePage.click_first_video_link(HomePage.java:519)
+	at com.miscellaneous.FooterTests.verify_TRUSTe_logo(FooterTests.java:272)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1356799626", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1356799626'><pre>org.openqa.selenium.TimeoutException: timeout
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;VSANKAR2&apos;, ip: &apos;10.37.0.236&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600210 (68dcf5eebde371..., userDataDir: C:\Users\vsankar\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:58969}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: 06b11c94f4107b507732503831508c07
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:485)
+	at com.util.WrapperFunctions.button(WrapperFunctions.java:927)
+	at com.pageobjects.HomePage.click_first_video_link(HomePage.java:519)
+	at com.miscellaneous.FooterTests.verify_TRUSTe_logo(FooterTests.java:272)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>496</td>
+<td>com.miscellaneous.FooterTests@18eed359</td></tr>
+<tr>
+<td title='com.awardtokens.TokenQueueTests.verify_credit_token_queue()'><b>verify_credit_token_queue</b><br>Test class: com.awardtokens.TokenQueueTests<br>Test method: Verify Token credit queue record by making Invalid API url on admin</td>
+<td><div><pre>java.lang.AssertionError: expected [FRONTPAGE] but found [PCHREWARDS]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at com.util.WrapperFunctions.assertEquals(WrapperFunctions.java:1567)
+	at com.awardtokens.TokenQueueTests.verify_credit_token_queue(TokenQueueTests.java:65)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace858889712", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace858889712'><pre>java.lang.AssertionError: expected [FRONTPAGE] but found [PCHREWARDS]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at com.util.WrapperFunctions.assertEquals(WrapperFunctions.java:1567)
+	at com.awardtokens.TokenQueueTests.verify_credit_token_queue(TokenQueueTests.java:65)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>202</td>
+<td>com.awardtokens.TokenQueueTests@6d7b4f4c</td></tr>
+<tr>
+<td title='com.lottery.LotteryTests.verify_lottery_page_unrecognized_user()'><b>verify_lottery_page_unrecognized_user</b><br>Test class: com.lottery.LotteryTests<br>Test method: Verify Lottery page links and navigations - Unrecognized user</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: timeout
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;VSANKAR2&apos;, ip: &apos;10.37.0.236&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600210 (68dcf5eebde371..., userDataDir: C:\Users\vsankar\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:58969}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: 06b11c94f4107b507732503831508c07
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:485)
+	at com.util.WrapperFunctions.button(WrapperFunctions.java:895)
+	at com.pageobjects.LotteryPage.clicklotterymap_michigan(LotteryPage.java:78)
+	at com.lottery.LotteryTests.verify_lottery_page_unrecognized_user(LotteryTests.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace481164401", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace481164401'><pre>org.openqa.selenium.TimeoutException: timeout
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;VSANKAR2&apos;, ip: &apos;10.37.0.236&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600210 (68dcf5eebde371..., userDataDir: C:\Users\vsankar\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:58969}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: 06b11c94f4107b507732503831508c07
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:485)
+	at com.util.WrapperFunctions.button(WrapperFunctions.java:895)
+	at com.pageobjects.LotteryPage.clicklotterymap_michigan(LotteryPage.java:78)
+	at com.lottery.LotteryTests.verify_lottery_page_unrecognized_user(LotteryTests.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>309</td>
+<td>com.lottery.LotteryTests@6b09bb57</td></tr>
+<tr>
+<td title='com.nfsp.NFSPSegmentTests.verify_nfsp_for_algo_only_segment_silver_user()'><b>verify_nfsp_for_algo_only_segment_silver_user</b><br>Test class: com.nfsp.NFSPSegmentTests<br>Test method: Verify NFSP value for algo only segment (["SES","ESS","SN"]) Silver users</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.util.WrapperFunctions.assertTrue(WrapperFunctions.java:1699)
+	at com.nfsp.NFSPSegmentTests.searchAndVerifyNFSP(NFSPSegmentTests.java:82)
+	at com.nfsp.NFSPSegmentTests.verify_nfsp_for_algo_only_segment_silver_user(NFSPSegmentTests.java:287)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1671154922", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1671154922'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.util.WrapperFunctions.assertTrue(WrapperFunctions.java:1699)
+	at com.nfsp.NFSPSegmentTests.searchAndVerifyNFSP(NFSPSegmentTests.java:82)
+	at com.nfsp.NFSPSegmentTests.verify_nfsp_for_algo_only_segment_silver_user(NFSPSegmentTests.java:287)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>233</td>
+<td>com.nfsp.NFSPSegmentTests@520a3426</td></tr>
+<tr>
+<td title='com.nfsp.NFSPSegmentTests.verify_nfsp_in_url_for_social_user()'><b>verify_nfsp_in_url_for_social_user</b><br>Test class: com.nfsp.NFSPSegmentTests<br>Test method: Verify NFSP value for users redirected with nfsp for Social users</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.util.WrapperFunctions.assertTrue(WrapperFunctions.java:1699)
+	at com.nfsp.NFSPSegmentTests.searchAndVerifyNFSP(NFSPSegmentTests.java:82)
+	at com.nfsp.NFSPSegmentTests.verify_nfsp_in_url_for_social_user(NFSPSegmentTests.java:718)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace993537213", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace993537213'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.util.WrapperFunctions.assertTrue(WrapperFunctions.java:1699)
+	at com.nfsp.NFSPSegmentTests.searchAndVerifyNFSP(NFSPSegmentTests.java:82)
+	at com.nfsp.NFSPSegmentTests.verify_nfsp_in_url_for_social_user(NFSPSegmentTests.java:718)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>487</td>
+<td>com.nfsp.NFSPSegmentTests@520a3426</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.miscellaneous.FooterTests.footer_add_on_link_navigation()'><b>footer_add_on_link_navigation</b><br>Test class: com.miscellaneous.FooterTests<br>Test method: Verify the Footer Menu Add on link navigations</td>
+<td></td>
+<td>301</td>
+<td>com.miscellaneous.FooterTests@18eed359</td></tr>
+<tr>
+<td title='com.lightbox.HighRiskLightboxTests.verify_25th_search_lb()'><b>verify_25th_search_lb</b><br>Test class: com.lightbox.HighRiskLightboxTests<br>Test method: Verify the 26th Maximum Search LightBox for Recognised User</td>
+<td></td>
+<td>248</td>
+<td>com.lightbox.HighRiskLightboxTests@3108bc</td></tr>
+<tr>
+<td title='com.lightbox.HighRiskLightboxTests.verify_40th_search_lb()'><b>verify_40th_search_lb</b><br>Test class: com.lightbox.HighRiskLightboxTests<br>Test method: Verify the 40th Maximum Search LightBox for Recognised User</td>
+<td></td>
+<td>217</td>
+<td>com.lightbox.HighRiskLightboxTests@3108bc</td></tr>
+<tr>
+<td title='com.lightbox.HighRiskLightboxTests.verify_500th_search_lb()'><b>verify_500th_search_lb</b><br>Test class: com.lightbox.HighRiskLightboxTests<br>Test method: Verify the 500th Search LightBox for Recognised User</td>
+<td></td>
+<td>272</td>
+<td>com.lightbox.HighRiskLightboxTests@3108bc</td></tr>
+<tr>
+<td title='com.lightbox.HighRiskLightboxTests.verify_75th_search_lb()'><b>verify_75th_search_lb</b><br>Test class: com.lightbox.HighRiskLightboxTests<br>Test method: Verify the 75th Maximum Search LightBox for Recognised User</td>
+<td></td>
+<td>222</td>
+<td>com.lightbox.HighRiskLightboxTests@3108bc</td></tr>
+<tr>
+<td title='com.miscellaneous.FooterTests.verify_BBB_logo()'><b>verify_BBB_logo</b><br>Test class: com.miscellaneous.FooterTests<br>Test method: Verify the BBB logo redirection from Footer</td>
+<td></td>
+<td>259</td>
+<td>com.miscellaneous.FooterTests@18eed359</td></tr>
+<tr>
+<td title='com.lottery.LotteryTests.verify_ads_on_lottery_page()'><b>verify_ads_on_lottery_page</b><br>Test class: com.lottery.LotteryTests<br>Test method: Verify display of Lottery page Ad's</td>
+<td></td>
+<td>208</td>
+<td>com.lottery.LotteryTests@6b09bb57</td></tr>
+<tr>
+<td title='com.search.SearchTests.verify_collapse_search_box_rec_user()'><b>verify_collapse_search_box_rec_user</b><br>Test class: com.search.SearchTests<br>Test method: Verify the Collapse Search box on all the Site Pages for Recognised User</td>
+<td></td>
+<td>111</td>
+<td>com.search.SearchTests@527740a2</td></tr>
+<tr>
+<td title='com.search.SearchTests.verify_collapse_search_box_unrec_user()'><b>verify_collapse_search_box_unrec_user</b><br>Test class: com.search.SearchTests<br>Test method: Verify the Collapse Search box on all the Site Pages for UnRecognised User</td>
+<td></td>
+<td>37</td>
+<td>com.search.SearchTests@527740a2</td></tr>
+<tr>
+<td title='com.lightbox.CompleteRegistrationLightboxTests.verify_complete_registration_lb_for_mini_reg()'><b>verify_complete_registration_lb_for_mini_reg</b><br>Test class: com.lightbox.CompleteRegistrationLightboxTests<br>Test method: Verify the Complete Registration LightBox for Mini Reg User</td>
+<td></td>
+<td>212</td>
+<td>com.lightbox.CompleteRegistrationLightboxTests@5f9d02cb</td></tr>
+<tr>
+<td title='com.lightbox.CompleteRegistrationLightboxTests.verify_complete_registration_lb_for_silver_user()'><b>verify_complete_registration_lb_for_silver_user</b><br>Test class: com.lightbox.CompleteRegistrationLightboxTests<br>Test method: Verify the Complete Registration LightBox for Silver User</td>
+<td></td>
+<td>157</td>
+<td>com.lightbox.CompleteRegistrationLightboxTests@5f9d02cb</td></tr>
+<tr>
+<td title='com.lightbox.CompleteRegistrationLightboxTests.verify_complete_registration_lb_for_social_user()'><b>verify_complete_registration_lb_for_social_user</b><br>Test class: com.lightbox.CompleteRegistrationLightboxTests<br>Test method: Verify the Complete Registration LightBox for Social User</td>
+<td></td>
+<td>202</td>
+<td>com.lightbox.CompleteRegistrationLightboxTests@5f9d02cb</td></tr>
+<tr>
+<td title='com.miscellaneous.FooterTests.verify_copyright_text()'><b>verify_copyright_text</b><br>Test class: com.miscellaneous.FooterTests<br>Test method: Verify the Copyright information from Footer</td>
+<td></td>
+<td>180</td>
+<td>com.miscellaneous.FooterTests@18eed359</td></tr>
+<tr>
+<td title='com.nfsp.NFSPTests.verify_default_nfsp_for_rec_user()'><b>verify_default_nfsp_for_rec_user</b><br>Test class: com.nfsp.NFSPTests<br>Test method: Verify the default NFSP value for Recognised User</td>
+<td></td>
+<td>179</td>
+<td>com.nfsp.NFSPTests@6536e911</td></tr>
+<tr>
+<td title='com.search.SearchTests.verify_inhouse_ads()'><b>verify_inhouse_ads</b><br>Test class: com.search.SearchTests<br>Test method: Verify the In House Ads on SERP page</td>
+<td></td>
+<td>319</td>
+<td>com.search.SearchTests@527740a2</td></tr>
+<tr>
+<td title='com.lottery.LotteryTests.verify_lottery_page_recognized_user()'><b>verify_lottery_page_recognized_user</b><br>Test class: com.lottery.LotteryTests<br>Test method: Verify Lottery page links and navigations - Recognized user</td>
+<td></td>
+<td>305</td>
+<td>com.lottery.LotteryTests@6b09bb57</td></tr>
+<tr>
+<td title='com.miscellaneous.HeaderTests.verify_newly_added_header()'><b>verify_newly_added_header</b><br>Test class: com.miscellaneous.HeaderTests<br>Test method: Verify the newly added header under Category page on Header bar</td>
+<td></td>
+<td>222</td>
+<td>com.miscellaneous.HeaderTests@3e9b1010</td></tr>
+<tr>
+<td title='com.nfsp.NFSPTests.verify_nfsp_after_5_search_for_unrec_user()'><b>verify_nfsp_after_5_search_for_unrec_user</b><br>Test class: com.nfsp.NFSPTests<br>Test method: Verify the NFSP value for UnRecognised User after 6 search</td>
+<td></td>
+<td>45</td>
+<td>com.nfsp.NFSPTests@6536e911</td></tr>
+<tr>
+<td title='com.nfsp.NFSPSegmentTests.verify_nfsp_for_algo_only_segment_gold_user()'><b>verify_nfsp_for_algo_only_segment_gold_user</b><br>Test class: com.nfsp.NFSPSegmentTests<br>Test method: Verify NFSP value for algo only segment (["SES","ESS","SN"]) Gold users</td>
+<td></td>
+<td>222</td>
+<td>com.nfsp.NFSPSegmentTests@520a3426</td></tr>
+<tr>
+<td title='com.nfsp.NFSPSegmentTests.verify_nfsp_for_algo_only_segment_mini_reg_user()'><b>verify_nfsp_for_algo_only_segment_mini_reg_user</b><br>Test class: com.nfsp.NFSPSegmentTests<br>Test method: Verify NFSP value for algo only segment (["SES","ESS","SN"]) Mini register users</td>
+<td></td>
+<td>362</td>
+<td>com.nfsp.NFSPSegmentTests@520a3426</td></tr>
+<tr>
+<td title='com.nfsp.NFSPSegmentTests.verify_nfsp_for_algo_only_segment_social_user()'><b>verify_nfsp_for_algo_only_segment_social_user</b><br>Test class: com.nfsp.NFSPSegmentTests<br>Test method: Verify NFSP value for algo only segment (["SES","ESS","SN"]) social users</td>
+<td></td>
+<td>380</td>
+<td>com.nfsp.NFSPSegmentTests@520a3426</td></tr>
+<tr>
+<td title='com.nfsp.NFSPTests.verify_nfsp_for_rec_user_after_27_search()'><b>verify_nfsp_for_rec_user_after_27_search</b><br>Test class: com.nfsp.NFSPTests<br>Test method: Verify the NFSP for Recognised User after 27th search</td>
+<td></td>
+<td>211</td>
+<td>com.nfsp.NFSPTests@6536e911</td></tr>
+<tr>
+<td title='com.nfsp.NFSPSegmentTests.verify_nfsp_in_url_for_gold_user()'><b>verify_nfsp_in_url_for_gold_user</b><br>Test class: com.nfsp.NFSPSegmentTests<br>Test method: Verify NFSP value for users redirected with nfsp for Gold users</td>
+<td></td>
+<td>320</td>
+<td>com.nfsp.NFSPSegmentTests@520a3426</td></tr>
+<tr>
+<td title='com.nfsp.NFSPSegmentTests.verify_nfsp_in_url_for_mini_reg_user()'><b>verify_nfsp_in_url_for_mini_reg_user</b><br>Test class: com.nfsp.NFSPSegmentTests<br>Test method: Verify NFSP value for users redirected with nfsp for Mini reg users</td>
+<td></td>
+<td>444</td>
+<td>com.nfsp.NFSPSegmentTests@520a3426</td></tr>
+<tr>
+<td title='com.nfsp.NFSPSegmentTests.verify_nfsp_in_url_for_silver_user()'><b>verify_nfsp_in_url_for_silver_user</b><br>Test class: com.nfsp.NFSPSegmentTests<br>Test method: Verify NFSP value for users redirected with nfsp for silver users</td>
+<td></td>
+<td>425</td>
+<td>com.nfsp.NFSPSegmentTests@520a3426</td></tr>
+<tr>
+<td title='com.nfsp.NFSPSegmentTests.verify_nfsp_specific_segment_for_gold_user()'><b>verify_nfsp_specific_segment_for_gold_user</b><br>Test class: com.nfsp.NFSPSegmentTests<br>Test method: Verify NFSP value for segment (["SST"]) Gold users</td>
+<td></td>
+<td>106</td>
+<td>com.nfsp.NFSPSegmentTests@520a3426</td></tr>
+<tr>
+<td title='com.nfsp.NFSPSegmentTests.verify_nfsp_specific_segment_for_mini_reg_user()'><b>verify_nfsp_specific_segment_for_mini_reg_user</b><br>Test class: com.nfsp.NFSPSegmentTests<br>Test method: Verify NFSP value for segment (["SST"]) mini reg users</td>
+<td></td>
+<td>221</td>
+<td>com.nfsp.NFSPSegmentTests@520a3426</td></tr>
+<tr>
+<td title='com.nfsp.NFSPSegmentTests.verify_nfsp_specific_segment_for_silver_user()'><b>verify_nfsp_specific_segment_for_silver_user</b><br>Test class: com.nfsp.NFSPSegmentTests<br>Test method: Verify NFSP value for segment (["SST"]) silver users</td>
+<td></td>
+<td>208</td>
+<td>com.nfsp.NFSPSegmentTests@520a3426</td></tr>
+<tr>
+<td title='com.nfsp.NFSPSegmentTests.verify_nfsp_specific_segment_for_social_user()'><b>verify_nfsp_specific_segment_for_social_user</b><br>Test class: com.nfsp.NFSPSegmentTests<br>Test method: Verify NFSP value for segment (["SST"]) social users</td>
+<td></td>
+<td>239</td>
+<td>com.nfsp.NFSPSegmentTests@520a3426</td></tr>
+<tr>
+<td title='com.search.SearchTests.verify_openx_banner_rec_user()'><b>verify_openx_banner_rec_user</b><br>Test class: com.search.SearchTests<br>Test method: Verify the OpenX banner on all the Site Pages for Recognised User</td>
+<td></td>
+<td>126</td>
+<td>com.search.SearchTests@527740a2</td></tr>
+<tr>
+<td title='com.search.SearchTests.verify_openx_banner_unrec_user()'><b>verify_openx_banner_unrec_user</b><br>Test class: com.search.SearchTests<br>Test method: Verify the OpenX banner and search box on all the Site Pages for UnRecognised User</td>
+<td></td>
+<td>24</td>
+<td>com.search.SearchTests@527740a2</td></tr>
+<tr>
+<td title='com.lightbox.OptinLightboxTests.verify_optin_lb_for_full_reg_user()'><b>verify_optin_lb_for_full_reg_user</b><br>Test class: com.lightbox.OptinLightboxTests<br>Test method: Verify the Optin LightBox for Full Reg. User</td>
+<td></td>
+<td>288</td>
+<td>com.lightbox.OptinLightboxTests@370736d9</td></tr>
+<tr>
+<td title='com.lightbox.OptinLightboxTests.verify_optin_lb_for_mini_reg_user()'><b>verify_optin_lb_for_mini_reg_user</b><br>Test class: com.lightbox.OptinLightboxTests<br>Test method: Verify the Optin LightBox for Mini Reg. User</td>
+<td></td>
+<td>225</td>
+<td>com.lightbox.OptinLightboxTests@370736d9</td></tr>
+<tr>
+<td title='com.lightbox.OptinLightboxTests.verify_optin_lb_for_silver_user()'><b>verify_optin_lb_for_silver_user</b><br>Test class: com.lightbox.OptinLightboxTests<br>Test method: Verify the Optin LightBox for Silver User</td>
+<td></td>
+<td>146</td>
+<td>com.lightbox.OptinLightboxTests@370736d9</td></tr>
+<tr>
+<td title='com.lightbox.OptinLightboxTests.verify_optin_lb_for_social_user()'><b>verify_optin_lb_for_social_user</b><br>Test class: com.lightbox.OptinLightboxTests<br>Test method: Verify the Optin LightBox for Social User</td>
+<td></td>
+<td>139</td>
+<td>com.lightbox.OptinLightboxTests@370736d9</td></tr>
+<tr>
+<td title='com.lightbox.HighRiskLightboxTests.verify_rapid_lb_for_rec_user()'><b>verify_rapid_lb_for_rec_user</b><br>Test class: com.lightbox.HighRiskLightboxTests<br>Test method: Verify the Rapid Search LightBox for Recognised User</td>
+<td></td>
+<td>255</td>
+<td>com.lightbox.HighRiskLightboxTests@3108bc</td></tr>
+<tr>
+<td title='com.lightbox.SignInRegisterLightboxTests.verify_register_lb_for_unrec_user()'><b>verify_register_lb_for_unrec_user</b><br>Test class: com.lightbox.SignInRegisterLightboxTests<br>Test method: Verify the Register/Sign-In LightBox for UnRecognised user</td>
+<td></td>
+<td>189</td>
+<td>com.lightbox.SignInRegisterLightboxTests@63753b6d</td></tr>
+<tr>
+<td title='com.lightbox.SignInRegisterLightboxTests.verify_register_signin_lb_for_unrec_user_on_serp()'><b>verify_register_signin_lb_for_unrec_user_on_serp</b><br>Test class: com.lightbox.SignInRegisterLightboxTests<br>Test method: Verify the Register/Sign-In LightBox for UnRecognised user on SERP page</td>
+<td></td>
+<td>54</td>
+<td>com.lightbox.SignInRegisterLightboxTests@63753b6d</td></tr>
+<tr>
+<td title='com.search.SearchTests.verify_search_box_redirection()'><b>verify_search_box_redirection</b><br>Test class: com.search.SearchTests<br>Test method: Verify the Search Box redirection URL by altering in the Joomla admin</td>
+<td></td>
+<td>199</td>
+<td>com.search.SearchTests@527740a2</td></tr>
+<tr>
+<td title='com.search.SearchTests.verify_serp_pagination_carousel_shopping()'><b>verify_serp_pagination_carousel_shopping</b><br>Test class: com.search.SearchTests<br>Test method: Verify the Serp page Pagination links, Shopping carousel and In-line shopping Ads</td>
+<td></td>
+<td>72</td>
+<td>com.search.SearchTests@527740a2</td></tr>
+<tr>
+<td title='com.lightbox.SignInRegisterLightboxTests.verify_signin_lb_for_unrec_user()'><b>verify_signin_lb_for_unrec_user</b><br>Test class: com.lightbox.SignInRegisterLightboxTests<br>Test method: Verify the Register/Sign-In LightBox for UnRecognised user</td>
+<td></td>
+<td>148</td>
+<td>com.lightbox.SignInRegisterLightboxTests@63753b6d</td></tr>
+<tr>
+<td title='com.search.SearchTests.verify_tokens_for_consecutive_search_for_same_keyword()'><b>verify_tokens_for_consecutive_search_for_same_keyword</b><br>Test class: com.search.SearchTests<br>Test method: Verify the Token amount for consecutive search for the same keyword</td>
+<td></td>
+<td>210</td>
+<td>com.search.SearchTests@527740a2</td></tr>
+<tr>
+<td title='com.awardtokens.SegIdTokens.verify_tokens_seg_id()'><b>verify_tokens_seg_id</b><br>Test class: com.awardtokens.SegIdTokens<br>Test method: Verify the token scenario for Seg Id user</td>
+<td></td>
+<td>442</td>
+<td>com.awardtokens.SegIdTokens@4e9ba398</td></tr>
+<tr>
+<td title='com.lightbox.WelcomeLightBoxTests.verify_welcome_lb_for_mini_reg_user()'><b>verify_welcome_lb_for_mini_reg_user</b><br>Test class: com.lightbox.WelcomeLightBoxTests<br>Test method: Verify the Welcome LightBox for Mini Reg User</td>
+<td></td>
+<td>266</td>
+<td>com.lightbox.WelcomeLightBoxTests@13a5fe33</td></tr>
+<tr>
+<td title='com.lightbox.WelcomeLightBoxTests.verify_welcome_lb_for_rec_user()'><b>verify_welcome_lb_for_rec_user</b><br>Test class: com.lightbox.WelcomeLightBoxTests<br>Test method: Verify the Welcome LightBox for Recognised User</td>
+<td></td>
+<td>307</td>
+<td>com.lightbox.WelcomeLightBoxTests@13a5fe33</td></tr>
+<tr>
+<td title='com.lightbox.WelcomeLightBoxTests.verify_welcome_lb_for_silver_user()'><b>verify_welcome_lb_for_silver_user</b><br>Test class: com.lightbox.WelcomeLightBoxTests<br>Test method: Verify the Welcome LightBox for Silver User</td>
+<td></td>
+<td>265</td>
+<td>com.lightbox.WelcomeLightBoxTests@13a5fe33</td></tr>
+<tr>
+<td title='com.lightbox.WelcomeLightBoxTests.verify_welcome_lb_for_social_user()'><b>verify_welcome_lb_for_social_user</b><br>Test class: com.lightbox.WelcomeLightBoxTests<br>Test method: Verify the Welcome LightBox for Social User</td>
+<td></td>
+<td>267</td>
+<td>com.lightbox.WelcomeLightBoxTests@13a5fe33</td></tr>
+</table><p>
+</body>
+</html>

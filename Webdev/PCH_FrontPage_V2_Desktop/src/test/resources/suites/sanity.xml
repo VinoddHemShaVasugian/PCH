@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SanitySuiteForDesktopAndTablet" thread-count="2"
+	verbose="10" preserve-order="true">
+	<listeners>
+		<listener class-name="com.util.ReporterListener" />
+		<listener class-name="com.util.PriorityListener" />
+	</listeners>
+	<test name="DesktopSanity" verbose="10" preserve-order="true">
+		<!-- For browser_name = Chrome, Firefox, IE, Tablet_IOS, Tablet_Android -->
+		<parameter name="browser_name" value="" />
+		<parameter name="grid_url" value="" />
+		<groups>
+			<run>
+				<include name="SANITY" />
+			</run>
+		</groups>
+		<classes>
+			<!-- Token Awarding related scenarios -->
+			<class name="com.awardtokens.SegIdTokens" />
+			<!-- SERP related scenarios -->
+			<class name="com.search.SearchTests" />
+			<!-- Miscellaneous related scenarios -->
+			<class name="com.miscellaneous.NFSPTests" />
+			<class name="com.miscellaneous.ArticleTests" />
+			<class name="com.miscellaneous.VideoTests" />
+			<!-- Light Box related scenarios -->
+			<class name="com.lightbox.HighRiskLightboxTests" />
+			<!-- Contest Entry related scenarios -->
+			<class name="com.contestentry.ContestEntryTests" />
+			<!-- Interstitial related scenarios -->
+			<class name="com.interstitial.InterstiatialTests" />
+			<!-- Popular Searches related scenarios -->
+			<class name="com.popularsearches.PopularSearchesTest" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

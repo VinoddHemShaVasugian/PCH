@@ -1,0 +1,776 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" guice-stage="DEVELOPMENT" verbose="10" name="Failed suite [RegressionSuiteForDesktopAndTablet]">
+  <listeners>
+    <listener class-name="com.util.ReporterListener"/>
+    <listener class-name="com.util.PriorityListener"/>
+  </listeners>
+  <test name="Regression01">
+    <classes>
+      <class name="com.awardtokens.BirthdayTests"/>
+      <class name="com.awardtokens.SegIdTokens"/>
+      <class name="com.awardtokens.TokenQueueTests"/>
+      <class name="com.search.SearchTests"/>
+      <class name="com.lightbox.WelcomeLightBoxTests"/>
+      <class name="com.lightbox.HighRiskLightboxTests"/>
+      <class name="com.lightbox.OptinLightboxTests"/>
+      <class name="com.lightbox.CompleteRegistrationLightboxTests"/>
+      <class name="com.lightbox.SignInRegisterLightboxTests"/>
+      <class name="com.lottery.LotteryTests"/>
+      <class name="com.nfsp.NFSPTests"/>
+      <class name="com.nfsp.NFSPSegmentTests"/>
+      <class name="com.miscellaneous.FooterTests"/>
+      <class name="com.miscellaneous.HeaderTests"/>
+    </classes>
+  </test> <!-- Regression01 -->
+  <test name="Regression02">
+    <classes>
+      <class name="com.miscellaneous.OurPicksTests"/>
+      <class name="com.miscellaneous.SubCategoryMenuTests"/>
+      <class name="com.miscellaneous.CategoryMenuTests"/>
+      <class name="com.miscellaneous.ArticleTests"/>
+      <class name="com.miscellaneous.VideoTests"/>
+      <class name="com.miscellaneous.ScratchPathTests"/>
+      <class name="com.miscellaneous.EcParameterTests"/>
+      <class name="com.miscellaneous.ContentFeedSitepageTests"/>
+      <class name="com.miscellaneous.FooterConfigTests"/>
+      <class name="com.miscellaneous.HeaderConfigTests"/>
+      <class name="com.miscellaneous.SecureAccountsTests"/>
+      <class name="com.miscellaneous.ErrorHandlingTests"/>
+    </classes>
+  </test> <!-- Regression02 -->
+  <test name="Regression03">
+    <classes>
+      <class name="com.uninav.UniNavTests"/>
+      <class name="com.contestentry.ContestEntryTests"/>
+      <class name="com.login.AccountsClientPackageIntegrationTests"/>
+      <class name="com.vip.VipTests"/>
+      <class name="com.usertypes.SilveruserTests"/>
+      <class name="com.usertypes.FBUserTests"/>
+      <class name="com.usertypes.MinireguserTests"/>
+      <class name="com.weather.WeatherTests"/>
+      <class name="com.sweepstakes.Sweepstakes"/>
+    </classes>
+  </test> <!-- Regression03 -->
+  <test name="Regression01(failed)">
+    <classes>
+      <class name="com.usertypes.SilveruserTests">
+        <methods>
+          <include name="deleteBrowserCookies"/>
+          <include name="notify_method_completes"/>
+        </methods>
+      </class> <!-- com.usertypes.SilveruserTests -->
+      <class name="com.awardtokens.BirthdayTests">
+        <methods>
+          <include name="birthday_tokens"/>
+          <include name="setup"/>
+          <include name="close"/>
+          <include name="deleteBrowserCookies"/>
+          <include name="notify_method_completes"/>
+        </methods>
+      </class> <!-- com.awardtokens.BirthdayTests -->
+      <class name="com.miscellaneous.FooterTests">
+        <methods>
+          <include name="footer_menu_navigation"/>
+          <include name="verify_TRUSTe_logo"/>
+          <include name="deleteBrowserCookies"/>
+          <include name="notify_method_completes"/>
+        </methods>
+      </class> <!-- com.miscellaneous.FooterTests -->
+      <class name="com.miscellaneous.HeaderTests">
+        <methods>
+          <include name="deleteBrowserCookies"/>
+          <include name="notify_method_completes"/>
+        </methods>
+      </class> <!-- com.miscellaneous.HeaderTests -->
+      <class name="com.miscellaneous.CategoryMenuTests">
+        <methods>
+          <include name="deleteBrowserCookies"/>
+          <include name="notify_method_completes"/>
+        </methods>
+      </class> <!-- com.miscellaneous.CategoryMenuTests -->
+      <class name="com.nfsp.NFSPTests">
+        <methods>
+          <include name="get_nfsp_from_admin"/>
+          <include name="deleteBrowserCookies"/>
+          <include name="notify_method_completes"/>
+        </methods>
+      </class> <!-- com.nfsp.NFSPTests -->
+      <class name="com.lottery.LotteryTests">
+        <methods>
+          <include name="deleteBrowserCookies"/>
+          <include name="notify_method_completes"/>
+          <include name="verify_lottery_page_unrecognized_user"/>
+        </methods>
+      </class> <!-- com.lottery.LotteryTests -->
+      <class name="com.miscellaneous.ScratchPathTests">
+        <methods>
+          <include name="deleteBrowserCookies"/>
+          <include name="notify_method_completes"/>
+        </methods>
+      </class> <!-- com.miscellaneous.ScratchPathTests -->
+      <class name="com.miscellaneous.ArticleTests">
+        <methods>
+          <include name="deleteBrowserCookies"/>
+          <include name="notify_method_completes"/>
+        </methods>
+      </class> <!-- com.miscellaneous.ArticleTests -->
+      <class name="com.miscellaneous.SubCategoryMenuTests">
+        <methods>
+          <include name="deleteBrowserCookies"/>
+          <include name="notify_method_completes"/>
+        </methods>
+      </class> <!-- com.miscellaneous.SubCategoryMenuTests -->
+      <class name="com.lightbox.SignInRegisterLightboxTests">
+        <methods>
+          <include name="deleteBrowserCookies"/>
+          <include name="notify_method_completes"/>
+        </methods>
+      </class> <!-- com.lightbox.SignInRegisterLightboxTests -->
+      <class name="com.search.SearchTests">
+        <methods>
+          <include name="deleteBrowserCookies"/>
+          <include name="notify_method_completes"/>
+        </methods>
+      </class> <!-- com.search.SearchTests -->
+      <class name="com.miscellaneous.HeaderConfigTests">
+        <methods>
+          <include name="deleteBrowserCookies"/>
+          <include name="notify_method_completes"/>
+        </methods>
+      </class> <!-- com.miscellaneous.HeaderConfigTests -->
+      <class name="com.awardtokens.SegIdTokens">
+        <methods>
+          <include name="deleteBrowserCookies"/>
+          <include name="notify_method_completes"/>
+        </methods>
+      </class> <!-- com.awardtokens.SegIdTokens -->
+      <class name="com.contestentry.ContestEntryTests">
+        <methods>
+          <include name="deleteBrowserCookies"/>
+          <include name="notify_method_completes"/>
+        </methods>
+      </class> <!-- com.contestentry.ContestEntryTests -->
+      <class name="com.usertypes.MinireguserTests">
+        <methods>
+          <include name="deleteBrowserCookies"/>
+          <include name="notify_method_completes"/>
+        </methods>
+      </class> <!-- com.usertypes.MinireguserTests -->
+      <class name="com.login.AccountsClientPackageIntegrationTests">
+        <methods>
+          <include name="deleteBrowserCookies"/>
+          <include name="notify_method_completes"/>
+        </methods>
+      </class> <!-- com.login.AccountsClientPackageIntegrationTests -->
+      <class name="com.miscellaneous.EcParameterTests">
+        <methods>
+          <include name="deleteBrowserCookies"/>
+          <include name="notify_method_completes"/>
+        </methods>
+      </class> <!-- com.miscellaneous.EcParameterTests -->
+      <class name="com.vip.VipTests">
+        <methods>
+          <include name="deleteBrowserCookies"/>
+          <include name="notify_method_completes"/>
+        </methods>
+      </class> <!-- com.vip.VipTests -->
+      <class name="com.miscellaneous.VideoTests">
+        <methods>
+          <include name="deleteBrowserCookies"/>
+          <include name="notify_method_completes"/>
+        </methods>
+      </class> <!-- com.miscellaneous.VideoTests -->
+      <class name="com.lightbox.CompleteRegistrationLightboxTests">
+        <methods>
+          <include name="deleteBrowserCookies"/>
+          <include name="notify_method_completes"/>
+        </methods>
+      </class> <!-- com.lightbox.CompleteRegistrationLightboxTests -->
+      <class name="com.weather.WeatherTests">
+        <methods>
+          <include name="deleteBrowserCookies"/>
+          <include name="notify_method_completes"/>
+        </methods>
+      </class> <!-- com.weather.WeatherTests -->
+      <class name="com.awardtokens.TokenQueueTests">
+        <methods>
+          <include name="deleteBrowserCookies"/>
+          <include name="notify_method_completes"/>
+          <include name="verify_credit_token_queue"/>
+        </methods>
+      </class> <!-- com.awardtokens.TokenQueueTests -->
+      <class name="com.lightbox.OptinLightboxTests">
+        <methods>
+          <include name="deleteBrowserCookies"/>
+          <include name="notify_method_completes"/>
+        </methods>
+      </class> <!-- com.lightbox.OptinLightboxTests -->
+      <class name="com.usertypes.FBUserTests">
+        <methods>
+          <include name="deleteBrowserCookies"/>
+          <include name="notify_method_completes"/>
+        </methods>
+      </class> <!-- com.usertypes.FBUserTests -->
+      <class name="com.uninav.UniNavTests">
+        <methods>
+          <include name="setup"/>
+          <include name="close"/>
+          <include name="deleteBrowserCookies"/>
+          <include name="notify_method_completes"/>
+        </methods>
+      </class> <!-- com.uninav.UniNavTests -->
+      <class name="com.miscellaneous.SecureAccountsTests">
+        <methods>
+          <include name="deleteBrowserCookies"/>
+          <include name="notify_method_completes"/>
+        </methods>
+      </class> <!-- com.miscellaneous.SecureAccountsTests -->
+      <class name="com.lightbox.HighRiskLightboxTests">
+        <methods>
+          <include name="get_nfsp_from_admin"/>
+          <include name="deleteBrowserCookies"/>
+          <include name="notify_method_completes"/>
+          <include name="reset_daily_count_of_default_user"/>
+        </methods>
+      </class> <!-- com.lightbox.HighRiskLightboxTests -->
+      <class name="com.miscellaneous.OurPicksTests">
+        <methods>
+          <include name="setup"/>
+          <include name="close"/>
+          <include name="deleteBrowserCookies"/>
+          <include name="notify_method_completes"/>
+        </methods>
+      </class> <!-- com.miscellaneous.OurPicksTests -->
+      <class name="com.miscellaneous.FooterConfigTests">
+        <methods>
+          <include name="deleteBrowserCookies"/>
+          <include name="notify_method_completes"/>
+        </methods>
+      </class> <!-- com.miscellaneous.FooterConfigTests -->
+      <class name="com.miscellaneous.ErrorHandlingTests">
+        <methods>
+          <include name="deleteBrowserCookies"/>
+          <include name="notify_method_completes"/>
+        </methods>
+      </class> <!-- com.miscellaneous.ErrorHandlingTests -->
+      <class name="com.sweepstakes.Sweepstakes">
+        <methods>
+          <include name="sweeps_config_on_admin"/>
+          <include name="deleteBrowserCookies"/>
+          <include name="notify_method_completes"/>
+        </methods>
+      </class> <!-- com.sweepstakes.Sweepstakes -->
+      <class name="com.miscellaneous.ContentFeedSitepageTests">
+        <methods>
+          <include name="deleteBrowserCookies"/>
+          <include name="notify_method_completes"/>
+        </methods>
+      </class> <!-- com.miscellaneous.ContentFeedSitepageTests -->
+      <class name="com.nfsp.NFSPSegmentTests">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="verify_nfsp_for_algo_only_segment_silver_user"/>
+          <include name="verify_nfsp_in_url_for_social_user"/>
+          <include name="deleteBrowserCookies"/>
+          <include name="notify_method_completes"/>
+        </methods>
+      </class> <!-- com.nfsp.NFSPSegmentTests -->
+      <class name="com.lightbox.WelcomeLightBoxTests">
+        <methods>
+          <include name="deleteBrowserCookies"/>
+          <include name="notify_method_completes"/>
+        </methods>
+      </class> <!-- com.lightbox.WelcomeLightBoxTests -->
+    </classes>
+  </test> <!-- Regression01(failed) -->
+  <test name="Regression02(failed)">
+    <classes>
+      <class name="com.usertypes.SilveruserTests">
+        <methods>
+          <include name="deleteBrowserCookies"/>
+          <include name="notify_method_completes"/>
+        </methods>
+      </class> <!-- com.usertypes.SilveruserTests -->
+      <class name="com.awardtokens.BirthdayTests">
+        <methods>
+          <include name="setup"/>
+          <include name="close"/>
+          <include name="deleteBrowserCookies"/>
+          <include name="notify_method_completes"/>
+        </methods>
+      </class> <!-- com.awardtokens.BirthdayTests -->
+      <class name="com.miscellaneous.HeaderTests">
+        <methods>
+          <include name="deleteBrowserCookies"/>
+          <include name="notify_method_completes"/>
+        </methods>
+      </class> <!-- com.miscellaneous.HeaderTests -->
+      <class name="com.miscellaneous.CategoryMenuTests">
+        <methods>
+          <include name="deleteBrowserCookies"/>
+          <include name="notify_method_completes"/>
+        </methods>
+      </class> <!-- com.miscellaneous.CategoryMenuTests -->
+      <class name="com.miscellaneous.FooterTests">
+        <methods>
+          <include name="deleteBrowserCookies"/>
+          <include name="notify_method_completes"/>
+        </methods>
+      </class> <!-- com.miscellaneous.FooterTests -->
+      <class name="com.nfsp.NFSPTests">
+        <methods>
+          <include name="get_nfsp_from_admin"/>
+          <include name="deleteBrowserCookies"/>
+          <include name="notify_method_completes"/>
+        </methods>
+      </class> <!-- com.nfsp.NFSPTests -->
+      <class name="com.miscellaneous.ScratchPathTests">
+        <methods>
+          <include name="play_scratch_path_games"/>
+          <include name="deleteBrowserCookies"/>
+          <include name="notify_method_completes"/>
+          <include name="verify_bonus_game_bar"/>
+        </methods>
+      </class> <!-- com.miscellaneous.ScratchPathTests -->
+      <class name="com.lottery.LotteryTests">
+        <methods>
+          <include name="deleteBrowserCookies"/>
+          <include name="notify_method_completes"/>
+        </methods>
+      </class> <!-- com.lottery.LotteryTests -->
+      <class name="com.miscellaneous.ArticleTests">
+        <methods>
+          <include name="verify_story_details_on_story_log_for_mini_reg"/>
+          <include name="verify_story_details_on_story_log_for_social_user"/>
+          <include name="deleteBrowserCookies"/>
+          <include name="verify_story_details_on_story_log_for_full_reg"/>
+          <include name="verify_article_page_bottom_dfp_ad"/>
+          <include name="notify_method_completes"/>
+          <include name="verify_story_details_on_story_log_for_silver_user"/>
+        </methods>
+      </class> <!-- com.miscellaneous.ArticleTests -->
+      <class name="com.miscellaneous.SubCategoryMenuTests">
+        <methods>
+          <include name="deleteBrowserCookies"/>
+          <include name="notify_method_completes"/>
+        </methods>
+      </class> <!-- com.miscellaneous.SubCategoryMenuTests -->
+      <class name="com.lightbox.SignInRegisterLightboxTests">
+        <methods>
+          <include name="deleteBrowserCookies"/>
+          <include name="notify_method_completes"/>
+        </methods>
+      </class> <!-- com.lightbox.SignInRegisterLightboxTests -->
+      <class name="com.search.SearchTests">
+        <methods>
+          <include name="deleteBrowserCookies"/>
+          <include name="notify_method_completes"/>
+        </methods>
+      </class> <!-- com.search.SearchTests -->
+      <class name="com.miscellaneous.HeaderConfigTests">
+        <methods>
+          <include name="deleteBrowserCookies"/>
+          <include name="notify_method_completes"/>
+        </methods>
+      </class> <!-- com.miscellaneous.HeaderConfigTests -->
+      <class name="com.awardtokens.SegIdTokens">
+        <methods>
+          <include name="deleteBrowserCookies"/>
+          <include name="notify_method_completes"/>
+        </methods>
+      </class> <!-- com.awardtokens.SegIdTokens -->
+      <class name="com.contestentry.ContestEntryTests">
+        <methods>
+          <include name="deleteBrowserCookies"/>
+          <include name="notify_method_completes"/>
+        </methods>
+      </class> <!-- com.contestentry.ContestEntryTests -->
+      <class name="com.usertypes.MinireguserTests">
+        <methods>
+          <include name="deleteBrowserCookies"/>
+          <include name="notify_method_completes"/>
+        </methods>
+      </class> <!-- com.usertypes.MinireguserTests -->
+      <class name="com.login.AccountsClientPackageIntegrationTests">
+        <methods>
+          <include name="deleteBrowserCookies"/>
+          <include name="notify_method_completes"/>
+        </methods>
+      </class> <!-- com.login.AccountsClientPackageIntegrationTests -->
+      <class name="com.miscellaneous.EcParameterTests">
+        <methods>
+          <include name="deleteBrowserCookies"/>
+          <include name="notify_method_completes"/>
+        </methods>
+      </class> <!-- com.miscellaneous.EcParameterTests -->
+      <class name="com.vip.VipTests">
+        <methods>
+          <include name="deleteBrowserCookies"/>
+          <include name="notify_method_completes"/>
+        </methods>
+      </class> <!-- com.vip.VipTests -->
+      <class name="com.miscellaneous.VideoTests">
+        <methods>
+          <include name="verify_video_details_on_video_log_for_mini_reg"/>
+          <include name="verify_token_icon_on_jw_player"/>
+          <include name="verify_video_details_on_video_log_for_silver_user"/>
+          <include name="deleteBrowserCookies"/>
+          <include name="video_landing_page_categories"/>
+          <include name="notify_method_completes"/>
+          <include name="verify_video_details_on_video_log_for_full_reg"/>
+          <include name="verify_video_details_on_video_log_for_social_user"/>
+          <include name="verify_ad_refresh_on_video_page"/>
+          <include name="verify_video_player_for_all_users"/>
+        </methods>
+      </class> <!-- com.miscellaneous.VideoTests -->
+      <class name="com.lightbox.CompleteRegistrationLightboxTests">
+        <methods>
+          <include name="deleteBrowserCookies"/>
+          <include name="notify_method_completes"/>
+        </methods>
+      </class> <!-- com.lightbox.CompleteRegistrationLightboxTests -->
+      <class name="com.weather.WeatherTests">
+        <methods>
+          <include name="deleteBrowserCookies"/>
+          <include name="notify_method_completes"/>
+        </methods>
+      </class> <!-- com.weather.WeatherTests -->
+      <class name="com.awardtokens.TokenQueueTests">
+        <methods>
+          <include name="deleteBrowserCookies"/>
+          <include name="notify_method_completes"/>
+        </methods>
+      </class> <!-- com.awardtokens.TokenQueueTests -->
+      <class name="com.lightbox.OptinLightboxTests">
+        <methods>
+          <include name="deleteBrowserCookies"/>
+          <include name="notify_method_completes"/>
+        </methods>
+      </class> <!-- com.lightbox.OptinLightboxTests -->
+      <class name="com.usertypes.FBUserTests">
+        <methods>
+          <include name="deleteBrowserCookies"/>
+          <include name="notify_method_completes"/>
+        </methods>
+      </class> <!-- com.usertypes.FBUserTests -->
+      <class name="com.uninav.UniNavTests">
+        <methods>
+          <include name="setup"/>
+          <include name="close"/>
+          <include name="deleteBrowserCookies"/>
+          <include name="notify_method_completes"/>
+        </methods>
+      </class> <!-- com.uninav.UniNavTests -->
+      <class name="com.miscellaneous.SecureAccountsTests">
+        <methods>
+          <include name="deleteBrowserCookies"/>
+          <include name="notify_method_completes"/>
+        </methods>
+      </class> <!-- com.miscellaneous.SecureAccountsTests -->
+      <class name="com.lightbox.HighRiskLightboxTests">
+        <methods>
+          <include name="get_nfsp_from_admin"/>
+          <include name="deleteBrowserCookies"/>
+          <include name="notify_method_completes"/>
+          <include name="reset_daily_count_of_default_user"/>
+        </methods>
+      </class> <!-- com.lightbox.HighRiskLightboxTests -->
+      <class name="com.miscellaneous.ErrorHandlingTests">
+        <methods>
+          <include name="deleteBrowserCookies"/>
+          <include name="verify_error_msg_on_fpcontent_down"/>
+          <include name="notify_method_completes"/>
+          <include name="verify_error_msg_cache_content_on_pages"/>
+        </methods>
+      </class> <!-- com.miscellaneous.ErrorHandlingTests -->
+      <class name="com.miscellaneous.OurPicksTests">
+        <methods>
+          <include name="setup"/>
+          <include name="close"/>
+          <include name="deleteBrowserCookies"/>
+          <include name="notify_method_completes"/>
+          <include name="verify_our_pick_tiles_unrec_user"/>
+        </methods>
+      </class> <!-- com.miscellaneous.OurPicksTests -->
+      <class name="com.miscellaneous.FooterConfigTests">
+        <methods>
+          <include name="deleteBrowserCookies"/>
+          <include name="notify_method_completes"/>
+        </methods>
+      </class> <!-- com.miscellaneous.FooterConfigTests -->
+      <class name="com.sweepstakes.Sweepstakes">
+        <methods>
+          <include name="sweeps_config_on_admin"/>
+          <include name="deleteBrowserCookies"/>
+          <include name="notify_method_completes"/>
+        </methods>
+      </class> <!-- com.sweepstakes.Sweepstakes -->
+      <class name="com.miscellaneous.ContentFeedSitepageTests">
+        <methods>
+          <include name="deleteBrowserCookies"/>
+          <include name="notify_method_completes"/>
+        </methods>
+      </class> <!-- com.miscellaneous.ContentFeedSitepageTests -->
+      <class name="com.nfsp.NFSPSegmentTests">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="deleteBrowserCookies"/>
+          <include name="notify_method_completes"/>
+        </methods>
+      </class> <!-- com.nfsp.NFSPSegmentTests -->
+      <class name="com.lightbox.WelcomeLightBoxTests">
+        <methods>
+          <include name="deleteBrowserCookies"/>
+          <include name="notify_method_completes"/>
+        </methods>
+      </class> <!-- com.lightbox.WelcomeLightBoxTests -->
+    </classes>
+  </test> <!-- Regression02(failed) -->
+  <test name="Regression03(failed)">
+    <classes>
+      <class name="com.usertypes.SilveruserTests">
+        <methods>
+          <include name="verify_claim_button_on_all_pages_for_silver_user"/>
+          <include name="deleteBrowserCookies"/>
+          <include name="notify_method_completes"/>
+        </methods>
+      </class> <!-- com.usertypes.SilveruserTests -->
+      <class name="com.awardtokens.BirthdayTests">
+        <methods>
+          <include name="setup"/>
+          <include name="close"/>
+          <include name="deleteBrowserCookies"/>
+          <include name="notify_method_completes"/>
+        </methods>
+      </class> <!-- com.awardtokens.BirthdayTests -->
+      <class name="com.miscellaneous.HeaderTests">
+        <methods>
+          <include name="deleteBrowserCookies"/>
+          <include name="notify_method_completes"/>
+        </methods>
+      </class> <!-- com.miscellaneous.HeaderTests -->
+      <class name="com.miscellaneous.CategoryMenuTests">
+        <methods>
+          <include name="deleteBrowserCookies"/>
+          <include name="notify_method_completes"/>
+        </methods>
+      </class> <!-- com.miscellaneous.CategoryMenuTests -->
+      <class name="com.miscellaneous.FooterTests">
+        <methods>
+          <include name="deleteBrowserCookies"/>
+          <include name="notify_method_completes"/>
+        </methods>
+      </class> <!-- com.miscellaneous.FooterTests -->
+      <class name="com.nfsp.NFSPTests">
+        <methods>
+          <include name="get_nfsp_from_admin"/>
+          <include name="deleteBrowserCookies"/>
+          <include name="notify_method_completes"/>
+        </methods>
+      </class> <!-- com.nfsp.NFSPTests -->
+      <class name="com.lottery.LotteryTests">
+        <methods>
+          <include name="deleteBrowserCookies"/>
+          <include name="notify_method_completes"/>
+        </methods>
+      </class> <!-- com.lottery.LotteryTests -->
+      <class name="com.miscellaneous.ScratchPathTests">
+        <methods>
+          <include name="deleteBrowserCookies"/>
+          <include name="notify_method_completes"/>
+        </methods>
+      </class> <!-- com.miscellaneous.ScratchPathTests -->
+      <class name="com.miscellaneous.ArticleTests">
+        <methods>
+          <include name="deleteBrowserCookies"/>
+          <include name="notify_method_completes"/>
+        </methods>
+      </class> <!-- com.miscellaneous.ArticleTests -->
+      <class name="com.miscellaneous.SubCategoryMenuTests">
+        <methods>
+          <include name="deleteBrowserCookies"/>
+          <include name="notify_method_completes"/>
+        </methods>
+      </class> <!-- com.miscellaneous.SubCategoryMenuTests -->
+      <class name="com.lightbox.SignInRegisterLightboxTests">
+        <methods>
+          <include name="deleteBrowserCookies"/>
+          <include name="notify_method_completes"/>
+        </methods>
+      </class> <!-- com.lightbox.SignInRegisterLightboxTests -->
+      <class name="com.search.SearchTests">
+        <methods>
+          <include name="deleteBrowserCookies"/>
+          <include name="notify_method_completes"/>
+        </methods>
+      </class> <!-- com.search.SearchTests -->
+      <class name="com.miscellaneous.HeaderConfigTests">
+        <methods>
+          <include name="deleteBrowserCookies"/>
+          <include name="notify_method_completes"/>
+        </methods>
+      </class> <!-- com.miscellaneous.HeaderConfigTests -->
+      <class name="com.contestentry.ContestEntryTests">
+        <methods>
+          <include name="verify_bmh_queue"/>
+          <include name="verify_contest_entry_invalid_ck_on_url_valid_on_admin"/>
+          <include name="verify_contest_entry_with_tc_v_without_ck"/>
+          <include name="verify_contest_entry_queue"/>
+          <include name="verify_contest_entry_silver_user"/>
+          <include name="verify_contest_entry_invalid_ck_on_admin_valid_on_url"/>
+          <include name="verify_contest_entry_with_mulitple_ck"/>
+          <include name="verify_contest_entry_full_reg"/>
+          <include name="verify_contest_entry_invalid_tc_on_url_valid_ck_on_admin"/>
+          <include name="deleteBrowserCookies"/>
+          <include name="notify_method_completes"/>
+          <include name="verify_contest_entry_mini_reg"/>
+          <include name="verify_contest_entry_social_user"/>
+          <include name="verify_contest_entry_with_ck_without_tc_v"/>
+        </methods>
+      </class> <!-- com.contestentry.ContestEntryTests -->
+      <class name="com.usertypes.MinireguserTests">
+        <methods>
+          <include name="deleteBrowserCookies"/>
+          <include name="notify_method_completes"/>
+          <include name="verify_claim_button_on_all_pages_for_mini_reg_user"/>
+        </methods>
+      </class> <!-- com.usertypes.MinireguserTests -->
+      <class name="com.awardtokens.SegIdTokens">
+        <methods>
+          <include name="deleteBrowserCookies"/>
+          <include name="notify_method_completes"/>
+        </methods>
+      </class> <!-- com.awardtokens.SegIdTokens -->
+      <class name="com.login.AccountsClientPackageIntegrationTests">
+        <methods>
+          <include name="deleteBrowserCookies"/>
+          <include name="notify_method_completes"/>
+        </methods>
+      </class> <!-- com.login.AccountsClientPackageIntegrationTests -->
+      <class name="com.miscellaneous.EcParameterTests">
+        <methods>
+          <include name="deleteBrowserCookies"/>
+          <include name="notify_method_completes"/>
+        </methods>
+      </class> <!-- com.miscellaneous.EcParameterTests -->
+      <class name="com.vip.VipTests">
+        <methods>
+          <include name="deleteBrowserCookies"/>
+          <include name="notify_method_completes"/>
+        </methods>
+      </class> <!-- com.vip.VipTests -->
+      <class name="com.miscellaneous.VideoTests">
+        <methods>
+          <include name="deleteBrowserCookies"/>
+          <include name="notify_method_completes"/>
+        </methods>
+      </class> <!-- com.miscellaneous.VideoTests -->
+      <class name="com.lightbox.CompleteRegistrationLightboxTests">
+        <methods>
+          <include name="deleteBrowserCookies"/>
+          <include name="notify_method_completes"/>
+        </methods>
+      </class> <!-- com.lightbox.CompleteRegistrationLightboxTests -->
+      <class name="com.weather.WeatherTests">
+        <methods>
+          <include name="verify_hourly_forecast_details"/>
+          <include name="deleteBrowserCookies"/>
+          <include name="weather_climate_history"/>
+          <include name="notify_method_completes"/>
+          <include name="verify_daily_forecast_details"/>
+          <include name="verify_weather_hover_screen"/>
+        </methods>
+      </class> <!-- com.weather.WeatherTests -->
+      <class name="com.awardtokens.TokenQueueTests">
+        <methods>
+          <include name="deleteBrowserCookies"/>
+          <include name="notify_method_completes"/>
+        </methods>
+      </class> <!-- com.awardtokens.TokenQueueTests -->
+      <class name="com.lightbox.OptinLightboxTests">
+        <methods>
+          <include name="deleteBrowserCookies"/>
+          <include name="notify_method_completes"/>
+        </methods>
+      </class> <!-- com.lightbox.OptinLightboxTests -->
+      <class name="com.usertypes.FBUserTests">
+        <methods>
+          <include name="verify_claim_button_on_all_pages_for_social_user"/>
+          <include name="deleteBrowserCookies"/>
+          <include name="notify_method_completes"/>
+        </methods>
+      </class> <!-- com.usertypes.FBUserTests -->
+      <class name="com.uninav.UniNavTests">
+        <methods>
+          <include name="setup"/>
+          <include name="close"/>
+          <include name="verify_uninav_settings"/>
+          <include name="deleteBrowserCookies"/>
+          <include name="notify_method_completes"/>
+        </methods>
+      </class> <!-- com.uninav.UniNavTests -->
+      <class name="com.miscellaneous.SecureAccountsTests">
+        <methods>
+          <include name="deleteBrowserCookies"/>
+          <include name="notify_method_completes"/>
+        </methods>
+      </class> <!-- com.miscellaneous.SecureAccountsTests -->
+      <class name="com.lightbox.HighRiskLightboxTests">
+        <methods>
+          <include name="get_nfsp_from_admin"/>
+          <include name="deleteBrowserCookies"/>
+          <include name="notify_method_completes"/>
+          <include name="reset_daily_count_of_default_user"/>
+        </methods>
+      </class> <!-- com.lightbox.HighRiskLightboxTests -->
+      <class name="com.miscellaneous.OurPicksTests">
+        <methods>
+          <include name="setup"/>
+          <include name="close"/>
+          <include name="deleteBrowserCookies"/>
+          <include name="notify_method_completes"/>
+        </methods>
+      </class> <!-- com.miscellaneous.OurPicksTests -->
+      <class name="com.miscellaneous.FooterConfigTests">
+        <methods>
+          <include name="deleteBrowserCookies"/>
+          <include name="notify_method_completes"/>
+        </methods>
+      </class> <!-- com.miscellaneous.FooterConfigTests -->
+      <class name="com.miscellaneous.ErrorHandlingTests">
+        <methods>
+          <include name="deleteBrowserCookies"/>
+          <include name="notify_method_completes"/>
+        </methods>
+      </class> <!-- com.miscellaneous.ErrorHandlingTests -->
+      <class name="com.sweepstakes.Sweepstakes">
+        <methods>
+          <include name="sweeps_config_on_admin"/>
+          <include name="deleteBrowserCookies"/>
+          <include name="notify_method_completes"/>
+          <include name="verify_sweepstakes_on_edl_pets_page"/>
+        </methods>
+      </class> <!-- com.sweepstakes.Sweepstakes -->
+      <class name="com.miscellaneous.ContentFeedSitepageTests">
+        <methods>
+          <include name="deleteBrowserCookies"/>
+          <include name="notify_method_completes"/>
+        </methods>
+      </class> <!-- com.miscellaneous.ContentFeedSitepageTests -->
+      <class name="com.nfsp.NFSPSegmentTests">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="deleteBrowserCookies"/>
+          <include name="notify_method_completes"/>
+        </methods>
+      </class> <!-- com.nfsp.NFSPSegmentTests -->
+      <class name="com.lightbox.WelcomeLightBoxTests">
+        <methods>
+          <include name="deleteBrowserCookies"/>
+          <include name="notify_method_completes"/>
+        </methods>
+      </class> <!-- com.lightbox.WelcomeLightBoxTests -->
+    </classes>
+  </test> <!-- Regression03(failed) -->
+</suite> <!-- Failed suite [RegressionSuiteForDesktopAndTablet] -->

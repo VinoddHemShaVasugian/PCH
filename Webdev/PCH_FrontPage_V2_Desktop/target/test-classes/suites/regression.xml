@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="RegressionSuiteForDesktopAndTablet" thread-count="3"
+	verbose="10" preserve-order="true" parallel="false">
+	<listeners>
+		<listener class-name="com.util.ReporterListener" />
+		<listener class-name="com.util.PriorityListener" />
+	</listeners>
+	<test name="Regression01">
+		<classes>
+			<!-- Token Awarding related scenarios -->
+			<class name="com.awardtokens.BirthdayTests" />
+			<class name="com.awardtokens.SegIdTokens" />
+			<class name="com.awardtokens.TokenQueueTests" />
+			<!-- SERP related scenarios -->
+			<class name="com.search.SearchTests" />
+			<!-- Light Box related scenarios -->
+			<class name="com.lightbox.WelcomeLightBoxTests" />
+			<class name="com.lightbox.HighRiskLightboxTests" />
+			<class name="com.lightbox.OptinLightboxTests" />
+			<class name="com.lightbox.CompleteRegistrationLightboxTests" />
+			<class name="com.lightbox.SignInRegisterLightboxTests" />
+			<!-- Lottery page related scenarios -->
+			<class name="com.lottery.LotteryTests" />
+			<!-- NFSP related scenarios -->
+			<class name="com.nfsp.NFSPTests" />
+			<class name="com.nfsp.NFSPSegmentTests" />
+			<!-- Miscellaneous related scenarios -->
+			<class name="com.miscellaneous.FooterTests" />
+			<class name="com.miscellaneous.HeaderTests" />
+		</classes>
+	</test> <!-- Test -->
+	<test name="Regression02">
+		<classes>
+			<!-- Miscellaneous related scenarios -->
+			<!-- <class name="com.miscellaneous.InHouseNewsAlerts" /> -->
+			<class name="com.miscellaneous.OurPicksTests" />
+			<class name="com.miscellaneous.SubCategoryMenuTests" />
+			<class name="com.miscellaneous.CategoryMenuTests" />
+			<class name="com.miscellaneous.ArticleTests" />
+			<class name="com.miscellaneous.VideoTests" />
+			<class name="com.miscellaneous.ScratchPathTests" />
+			<class name="com.miscellaneous.EcParameterTests" />
+			<class name="com.miscellaneous.ContentFeedSitepageTests" />
+			<class name="com.miscellaneous.FooterConfigTests" />
+			<class name="com.miscellaneous.HeaderConfigTests" />
+			<class name="com.miscellaneous.SecureAccountsTests" />
+			<class name="com.miscellaneous.ErrorHandlingTests" />
+		</classes>
+	</test> <!-- Test -->
+	<test name="Regression03">
+		<classes>
+			<!-- UniNav related scenarios -->
+			<class name="com.uninav.UniNavTests" />
+			<!-- Contest Entry related scenarios -->
+			<class name="com.contestentry.ContestEntryTests" />
+			<!-- IWE related scenarios -->
+			<!-- <class name="com.iwe.InstantWinTests" /> -->
+			<!-- Interstitial related scenarios -->
+			<!-- <class name="com.interstitial.InterstiatialTests" /> -->
+			<!-- Accounts related scenarios -->
+			<class name="com.login.AccountsClientPackageIntegrationTests" />
+			<!-- VIP related scenarios -->
+			<class name="com.vip.VipTests" />
+			<!-- User types related scenarios -->
+			<class name="com.usertypes.SilveruserTests" />
+			<class name="com.usertypes.FBUserTests" />
+			<class name="com.usertypes.MinireguserTests" />
+			<!-- Weather related scenarios -->
+			<class name="com.weather.WeatherTests" />
+			<!-- Sweep stakes related scenarios -->
+			<class name="com.sweepstakes.Sweepstakes" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

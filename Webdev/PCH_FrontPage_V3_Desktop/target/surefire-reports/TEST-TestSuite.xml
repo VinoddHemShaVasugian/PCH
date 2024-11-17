@@ -1,0 +1,798 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="4,039.745" tests="107" errors="0" skipped="1" failures="38">
+  <properties>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="RUN_DISPLAY_URL" value="http://localhost:8080/job/PCH_FrontPage_V3_Desktop/130/display/redirect"/>
+    <property name="HUDSON_HOME" value="C:\Program Files (x86)\Jenkins"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="RUN_CHANGES_DISPLAY_URL" value="http://localhost:8080/job/PCH_FrontPage_V3_Desktop/130/display/redirect?page=changes"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="WINSW_SERVICE_ID" value="Jenkins"/>
+    <property name="ALLUSERSPROFILE" value="C:\ProgramData"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="SystemDrive" value="C:"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="JENKINS_SERVER_COOKIE" value="79a2b53e747b9e3c"/>
+    <property name="SERVICE_ID" value="Jenkins"/>
+    <property name="USERNAME" value="VSANKAR2$"/>
+    <property name="ProgramFiles(x86)" value="C:\Program Files (x86)"/>
+    <property name="JENKINS_URL" value="http://localhost:8080/"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-11.0.2\bin"/>
+    <property name="sun.java.command" value="jenkins.maven3.agent.Maven35Main C:\Users\vsankar\Desktop\Vinoth\Automation\Jenkins\Maven\apache-maven-3.6.0-bin\apache-maven-3.6.0 C:\Program Files (x86)\Jenkins\war\WEB-INF\lib\remoting-3.29.jar C:\Program Files (x86)\Jenkins\plugins\maven-plugin\WEB-INF\lib\maven35-interceptor-1.12.jar C:\Program Files (x86)\Jenkins\plugins\maven-plugin\WEB-INF\lib\maven3-interceptor-commons-1.12.jar 51364"/>
+    <property name="maven.home" value="C:\Users\vsankar\Desktop\Vinoth\Automation\Jenkins\Maven\apache-maven-3.6.0-bin\apache-maven-3.6.0"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="PATHEXT" value=".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC"/>
+    <property name="POM_GROUPID" value="PCH"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="env_to_execute" value="STG"/>
+    <property name="java.version.date" value="2019-01-15"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-11.0.2"/>
+    <property name="JENKINS_HOME" value="C:\Program Files (x86)\Jenkins"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\vsankar\Desktop\Vinoth\Automation\Eclipse\Workspaces\PCH\PCH_FrontPage_V3_Desktop"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="NODE_NAME" value="master"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="BUILD_DISPLAY_NAME" value="#130"/>
+    <property name="PROCESSOR_IDENTIFIER" value="Intel64 Family 6 Model 62 Stepping 4, GenuineIntel"/>
+    <property name="maven3.interceptor" value="C:\Program Files (x86)\Jenkins\plugins\maven-plugin\WEB-INF\lib\maven35-interceptor-1.12.jar"/>
+    <property name="PATH+MAVEN" value="C:\Users\vsankar\Desktop\Vinoth\Automation\Jenkins\Maven\apache-maven-3.6.0-bin\apache-maven-3.6.0/bin"/>
+    <property name="maven3.interceptor.common" value="C:\Program Files (x86)\Jenkins\plugins\maven-plugin\WEB-INF\lib\maven3-interceptor-commons-1.12.jar"/>
+    <property name="ProgramFiles" value="C:\Program Files (x86)"/>
+    <property name="PUBLIC" value="C:\Users\Public"/>
+    <property name="windir" value="C:\Windows"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="11.0.2+9-LTS"/>
+    <property name="JAVA_HOME" value="C:\Program Files\Java\jdk-11.0.2"/>
+    <property name="LDMS_LOCAL_DIR" value="C:\Program Files (x86)\LANDesk\LDClient\Data"/>
+    <property name="user.name" value="VSANKAR2$"/>
+    <property name="POM_ARTIFACTID" value="Frontpage_v1"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="APPDATA" value="C:\Windows\system32\config\systemprofile\AppData\Roaming"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="HUDSON_URL" value="http://localhost:8080/"/>
+    <property name="WORKSPACE" value="C:\Program Files (x86)\Jenkins\workspace\PCH_FrontPage_V3_Desktop"/>
+    <property name="java.vendor.version" value="18.9"/>
+    <property name="localRepository" value="C:\Windows\system32\config\systemprofile\.m2\repository"/>
+    <property name="Path" value="C:\Program Files\Java\jdk-11.0.2/bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Citrix\System32\;C:\Program Files\Citrix\ICAService\;C:\Program Files\Citrix\Virtual Desktop Agent\;C:\Program Files\Java\jdk-11.0.2\bin;C:\Users\vsankar\Desktop\Codeception\Installation\php;C:\ProgramData\ComposerSetup\bin;C:\Users\vsankar\Desktop\Codeception\Installation\Apache24;C:\Program Files\Git\cmd;C:\Users\vsankar\Desktop\Vinoth\Automation\Jenkins\Maven\apache-maven-3.6.0-bin\apache-maven-3.6.0\bin;"/>
+    <property name="java.io.tmpdir" value="C:\Windows\TEMP\"/>
+    <property name="java.version" value="11.0.2"/>
+    <property name="COMPUTERNAME" value="VSANKAR2"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="JOB_BASE_NAME" value="PCH_FrontPage_V3_Desktop"/>
+    <property name="sun.os.patch.level" value="Service Pack 1"/>
+    <property name="ComSpec" value="C:\Windows\system32\cmd.exe"/>
+    <property name="org.slf4j.simpleLogger.defaultLogLevel" value="info"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-11.0.2\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Users\vsankar\Desktop\Vinoth\Automation\Jenkins\Maven\apache-maven-3.6.0-bin\apache-maven-3.6.0/bin;C:\Program Files\Java\jdk-11.0.2/bin;C:\Program Files\Java\jdk-11.0.2/bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Citrix\System32\;C:\Program Files\Citrix\ICAService\;C:\Program Files\Citrix\Virtual Desktop Agent\;C:\Program Files\Java\jdk-11.0.2\bin;C:\Users\vsankar\Desktop\Codeception\Installation\php;C:\ProgramData\ComposerSetup\bin;C:\Users\vsankar\Desktop\Codeception\Installation\Apache24;C:\Program Files\Git\cmd;C:\Users\vsankar\Desktop\Vinoth\Automation\Jenkins\Maven\apache-maven-3.6.0-bin\apache-maven-3.6.0\bin;;."/>
+    <property name="BUILD_NUMBER" value="130"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="BUILD_URL" value="http://localhost:8080/job/PCH_FrontPage_V3_Desktop/130/"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="POM_DISPLAYNAME" value="PCH_Frontpage_V3_Desktop"/>
+    <property name="NUMBER_OF_PROCESSORS" value="2"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="LDMS_PREFERRED_SERVER" value="pwld1"/>
+    <property name="PROCESSOR_LEVEL" value="6"/>
+    <property name="FP_NO_HOST_CHECK" value="NO"/>
+    <property name="M2" value="C:\Users\vsankar\Desktop\Vinoth\Automation\Jenkins\Maven\apache-maven-3.6.0-bin\apache-maven-3.6.0\bin"/>
+    <property name="JOB_URL" value="http://localhost:8080/job/PCH_FrontPage_V3_Desktop/"/>
+    <property name="java.class.path" value="C:\Program Files (x86)\Jenkins\plugins\maven-plugin\WEB-INF\lib\maven35-agent-1.12.jar;C:\Users\vsankar\Desktop\Vinoth\Automation\Jenkins\Maven\apache-maven-3.6.0-bin\apache-maven-3.6.0\boot\plexus-classworlds-2.5.2.jar;C:\Users\vsankar\Desktop\Vinoth\Automation\Jenkins\Maven\apache-maven-3.6.0-bin\apache-maven-3.6.0/conf/logging"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="PROCESSOR_ARCHITECTURE" value="x86"/>
+    <property name="PSModulePath" value="C:\Windows\system32\WindowsPowerShell\v1.0\Modules\;C:\Program Files\Citrix\Telemetry Service\"/>
+    <property name="user.variant" value=""/>
+    <property name="MAVEN_HOME" value="C:\Users\vsankar\Desktop\Vinoth\Automation\Jenkins\Maven\apache-maven-3.6.0-bin\apache-maven-3.6.0"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="maven.conf" value="C:\Users\vsankar\Desktop\Vinoth\Automation\Jenkins\Maven\apache-maven-3.6.0-bin\apache-maven-3.6.0\conf"/>
+    <property name="os.name" value="Windows 7"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="POM_VERSION" value="0.0.1-SNAPSHOT"/>
+    <property name="BUILD_TAG" value="jenkins-PCH_FrontPage_V3_Desktop-130"/>
+    <property name="surefire.test.class.path" value="C:\Users\vsankar\Desktop\Vinoth\Automation\Eclipse\Workspaces\PCH\PCH_FrontPage_V3_Desktop\target\test-classes;C:\Users\vsankar\Desktop\Vinoth\Automation\Eclipse\Workspaces\PCH\PCH_FrontPage_V3_Desktop\target\classes;C:\Windows\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Windows\system32\config\systemprofile\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Windows\system32\config\systemprofile\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Windows\system32\config\systemprofile\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Windows\system32\config\systemprofile\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Windows\system32\config\systemprofile\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Windows\system32\config\systemprofile\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Windows\system32\config\systemprofile\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\testng\testng\6.9.10\testng-6.9.10.jar;C:\Windows\system32\config\systemprofile\.m2\repository\com\beust\jcommander\1.48\jcommander-1.48.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\beanshell\bsh\2.0b4\bsh-2.0b4.jar;C:\Windows\system32\config\systemprofile\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\apache\httpcomponents\httpclient\4.5.3\httpclient-4.5.3.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\apache\httpcomponents\httpcore\4.4.6\httpcore-4.4.6.jar;C:\Windows\system32\config\systemprofile\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Windows\system32\config\systemprofile\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.8.6\jackson-core-2.8.6.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\codehaus\jackson\jackson-mapper-asl\1.9.13\jackson-mapper-asl-1.9.13.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\codehaus\jackson\jackson-core-asl\1.9.13\jackson-core-asl-1.9.13.jar;C:\Windows\system32\config\systemprofile\.m2\repository\ru\yandex\qatools\ashot\ashot\1.5.4\ashot-1.5.4.jar;C:\Windows\system32\config\systemprofile\.m2\repository\commons-io\commons-io\2.5\commons-io-2.5.jar;C:\Windows\system32\config\systemprofile\.m2\repository\com\google\code\gson\gson\2.6.2\gson-2.6.2.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Windows\system32\config\systemprofile\.m2\repository\io\github\bonigarcia\webdrivermanager\2.0.1\webdrivermanager-2.0.1.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\slf4j\slf4j-api\1.7.24\slf4j-api-1.7.24.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\apache\commons\commons-lang3\3.5\commons-lang3-3.5.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\rauschig\jarchivelib\0.7.1\jarchivelib-0.7.1.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\apache\commons\commons-compress\1.9\commons-compress-1.9.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\jsoup\jsoup\1.10.2\jsoup-1.10.2.jar;C:\Windows\system32\config\systemprofile\.m2\repository\com\browserstack\browserstack-local-java\0.1.0\browserstack-local-java-0.1.0.jar;C:\Windows\system32\config\systemprofile\.m2\repository\com\googlecode\json-simple\json-simple\1.1.1\json-simple-1.1.1.jar;C:\Windows\system32\config\systemprofile\.m2\repository\junit\junit\4.10\junit-4.10.jar;C:\Windows\system32\config\systemprofile\.m2\repository\com\microsoft\sqlserver\mssql-jdbc\6.1.0.jre8\mssql-jdbc-6.1.0.jre8.jar;C:\Windows\system32\config\systemprofile\.m2\repository\com\microsoft\azure\azure-keyvault\0.9.3\azure-keyvault-0.9.3.jar;C:\Windows\system32\config\systemprofile\.m2\repository\com\microsoft\azure\azure-core\0.9.3\azure-core-0.9.3.jar;C:\Windows\system32\config\systemprofile\.m2\repository\commons-codec\commons-codec\1.10\commons-codec-1.10.jar;C:\Windows\system32\config\systemprofile\.m2\repository\commons-lang\commons-lang\2.6\commons-lang-2.6.jar;C:\Windows\system32\config\systemprofile\.m2\repository\javax\mail\mail\1.4.5\mail-1.4.5.jar;C:\Windows\system32\config\systemprofile\.m2\repository\javax\activation\activation\1.1\activation-1.1.jar;C:\Windows\system32\config\systemprofile\.m2\repository\com\sun\jersey\jersey-client\1.13\jersey-client-1.13.jar;C:\Windows\system32\config\systemprofile\.m2\repository\com\sun\jersey\jersey-core\1.13\jersey-core-1.13.jar;C:\Windows\system32\config\systemprofile\.m2\repository\com\sun\jersey\jersey-json\1.13\jersey-json-1.13.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\codehaus\jettison\jettison\1.1\jettison-1.1.jar;C:\Windows\system32\config\systemprofile\.m2\repository\stax\stax-api\1.0.1\stax-api-1.0.1.jar;C:\Windows\system32\config\systemprofile\.m2\repository\com\sun\xml\bind\jaxb-impl\2.2.3-1\jaxb-impl-2.2.3-1.jar;C:\Windows\system32\config\systemprofile\.m2\repository\javax\xml\bind\jaxb-api\2.2.2\jaxb-api-2.2.2.jar;C:\Windows\system32\config\systemprofile\.m2\repository\javax\xml\stream\stax-api\1.0-2\stax-api-1.0-2.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\codehaus\jackson\jackson-jaxrs\1.9.2\jackson-jaxrs-1.9.2.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\codehaus\jackson\jackson-xc\1.9.2\jackson-xc-1.9.2.jar;C:\Windows\system32\config\systemprofile\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar;C:\Windows\system32\config\systemprofile\.m2\repository\com\microsoft\azure\adal4j\1.0.0\adal4j-1.0.0.jar;C:\Windows\system32\config\systemprofile\.m2\repository\com\nimbusds\oauth2-oidc-sdk\4.5\oauth2-oidc-sdk-4.5.jar;C:\Windows\system32\config\systemprofile\.m2\repository\net\jcip\jcip-annotations\1.0\jcip-annotations-1.0.jar;C:\Windows\system32\config\systemprofile\.m2\repository\net\minidev\json-smart\1.1.1\json-smart-1.1.1.jar;C:\Windows\system32\config\systemprofile\.m2\repository\com\nimbusds\lang-tag\1.4\lang-tag-1.4.jar;C:\Windows\system32\config\systemprofile\.m2\repository\com\nimbusds\nimbus-jose-jwt\3.1.2\nimbus-jose-jwt-3.1.2.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\bouncycastle\bcprov-jdk15on\1.51\bcprov-jdk15on-1.51.jar;C:\Windows\system32\config\systemprofile\.m2\repository\mysql\mysql-connector-java\5.1.33\mysql-connector-java-5.1.33.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="PROCESSOR_ARCHITEW6432" value="AMD64"/>
+    <property name="user.home" value="C:\Windows\system32\config\systemprofile"/>
+    <property name="user.language" value="en"/>
+    <property name="browser_to_invoke" value="Chrome"/>
+    <property name="ProgramData" value="C:\ProgramData"/>
+    <property name="ProgramW6432" value="C:\Program Files"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="JOB_DISPLAY_URL" value="http://localhost:8080/job/PCH_FrontPage_V3_Desktop/display/redirect"/>
+    <property name="M2_HOME" value="C:\Users\vsankar\Desktop\Vinoth\Automation\Jenkins\Maven\apache-maven-3.6.0-bin\apache-maven-3.6.0"/>
+    <property name="WINSW_EXECUTABLE" value="C:\Program Files (x86)\Jenkins\jenkins.exe"/>
+    <property name="enable_browserstack" value="true"/>
+    <property name="LOCALAPPDATA" value="C:\Windows\system32\config\systemprofile\AppData\Local"/>
+    <property name="POM_PACKAGING" value="jar"/>
+    <property name="USERDOMAIN" value="CLASSIC"/>
+    <property name="path.separator" value=";"/>
+    <property name="BUILD_ID" value="130"/>
+    <property name="os.version" value="6.1"/>
+    <property name="BASE" value="C:\Program Files (x86)\Jenkins"/>
+    <property name="JOB_NAME" value="PCH_FrontPage_V3_Desktop"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="NODE_LABELS" value="master"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="PATH+JDK" value="C:\Program Files\Java\jdk-11.0.2/bin"/>
+    <property name="CommonProgramFiles" value="C:\Program Files (x86)\Common Files"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.java.com/bugreport/"/>
+    <property name="OS" value="Windows_NT"/>
+    <property name="user.dir" value="C:\Users\vsankar\Desktop\Vinoth\Automation\Eclipse\Workspaces\PCH\PCH_FrontPage_V3_Desktop"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="EXECUTOR_NUMBER" value="1"/>
+    <property name="HUDSON_SERVER_COOKIE" value="79a2b53e747b9e3c"/>
+    <property name="PROCESSOR_REVISION" value="3e04"/>
+    <property name="CLASSPATH" value=""/>
+    <property name="CommonProgramW6432" value="C:\Program Files\Common Files"/>
+    <property name="device_to_launch" value="Desktop"/>
+    <property name="SystemRoot" value="C:\Windows"/>
+    <property name="TEMP" value="C:\Windows\TEMP"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vm.version" value="11.0.2+9-LTS"/>
+    <property name="USERPROFILE" value="C:\Windows\system32\config\systemprofile"/>
+    <property name="TMP" value="C:\Windows\TEMP"/>
+    <property name="CommonProgramFiles(x86)" value="C:\Program Files (x86)\Common Files"/>
+    <property name="java.class.version" value="55.0"/>
+  </properties>
+  <testcase name="verify_entry_message_on_latest_activity_tab" classname="com.miscellaneous.EcParameterTests" time="102.167">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at com.miscellaneous.EcParameterTests.verify_entry_message_on_latest_activity_tab(EcParameterTests.java:34)
+</failure>
+    <system-out><![CDATA[System Properties
+STG
+Desktop
+Chrome
+true
+138
+...
+... TestNG 6.9.10 by Cédric Beust (cedric@beust.com)
+...
+
+Running Before test
+Running Before test
+Running Before test
+Running Before test
+Running Before test
+Running Before test
+Running Before test
+Running Before test
+Running Before test
+Running Before test
+File is deleted : C:\Windows\system32\config\systemprofile\Logs
+File is deleted : C:\Windows\system32\config\systemprofile\Logs
+File is deleted : C:\Windows\system32\config\systemprofile\Logs
+File is deleted : C:\Windows\system32\config\systemprofile\Logs
+File is deleted : C:\Windows\system32\config\systemprofile\Logs
+File is deleted : C:\Windows\system32\config\systemprofile\Logs
+File is deleted : C:\Windows\system32\config\systemprofile\Logs
+File is deleted : C:\Windows\system32\config\systemprofile\Logs
+File is deleted : C:\Windows\system32\config\systemprofile\Logs
+File is deleted : C:\Windows\system32\config\systemprofile\Logs
+TEST NUMBER: 1 IS INITIALIZED. TEST DESCRIPTION IS: Verify Lottery page links and navigations - Unrecognized user
+StepNo: 1 is initialized. Step decription is: Navigate the Lottery page and verify the lottery header
+TEST NUMBER: 1 IS INITIALIZED. TEST DESCRIPTION IS: Verify the Claim button for Social user on all the pages
+StepNo: 1 is initialized. Step decription is: Create new FB user and verify the article page text - Complete Registration now to earn tokens for enjoying articles!
+TEST NUMBER: 3 IS INITIALIZED. TEST DESCRIPTION IS: Verify the Video details on Video log table after plays the Video for Full Reg user
+StepNo: 1 is initialized. Step decription is: Create a Full Reg user
+TEST NUMBER: 1 IS INITIALIZED. TEST DESCRIPTION IS: Verify the Contest Entries for Registration and First Search for Full Reg user
+StepNo: 1 is initialized. Step decription is: Navigate to Joomla admin and retrieve the Contest Key details
+TEST NUMBER: 1 IS INITIALIZED. TEST DESCRIPTION IS: Verify the Article page
+StepNo: 1 is initialized. Step decription is: Create a Full Reg. user
+TEST NUMBER: 1 IS INITIALIZED. TEST DESCRIPTION IS: Verify the Welcome LightBox for Recognised User
+StepNo: 1 is initialized. Step decription is: Create a Full reg user and verify the Welcome Light Box.
+TEST NUMBER: 1 IS INITIALIZED. TEST DESCRIPTION IS: Verify the VIP call trigger order in presence of lightbox
+StepNo: 1 is initialized. Step decription is: Navigate to admin and publish global vip article & disable existing vip badge
+TEST NUMBER: 1 IS INITIALIZED. TEST DESCRIPTION IS: Verify the Sub Category page scenarios
+StepNo: 1 is initialized. Step decription is: Navigate to frontpage and sign-in with valid credentials
+TEST NUMBER: 1 IS INITIALIZED. TEST DESCRIPTION IS: Verify the Entry message in the Latest activity tab by passing Ec parameter in URL
+StepNo: 1 is initialized. Step decription is: Navigate to Frontpage and sign-in with valid credentials
+StepNo: 1 is Completed.
+StepNo: 2 is initialized. Step decription is: Change Lottery location and verify the text
+StepNo: 1 is Completed.
+StepNo: 2 is initialized. Step decription is: Create a Full Reg. user
+StepNo: 2 is Completed.
+StepNo: 3 is initialized. Step decription is: Verfiy the last draw date and next draw date
+StepNo: 1 is Completed.
+StepNo: 2 is initialized. Step decription is: Register a user
+Next draw dateSat Mar 16 23:59:59 IST 2019
+Current date: Tue Mar 19 10:03:36 IST 2019
+Wed Mar 20 23:59:59 IST 2019
+Tue Mar 19 10:03:46 IST 2019
+StepNo: 3 is Completed.
+StepNo: 4 is initialized. Step decription is: Verfiy past results page
+Next draw dateSat Mar 16 23:59:59 IST 2019
+Current date: Tue Mar 19 10:04:01 IST 2019
+Newly Registered Email is :: PCHAutocxijf201951@pchmail.com
+Wed Mar 20 23:59:59 IST 2019
+Tue Mar 19 10:04:03 IST 2019
+StepNo: 1 is Completed.
+StepNo: 2 is initialized. Step decription is: Navigate to each Sub-Catagory page
+Newly Registered Email is :: PCHAutoqpcnu201949@pchmail.com
+StepNo: 1 is Completed.
+StepNo: 2 is initialized. Step decription is: Click on Learn More link and verify the Redirection page
+StepNo: 4 is Completed.
+StepNo: 5 is initialized. Step decription is: Verfiy payouts page
+StepNo: 1 is Completed.
+StepNo: 2 is initialized. Step decription is: Verify the videos section for claim token button not displayed
+]]></system-out>
+    <system-err><![CDATA[log4j:WARN No appenders could be found for logger (com.util.BaseClass).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+]]></system-err>
+  </testcase>
+  <testcase name="verify_lottery_page_unrecognized_user" classname="com.lottery.LotteryTests" time="8.376"/>
+  <testcase name="verify_page_articles_count" classname="com.miscellaneous.SubCategoryMenuTests" time="21.999"/>
+  <testcase name="verify_welcome_lb_for_rec_user" classname="com.lightbox.WelcomeLightBoxTests" time="16.053"/>
+  <testcase name="verify_contest_entry_full_reg" classname="com.contestentry.ContestEntryTests" time="69.062">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at com.contestentry.ContestEntryTests.verify_contest_entry_full_reg(ContestEntryTests.java:102)
+</failure>
+    <system-out><![CDATA[StepNo: 1 is Completed.
+StepNo: 2 is initialized. Step decription is: Verify the daily Bonus Game Info window
+StepNo: 3 is Completed.
+StepNo: 4 is initialized. Step decription is: Verify the Video log by watch a Video from all the Sub-Category pages
+StepNo: 3 is Completed.
+StepNo: 4 is initialized. Step decription is: Verify the weather section for claim token button not displayed
+StepNo: 2 is Completed.
+StepNo: 3 is initialized. Step decription is: Do a first search and Verify the algo NFSP value
+StepNo: 1 is Completed.
+StepNo: 2 is initialized. Step decription is: Create a Full Reg user from CS page
+Entered into finally block
+StepNo: 2 is Completed.
+StepNo: 3 is initialized. Step decription is: Login to the application with the Seg Id and do a first search
+StepNo: 5 is Completed.
+StepNo: 6 is initialized. Step decription is: Verify the VIP call trigger order by considering the Create Password lightbox of Silver user
+StepNo: 2 is Completed.
+StepNo: 3 is initialized. Step decription is: Search a String and verify the daily bonus game Step-1 is unlocked.
+]]></system-out>
+  </testcase>
+  <testcase name="verify_nfsp_for_algo_only_segment_gold_user" classname="com.nfsp.NFSPSegmentTests" time="70.247">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at com.nfsp.NFSPSegmentTests.searchAndVerifyNFSP(NFSPSegmentTests.java:82)
+	at com.nfsp.NFSPSegmentTests.verify_nfsp_for_algo_only_segment_gold_user(NFSPSegmentTests.java:124)
+</failure>
+    <system-out><![CDATA[Test result:FAIL
+]]></system-out>
+  </testcase>
+  <testcase name="verify_video_details_on_video_log_for_full_reg" classname="com.miscellaneous.VideoTests" time="1.136"/>
+  <testcase name="verify_article_page" classname="com.miscellaneous.ArticleTests" time="0.81">
+    <failure message="By.cssSelector: p.uninav__msg__desc NoSuchElementException NOT FOUND. TEST FAILED." type="java.lang.AssertionError">java.lang.AssertionError: By.cssSelector: p.uninav__msg__desc NoSuchElementException NOT FOUND. TEST FAILED.
+	at com.miscellaneous.ArticleTests.verify_article_page(ArticleTests.java:89)
+</failure>
+    <system-out><![CDATA[StepNo: 4 is Completed.
+StepNo: 5 is initialized. Step decription is: Do a search and verify the progress bar
+TEST NUMBER: 2 IS INITIALIZED. TEST DESCRIPTION IS: Verify the Contest Entries for Registration and First Search for Mini Reg user
+StepNo: 1 is initialized. Step decription is: Navigate to Joomla admin and retrieve the Contest Key details
+]]></system-out>
+  </testcase>
+  <testcase name="verify_bonus_game_bar" classname="com.miscellaneous.ScratchPathTests" time="8.003">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at com.miscellaneous.ScratchPathTests.verify_bonus_game_bar(ScratchPathTests.java:63)
+</failure>
+    <system-out><![CDATA[Test result:FAIL
+StepNo: 1 is initialized. Step decription is: Create a Mini Reg user
+StepNo: 4 is Completed.
+StepNo: 5 is initialized. Step decription is: Revert back the Admin changes
+]]></system-out>
+  </testcase>
+  <testcase name="verify_claim_button_on_all_pages_for_social_user" classname="com.usertypes.UserTests" time="2.885">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at com.usertypes.UserTests.verify_claim_button_on_all_pages_for_social_user(UserTests.java:76)
+</failure>
+    <system-out><![CDATA[Test result:FAIL
+StepNo: 1 is initialized. Step decription is: Verify the Error message by passing a Image URL
+StepNo: 2 is initialized. Step decription is: Verify the Error message by passing a Invalid Lottery state code in the URL
+StepNo: 3 is initialized. Step decription is: Verify the Lottery FP content Cache storage by modifying the Config.
+StepNo: 1 is Completed.
+StepNo: 2 is initialized. Step decription is: Create a Mini Reg. user and complete the registration
+StepNo: 4 is initialized. Step decription is: Verify the Lottery FP content Cache storage by modifying the Config.
+TEST NUMBER: 1 IS INITIALIZED. TEST DESCRIPTION IS: Verify the NFSP value for UnRecognised User after 6 search
+StepNo: 1 is initialized. Step decription is: Search a keyword and Verify the SERP
+StepNo: 5 is Completed.
+TEST NUMBER: 2 IS INITIALIZED. TEST DESCRIPTION IS: B-49294 Move triple ad on Article pages to DFP Tag
+StepNo: 1 is initialized. Step decription is: Login to the FP with valid user
+]]></system-out>
+  </testcase>
+  <testcase name="verify_vip_call_trigger_order" classname="com.vip.VipTests" time="4.69"/>
+  <testcase name="verify_tokens_seg_id" classname="com.awardtokens.SegIdTokens" time="8.939">
+    <failure message="expected [1] but found [0]" type="java.lang.AssertionError">java.lang.AssertionError: expected [1] but found [0]
+	at com.awardtokens.SegIdTokens.verify_tokens_seg_id(SegIdTokens.java:73)
+</failure>
+  </testcase>
+  <testcase name="verify_search_box_redirection" classname="com.search.SearchTests" time="23.963"/>
+  <testcase name="verify_nfsp_after_5_search_for_unrec_user" classname="com.nfsp.NFSPTests" time="38.911"/>
+  <testcase name="verify_rapid_lb_for_rec_user" classname="com.lightbox.HighRiskLightboxTests" time="74.01"/>
+  <testcase name="verify_video_details_on_video_log_for_mini_reg" classname="com.miscellaneous.VideoTests" time="85.951">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at com.miscellaneous.VideoTests.verify_video_details_on_video_log_for_mini_reg(VideoTests.java:355)
+</failure>
+    <system-out><![CDATA[StepNo: 1 is Completed.
+StepNo: 2 is initialized. Step decription is: Navigate to article page from top stories section
+]]></system-out>
+  </testcase>
+  <testcase name="verify_nfsp_specific_segment_for_gold_user" classname="com.nfsp.NFSPSegmentTests" time="91.173"/>
+  <testcase name="verify_article_page_bottom_dfp_ad" classname="com.miscellaneous.ArticleTests" time="99.526"/>
+  <testcase name="verify_credit_token_queue" classname="com.awardtokens.TokenQueueTests" time="32.509">
+    <failure message="expected [FRONTPAGE] but found [PCHREWARDS]" type="java.lang.AssertionError">java.lang.AssertionError: expected [FRONTPAGE] but found [PCHREWARDS]
+	at com.awardtokens.TokenQueueTests.verify_credit_token_queue(TokenQueueTests.java:65)
+</failure>
+    <system-out><![CDATA[TEST NUMBER: 2 IS INITIALIZED. TEST DESCRIPTION IS: Verify the default NFSP value for Recognised User
+StepNo: 1 is initialized. Step decription is: Navigate to frontpage.qa.pch.com  and sign-in with valid credentials
+StepNo: 3 is Completed.
+StepNo: 4 is initialized. Step decription is: Login to the OAM tool to verify Registration contest key
+TEST NUMBER: 3 IS INITIALIZED. TEST DESCRIPTION IS: Move teads ad within article pages to DFP [D&T],B-29394 [MT] Replace In Line Ad on Article Page with Teads ad - IOS_Copy_1
+StepNo: 1 is initialized. Step decription is: Login to the FP with valid user
+Newly Registered Email is :: PCHAutobrpkh201948@pchmail.com
+StepNo: 1 is initialized. Step decription is: Create a Silver user
+StepNo: 2 is Completed.
+StepNo: 3 is initialized. Step decription is: Verify the Token details in the queue for Registration
+Entered finally block
+delete_sweeps complete for Sweepstakes Recipe 1 & Sweepstakes edl Recipe Completed
+StepNo: 4 is Completed.
+StepNo: 5 is initialized. Step decription is: Verify the Contest Entry for the Registration
+]]></system-out>
+  </testcase>
+  <testcase name="verify_the_registration_form_for_social_user" classname="com.usertypes.UserTests" time="36.022">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at com.usertypes.UserTests.verify_the_registration_form_for_social_user(UserTests.java:123)
+</failure>
+    <system-out><![CDATA[Test result:FAIL
+]]></system-out>
+  </testcase>
+  <testcase name="verify_lottery_page_recognized_user" classname="com.lottery.LotteryTests" time="23.741">
+    <failure message="For input string: &quot;Loading...&quot;" type="java.lang.NumberFormatException">java.lang.NumberFormatException: For input string: "Loading..."
+	at com.lottery.LotteryTests.verify_lottery_page_recognized_user(LotteryTests.java:125)
+</failure>
+    <system-out><![CDATA[Test result:FAIL
+TEST NUMBER: 1 IS INITIALIZED. TEST DESCRIPTION IS: Verify the Birthday token scenarios
+StepNo: 1 is initialized. Step decription is: Login to Joomla and verify
+TEST NUMBER: 3 IS INITIALIZED. TEST DESCRIPTION IS: Verify the Claim button on all pages for the Mini Reg user
+StepNo: 1 is initialized. Step decription is: Create new Mini Reguser and go to FP and verify the article page text - Complete Registration now to earn tokens for enjoying articles!
+StepNo: 1 is Completed.
+StepNo: 2 is initialized. Step decription is: Create a full reg user with current date as dob from Frontpage application
+Newly Registered Email is :: PCHAutolebrs201957@pchmail.com
+Registration contest entires not updated in OAM for Mini Reg user: PCHAutosolyj201956@pchmail.com
+StepNo: 5 is Completed.
+StepNo: 6 is initialized. Step decription is: Do a First Search
+StepNo: 2 is initialized. Step decription is: Verify the Video log by watch a Featured Video
+]]></system-out>
+  </testcase>
+  <testcase name="verify_contest_entry_mini_reg" classname="com.contestentry.ContestEntryTests" time="19.758">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at com.contestentry.ContestEntryTests.verify_contest_entry_mini_reg(ContestEntryTests.java:199)
+</failure>
+    <system-out><![CDATA[Test result:FAIL
+TEST NUMBER: 2 IS INITIALIZED. TEST DESCRIPTION IS: Verify the Hourly Forecast section details with Ad refresh
+StepNo: 1 is initialized. Step decription is: Verify the presence of Hourly Forecast section
+delete_sweeps complete for Sweepstakes Health 1 & Sweepstakes edl health Completed
+StepNo: 1 is Completed.
+StepNo: 2 is initialized. Step decription is: Search a keyword and Verify the SERP
+]]></system-out>
+  </testcase>
+  <testcase name="verify_error_msg_cache_content_on_pages" classname="com.miscellaneous.ErrorHandlingTests" time="24.607">
+    <failure message="By.id: art_state LISTBOX NOT FOUND. TEST FAILED." type="java.lang.AssertionError">java.lang.AssertionError: By.id: art_state LISTBOX NOT FOUND. TEST FAILED.
+	at com.miscellaneous.ErrorHandlingTests.verify_error_msg_cache_content_on_pages(ErrorHandlingTests.java:249)
+</failure>
+    <system-out><![CDATA[Test result:FAIL
+StepNo: 1 is Completed.
+StepNo: 2 is initialized. Step decription is: Navigate to article page from top stories section
+]]></system-out>
+  </testcase>
+  <testcase name="verify_default_nfsp_for_rec_user" classname="com.nfsp.NFSPTests" time="28.904"/>
+  <testcase name="verify_video_details_on_video_log_for_silver_user" classname="com.miscellaneous.VideoTests" time="25.008">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at com.miscellaneous.VideoTests.verify_video_details_on_video_log_for_silver_user(VideoTests.java:468)
+</failure>
+    <system-out><![CDATA[TEST NUMBER: 3 IS INITIALIZED. TEST DESCRIPTION IS: Verify the Contest Entries for Registration and First Search for Silver Reg user
+StepNo: 1 is initialized. Step decription is: Navigate to Joomla admin and retrieve the Contest Key details
+TEST NUMBER: 3 IS INITIALIZED. TEST DESCRIPTION IS: Verify the NFSP value for segment user
+StepNo: 1 is initialized. Step decription is: Create a gold user and login
+StepNo: 1 is Completed.
+StepNo: 2 is initialized. Step decription is: Verify the videos section for claim token button not displayed
+StepNo: 2 is Completed.
+StepNo: 3 is initialized. Step decription is: Verify the Teads ad
+StepNo: 3 is Completed.
+StepNo: 4 is initialized. Step decription is: Navigate to Joomla admin and disable the Article Teads Ad
+StepNo: 1 is initialized. Step decription is: Navigate to Joomla admin and modify the FP content API url and message
+Newly Registered Email is :: PCHAutoimflr201918@pchmail.com
+StepNo: 1 is Completed.
+StepNo: 2 is initialized. Step decription is: Launch URL with different NFSP and Verify NFSP value in browser console
+StepNo: 1 is Completed.
+StepNo: 2 is initialized. Step decription is: Create a Silver user and complete the registration
+]]></system-out>
+  </testcase>
+  <testcase name="birthday_tokens" classname="com.awardtokens.BirthdayTests" time="73.942">
+    <failure message="expected [1] but found [0]" type="java.lang.AssertionError">java.lang.AssertionError: expected [1] but found [0]
+	at com.awardtokens.BirthdayTests.birthday_tokens(BirthdayTests.java:64)
+</failure>
+    <system-out><![CDATA[Test result:FAIL
+StepNo: 1 is initialized. Step decription is: Create a Full Reg. user
+StepNo: 4 is Completed.
+StepNo: 5 is initialized. Step decription is: Verify the Teads ad
+StepNo: 2 is initialized. Step decription is: Navigate to application homepage and verify the FP Content error message
+StepNo: 2 is Completed.
+StepNo: 3 is initialized. Step decription is: Do a first search and Verify NFSP value
+StepNo: 1 is initialized. Step decription is: Create a Social user
+StepNo: 3 is initialized. Step decription is: Verify the FP Content error message on all the Category pages
+StepNo: 3 is Completed.
+StepNo: 4 is initialized. Step decription is: Do a second search and Verify NFSP value
+delete_sweeps complete for Sweepstakes Comics 1 & Sweepstakes edl Comics Completed
+StepNo: 4 is Completed.
+StepNo: 5 is initialized. Step decription is: Login and Verify the default NFSP value
+StepNo: 4 is initialized. Step decription is: Verify the FP Content error message on all the Sub-Category pages
+StepNo: 2 is initialized. Step decription is: Verify the Optin LB
+]]></system-out>
+  </testcase>
+  <testcase name="verify_article_page_teads_ad" classname="com.miscellaneous.ArticleTests" time="74.33"/>
+  <testcase name="verify_hourly_forecast_details" classname="com.weather.WeatherTests" time="0.89">
+    <failure message="By.cssSelector: input.weather-locationAndZip__zip_submit NoSuchElementException NOT FOUND. TEST FAILED." type="java.lang.AssertionError">java.lang.AssertionError: By.cssSelector: input.weather-locationAndZip__zip_submit NoSuchElementException NOT FOUND. TEST FAILED.
+	at com.weather.WeatherTests.verify_hourly_forecast_details(WeatherTests.java:179)
+</failure>
+    <system-out><![CDATA[StepNo: 2 is initialized. Step decription is: Verify the Video log by watch a Featured Video
+StepNo: 3 is initialized. Step decription is: Verify the Optin LB for the same user
+TEST NUMBER: 4 IS INITIALIZED. TEST DESCRIPTION IS: Verify the Story details on Story log table after reads the story for Full Reg user
+StepNo: 1 is initialized. Step decription is: Create a Full Reg user
+StepNo: 1 is initialized. Step decription is: Navigate to frontpage.qa.pch.com and sign-in with valid credentials
+]]></system-out>
+  </testcase>
+  <testcase name="verify_video_details_on_video_log_for_social_user" classname="com.miscellaneous.VideoTests" time="8.092">
+    <failure message="Index 0 out of bounds for length 0" type="java.lang.IndexOutOfBoundsException">java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
+	at com.miscellaneous.VideoTests.verify_video_details_on_video_log_for_social_user(VideoTests.java:580)
+</failure>
+    <system-out><![CDATA[Test result:FAIL
+TEST NUMBER: 2 IS INITIALIZED. TEST DESCRIPTION IS: frontpage redesign-SERP Integration
+StepNo: 1 is initialized. Step decription is: Navigate to frontpage and search with valid term
+]]></system-out>
+  </testcase>
+  <testcase name="verify_error_msg_on_fpcontent_down" classname="com.miscellaneous.ErrorHandlingTests" time="9.662">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at com.miscellaneous.ErrorHandlingTests.verify_error_msg_on_fpcontent_down(ErrorHandlingTests.java:81)
+</failure>
+    <system-out><![CDATA[Test result:FAIL
+]]></system-out>
+  </testcase>
+  <testcase name="verify_claim_button_on_all_pages_for_mini_reg_user" classname="com.usertypes.UserTests" time="33.688">
+    <failure message="timeout&#10;  (Session info: chrome=71.0.3578.80)&#10;  (Driver info: chromedriver=2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90),platform=Windows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 200.24 seconds&#10;Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 17:00:58&apos;&#10;System info: host: &apos;207-254-10-161&apos;, ip: &apos;207.254.10.161&apos;, os.name: &apos;windows&apos;, os.arch: &apos;x86&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:2543}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90), userDataDir=C:\Windows\proxy\scoped_dir6316_42}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=71.0.3578.80, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]&#10;Session ID: ccef8b987ab9ccd0b1175c5a3ed386e1&#10;Command duration or timeout: 0 milliseconds" type="org.openqa.selenium.ScriptTimeoutException">org.openqa.selenium.ScriptTimeoutException: 
+timeout
+  (Session info: chrome=71.0.3578.80)
+  (Driver info: chromedriver=2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90),platform=Windows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 200.24 seconds
+Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 17:00:58'
+System info: host: '207-254-10-161', ip: '207.254.10.161', os.name: 'windows', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:2543}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90), userDataDir=C:\Windows\proxy\scoped_dir6316_42}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=71.0.3578.80, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: ccef8b987ab9ccd0b1175c5a3ed386e1
+Command duration or timeout: 0 milliseconds
+	at com.usertypes.UserTests.verify_claim_button_on_all_pages_for_mini_reg_user(UserTests.java:148)
+Caused by: org.openqa.selenium.remote.ScreenshotException: Screen shot has been taken
+	at com.usertypes.UserTests.verify_claim_button_on_all_pages_for_mini_reg_user(UserTests.java:148)
+Caused by: org.openqa.selenium.TimeoutException: 
+timeout
+  (Session info: chrome=71.0.3578.80)
+  (Driver info: chromedriver=2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90),platform=Windows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 200.24 seconds
+Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 17:00:58'
+System info: host: '207-254-10-161', ip: '207.254.10.161', os.name: 'windows', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:2543}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90), userDataDir=C:\Windows\proxy\scoped_dir6316_42}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=71.0.3578.80, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: ccef8b987ab9ccd0b1175c5a3ed386e1
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'VSANKAR2', ip: '10.37.0.236', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '11.0.2'
+Driver info: driver.version: EventFiringWebDriver
+</failure>
+    <system-out><![CDATA[Test result:FAIL
+delete_sweeps complete for Sweepstakes Lifehacks 1 & Sweepstakes edl Lifehacks Completed
+TEST NUMBER: 2 IS INITIALIZED. TEST DESCRIPTION IS: Verify the Promotion campaign email's
+StepNo: 1 is initialized. Step decription is: Create a Full Reg user
+StepNo: 2 is Completed.
+StepNo: 3 is initialized. Step decription is: Login to the OAM tool to verify Registration contest key
+StepNo: 1 is initialized. Step decription is: Login to the FP with valid user
+StepNo: 1 is Completed.
+StepNo: 2 is initialized. Step decription is: Verify pagination links and their functionality
+StepNo: 1 is Completed.
+StepNo: 2 is initialized. Step decription is: Append the Promotion campaign details to the user and verify it
+StepNo: 1 is Completed.
+StepNo: 2 is initialized. Step decription is: Navigate to each Catagory page on Joomla admin to add a new Sub category list
+StepNo: 2 is Completed.
+StepNo: 3 is initialized. Step decription is: Validate the In-line Shopping Ads carousel.
+StepNo: 3 is Completed.
+StepNo: 4 is initialized. Step decription is: Verify the Contest Entry for the Registration
+]]></system-out>
+  </testcase>
+  <testcase name="verify_serp_pagination_carousel_shopping" classname="com.search.SearchTests" time="55.197"/>
+  <testcase name="verify_nfsp_in_url_for_gold_user" classname="com.nfsp.NFSPSegmentTests" time="0.965"/>
+  <testcase name="verfiy_newly_added_sub_category" classname="com.miscellaneous.CategoryMenuTests" time="1.151"/>
+  <testcase name="verify_contest_entry_silver_user" classname="com.contestentry.ContestEntryTests" time="31.205">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at com.contestentry.ContestEntryTests.verify_contest_entry_silver_user(ContestEntryTests.java:294)
+</failure>
+    <system-out><![CDATA[TEST NUMBER: 2 IS INITIALIZED. TEST DESCRIPTION IS: Verify the Native Ad's are displayed in Sub Category page as per Admin configurations.
+StepNo: 1 is initialized. Step decription is: Navigate to frontpage and sign-in with valid credentials
+TEST NUMBER: 3 IS INITIALIZED. TEST DESCRIPTION IS: Verify the NFSP for Recognised User after 27th search
+StepNo: 1 is initialized. Step decription is: Navigate to frontpage.qa.pch.com and sign-in with valid credentials
+StepNo: 4 is initialized. Step decription is: Verify the Optin LB after modifying the DB value
+TEST NUMBER: 3 IS INITIALIZED. TEST DESCRIPTION IS: Verify display of Lottery page Ad's
+StepNo: 1 is initialized. Step decription is: Login as a Recognised user
+delete_sweeps complete for Sweepstakes Pets 1 & Sweepstakes edl Pets Completed
+]]></system-out>
+  </testcase>
+  <testcase name="verify_promotion_campaign_email" classname="com.miscellaneous.EcParameterTests" time="38.049">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at com.miscellaneous.EcParameterTests.verify_promotion_campaign_email(EcParameterTests.java:74)
+</failure>
+    <system-out><![CDATA[Test result:FAIL
+]]></system-out>
+  </testcase>
+  <testcase name="verify_optin_lb_for_full_reg_user" classname="com.lightbox.OptinLightboxTests" time="42.15"/>
+  <testcase name="verify_native_ad_positioning" classname="com.miscellaneous.SubCategoryMenuTests" time="41.419"/>
+  <testcase name="verify_ads_on_lottery_page" classname="com.lottery.LotteryTests" time="21.185"/>
+  <testcase name="verify_nfsp_for_rec_user_after_27_search" classname="com.nfsp.NFSPTests" time="23.699"/>
+  <testcase name="verify_ad_refresh_on_video_page" classname="com.miscellaneous.VideoTests" time="25.02">
+    <failure message="null" type="java.lang.AssertionError">java.lang.AssertionError: null
+	at com.miscellaneous.VideoTests.verify_ad_refresh_on_video_page(VideoTests.java:768)
+</failure>
+  </testcase>
+  <testcase name="verify_ads_on_homepage" classname="com.miscellaneous.OurPicksTests" time="0.844"/>
+  <testcase name="play_scratch_path_games" classname="com.miscellaneous.ScratchPathTests" time="0">
+    <skipped message="Method ScratchPathTests.play_scratch_path_games()[pri:2, instance:com.miscellaneous.ScratchPathTests@63f9cb25] depends on not successfully finished methods"/>
+  </testcase>
+  <testcase name="verify_story_details_on_story_log_for_full_reg" classname="com.miscellaneous.ArticleTests" time="20.075"/>
+  <testcase name="verify_complete_registration_lb_for_mini_reg" classname="com.lightbox.CompleteRegistrationLightboxTests" time="16.238"/>
+  <testcase name="verify_ads_on_sub_category_page" classname="com.miscellaneous.SubCategoryMenuTests" time="40.943"/>
+  <testcase name="verify_daily_forecast_details" classname="com.weather.WeatherTests" time="3.198"/>
+  <testcase name="verify_native_gpt_ad_positioning" classname="com.miscellaneous.CategoryMenuTests" time="92.953"/>
+  <testcase name="verify_contest_entry_social_user" classname="com.contestentry.ContestEntryTests" time="1.468">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at com.contestentry.ContestEntryTests.verify_contest_entry_social_user(ContestEntryTests.java:392)
+</failure>
+    <system-out><![CDATA[StepNo: 1 is initialized. Step decription is: Navigate to FP and sign-in with valid credentials
+]]></system-out>
+  </testcase>
+  <testcase name="verify_claim_button_on_all_pages_for_silver_user" classname="com.usertypes.UserTests" time="7.046">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at com.usertypes.UserTests.verify_claim_button_on_all_pages_for_silver_user(UserTests.java:254)
+</failure>
+    <system-out><![CDATA[Test result:FAIL
+config_sweeps complete for Sweepstakes Pets 1 & Sweepstakes edl Pets Completed & dp123
+TEST NUMBER: 5 IS INITIALIZED. TEST DESCRIPTION IS: Verify the Contest Entries for First Search by having TC & V and not CK in query string
+StepNo: 1 is initialized. Step decription is: Navigate to Joomla admin and retrieve the Contest Key details
+]]></system-out>
+  </testcase>
+  <testcase name="verify_register_lb_for_unrec_user" classname="com.lightbox.SignInRegisterLightboxTests" time="36.416"/>
+  <testcase name="verify_inhouse_ads" classname="com.search.SearchTests" time="38.398">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at com.search.SearchTests.verify_inhouse_ads(SearchTests.java:188)
+</failure>
+    <system-out><![CDATA[config_sweeps complete for Sweepstakes Trending 1 & Sweepstakes edl Trending Completed & dt123
+]]></system-out>
+  </testcase>
+  <testcase name="verify_nfsp_for_algo_only_segment_silver_user" classname="com.nfsp.NFSPSegmentTests" time="41.001"/>
+  <testcase name="verify_top_story_native_ad" classname="com.miscellaneous.CategoryMenuTests" time="35.774"/>
+  <testcase name="verify_ads_on_video_page" classname="com.miscellaneous.VideoTests" time="44.477">
+    <failure message="timeout&#10;  (Session info: chrome=71.0.3578.80)&#10;  (Driver info: chromedriver=2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 200.09 seconds&#10;Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 17:00:58&apos;&#10;System info: host: &apos;208-52-164-82&apos;, ip: &apos;208.52.164.82&apos;, os.name: &apos;windows&apos;, os.arch: &apos;x86&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:2502}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90), userDataDir=C:\Windows\proxy\scoped_dir4592_13773}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=71.0.3578.80, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]&#10;Session ID: 18cee9e79dd2e6119c0d453796dbb973&#10;Command duration or timeout: 0 milliseconds" type="org.openqa.selenium.ScriptTimeoutException">org.openqa.selenium.ScriptTimeoutException: 
+timeout
+  (Session info: chrome=71.0.3578.80)
+  (Driver info: chromedriver=2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 200.09 seconds
+Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 17:00:58'
+System info: host: '208-52-164-82', ip: '208.52.164.82', os.name: 'windows', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:2502}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90), userDataDir=C:\Windows\proxy\scoped_dir4592_13773}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=71.0.3578.80, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 18cee9e79dd2e6119c0d453796dbb973
+Command duration or timeout: 0 milliseconds
+	at com.miscellaneous.VideoTests.verify_ads_on_video_page(VideoTests.java:838)
+Caused by: org.openqa.selenium.remote.ScreenshotException: Screen shot has been taken
+	at com.miscellaneous.VideoTests.verify_ads_on_video_page(VideoTests.java:838)
+Caused by: org.openqa.selenium.TimeoutException: 
+timeout
+  (Session info: chrome=71.0.3578.80)
+  (Driver info: chromedriver=2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 200.09 seconds
+Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 17:00:58'
+System info: host: '208-52-164-82', ip: '208.52.164.82', os.name: 'windows', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:2502}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90), userDataDir=C:\Windows\proxy\scoped_dir4592_13773}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=71.0.3578.80, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 18cee9e79dd2e6119c0d453796dbb973
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'VSANKAR2', ip: '10.37.0.236', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '11.0.2'
+Driver info: driver.version: EventFiringWebDriver
+</failure>
+  </testcase>
+  <testcase name="verify_story_details_on_story_log_for_mini_reg" classname="com.miscellaneous.ArticleTests" time="16.421"/>
+  <testcase name="verify_contest_entry_with_tc_v_without_ck" classname="com.contestentry.ContestEntryTests" time="21.207">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at com.contestentry.ContestEntryTests.verify_contest_entry_with_tc_v_without_ck(ContestEntryTests.java:467)
+</failure>
+    <system-out><![CDATA[TEST NUMBER: 6 IS INITIALIZED. TEST DESCRIPTION IS: Verify the Story details on Story log table after reads the story for Silver user
+StepNo: 1 is initialized. Step decription is: Create a Silver user
+StepNo: 2 is Completed.
+StepNo: 3 is initialized. Step decription is: Sign Out & Sign In with the same user and verify Welcome Light Box.
+]]></system-out>
+  </testcase>
+  <testcase name="weather_climate_history" classname="com.weather.WeatherTests" time="2.104"/>
+  <testcase name="verify_nfsp_specific_segment_for_silver_user" classname="com.nfsp.NFSPSegmentTests" time="76.799"/>
+  <testcase name="verify_welcome_lb_for_mini_reg_user" classname="com.lightbox.WelcomeLightBoxTests" time="81.705"/>
+  <testcase name="verify_contest_entry_with_ck_without_tc_v" classname="com.contestentry.ContestEntryTests" time="6.818">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at com.contestentry.ContestEntryTests.verify_contest_entry_with_ck_without_tc_v(ContestEntryTests.java:528)
+</failure>
+    <system-out><![CDATA[StepNo: 3 is Completed.
+StepNo: 4 is initialized. Step decription is: Search a keyword from the Collapsed Search box
+TEST NUMBER: 6 IS INITIALIZED. TEST DESCRIPTION IS: Verify the NFSP value for segment silver user
+StepNo: 1 is initialized. Step decription is: Create a silver user and login
+TEST NUMBER: 2 IS INITIALIZED. TEST DESCRIPTION IS: Verify the 26th Maximum Search LightBox for Recognised User
+StepNo: 1 is initialized. Step decription is: Navigate to Frontpage and sign-in with valid credentials
+StepNo: 3 is Completed.
+StepNo: 4 is initialized. Step decription is: Verify the Story log by read a story from all the Sub-Category pages
+]]></system-out>
+  </testcase>
+  <testcase name="verify_ads_on_category_page" classname="com.miscellaneous.CategoryMenuTests" time="10.396"/>
+  <testcase name="verify_sweepstakes_on_edl_home_page" classname="com.sweepstakes.Sweepstakes" time="13.723"/>
+  <testcase name="verify_collapse_search_box_rec_user" classname="com.search.SearchTests" time="21.559"/>
+  <testcase name="verify_contest_entry_with_mulitple_ck" classname="com.contestentry.ContestEntryTests" time="81.268">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at com.contestentry.ContestEntryTests.verify_contest_entry_with_mulitple_ck(ContestEntryTests.java:583)
+</failure>
+    <system-out><![CDATA[TEST NUMBER: 2 IS INITIALIZED. TEST DESCRIPTION IS: Verify sweepstakes in EDL Recipe page
+StepNo: 1 is initialized. Step decription is: Launch EDL site and sign-in with valid credentials
+TEST NUMBER: 5 IS INITIALIZED. TEST DESCRIPTION IS: Verify display of Weather page Ad's
+StepNo: 1 is initialized. Step decription is: Login as a Recognised user
+StepNo: 1 is Completed.
+StepNo: 2 is initialized. Step decription is: Do a First Search
+]]></system-out>
+  </testcase>
+  <testcase name="verify_story_details_on_story_log_for_silver_user" classname="com.miscellaneous.ArticleTests" time="16.272"/>
+  <testcase name="verify_25th_search_lb" classname="com.lightbox.HighRiskLightboxTests" time="38.648"/>
+  <testcase name="verify_ads_on_weather_page" classname="com.weather.WeatherTests" time="29.915">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at com.weather.WeatherTests.verify_ads_on_weather_page(WeatherTests.java:346)
+</failure>
+    <system-out><![CDATA[StepNo: 3 is Completed.
+StepNo: 4 is initialized. Step decription is: Verify the display of Right Rail Second Ad and the Size
+StepNo: 1 is initialized. Step decription is: Create a Mini Reg. user
+StepNo: 1 is Completed.
+StepNo: 2 is initialized. Step decription is: Navigate to recipe page and verify sweeps presence
+StepNo: 2 is Completed.
+StepNo: 3 is initialized. Step decription is: Play sweeps and verify complete state in recipe page
+StepNo: 2 is initialized. Step decription is: Verify the Optin LB
+]]></system-out>
+  </testcase>
+  <testcase name="verify_sweepstakes_on_edl_recipe_page" classname="com.sweepstakes.Sweepstakes" time="32.519"/>
+  <testcase name="verify_collapse_search_box_unrec_user" classname="com.search.SearchTests" time="2.778"/>
+  <testcase name="verify_nfsp_in_url_for_silver_user" classname="com.nfsp.NFSPSegmentTests" time="51.774"/>
+  <testcase name="verify_openx_banner_rec_user" classname="com.search.SearchTests" time="32.42"/>
+  <testcase name="verify_failed_contest_entry" classname="com.contestentry.ContestEntryTests" time="2.41">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at com.contestentry.ContestEntryTests.verify_failed_contest_entry(ContestEntryTests.java:703)
+</failure>
+    <system-out><![CDATA[TEST NUMBER: 7 IS INITIALIZED. TEST DESCRIPTION IS: Verify the OpenX banner on all the Site Pages for UnRecognised User
+StepNo: 1 is initialized. Step decription is: Verify the OpenX banner on all the SitePages
+]]></system-out>
+  </testcase>
+  <testcase name="verify_vip_activity" classname="com.vip.VipTests" time="4.153">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at com.vip.VipTests.verify_vip_activity(VipTests.java:259)
+</failure>
+    <system-out><![CDATA[Test result:FAIL
+]]></system-out>
+  </testcase>
+  <testcase name="verify_optin_lb_for_mini_reg_user" classname="com.lightbox.OptinLightboxTests" time="11.403"/>
+  <testcase name="verify_openx_banner_unrec_user" classname="com.search.SearchTests" time="5.298"/>
+  <testcase name="verify_story_details_on_story_log_for_social_user" classname="com.miscellaneous.ArticleTests" time="69.312"/>
+  <testcase name="verify_complete_registration_lb_for_silver_user" classname="com.lightbox.CompleteRegistrationLightboxTests" time="23.49"/>
+  <testcase name="verify_contest_entry_invalid_ck_on_admin_valid_on_url" classname="com.contestentry.ContestEntryTests" time="2.079">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at com.contestentry.ContestEntryTests.verify_contest_entry_invalid_ck_on_admin_valid_on_url(ContestEntryTests.java:788)
+</failure>
+    <system-out><![CDATA[StepNo: 1 is initialized. Step decription is: Verify the Register/Sign In LB after navigating 2 articles for Unrecognised user
+StepNo: 2 is Completed.
+StepNo: 3 is initialized. Step decription is: Do a first search and Verify the algo NFSP value
+]]></system-out>
+  </testcase>
+  <testcase name="verify_tokens_for_consecutive_search_for_same_keyword" classname="com.search.SearchTests" time="22.961">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at com.search.SearchTests.verify_tokens_for_consecutive_search_for_same_keyword(SearchTests.java:414)
+</failure>
+    <system-out><![CDATA[Test result:FAIL
+StepNo: 1 is Completed.
+StepNo: 2 is initialized. Step decription is: Validate the SERP and the token amount for the Search
+TEST NUMBER: 10 IS INITIALIZED. TEST DESCRIPTION IS: Verify the Contest Entries by having invalid CK on Query string and valid on admin
+StepNo: 1 is initialized. Step decription is: Navigate to Joomla admin and retrieve the Contest Key details
+StepNo: 3 is Completed.
+StepNo: 4 is initialized. Step decription is: Do a second search and Verify the algo NFSP value
+StepNo: 4 is Completed.
+StepNo: 5 is initialized. Step decription is: Launch URL with different NFSP and Verify the algo NFSP value
+StepNo: 1 is Completed.
+StepNo: 2 is initialized. Step decription is: Create a Full Reg. user from CS and add a CK as Query string
+]]></system-out>
+  </testcase>
+  <testcase name="verify_contest_entry_invalid_ck_on_url_valid_on_admin" classname="com.contestentry.ContestEntryTests" time="104.296">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at com.contestentry.ContestEntryTests.verify_contest_entry_invalid_ck_on_url_valid_on_admin(ContestEntryTests.java:853)
+</failure>
+    <system-out><![CDATA[Test result:FAIL
+Running After test
+StepNo: 2 is initialized. Step decription is: Verify the Sign-In functionality from LB for Unrecognised user
+StepNo: 3 is Completed.
+StepNo: 4 is initialized. Step decription is: verify VIP msg before and after search for Silver user
+StepNo: 2 is Completed.
+StepNo: 3 is initialized. Step decription is: Do a First Search
+VIP message before search: Hi, Scott! Welcome back - you could be winning big in no time!
+Did you know we have a winner every 10 minutes? You could be next! Enter Now
+StepNo: 1 is Completed.
+StepNo: 2 is initialized. Step decription is: Verify the display of Tead Ad and the Size
+VIP message after search: Keep it up, Scott! It’s great to see you enjoying all the ways to win!
+The more you play, the more winning opportunities you unlock! Come back and play everyday and you could become our next BIG WINNER!
+StepNo: 4 is Completed.
+StepNo: 5 is initialized. Step decription is: Register a Mini reg user, login and get VIP message
+StepNo: 2 is Completed.
+StepNo: 3 is initialized. Step decription is: Verify the display of Right Rail Ad's and the Size
+StepNo: 3 is Completed.
+StepNo: 4 is initialized. Step decription is: Verify the display of bottom Native Ad
+]]></system-out>
+  </testcase>
+  <testcase name="verify_ads_on_article_page" classname="com.miscellaneous.ArticleTests" time="106.05"/>
+  <testcase name="verify_nfsp_for_algo_only_segment_mini_reg_user" classname="com.nfsp.NFSPSegmentTests" time="108.278"/>
+  <testcase name="verify_signin_lb_for_unrec_user" classname="com.lightbox.SignInRegisterLightboxTests" time="108.285"/>
+  <testcase name="verify_contest_entry_invalid_tc_on_url_valid_ck_on_admin" classname="com.contestentry.ContestEntryTests" time="110.971">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at com.contestentry.ContestEntryTests.verify_contest_entry_invalid_tc_on_url_valid_ck_on_admin(ContestEntryTests.java:899)
+</failure>
+    <system-out><![CDATA[TEST NUMBER: 3 IS INITIALIZED. TEST DESCRIPTION IS: Verify the Welcome LightBox for Silver User
+StepNo: 1 is initialized. Step decription is: Create a Silver reg user and verify the Welcome Light Box.
+TEST NUMBER: 11 IS INITIALIZED. TEST DESCRIPTION IS: Verify the Contest Entries by having invalid TC & V on Query string and valid CK on admin
+StepNo: 1 is initialized. Step decription is: Navigate to Joomla admin and retrieve the Contest Key details
+TEST NUMBER: 8 IS INITIALIZED. TEST DESCRIPTION IS: Verify the NFSP value for segment mini reg user
+StepNo: 1 is initialized. Step decription is: Create a mini reg user
+StepNo: 1 is Completed.
+StepNo: 2 is initialized. Step decription is: Assign specific segment to user and login
+Segment: SST assigned to PCHAutoeuovm201924@pchmail.com
+StepNo: 1 is Completed.
+StepNo: 2 is initialized. Step decription is: Create a Full Reg. user from CS and add a CK as Query string
+StepNo: 1 is Completed.
+StepNo: 2 is initialized. Step decription is: Click on Learn More link and verify the Redirection page
+StepNo: 2 is Completed.
+StepNo: 3 is initialized. Step decription is: Do a First Search
+StepNo: 2 is Completed.
+StepNo: 3 is initialized. Step decription is: Sign Out & Sign In with the same user and verify Welcome Light Box.
+]]></system-out>
+  </testcase>
+  <testcase name="verify_welcome_lb_for_silver_user" classname="com.lightbox.WelcomeLightBoxTests" time="77.14"/>
+  <testcase name="verify_nfsp_specific_segment_for_mini_reg_user" classname="com.nfsp.NFSPSegmentTests" time="6.462"/>
+  <testcase name="verify_40th_search_lb" classname="com.lightbox.HighRiskLightboxTests" time="130.26"/>
+  <testcase name="verify_contest_entry_queue" classname="com.contestentry.ContestEntryTests" time="0.236">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at com.contestentry.ContestEntryTests.verify_contest_entry_queue(ContestEntryTests.java:958)
+</failure>
+    <system-out><![CDATA[StepNo: 1 is initialized. Step decription is: Create a Social user
+]]></system-out>
+  </testcase>
+  <testcase name="verify_vip_activity_by_search" classname="com.vip.VipTests" time="29.531"/>
+  <testcase name="verify_optin_lb_for_social_user" classname="com.lightbox.OptinLightboxTests" time="95.012"/>
+  <testcase name="verify_bmh_queue" classname="com.contestentry.ContestEntryTests" time="118.81">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at com.contestentry.ContestEntryTests.verify_bmh_queue(ContestEntryTests.java:1063)
+</failure>
+  </testcase>
+  <testcase name="verify_nfsp_in_url_for_mini_reg_user" classname="com.nfsp.NFSPSegmentTests" time="62.832"/>
+  <testcase name="verify_sweepstakes_on_edl_health_page" classname="com.sweepstakes.Sweepstakes" time="32.771"/>
+  <testcase name="verify_complete_registration_lb_for_social_user" classname="com.lightbox.CompleteRegistrationLightboxTests" time="125.652"/>
+  <testcase name="verify_register_signin_lb_for_unrec_user_on_serp" classname="com.lightbox.SignInRegisterLightboxTests" time="61.766"/>
+  <testcase name="verify_sweepstakes_on_edl_comics_page" classname="com.sweepstakes.Sweepstakes" time="32.722"/>
+  <testcase name="verify_nfsp_for_algo_only_segment_social_user" classname="com.nfsp.NFSPSegmentTests" time="71.235"/>
+  <testcase name="verify_welcome_lb_for_social_user" classname="com.lightbox.WelcomeLightBoxTests" time="83.997"/>
+  <testcase name="verify_sweepstakes_on_edl_lifehacks_page" classname="com.sweepstakes.Sweepstakes" time="75.352"/>
+  <testcase name="verify_75th_search_lb" classname="com.lightbox.HighRiskLightboxTests" time="68.447"/>
+  <testcase name="verify_nfsp_specific_segment_for_social_user" classname="com.nfsp.NFSPSegmentTests" time="70.609"/>
+  <testcase name="verify_optin_lb_for_silver_user" classname="com.lightbox.OptinLightboxTests" time="140.764"/>
+  <testcase name="verify_sweepstakes_on_edl_pets_page" classname="com.sweepstakes.Sweepstakes" time="13.536"/>
+  <testcase name="verify_500th_search_lb" classname="com.lightbox.HighRiskLightboxTests" time="192.63"/>
+  <testcase name="verify_sweepstakes_on_edl_trending_page" classname="com.sweepstakes.Sweepstakes" time="236.017"/>
+  <testcase name="verify_nfsp_in_url_for_social_user" classname="com.nfsp.NFSPSegmentTests" time="247.337"/>
+</testsuite>

@@ -1,0 +1,291 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml">
+<head><meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>ConsolidateTestReport</title>
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'/>
+<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300' rel='stylesheet' type='text/css'/>
+<style>
+* { margin:0; padding:0; }
+body { background-color:#FFFFFF; }
+#shell { margin:0; min-width:1000px; }
+#header { width:100%; height:112px; background-color:#1c8888; background-position:right; background-repeat:no-repeat; }
+#header-left { float:left; margin-left:20px; margin-top:38px; }
+#header-left p { font-size:17px; color:#FFFFFF; font-family: 'Roboto', sans-serif; }
+.module-report { font-size:36px; font-family: 'Open Sans', sans-serif; font-weight:600; color:#fbc815; text-transform:uppercase; }
+#header-inner { float:left; margin-left:20px; margin-top:33px; }
+.consolidate-report { font-size:36px; font-family: 'Open Sans', sans-serif; font-weight:600; color:#fbc815; text-transform:uppercase; }
+#logo { float:right; margin-right:85px; margin-top:15px; }
+img { height:20px; width:20px; }
+.content { min-height:527px; height:527px; height:auto !important; }
+#table-datas { margin-left:2%; margin-right:2%; width:96%; margin-top:2%; margin-bottom:2%; float:left; }
+#table-datas table tr th, #table-datas table tr td { border-bottom:1px solid #dddddd; border-right:1px solid #dddddd; }
+#table-datas table { border:1px solid #dddddd; border-right:none; border-bottom:none; }
+#table-datas table tr th { background-color:#5c5c5c; height:33px; color:#FFFFFF; font-size:14px; font-weight:normal; font-family: 'Roboto', sans-serif; }
+#table-datas table tr td { height:24px; }
+.active-color { background-color:#efefef; font-size:13px; font-weight:300; font-family: 'Roboto', sans-serif; }
+.active-color td { padding-left:10px; }
+.inactive-color { background-color:#ffffff; font-size:13px; font-weight:300; font-family: 'Roboto', sans-serif; }
+.inactive-color td { padding-left:10px; }
+.heading { font-size:14px; font-weight:500; color:#179c9c; font-family: 'Roboto', sans-serif; }
+#left-table { float:left; width:47%; margin-left:2%; margin-top:2%; }
+#left-table table tr td { border-bottom:1px solid #dddddd; border-right:1px solid #dddddd; }
+#left-table table { border:1px solid #dddddd; border-right:none; border-bottom:none; }
+#right-piereport { float:right; width:47%; margin-left:2%; margin-top:2%;}
+.left-active-color { background-color:#efefef; height:35px; width:55%; padding-left:20px; font-family: 'Roboto', sans-serif; font-size:13px; color:#000000; font-weight:700; }
+.right-active-color { background-color:#ffffff; height:35px; width:45%; padding-left:20px; font-family: 'Roboto', sans-serif; font-size:13px; color:#2e2e2e; font-weight:400; }
+.results { text-align:center; padding-left:0px !important; }
+#report div.show-exception { background: transparent; display: block;}
+#report div.up { background-position: 0 0;}
+#report tr.exception{ background-color:#FBFBF9;white-space: pre-wrap;font-size:12px;}
+#exception-filters { margin-left:2%; margin-right:2%; width:96%; float:left; margin-top:2%;}
+#exception-left-table { float:left; width:30%; margin-left:2%; margin-top:2%; }
+#exception-left-table table tr td { border-bottom:1px solid #dddddd; border-right:1px solid #dddddd; }
+#exception-left-table table { border:1px solid #dddddd; border-right:none; border-bottom:none; }
+#exception-right-piereport { float:right; width:64%; margin-left:2%; margin-top:2%;}
+.exception-left-active-color { background-color:#efefef; height:35px; width:40%; padding-left:20px; font-family: 'Roboto', sans-serif; font-size:13px; color:#000000; font-weight:700; }
+.exception-right-active-color { background-color:#ffffff; height:35px; width:15%; padding-left:20px; font-family: 'Roboto', sans-serif; font-size:13px; color:#2e2e2e; font-weight:400;}
+#footer { background-color:#2e2e2e; height:35px; }
+#footer-text { width:1000px; margin:0 auto; padding-top:8px; text-align:center; }
+#footer-text span { font-size:12px; color:#FFFFFF; font-weight:300; font-family: 'Roboto', sans-serif; }
+#footer-text span a { color:#FFFFFF;}
+.clearfix:after {	content: "."; display: block;	clear: both; visibility: hidden; line-height: 0; height: 0; }
+.clearfix 		{	display: inline-block; }
+html[xmlns] .clearfix {	display: block; }
+* html .clearfix { height: 1%; }
+</style>
+<script>window.onload=function(){ passed=27; failed=71; skipped=0;}</script>
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<script type="text/javascript">
+google.load("visualization", "1", {packages:["corechart"]});
+google.setOnLoadCallback(drawChart);
+function drawChart(){
+var data = google.visualization.arrayToDataTable([['Test_report', 'Percentage'],['Pass', passed],['Fail', failed],['Skipped', skipped]]);
+var options = {
+legend: { position : 'right', textStyle: {color: 'black', fontSize: 14}},
+chartArea:{left:0,top:0,width:"100%",height:"100%"},
+is3D: true,
+backgroundColor: 'transparent',
+slices: {0: {color: '#B8FF70'}, 1:{color: '#FF6666'}, 2:{color: '#FFFFA3'}},
+pieSliceTextStyle: {color: 'black', fontName: 'Arial', fontSize: '22'}};
+var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
+chart.draw(data, options);}
+</script>
+</head>
+<body><div id="shell"><div id="header"><div id="header-inner"><span class="consolidate-report">Consolidated Suite Report</span></div>
+</div>
+<div class="content clearfix"><div id="left-table"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td class="left-active-color">Executed Browser</td><td class="right-active-color">STG</td></tr>
+<tr><td class="left-active-color">Application Environment</td><td class="right-active-color">FRONTPAGE</td></tr>
+<tr><td class="left-active-color">Platform</td><td class="right-active-color">Windows 7</td></tr>
+<tr><td class="left-active-color">Total Test Cases</td><td class="right-active-color">108</td></tr>
+<tr><td class="left-active-color">Test Cases Passed</td><td class="right-active-color">30</td></tr>
+<tr><td class="left-active-color">Test Cases Failed</td><td class="right-active-color">77</td></tr>
+<tr><td class="left-active-color">Test Cases Skipped</td><td class="right-active-color">1</td></tr>
+<tr><td class="left-active-color">Overall Test Duration (H : M : S)</td><td class="right-active-color">01h:10m:15s</td></tr>
+</table></div>
+<div id="right-piereport">
+<div id="piechart_3d" style="width: 590px; height: 290px;  position: relative;"></div></div>
+<div id="table-datas"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><th width="18%"><strong>Test Name</strong></td>
+<th width="14%"><strong>Total Methods</strong></td><th width="14%"><strong>Methods Passed</strong></td><th width="14%"><strong>Methods Failed</strong></td><th width="14%"><strong>Methods Skipped</strong></td><th width="10%"><strong>%</strong></td><th width="14%"><strong>Total Time (H:M:S)</strong></td></tr>
+<tr class="inactive-color">
+<td align="center"><strong><a href="CompleteRegistrationLightboxTests.html" target="_blank">CompleteRegistrationLightboxTests</a></strong></td>
+<td align="center">3</td>
+<td align="center">3</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">100%</td>
+<td align="center">00h:08m:15s</td></tr>
+<tr class="active-color">
+<td align="center"><strong><a href="HighRiskLightboxTests.html" target="_blank">HighRiskLightboxTests</a></strong></td>
+<td align="center">5</td>
+<td align="center">0</td>
+<td align="center">5</td>
+<td align="center">0</td>
+<td align="center">0%</td>
+<td align="center">00h:13m:09s</td></tr>
+<tr class="inactive-color">
+<td align="center"><strong><a href="OptinLightboxTests.html" target="_blank">OptinLightboxTests</a></strong></td>
+<td align="center">4</td>
+<td align="center">0</td>
+<td align="center">4</td>
+<td align="center">0</td>
+<td align="center">0%</td>
+<td align="center">00h:03m:18s</td></tr>
+<tr class="active-color">
+<td align="center"><strong><a href="SignInRegisterLightboxTests.html" target="_blank">SignInRegisterLightboxTests</a></strong></td>
+<td align="center">3</td>
+<td align="center">2</td>
+<td align="center">1</td>
+<td align="center">0</td>
+<td align="center">66%</td>
+<td align="center">00h:05m:40s</td></tr>
+<tr class="inactive-color">
+<td align="center"><strong><a href="WelcomeLightBoxTests.html" target="_blank">WelcomeLightBoxTests</a></strong></td>
+<td align="center">4</td>
+<td align="center">1</td>
+<td align="center">3</td>
+<td align="center">0</td>
+<td align="center">25%</td>
+<td align="center">00h:08m:13s</td></tr>
+<tr class="inactive-color">
+<td align="center"><strong><a href="LotteryTests.html" target="_blank">LotteryTests</a></strong></td>
+<td align="center">3</td>
+<td align="center">3</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">100%</td>
+<td align="center">00h:08m:37s</td></tr>
+<tr class="active-color">
+<td align="center"><strong><a href="SearchTests.html" target="_blank">SearchTests</a></strong></td>
+<td align="center">8</td>
+<td align="center">0</td>
+<td align="center">8</td>
+<td align="center">0</td>
+<td align="center">0%</td>
+<td align="center">00h:13m:47s</td></tr>
+<tr class="inactive-color">
+<td align="center"><strong><a href="WeatherTests.html" target="_blank">WeatherTests</a></strong></td>
+<td align="center">5</td>
+<td align="center">2</td>
+<td align="center">3</td>
+<td align="center">0</td>
+<td align="center">40%</td>
+<td align="center">00h:10m:44s</td></tr>
+<tr class="inactive-color">
+<td align="center"><strong><a href="UserTests.html" target="_blank">UserTests</a></strong></td>
+<td align="center">4</td>
+<td align="center">1</td>
+<td align="center">3</td>
+<td align="center">0</td>
+<td align="center">25%</td>
+<td align="center">00h:18m:18s</td></tr>
+<tr class="inactive-color">
+<td align="center"><strong><a href="Sweepstakes.html" target="_blank">Sweepstakes</a></strong></td>
+<td align="center">7</td>
+<td align="center">7</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">100%</td>
+<td align="center">00h:33m:58s</td></tr>
+<tr class="active-color">
+<td align="center"><strong><a href="VipTests.html" target="_blank">VipTests</a></strong></td>
+<td align="center">3</td>
+<td align="center">0</td>
+<td align="center">3</td>
+<td align="center">0</td>
+<td align="center">0%</td>
+<td align="center">00h:08m:35s</td></tr>
+<tr class="inactive-color">
+<td align="center"><strong><a href="NFSPSegmentTests.html" target="_blank">NFSPSegmentTests</a></strong></td>
+<td align="center">12</td>
+<td align="center">0</td>
+<td align="center">12</td>
+<td align="center">0</td>
+<td align="center">0%</td>
+<td align="center">00h:45m:41s</td></tr>
+<tr class="active-color">
+<td align="center"><strong><a href="NFSPTests.html" target="_blank">NFSPTests</a></strong></td>
+<td align="center">3</td>
+<td align="center">0</td>
+<td align="center">3</td>
+<td align="center">0</td>
+<td align="center">0%</td>
+<td align="center">00h:07m:20s</td></tr>
+<tr class="inactive-color">
+<td align="center"><strong><a href="ContestEntryTests.html" target="_blank">ContestEntryTests</a></strong></td>
+<td align="center">13</td>
+<td align="center">0</td>
+<td align="center">13</td>
+<td align="center">0</td>
+<td align="center">0%</td>
+<td align="center">00h:43m:20s</td></tr>
+<tr class="inactive-color">
+<td align="center"><strong><a href="BirthdayTests.html" target="_blank">BirthdayTests</a></strong></td>
+<td align="center">1</td>
+<td align="center">0</td>
+<td align="center">1</td>
+<td align="center">0</td>
+<td align="center">0%</td>
+<td align="center">00h:09m:43s</td></tr>
+<tr class="active-color">
+<td align="center"><strong><a href="CategoryMenuTests.html" target="_blank">CategoryMenuTests</a></strong></td>
+<td align="center">4</td>
+<td align="center">4</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">100%</td>
+<td align="center">00h:09m:20s</td></tr>
+<tr class="inactive-color">
+<td align="center"><strong><a href="SegIdTokens.html" target="_blank">SegIdTokens</a></strong></td>
+<td align="center">1</td>
+<td align="center">0</td>
+<td align="center">1</td>
+<td align="center">0</td>
+<td align="center">0%</td>
+<td align="center">00h:09m:43s</td></tr>
+<tr class="active-color">
+<td align="center"><strong><a href="SubCategoryMenuTests.html" target="_blank">SubCategoryMenuTests</a></strong></td>
+<td align="center">3</td>
+<td align="center">1</td>
+<td align="center">2</td>
+<td align="center">0</td>
+<td align="center">33%</td>
+<td align="center">00h:09m:03s</td></tr>
+<tr class="inactive-color">
+<td align="center"><strong><a href="TokenQueueTests.html" target="_blank">TokenQueueTests</a></strong></td>
+<td align="center">1</td>
+<td align="center">0</td>
+<td align="center">1</td>
+<td align="center">0</td>
+<td align="center">0%</td>
+<td align="center">00h:03m:19s</td></tr>
+<tr class="inactive-color">
+<td align="center"><strong><a href="ArticleTests.html" target="_blank">ArticleTests</a></strong></td>
+<td align="center">8</td>
+<td align="center">5</td>
+<td align="center">3</td>
+<td align="center">0</td>
+<td align="center">62%</td>
+<td align="center">00h:47m:43s</td></tr>
+<tr class="inactive-color">
+<td align="center"><strong><a href="ErrorHandlingTests.html" target="_blank">ErrorHandlingTests</a></strong></td>
+<td align="center">2</td>
+<td align="center">0</td>
+<td align="center">2</td>
+<td align="center">0</td>
+<td align="center">0%</td>
+<td align="center">00h:06m:52s</td></tr>
+<tr class="active-color">
+<td align="center"><strong><a href="ScratchPathTests.html" target="_blank">ScratchPathTests</a></strong></td>
+<td align="center">2</td>
+<td align="center">0</td>
+<td align="center">1</td>
+<td align="center">1</td>
+<td align="center">0%</td>
+<td align="center">00h:02m:48s</td></tr>
+<tr class="inactive-color">
+<td align="center"><strong><a href="EcParameterTests.html" target="_blank">EcParameterTests</a></strong></td>
+<td align="center">2</td>
+<td align="center">1</td>
+<td align="center">1</td>
+<td align="center">0</td>
+<td align="center">50%</td>
+<td align="center">00h:03m:09s</td></tr>
+<tr class="active-color">
+<td align="center"><strong><a href="OurPicksTests.html" target="_blank">OurPicksTests</a></strong></td>
+<td align="center">1</td>
+<td align="center">0</td>
+<td align="center">1</td>
+<td align="center">0</td>
+<td align="center">0%</td>
+<td align="center">00h:02m:12s</td></tr>
+<tr class="inactive-color">
+<td align="center"><strong><a href="VideoTests.html" target="_blank">VideoTests</a></strong></td>
+<td align="center">6</td>
+<td align="center">0</td>
+<td align="center">6</td>
+<td align="center">0</td>
+<td align="center">0%</td>
+<td align="center">01h:01m:31s</td></tr>
+</table></div></div>
+</body></html>

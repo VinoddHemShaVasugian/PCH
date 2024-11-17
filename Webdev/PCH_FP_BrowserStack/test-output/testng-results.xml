@@ -1,0 +1,1841 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="7" total="47" passed="40">
+  <reporter-output>
+  </reporter-output>
+  <suite name="RegressionSuiteForDesktopAndTablet" duration-ms="6893485" started-at="2019-02-01T10:57:38Z" finished-at="2019-02-01T12:52:31Z">
+    <groups>
+      <group name="SANITY">
+        <method signature="HighRiskLightboxTests.verify_25th_search_lb()[pri:2, instance:com.lightbox.HighRiskLightboxTests@527740a2]" name="verify_25th_search_lb" class="com.lightbox.HighRiskLightboxTests"/>
+        <method signature="HighRiskLightboxTests.verify_40th_search_lb()[pri:3, instance:com.lightbox.HighRiskLightboxTests@527740a2]" name="verify_40th_search_lb" class="com.lightbox.HighRiskLightboxTests"/>
+        <method signature="HighRiskLightboxTests.verify_500th_search_lb()[pri:5, instance:com.lightbox.HighRiskLightboxTests@527740a2]" name="verify_500th_search_lb" class="com.lightbox.HighRiskLightboxTests"/>
+        <method signature="HighRiskLightboxTests.verify_75th_search_lb()[pri:4, instance:com.lightbox.HighRiskLightboxTests@527740a2]" name="verify_75th_search_lb" class="com.lightbox.HighRiskLightboxTests"/>
+        <method signature="HighRiskLightboxTests.verify_rapid_lb_for_rec_user()[pri:1, instance:com.lightbox.HighRiskLightboxTests@527740a2]" name="verify_rapid_lb_for_rec_user" class="com.lightbox.HighRiskLightboxTests"/>
+        <method signature="NFSPTests.verify_default_nfsp_for_rec_user()[pri:2, instance:com.nfsp.NFSPTests@5f9d02cb]" name="verify_default_nfsp_for_rec_user" class="com.nfsp.NFSPTests"/>
+        <method signature="NFSPTests.verify_nfsp_after_5_search_for_unrec_user()[pri:1, instance:com.nfsp.NFSPTests@5f9d02cb]" name="verify_nfsp_after_5_search_for_unrec_user" class="com.nfsp.NFSPTests"/>
+        <method signature="NFSPTests.verify_nfsp_for_rec_user_after_27_search()[pri:3, instance:com.nfsp.NFSPTests@5f9d02cb]" name="verify_nfsp_for_rec_user_after_27_search" class="com.nfsp.NFSPTests"/>
+        <method signature="SearchTests.verify_collapse_search_box_rec_user()[pri:4, instance:com.search.SearchTests@4e9ba398]" name="verify_collapse_search_box_rec_user" class="com.search.SearchTests"/>
+        <method signature="SearchTests.verify_openx_banner_rec_user()[pri:6, instance:com.search.SearchTests@4e9ba398]" name="verify_openx_banner_rec_user" class="com.search.SearchTests"/>
+        <method signature="ArticleTests.verify_article_page()[pri:1, instance:com.miscellaneous.ArticleTests@6e0e048a]" name="verify_article_page" class="com.miscellaneous.ArticleTests"/>
+        <method signature="SegIdTokens.verify_tokens_seg_id()[pri:1, instance:com.awardtokens.SegIdTokens@5bc79255]" name="verify_tokens_seg_id" class="com.awardtokens.SegIdTokens"/>
+        <method signature="Sweepstakes.verify_sweepstakes_on_edl_comics_page()[pri:4, instance:com.sweepstakes.Sweepstakes@1efed156]" name="verify_sweepstakes_on_edl_comics_page" class="com.sweepstakes.Sweepstakes"/>
+        <method signature="Sweepstakes.verify_sweepstakes_on_edl_health_page()[pri:3, instance:com.sweepstakes.Sweepstakes@1efed156]" name="verify_sweepstakes_on_edl_health_page" class="com.sweepstakes.Sweepstakes"/>
+        <method signature="Sweepstakes.verify_sweepstakes_on_edl_home_page()[pri:1, instance:com.sweepstakes.Sweepstakes@1efed156]" name="verify_sweepstakes_on_edl_home_page" class="com.sweepstakes.Sweepstakes"/>
+        <method signature="Sweepstakes.verify_sweepstakes_on_edl_lifehacks_page()[pri:5, instance:com.sweepstakes.Sweepstakes@1efed156]" name="verify_sweepstakes_on_edl_lifehacks_page" class="com.sweepstakes.Sweepstakes"/>
+        <method signature="Sweepstakes.verify_sweepstakes_on_edl_pets_page()[pri:6, instance:com.sweepstakes.Sweepstakes@1efed156]" name="verify_sweepstakes_on_edl_pets_page" class="com.sweepstakes.Sweepstakes"/>
+        <method signature="Sweepstakes.verify_sweepstakes_on_edl_recipe_page()[pri:2, instance:com.sweepstakes.Sweepstakes@1efed156]" name="verify_sweepstakes_on_edl_recipe_page" class="com.sweepstakes.Sweepstakes"/>
+        <method signature="Sweepstakes.verify_sweepstakes_on_edl_trending_page()[pri:7, instance:com.sweepstakes.Sweepstakes@1efed156]" name="verify_sweepstakes_on_edl_trending_page" class="com.sweepstakes.Sweepstakes"/>
+        <method signature="ScratchPathTests.play_scratch_path_games()[pri:2, instance:com.miscellaneous.ScratchPathTests@5a8806ef]" name="play_scratch_path_games" class="com.miscellaneous.ScratchPathTests"/>
+        <method signature="NFSPSegmentTests.verify_nfsp_for_algo_only_segment_gold_user()[pri:1, instance:com.nfsp.NFSPSegmentTests@9660f4e]" name="verify_nfsp_for_algo_only_segment_gold_user" class="com.nfsp.NFSPSegmentTests"/>
+        <method signature="NFSPSegmentTests.verify_nfsp_for_algo_only_segment_mini_reg_user()[pri:7, instance:com.nfsp.NFSPSegmentTests@9660f4e]" name="verify_nfsp_for_algo_only_segment_mini_reg_user" class="com.nfsp.NFSPSegmentTests"/>
+        <method signature="NFSPSegmentTests.verify_nfsp_for_algo_only_segment_silver_user()[pri:4, instance:com.nfsp.NFSPSegmentTests@9660f4e]" name="verify_nfsp_for_algo_only_segment_silver_user" class="com.nfsp.NFSPSegmentTests"/>
+        <method signature="NFSPSegmentTests.verify_nfsp_for_algo_only_segment_social_user()[pri:10, instance:com.nfsp.NFSPSegmentTests@9660f4e]" name="verify_nfsp_for_algo_only_segment_social_user" class="com.nfsp.NFSPSegmentTests"/>
+        <method signature="NFSPSegmentTests.verify_nfsp_in_url_for_gold_user()[pri:3, instance:com.nfsp.NFSPSegmentTests@9660f4e]" name="verify_nfsp_in_url_for_gold_user" class="com.nfsp.NFSPSegmentTests"/>
+        <method signature="NFSPSegmentTests.verify_nfsp_in_url_for_mini_reg_user()[pri:9, instance:com.nfsp.NFSPSegmentTests@9660f4e]" name="verify_nfsp_in_url_for_mini_reg_user" class="com.nfsp.NFSPSegmentTests"/>
+        <method signature="NFSPSegmentTests.verify_nfsp_in_url_for_silver_user()[pri:6, instance:com.nfsp.NFSPSegmentTests@9660f4e]" name="verify_nfsp_in_url_for_silver_user" class="com.nfsp.NFSPSegmentTests"/>
+        <method signature="NFSPSegmentTests.verify_nfsp_in_url_for_social_user()[pri:12, instance:com.nfsp.NFSPSegmentTests@9660f4e]" name="verify_nfsp_in_url_for_social_user" class="com.nfsp.NFSPSegmentTests"/>
+        <method signature="NFSPSegmentTests.verify_nfsp_specific_segment_for_gold_user()[pri:2, instance:com.nfsp.NFSPSegmentTests@9660f4e]" name="verify_nfsp_specific_segment_for_gold_user" class="com.nfsp.NFSPSegmentTests"/>
+        <method signature="NFSPSegmentTests.verify_nfsp_specific_segment_for_mini_reg_user()[pri:8, instance:com.nfsp.NFSPSegmentTests@9660f4e]" name="verify_nfsp_specific_segment_for_mini_reg_user" class="com.nfsp.NFSPSegmentTests"/>
+        <method signature="NFSPSegmentTests.verify_nfsp_specific_segment_for_silver_user()[pri:5, instance:com.nfsp.NFSPSegmentTests@9660f4e]" name="verify_nfsp_specific_segment_for_silver_user" class="com.nfsp.NFSPSegmentTests"/>
+        <method signature="NFSPSegmentTests.verify_nfsp_specific_segment_for_social_user()[pri:11, instance:com.nfsp.NFSPSegmentTests@9660f4e]" name="verify_nfsp_specific_segment_for_social_user" class="com.nfsp.NFSPSegmentTests"/>
+        <method signature="ContestEntryTests.verify_contest_entry_full_reg()[pri:1, instance:com.contestentry.ContestEntryTests@76707e36]" name="verify_contest_entry_full_reg" class="com.contestentry.ContestEntryTests"/>
+        <method signature="VideoTests.verify_video_details_on_video_log_for_full_reg()[pri:3, instance:com.miscellaneous.VideoTests@614ddd49]" name="verify_video_details_on_video_log_for_full_reg" class="com.miscellaneous.VideoTests"/>
+      </group> <!-- SANITY -->
+      <group name="DESKTOP">
+        <method signature="CompleteRegistrationLightboxTests.verify_complete_registration_lb_for_mini_reg()[pri:1, instance:com.lightbox.CompleteRegistrationLightboxTests@3108bc]" name="verify_complete_registration_lb_for_mini_reg" class="com.lightbox.CompleteRegistrationLightboxTests"/>
+        <method signature="CompleteRegistrationLightboxTests.verify_complete_registration_lb_for_silver_user()[pri:2, instance:com.lightbox.CompleteRegistrationLightboxTests@3108bc]" name="verify_complete_registration_lb_for_silver_user" class="com.lightbox.CompleteRegistrationLightboxTests"/>
+        <method signature="CompleteRegistrationLightboxTests.verify_complete_registration_lb_for_social_user()[pri:3, instance:com.lightbox.CompleteRegistrationLightboxTests@3108bc]" name="verify_complete_registration_lb_for_social_user" class="com.lightbox.CompleteRegistrationLightboxTests"/>
+        <method signature="HighRiskLightboxTests.verify_25th_search_lb()[pri:2, instance:com.lightbox.HighRiskLightboxTests@527740a2]" name="verify_25th_search_lb" class="com.lightbox.HighRiskLightboxTests"/>
+        <method signature="HighRiskLightboxTests.verify_40th_search_lb()[pri:3, instance:com.lightbox.HighRiskLightboxTests@527740a2]" name="verify_40th_search_lb" class="com.lightbox.HighRiskLightboxTests"/>
+        <method signature="HighRiskLightboxTests.verify_500th_search_lb()[pri:5, instance:com.lightbox.HighRiskLightboxTests@527740a2]" name="verify_500th_search_lb" class="com.lightbox.HighRiskLightboxTests"/>
+        <method signature="HighRiskLightboxTests.verify_75th_search_lb()[pri:4, instance:com.lightbox.HighRiskLightboxTests@527740a2]" name="verify_75th_search_lb" class="com.lightbox.HighRiskLightboxTests"/>
+        <method signature="HighRiskLightboxTests.verify_rapid_lb_for_rec_user()[pri:1, instance:com.lightbox.HighRiskLightboxTests@527740a2]" name="verify_rapid_lb_for_rec_user" class="com.lightbox.HighRiskLightboxTests"/>
+        <method signature="NFSPTests.verify_default_nfsp_for_rec_user()[pri:2, instance:com.nfsp.NFSPTests@5f9d02cb]" name="verify_default_nfsp_for_rec_user" class="com.nfsp.NFSPTests"/>
+        <method signature="NFSPTests.verify_nfsp_after_5_search_for_unrec_user()[pri:1, instance:com.nfsp.NFSPTests@5f9d02cb]" name="verify_nfsp_after_5_search_for_unrec_user" class="com.nfsp.NFSPTests"/>
+        <method signature="NFSPTests.verify_nfsp_for_rec_user_after_27_search()[pri:3, instance:com.nfsp.NFSPTests@5f9d02cb]" name="verify_nfsp_for_rec_user_after_27_search" class="com.nfsp.NFSPTests"/>
+        <method signature="OptinLightboxTests.verify_optin_lb_for_full_reg_user()[pri:1, instance:com.lightbox.OptinLightboxTests@13a5fe33]" name="verify_optin_lb_for_full_reg_user" class="com.lightbox.OptinLightboxTests"/>
+        <method signature="OptinLightboxTests.verify_optin_lb_for_mini_reg_user()[pri:2, instance:com.lightbox.OptinLightboxTests@13a5fe33]" name="verify_optin_lb_for_mini_reg_user" class="com.lightbox.OptinLightboxTests"/>
+        <method signature="OptinLightboxTests.verify_optin_lb_for_silver_user()[pri:4, instance:com.lightbox.OptinLightboxTests@13a5fe33]" name="verify_optin_lb_for_silver_user" class="com.lightbox.OptinLightboxTests"/>
+        <method signature="OptinLightboxTests.verify_optin_lb_for_social_user()[pri:3, instance:com.lightbox.OptinLightboxTests@13a5fe33]" name="verify_optin_lb_for_social_user" class="com.lightbox.OptinLightboxTests"/>
+        <method signature="SearchTests.verify_collapse_search_box_rec_user()[pri:4, instance:com.search.SearchTests@4e9ba398]" name="verify_collapse_search_box_rec_user" class="com.search.SearchTests"/>
+        <method signature="SearchTests.verify_collapse_search_box_unrec_user()[pri:5, instance:com.search.SearchTests@4e9ba398]" name="verify_collapse_search_box_unrec_user" class="com.search.SearchTests"/>
+        <method signature="SearchTests.verify_inhouse_ads()[pri:3, instance:com.search.SearchTests@4e9ba398]" name="verify_inhouse_ads" class="com.search.SearchTests"/>
+        <method signature="SearchTests.verify_openx_banner_rec_user()[pri:6, instance:com.search.SearchTests@4e9ba398]" name="verify_openx_banner_rec_user" class="com.search.SearchTests"/>
+        <method signature="SearchTests.verify_openx_banner_unrec_user()[pri:7, instance:com.search.SearchTests@4e9ba398]" name="verify_openx_banner_unrec_user" class="com.search.SearchTests"/>
+        <method signature="SearchTests.verify_search_box_redirection()[pri:1, instance:com.search.SearchTests@4e9ba398]" name="verify_search_box_redirection" class="com.search.SearchTests"/>
+        <method signature="SearchTests.verify_serp_pagination_carousel_shopping()[pri:2, instance:com.search.SearchTests@4e9ba398]" name="verify_serp_pagination_carousel_shopping" class="com.search.SearchTests"/>
+        <method signature="SearchTests.verify_tokens_for_consecutive_search_for_same_keyword()[pri:8, instance:com.search.SearchTests@4e9ba398]" name="verify_tokens_for_consecutive_search_for_same_keyword" class="com.search.SearchTests"/>
+        <method signature="SignInRegisterLightboxTests.verify_register_lb_for_unrec_user()[pri:1, instance:com.lightbox.SignInRegisterLightboxTests@370736d9]" name="verify_register_lb_for_unrec_user" class="com.lightbox.SignInRegisterLightboxTests"/>
+        <method signature="SignInRegisterLightboxTests.verify_register_signin_lb_for_unrec_user_on_serp()[pri:1, instance:com.lightbox.SignInRegisterLightboxTests@370736d9]" name="verify_register_signin_lb_for_unrec_user_on_serp" class="com.lightbox.SignInRegisterLightboxTests"/>
+        <method signature="SignInRegisterLightboxTests.verify_signin_lb_for_unrec_user()[pri:2, instance:com.lightbox.SignInRegisterLightboxTests@370736d9]" name="verify_signin_lb_for_unrec_user" class="com.lightbox.SignInRegisterLightboxTests"/>
+        <method signature="WelcomeLightBoxTests.verify_welcome_lb_for_mini_reg_user()[pri:2, instance:com.lightbox.WelcomeLightBoxTests@6d7b4f4c]" name="verify_welcome_lb_for_mini_reg_user" class="com.lightbox.WelcomeLightBoxTests"/>
+        <method signature="WelcomeLightBoxTests.verify_welcome_lb_for_rec_user()[pri:1, instance:com.lightbox.WelcomeLightBoxTests@6d7b4f4c]" name="verify_welcome_lb_for_rec_user" class="com.lightbox.WelcomeLightBoxTests"/>
+        <method signature="WelcomeLightBoxTests.verify_welcome_lb_for_silver_user()[pri:3, instance:com.lightbox.WelcomeLightBoxTests@6d7b4f4c]" name="verify_welcome_lb_for_silver_user" class="com.lightbox.WelcomeLightBoxTests"/>
+        <method signature="WelcomeLightBoxTests.verify_welcome_lb_for_social_user()[pri:4, instance:com.lightbox.WelcomeLightBoxTests@6d7b4f4c]" name="verify_welcome_lb_for_social_user" class="com.lightbox.WelcomeLightBoxTests"/>
+        <method signature="ArticleTests.verify_ads_on_article_page()[pri:8, instance:com.miscellaneous.ArticleTests@6e0e048a]" name="verify_ads_on_article_page" class="com.miscellaneous.ArticleTests"/>
+        <method signature="ArticleTests.verify_article_page()[pri:1, instance:com.miscellaneous.ArticleTests@6e0e048a]" name="verify_article_page" class="com.miscellaneous.ArticleTests"/>
+        <method signature="ArticleTests.verify_article_page_bottom_dfp_ad()[pri:2, instance:com.miscellaneous.ArticleTests@6e0e048a]" name="verify_article_page_bottom_dfp_ad" class="com.miscellaneous.ArticleTests"/>
+        <method signature="ArticleTests.verify_article_page_teads_ad()[pri:3, instance:com.miscellaneous.ArticleTests@6e0e048a]" name="verify_article_page_teads_ad" class="com.miscellaneous.ArticleTests"/>
+        <method signature="ArticleTests.verify_story_details_on_story_log_for_full_reg()[pri:4, instance:com.miscellaneous.ArticleTests@6e0e048a]" name="verify_story_details_on_story_log_for_full_reg" class="com.miscellaneous.ArticleTests"/>
+        <method signature="ArticleTests.verify_story_details_on_story_log_for_mini_reg()[pri:5, instance:com.miscellaneous.ArticleTests@6e0e048a]" name="verify_story_details_on_story_log_for_mini_reg" class="com.miscellaneous.ArticleTests"/>
+        <method signature="ArticleTests.verify_story_details_on_story_log_for_silver_user()[pri:6, instance:com.miscellaneous.ArticleTests@6e0e048a]" name="verify_story_details_on_story_log_for_silver_user" class="com.miscellaneous.ArticleTests"/>
+        <method signature="ArticleTests.verify_story_details_on_story_log_for_social_user()[pri:7, instance:com.miscellaneous.ArticleTests@6e0e048a]" name="verify_story_details_on_story_log_for_social_user" class="com.miscellaneous.ArticleTests"/>
+        <method signature="BirthdayTests.birthday_tokens()[pri:1, instance:com.awardtokens.BirthdayTests@23e028a9]" name="birthday_tokens" class="com.awardtokens.BirthdayTests"/>
+        <method signature="CategoryMenuTests.verfiy_newly_added_sub_category()[pri:2, instance:com.miscellaneous.CategoryMenuTests@5b87ed94]" name="verfiy_newly_added_sub_category" class="com.miscellaneous.CategoryMenuTests"/>
+        <method signature="CategoryMenuTests.verify_ads_on_category_page()[pri:6, instance:com.miscellaneous.CategoryMenuTests@5b87ed94]" name="verify_ads_on_category_page" class="com.miscellaneous.CategoryMenuTests"/>
+        <method signature="CategoryMenuTests.verify_native_gpt_ad_positioning()[pri:4, instance:com.miscellaneous.CategoryMenuTests@5b87ed94]" name="verify_native_gpt_ad_positioning" class="com.miscellaneous.CategoryMenuTests"/>
+        <method signature="CategoryMenuTests.verify_top_story_native_ad()[pri:5, instance:com.miscellaneous.CategoryMenuTests@5b87ed94]" name="verify_top_story_native_ad" class="com.miscellaneous.CategoryMenuTests"/>
+        <method signature="SegIdTokens.verify_tokens_seg_id()[pri:1, instance:com.awardtokens.SegIdTokens@5bc79255]" name="verify_tokens_seg_id" class="com.awardtokens.SegIdTokens"/>
+        <method signature="SubCategoryMenuTests.verify_ads_on_sub_category_page()[pri:3, instance:com.miscellaneous.SubCategoryMenuTests@7fac631b]" name="verify_ads_on_sub_category_page" class="com.miscellaneous.SubCategoryMenuTests"/>
+        <method signature="SubCategoryMenuTests.verify_native_ad_positioning()[pri:2, instance:com.miscellaneous.SubCategoryMenuTests@7fac631b]" name="verify_native_ad_positioning" class="com.miscellaneous.SubCategoryMenuTests"/>
+        <method signature="SubCategoryMenuTests.verify_page_articles_count()[pri:1, instance:com.miscellaneous.SubCategoryMenuTests@7fac631b]" name="verify_page_articles_count" class="com.miscellaneous.SubCategoryMenuTests"/>
+        <method signature="TokenQueueTests.verify_credit_token_queue()[pri:1, instance:com.awardtokens.TokenQueueTests@47ef968d]" name="verify_credit_token_queue" class="com.awardtokens.TokenQueueTests"/>
+        <method signature="EcParameterTests.verify_entry_message_on_latest_activity_tab()[pri:1, instance:com.miscellaneous.EcParameterTests@3d99d22e]" name="verify_entry_message_on_latest_activity_tab" class="com.miscellaneous.EcParameterTests"/>
+        <method signature="EcParameterTests.verify_promotion_campaign_email()[pri:2, instance:com.miscellaneous.EcParameterTests@3d99d22e]" name="verify_promotion_campaign_email" class="com.miscellaneous.EcParameterTests"/>
+        <method signature="ErrorHandlingTests.verify_error_msg_cache_content_on_pages()[pri:1, instance:com.miscellaneous.ErrorHandlingTests@cd2dae5]" name="verify_error_msg_cache_content_on_pages" class="com.miscellaneous.ErrorHandlingTests"/>
+        <method signature="ErrorHandlingTests.verify_error_msg_on_fpcontent_down()[pri:1, instance:com.miscellaneous.ErrorHandlingTests@cd2dae5]" name="verify_error_msg_on_fpcontent_down" class="com.miscellaneous.ErrorHandlingTests"/>
+        <method signature="FBUserTests.verify_claim_button_on_all_pages_for_social_user()[pri:1, instance:com.usertypes.FBUserTests@6e6c3152]" name="verify_claim_button_on_all_pages_for_social_user" class="com.usertypes.FBUserTests"/>
+        <method signature="FBUserTests.verify_the_registration_form_for_social_user()[pri:2, instance:com.usertypes.FBUserTests@6e6c3152]" name="verify_the_registration_form_for_social_user" class="com.usertypes.FBUserTests"/>
+        <method signature="LotteryTests.verify_ads_on_lottery_page()[pri:3, instance:com.lottery.LotteryTests@3cef309d]" name="verify_ads_on_lottery_page" class="com.lottery.LotteryTests"/>
+        <method signature="LotteryTests.verify_lottery_page_recognized_user()[pri:2, instance:com.lottery.LotteryTests@3cef309d]" name="verify_lottery_page_recognized_user" class="com.lottery.LotteryTests"/>
+        <method signature="LotteryTests.verify_lottery_page_unrecognized_user()[pri:1, instance:com.lottery.LotteryTests@3cef309d]" name="verify_lottery_page_unrecognized_user" class="com.lottery.LotteryTests"/>
+        <method signature="MinireguserTests.verify_claim_button_on_all_pages_for_mini_reg_user()[pri:1, instance:com.usertypes.MinireguserTests@50b494a6]" name="verify_claim_button_on_all_pages_for_mini_reg_user" class="com.usertypes.MinireguserTests"/>
+        <method signature="OurPicksTests.verify_ads_on_homepage()[pri:5, instance:com.miscellaneous.OurPicksTests@49fc609f]" name="verify_ads_on_homepage" class="com.miscellaneous.OurPicksTests"/>
+        <method signature="SilveruserTests.verify_claim_button_on_all_pages_for_silver_user()[pri:1, instance:com.usertypes.SilveruserTests@6ebc05a6]" name="verify_claim_button_on_all_pages_for_silver_user" class="com.usertypes.SilveruserTests"/>
+        <method signature="WeatherTests.verify_ads_on_weather_page()[pri:5, instance:com.weather.WeatherTests@32709393]" name="verify_ads_on_weather_page" class="com.weather.WeatherTests"/>
+        <method signature="WeatherTests.verify_daily_forecast_details()[pri:3, instance:com.weather.WeatherTests@32709393]" name="verify_daily_forecast_details" class="com.weather.WeatherTests"/>
+        <method signature="WeatherTests.verify_hourly_forecast_details()[pri:2, instance:com.weather.WeatherTests@32709393]" name="verify_hourly_forecast_details" class="com.weather.WeatherTests"/>
+        <method signature="WeatherTests.weather_climate_history()[pri:4, instance:com.weather.WeatherTests@32709393]" name="weather_climate_history" class="com.weather.WeatherTests"/>
+        <method signature="Sweepstakes.verify_sweepstakes_on_edl_comics_page()[pri:4, instance:com.sweepstakes.Sweepstakes@1efed156]" name="verify_sweepstakes_on_edl_comics_page" class="com.sweepstakes.Sweepstakes"/>
+        <method signature="Sweepstakes.verify_sweepstakes_on_edl_health_page()[pri:3, instance:com.sweepstakes.Sweepstakes@1efed156]" name="verify_sweepstakes_on_edl_health_page" class="com.sweepstakes.Sweepstakes"/>
+        <method signature="Sweepstakes.verify_sweepstakes_on_edl_home_page()[pri:1, instance:com.sweepstakes.Sweepstakes@1efed156]" name="verify_sweepstakes_on_edl_home_page" class="com.sweepstakes.Sweepstakes"/>
+        <method signature="Sweepstakes.verify_sweepstakes_on_edl_lifehacks_page()[pri:5, instance:com.sweepstakes.Sweepstakes@1efed156]" name="verify_sweepstakes_on_edl_lifehacks_page" class="com.sweepstakes.Sweepstakes"/>
+        <method signature="Sweepstakes.verify_sweepstakes_on_edl_pets_page()[pri:6, instance:com.sweepstakes.Sweepstakes@1efed156]" name="verify_sweepstakes_on_edl_pets_page" class="com.sweepstakes.Sweepstakes"/>
+        <method signature="Sweepstakes.verify_sweepstakes_on_edl_recipe_page()[pri:2, instance:com.sweepstakes.Sweepstakes@1efed156]" name="verify_sweepstakes_on_edl_recipe_page" class="com.sweepstakes.Sweepstakes"/>
+        <method signature="Sweepstakes.verify_sweepstakes_on_edl_trending_page()[pri:7, instance:com.sweepstakes.Sweepstakes@1efed156]" name="verify_sweepstakes_on_edl_trending_page" class="com.sweepstakes.Sweepstakes"/>
+        <method signature="VipTests.verify_vip_activity()[pri:3, instance:com.vip.VipTests@63e2203c]" name="verify_vip_activity" class="com.vip.VipTests"/>
+        <method signature="VipTests.verify_vip_activity_by_search()[pri:3, instance:com.vip.VipTests@63e2203c]" name="verify_vip_activity_by_search" class="com.vip.VipTests"/>
+        <method signature="VipTests.verify_vip_call_trigger_order()[pri:1, instance:com.vip.VipTests@63e2203c]" name="verify_vip_call_trigger_order" class="com.vip.VipTests"/>
+        <method signature="ScratchPathTests.verify_bonus_game_bar()[pri:1, instance:com.miscellaneous.ScratchPathTests@5a8806ef]" name="verify_bonus_game_bar" class="com.miscellaneous.ScratchPathTests"/>
+        <method signature="ScratchPathTests.play_scratch_path_games()[pri:2, instance:com.miscellaneous.ScratchPathTests@5a8806ef]" name="play_scratch_path_games" class="com.miscellaneous.ScratchPathTests"/>
+        <method signature="NFSPSegmentTests.verify_nfsp_for_algo_only_segment_gold_user()[pri:1, instance:com.nfsp.NFSPSegmentTests@9660f4e]" name="verify_nfsp_for_algo_only_segment_gold_user" class="com.nfsp.NFSPSegmentTests"/>
+        <method signature="NFSPSegmentTests.verify_nfsp_for_algo_only_segment_mini_reg_user()[pri:7, instance:com.nfsp.NFSPSegmentTests@9660f4e]" name="verify_nfsp_for_algo_only_segment_mini_reg_user" class="com.nfsp.NFSPSegmentTests"/>
+        <method signature="NFSPSegmentTests.verify_nfsp_for_algo_only_segment_silver_user()[pri:4, instance:com.nfsp.NFSPSegmentTests@9660f4e]" name="verify_nfsp_for_algo_only_segment_silver_user" class="com.nfsp.NFSPSegmentTests"/>
+        <method signature="NFSPSegmentTests.verify_nfsp_for_algo_only_segment_social_user()[pri:10, instance:com.nfsp.NFSPSegmentTests@9660f4e]" name="verify_nfsp_for_algo_only_segment_social_user" class="com.nfsp.NFSPSegmentTests"/>
+        <method signature="NFSPSegmentTests.verify_nfsp_in_url_for_gold_user()[pri:3, instance:com.nfsp.NFSPSegmentTests@9660f4e]" name="verify_nfsp_in_url_for_gold_user" class="com.nfsp.NFSPSegmentTests"/>
+        <method signature="NFSPSegmentTests.verify_nfsp_in_url_for_mini_reg_user()[pri:9, instance:com.nfsp.NFSPSegmentTests@9660f4e]" name="verify_nfsp_in_url_for_mini_reg_user" class="com.nfsp.NFSPSegmentTests"/>
+        <method signature="NFSPSegmentTests.verify_nfsp_in_url_for_silver_user()[pri:6, instance:com.nfsp.NFSPSegmentTests@9660f4e]" name="verify_nfsp_in_url_for_silver_user" class="com.nfsp.NFSPSegmentTests"/>
+        <method signature="NFSPSegmentTests.verify_nfsp_in_url_for_social_user()[pri:12, instance:com.nfsp.NFSPSegmentTests@9660f4e]" name="verify_nfsp_in_url_for_social_user" class="com.nfsp.NFSPSegmentTests"/>
+        <method signature="NFSPSegmentTests.verify_nfsp_specific_segment_for_gold_user()[pri:2, instance:com.nfsp.NFSPSegmentTests@9660f4e]" name="verify_nfsp_specific_segment_for_gold_user" class="com.nfsp.NFSPSegmentTests"/>
+        <method signature="NFSPSegmentTests.verify_nfsp_specific_segment_for_mini_reg_user()[pri:8, instance:com.nfsp.NFSPSegmentTests@9660f4e]" name="verify_nfsp_specific_segment_for_mini_reg_user" class="com.nfsp.NFSPSegmentTests"/>
+        <method signature="NFSPSegmentTests.verify_nfsp_specific_segment_for_silver_user()[pri:5, instance:com.nfsp.NFSPSegmentTests@9660f4e]" name="verify_nfsp_specific_segment_for_silver_user" class="com.nfsp.NFSPSegmentTests"/>
+        <method signature="NFSPSegmentTests.verify_nfsp_specific_segment_for_social_user()[pri:11, instance:com.nfsp.NFSPSegmentTests@9660f4e]" name="verify_nfsp_specific_segment_for_social_user" class="com.nfsp.NFSPSegmentTests"/>
+        <method signature="ContestEntryTests.verify_bmh_queue()[pri:13, instance:com.contestentry.ContestEntryTests@76707e36]" name="verify_bmh_queue" class="com.contestentry.ContestEntryTests"/>
+        <method signature="ContestEntryTests.verify_contest_entry_full_reg()[pri:1, instance:com.contestentry.ContestEntryTests@76707e36]" name="verify_contest_entry_full_reg" class="com.contestentry.ContestEntryTests"/>
+        <method signature="ContestEntryTests.verify_contest_entry_invalid_ck_on_admin_valid_on_url()[pri:9, instance:com.contestentry.ContestEntryTests@76707e36]" name="verify_contest_entry_invalid_ck_on_admin_valid_on_url" class="com.contestentry.ContestEntryTests"/>
+        <method signature="ContestEntryTests.verify_contest_entry_invalid_ck_on_url_valid_on_admin()[pri:10, instance:com.contestentry.ContestEntryTests@76707e36]" name="verify_contest_entry_invalid_ck_on_url_valid_on_admin" class="com.contestentry.ContestEntryTests"/>
+        <method signature="ContestEntryTests.verify_contest_entry_invalid_tc_on_url_valid_ck_on_admin()[pri:11, instance:com.contestentry.ContestEntryTests@76707e36]" name="verify_contest_entry_invalid_tc_on_url_valid_ck_on_admin" class="com.contestentry.ContestEntryTests"/>
+        <method signature="ContestEntryTests.verify_contest_entry_mini_reg()[pri:2, instance:com.contestentry.ContestEntryTests@76707e36]" name="verify_contest_entry_mini_reg" class="com.contestentry.ContestEntryTests"/>
+        <method signature="ContestEntryTests.verify_contest_entry_queue()[pri:12, instance:com.contestentry.ContestEntryTests@76707e36]" name="verify_contest_entry_queue" class="com.contestentry.ContestEntryTests"/>
+        <method signature="ContestEntryTests.verify_contest_entry_silver_user()[pri:3, instance:com.contestentry.ContestEntryTests@76707e36]" name="verify_contest_entry_silver_user" class="com.contestentry.ContestEntryTests"/>
+        <method signature="ContestEntryTests.verify_contest_entry_social_user()[pri:4, instance:com.contestentry.ContestEntryTests@76707e36]" name="verify_contest_entry_social_user" class="com.contestentry.ContestEntryTests"/>
+        <method signature="ContestEntryTests.verify_contest_entry_with_ck_without_tc_v()[pri:6, instance:com.contestentry.ContestEntryTests@76707e36]" name="verify_contest_entry_with_ck_without_tc_v" class="com.contestentry.ContestEntryTests"/>
+        <method signature="ContestEntryTests.verify_contest_entry_with_mulitple_ck()[pri:7, instance:com.contestentry.ContestEntryTests@76707e36]" name="verify_contest_entry_with_mulitple_ck" class="com.contestentry.ContestEntryTests"/>
+        <method signature="ContestEntryTests.verify_contest_entry_with_tc_v_without_ck()[pri:5, instance:com.contestentry.ContestEntryTests@76707e36]" name="verify_contest_entry_with_tc_v_without_ck" class="com.contestentry.ContestEntryTests"/>
+        <method signature="ContestEntryTests.verify_failed_contest_entry()[pri:8, instance:com.contestentry.ContestEntryTests@76707e36]" name="verify_failed_contest_entry" class="com.contestentry.ContestEntryTests"/>
+        <method signature="VideoTests.verify_ad_refresh_on_video_page()[pri:10, instance:com.miscellaneous.VideoTests@614ddd49]" name="verify_ad_refresh_on_video_page" class="com.miscellaneous.VideoTests"/>
+        <method signature="VideoTests.verify_ads_on_video_page()[pri:11, instance:com.miscellaneous.VideoTests@614ddd49]" name="verify_ads_on_video_page" class="com.miscellaneous.VideoTests"/>
+        <method signature="VideoTests.verify_video_details_on_video_log_for_full_reg()[pri:3, instance:com.miscellaneous.VideoTests@614ddd49]" name="verify_video_details_on_video_log_for_full_reg" class="com.miscellaneous.VideoTests"/>
+        <method signature="VideoTests.verify_video_details_on_video_log_for_mini_reg()[pri:4, instance:com.miscellaneous.VideoTests@614ddd49]" name="verify_video_details_on_video_log_for_mini_reg" class="com.miscellaneous.VideoTests"/>
+        <method signature="VideoTests.verify_video_details_on_video_log_for_silver_user()[pri:5, instance:com.miscellaneous.VideoTests@614ddd49]" name="verify_video_details_on_video_log_for_silver_user" class="com.miscellaneous.VideoTests"/>
+        <method signature="VideoTests.verify_video_details_on_video_log_for_social_user()[pri:6, instance:com.miscellaneous.VideoTests@614ddd49]" name="verify_video_details_on_video_log_for_social_user" class="com.miscellaneous.VideoTests"/>
+      </group> <!-- DESKTOP -->
+      <group name="TABLET">
+        <method signature="CompleteRegistrationLightboxTests.verify_complete_registration_lb_for_mini_reg()[pri:1, instance:com.lightbox.CompleteRegistrationLightboxTests@3108bc]" name="verify_complete_registration_lb_for_mini_reg" class="com.lightbox.CompleteRegistrationLightboxTests"/>
+        <method signature="CompleteRegistrationLightboxTests.verify_complete_registration_lb_for_silver_user()[pri:2, instance:com.lightbox.CompleteRegistrationLightboxTests@3108bc]" name="verify_complete_registration_lb_for_silver_user" class="com.lightbox.CompleteRegistrationLightboxTests"/>
+        <method signature="CompleteRegistrationLightboxTests.verify_complete_registration_lb_for_social_user()[pri:3, instance:com.lightbox.CompleteRegistrationLightboxTests@3108bc]" name="verify_complete_registration_lb_for_social_user" class="com.lightbox.CompleteRegistrationLightboxTests"/>
+        <method signature="HighRiskLightboxTests.verify_25th_search_lb()[pri:2, instance:com.lightbox.HighRiskLightboxTests@527740a2]" name="verify_25th_search_lb" class="com.lightbox.HighRiskLightboxTests"/>
+        <method signature="HighRiskLightboxTests.verify_40th_search_lb()[pri:3, instance:com.lightbox.HighRiskLightboxTests@527740a2]" name="verify_40th_search_lb" class="com.lightbox.HighRiskLightboxTests"/>
+        <method signature="HighRiskLightboxTests.verify_500th_search_lb()[pri:5, instance:com.lightbox.HighRiskLightboxTests@527740a2]" name="verify_500th_search_lb" class="com.lightbox.HighRiskLightboxTests"/>
+        <method signature="HighRiskLightboxTests.verify_75th_search_lb()[pri:4, instance:com.lightbox.HighRiskLightboxTests@527740a2]" name="verify_75th_search_lb" class="com.lightbox.HighRiskLightboxTests"/>
+        <method signature="HighRiskLightboxTests.verify_rapid_lb_for_rec_user()[pri:1, instance:com.lightbox.HighRiskLightboxTests@527740a2]" name="verify_rapid_lb_for_rec_user" class="com.lightbox.HighRiskLightboxTests"/>
+        <method signature="NFSPTests.verify_default_nfsp_for_rec_user()[pri:2, instance:com.nfsp.NFSPTests@5f9d02cb]" name="verify_default_nfsp_for_rec_user" class="com.nfsp.NFSPTests"/>
+        <method signature="NFSPTests.verify_nfsp_after_5_search_for_unrec_user()[pri:1, instance:com.nfsp.NFSPTests@5f9d02cb]" name="verify_nfsp_after_5_search_for_unrec_user" class="com.nfsp.NFSPTests"/>
+        <method signature="NFSPTests.verify_nfsp_for_rec_user_after_27_search()[pri:3, instance:com.nfsp.NFSPTests@5f9d02cb]" name="verify_nfsp_for_rec_user_after_27_search" class="com.nfsp.NFSPTests"/>
+        <method signature="OptinLightboxTests.verify_optin_lb_for_full_reg_user()[pri:1, instance:com.lightbox.OptinLightboxTests@13a5fe33]" name="verify_optin_lb_for_full_reg_user" class="com.lightbox.OptinLightboxTests"/>
+        <method signature="OptinLightboxTests.verify_optin_lb_for_mini_reg_user()[pri:2, instance:com.lightbox.OptinLightboxTests@13a5fe33]" name="verify_optin_lb_for_mini_reg_user" class="com.lightbox.OptinLightboxTests"/>
+        <method signature="OptinLightboxTests.verify_optin_lb_for_silver_user()[pri:4, instance:com.lightbox.OptinLightboxTests@13a5fe33]" name="verify_optin_lb_for_silver_user" class="com.lightbox.OptinLightboxTests"/>
+        <method signature="OptinLightboxTests.verify_optin_lb_for_social_user()[pri:3, instance:com.lightbox.OptinLightboxTests@13a5fe33]" name="verify_optin_lb_for_social_user" class="com.lightbox.OptinLightboxTests"/>
+        <method signature="SearchTests.verify_collapse_search_box_rec_user()[pri:4, instance:com.search.SearchTests@4e9ba398]" name="verify_collapse_search_box_rec_user" class="com.search.SearchTests"/>
+        <method signature="SearchTests.verify_collapse_search_box_unrec_user()[pri:5, instance:com.search.SearchTests@4e9ba398]" name="verify_collapse_search_box_unrec_user" class="com.search.SearchTests"/>
+        <method signature="SearchTests.verify_inhouse_ads()[pri:3, instance:com.search.SearchTests@4e9ba398]" name="verify_inhouse_ads" class="com.search.SearchTests"/>
+        <method signature="SearchTests.verify_openx_banner_rec_user()[pri:6, instance:com.search.SearchTests@4e9ba398]" name="verify_openx_banner_rec_user" class="com.search.SearchTests"/>
+        <method signature="SearchTests.verify_openx_banner_unrec_user()[pri:7, instance:com.search.SearchTests@4e9ba398]" name="verify_openx_banner_unrec_user" class="com.search.SearchTests"/>
+        <method signature="SearchTests.verify_search_box_redirection()[pri:1, instance:com.search.SearchTests@4e9ba398]" name="verify_search_box_redirection" class="com.search.SearchTests"/>
+        <method signature="SearchTests.verify_serp_pagination_carousel_shopping()[pri:2, instance:com.search.SearchTests@4e9ba398]" name="verify_serp_pagination_carousel_shopping" class="com.search.SearchTests"/>
+        <method signature="SearchTests.verify_tokens_for_consecutive_search_for_same_keyword()[pri:8, instance:com.search.SearchTests@4e9ba398]" name="verify_tokens_for_consecutive_search_for_same_keyword" class="com.search.SearchTests"/>
+        <method signature="SignInRegisterLightboxTests.verify_register_lb_for_unrec_user()[pri:1, instance:com.lightbox.SignInRegisterLightboxTests@370736d9]" name="verify_register_lb_for_unrec_user" class="com.lightbox.SignInRegisterLightboxTests"/>
+        <method signature="SignInRegisterLightboxTests.verify_register_signin_lb_for_unrec_user_on_serp()[pri:1, instance:com.lightbox.SignInRegisterLightboxTests@370736d9]" name="verify_register_signin_lb_for_unrec_user_on_serp" class="com.lightbox.SignInRegisterLightboxTests"/>
+        <method signature="SignInRegisterLightboxTests.verify_signin_lb_for_unrec_user()[pri:2, instance:com.lightbox.SignInRegisterLightboxTests@370736d9]" name="verify_signin_lb_for_unrec_user" class="com.lightbox.SignInRegisterLightboxTests"/>
+        <method signature="WelcomeLightBoxTests.verify_welcome_lb_for_mini_reg_user()[pri:2, instance:com.lightbox.WelcomeLightBoxTests@6d7b4f4c]" name="verify_welcome_lb_for_mini_reg_user" class="com.lightbox.WelcomeLightBoxTests"/>
+        <method signature="WelcomeLightBoxTests.verify_welcome_lb_for_rec_user()[pri:1, instance:com.lightbox.WelcomeLightBoxTests@6d7b4f4c]" name="verify_welcome_lb_for_rec_user" class="com.lightbox.WelcomeLightBoxTests"/>
+        <method signature="WelcomeLightBoxTests.verify_welcome_lb_for_silver_user()[pri:3, instance:com.lightbox.WelcomeLightBoxTests@6d7b4f4c]" name="verify_welcome_lb_for_silver_user" class="com.lightbox.WelcomeLightBoxTests"/>
+        <method signature="WelcomeLightBoxTests.verify_welcome_lb_for_social_user()[pri:4, instance:com.lightbox.WelcomeLightBoxTests@6d7b4f4c]" name="verify_welcome_lb_for_social_user" class="com.lightbox.WelcomeLightBoxTests"/>
+        <method signature="ArticleTests.verify_ads_on_article_page()[pri:8, instance:com.miscellaneous.ArticleTests@6e0e048a]" name="verify_ads_on_article_page" class="com.miscellaneous.ArticleTests"/>
+        <method signature="ArticleTests.verify_article_page()[pri:1, instance:com.miscellaneous.ArticleTests@6e0e048a]" name="verify_article_page" class="com.miscellaneous.ArticleTests"/>
+        <method signature="ArticleTests.verify_article_page_bottom_dfp_ad()[pri:2, instance:com.miscellaneous.ArticleTests@6e0e048a]" name="verify_article_page_bottom_dfp_ad" class="com.miscellaneous.ArticleTests"/>
+        <method signature="ArticleTests.verify_article_page_teads_ad()[pri:3, instance:com.miscellaneous.ArticleTests@6e0e048a]" name="verify_article_page_teads_ad" class="com.miscellaneous.ArticleTests"/>
+        <method signature="ArticleTests.verify_story_details_on_story_log_for_full_reg()[pri:4, instance:com.miscellaneous.ArticleTests@6e0e048a]" name="verify_story_details_on_story_log_for_full_reg" class="com.miscellaneous.ArticleTests"/>
+        <method signature="ArticleTests.verify_story_details_on_story_log_for_mini_reg()[pri:5, instance:com.miscellaneous.ArticleTests@6e0e048a]" name="verify_story_details_on_story_log_for_mini_reg" class="com.miscellaneous.ArticleTests"/>
+        <method signature="ArticleTests.verify_story_details_on_story_log_for_silver_user()[pri:6, instance:com.miscellaneous.ArticleTests@6e0e048a]" name="verify_story_details_on_story_log_for_silver_user" class="com.miscellaneous.ArticleTests"/>
+        <method signature="ArticleTests.verify_story_details_on_story_log_for_social_user()[pri:7, instance:com.miscellaneous.ArticleTests@6e0e048a]" name="verify_story_details_on_story_log_for_social_user" class="com.miscellaneous.ArticleTests"/>
+        <method signature="BirthdayTests.birthday_tokens()[pri:1, instance:com.awardtokens.BirthdayTests@23e028a9]" name="birthday_tokens" class="com.awardtokens.BirthdayTests"/>
+        <method signature="CategoryMenuTests.verfiy_newly_added_sub_category()[pri:2, instance:com.miscellaneous.CategoryMenuTests@5b87ed94]" name="verfiy_newly_added_sub_category" class="com.miscellaneous.CategoryMenuTests"/>
+        <method signature="CategoryMenuTests.verify_ads_on_category_page()[pri:6, instance:com.miscellaneous.CategoryMenuTests@5b87ed94]" name="verify_ads_on_category_page" class="com.miscellaneous.CategoryMenuTests"/>
+        <method signature="CategoryMenuTests.verify_native_gpt_ad_positioning()[pri:4, instance:com.miscellaneous.CategoryMenuTests@5b87ed94]" name="verify_native_gpt_ad_positioning" class="com.miscellaneous.CategoryMenuTests"/>
+        <method signature="CategoryMenuTests.verify_top_story_native_ad()[pri:5, instance:com.miscellaneous.CategoryMenuTests@5b87ed94]" name="verify_top_story_native_ad" class="com.miscellaneous.CategoryMenuTests"/>
+        <method signature="SegIdTokens.verify_tokens_seg_id()[pri:1, instance:com.awardtokens.SegIdTokens@5bc79255]" name="verify_tokens_seg_id" class="com.awardtokens.SegIdTokens"/>
+        <method signature="SubCategoryMenuTests.verify_ads_on_sub_category_page()[pri:3, instance:com.miscellaneous.SubCategoryMenuTests@7fac631b]" name="verify_ads_on_sub_category_page" class="com.miscellaneous.SubCategoryMenuTests"/>
+        <method signature="SubCategoryMenuTests.verify_native_ad_positioning()[pri:2, instance:com.miscellaneous.SubCategoryMenuTests@7fac631b]" name="verify_native_ad_positioning" class="com.miscellaneous.SubCategoryMenuTests"/>
+        <method signature="SubCategoryMenuTests.verify_page_articles_count()[pri:1, instance:com.miscellaneous.SubCategoryMenuTests@7fac631b]" name="verify_page_articles_count" class="com.miscellaneous.SubCategoryMenuTests"/>
+        <method signature="TokenQueueTests.verify_credit_token_queue()[pri:1, instance:com.awardtokens.TokenQueueTests@47ef968d]" name="verify_credit_token_queue" class="com.awardtokens.TokenQueueTests"/>
+        <method signature="EcParameterTests.verify_entry_message_on_latest_activity_tab()[pri:1, instance:com.miscellaneous.EcParameterTests@3d99d22e]" name="verify_entry_message_on_latest_activity_tab" class="com.miscellaneous.EcParameterTests"/>
+        <method signature="EcParameterTests.verify_promotion_campaign_email()[pri:2, instance:com.miscellaneous.EcParameterTests@3d99d22e]" name="verify_promotion_campaign_email" class="com.miscellaneous.EcParameterTests"/>
+        <method signature="ErrorHandlingTests.verify_error_msg_cache_content_on_pages()[pri:1, instance:com.miscellaneous.ErrorHandlingTests@cd2dae5]" name="verify_error_msg_cache_content_on_pages" class="com.miscellaneous.ErrorHandlingTests"/>
+        <method signature="ErrorHandlingTests.verify_error_msg_on_fpcontent_down()[pri:1, instance:com.miscellaneous.ErrorHandlingTests@cd2dae5]" name="verify_error_msg_on_fpcontent_down" class="com.miscellaneous.ErrorHandlingTests"/>
+        <method signature="FBUserTests.verify_claim_button_on_all_pages_for_social_user()[pri:1, instance:com.usertypes.FBUserTests@6e6c3152]" name="verify_claim_button_on_all_pages_for_social_user" class="com.usertypes.FBUserTests"/>
+        <method signature="FBUserTests.verify_the_registration_form_for_social_user()[pri:2, instance:com.usertypes.FBUserTests@6e6c3152]" name="verify_the_registration_form_for_social_user" class="com.usertypes.FBUserTests"/>
+        <method signature="LotteryTests.verify_ads_on_lottery_page()[pri:3, instance:com.lottery.LotteryTests@3cef309d]" name="verify_ads_on_lottery_page" class="com.lottery.LotteryTests"/>
+        <method signature="LotteryTests.verify_lottery_page_recognized_user()[pri:2, instance:com.lottery.LotteryTests@3cef309d]" name="verify_lottery_page_recognized_user" class="com.lottery.LotteryTests"/>
+        <method signature="LotteryTests.verify_lottery_page_unrecognized_user()[pri:1, instance:com.lottery.LotteryTests@3cef309d]" name="verify_lottery_page_unrecognized_user" class="com.lottery.LotteryTests"/>
+        <method signature="MinireguserTests.verify_claim_button_on_all_pages_for_mini_reg_user()[pri:1, instance:com.usertypes.MinireguserTests@50b494a6]" name="verify_claim_button_on_all_pages_for_mini_reg_user" class="com.usertypes.MinireguserTests"/>
+        <method signature="OurPicksTests.verify_ads_on_homepage()[pri:5, instance:com.miscellaneous.OurPicksTests@49fc609f]" name="verify_ads_on_homepage" class="com.miscellaneous.OurPicksTests"/>
+        <method signature="SilveruserTests.verify_claim_button_on_all_pages_for_silver_user()[pri:1, instance:com.usertypes.SilveruserTests@6ebc05a6]" name="verify_claim_button_on_all_pages_for_silver_user" class="com.usertypes.SilveruserTests"/>
+        <method signature="WeatherTests.verify_ads_on_weather_page()[pri:5, instance:com.weather.WeatherTests@32709393]" name="verify_ads_on_weather_page" class="com.weather.WeatherTests"/>
+        <method signature="WeatherTests.verify_daily_forecast_details()[pri:3, instance:com.weather.WeatherTests@32709393]" name="verify_daily_forecast_details" class="com.weather.WeatherTests"/>
+        <method signature="WeatherTests.verify_hourly_forecast_details()[pri:2, instance:com.weather.WeatherTests@32709393]" name="verify_hourly_forecast_details" class="com.weather.WeatherTests"/>
+        <method signature="WeatherTests.weather_climate_history()[pri:4, instance:com.weather.WeatherTests@32709393]" name="weather_climate_history" class="com.weather.WeatherTests"/>
+        <method signature="Sweepstakes.verify_sweepstakes_on_edl_comics_page()[pri:4, instance:com.sweepstakes.Sweepstakes@1efed156]" name="verify_sweepstakes_on_edl_comics_page" class="com.sweepstakes.Sweepstakes"/>
+        <method signature="Sweepstakes.verify_sweepstakes_on_edl_health_page()[pri:3, instance:com.sweepstakes.Sweepstakes@1efed156]" name="verify_sweepstakes_on_edl_health_page" class="com.sweepstakes.Sweepstakes"/>
+        <method signature="Sweepstakes.verify_sweepstakes_on_edl_home_page()[pri:1, instance:com.sweepstakes.Sweepstakes@1efed156]" name="verify_sweepstakes_on_edl_home_page" class="com.sweepstakes.Sweepstakes"/>
+        <method signature="Sweepstakes.verify_sweepstakes_on_edl_lifehacks_page()[pri:5, instance:com.sweepstakes.Sweepstakes@1efed156]" name="verify_sweepstakes_on_edl_lifehacks_page" class="com.sweepstakes.Sweepstakes"/>
+        <method signature="Sweepstakes.verify_sweepstakes_on_edl_pets_page()[pri:6, instance:com.sweepstakes.Sweepstakes@1efed156]" name="verify_sweepstakes_on_edl_pets_page" class="com.sweepstakes.Sweepstakes"/>
+        <method signature="Sweepstakes.verify_sweepstakes_on_edl_recipe_page()[pri:2, instance:com.sweepstakes.Sweepstakes@1efed156]" name="verify_sweepstakes_on_edl_recipe_page" class="com.sweepstakes.Sweepstakes"/>
+        <method signature="Sweepstakes.verify_sweepstakes_on_edl_trending_page()[pri:7, instance:com.sweepstakes.Sweepstakes@1efed156]" name="verify_sweepstakes_on_edl_trending_page" class="com.sweepstakes.Sweepstakes"/>
+        <method signature="VipTests.verify_vip_activity()[pri:3, instance:com.vip.VipTests@63e2203c]" name="verify_vip_activity" class="com.vip.VipTests"/>
+        <method signature="VipTests.verify_vip_activity_by_search()[pri:3, instance:com.vip.VipTests@63e2203c]" name="verify_vip_activity_by_search" class="com.vip.VipTests"/>
+        <method signature="VipTests.verify_vip_call_trigger_order()[pri:1, instance:com.vip.VipTests@63e2203c]" name="verify_vip_call_trigger_order" class="com.vip.VipTests"/>
+        <method signature="ScratchPathTests.verify_bonus_game_bar()[pri:1, instance:com.miscellaneous.ScratchPathTests@5a8806ef]" name="verify_bonus_game_bar" class="com.miscellaneous.ScratchPathTests"/>
+        <method signature="ScratchPathTests.play_scratch_path_games()[pri:2, instance:com.miscellaneous.ScratchPathTests@5a8806ef]" name="play_scratch_path_games" class="com.miscellaneous.ScratchPathTests"/>
+        <method signature="NFSPSegmentTests.verify_nfsp_for_algo_only_segment_gold_user()[pri:1, instance:com.nfsp.NFSPSegmentTests@9660f4e]" name="verify_nfsp_for_algo_only_segment_gold_user" class="com.nfsp.NFSPSegmentTests"/>
+        <method signature="NFSPSegmentTests.verify_nfsp_for_algo_only_segment_mini_reg_user()[pri:7, instance:com.nfsp.NFSPSegmentTests@9660f4e]" name="verify_nfsp_for_algo_only_segment_mini_reg_user" class="com.nfsp.NFSPSegmentTests"/>
+        <method signature="NFSPSegmentTests.verify_nfsp_for_algo_only_segment_silver_user()[pri:4, instance:com.nfsp.NFSPSegmentTests@9660f4e]" name="verify_nfsp_for_algo_only_segment_silver_user" class="com.nfsp.NFSPSegmentTests"/>
+        <method signature="NFSPSegmentTests.verify_nfsp_for_algo_only_segment_social_user()[pri:10, instance:com.nfsp.NFSPSegmentTests@9660f4e]" name="verify_nfsp_for_algo_only_segment_social_user" class="com.nfsp.NFSPSegmentTests"/>
+        <method signature="NFSPSegmentTests.verify_nfsp_in_url_for_gold_user()[pri:3, instance:com.nfsp.NFSPSegmentTests@9660f4e]" name="verify_nfsp_in_url_for_gold_user" class="com.nfsp.NFSPSegmentTests"/>
+        <method signature="NFSPSegmentTests.verify_nfsp_in_url_for_mini_reg_user()[pri:9, instance:com.nfsp.NFSPSegmentTests@9660f4e]" name="verify_nfsp_in_url_for_mini_reg_user" class="com.nfsp.NFSPSegmentTests"/>
+        <method signature="NFSPSegmentTests.verify_nfsp_in_url_for_silver_user()[pri:6, instance:com.nfsp.NFSPSegmentTests@9660f4e]" name="verify_nfsp_in_url_for_silver_user" class="com.nfsp.NFSPSegmentTests"/>
+        <method signature="NFSPSegmentTests.verify_nfsp_in_url_for_social_user()[pri:12, instance:com.nfsp.NFSPSegmentTests@9660f4e]" name="verify_nfsp_in_url_for_social_user" class="com.nfsp.NFSPSegmentTests"/>
+        <method signature="NFSPSegmentTests.verify_nfsp_specific_segment_for_gold_user()[pri:2, instance:com.nfsp.NFSPSegmentTests@9660f4e]" name="verify_nfsp_specific_segment_for_gold_user" class="com.nfsp.NFSPSegmentTests"/>
+        <method signature="NFSPSegmentTests.verify_nfsp_specific_segment_for_mini_reg_user()[pri:8, instance:com.nfsp.NFSPSegmentTests@9660f4e]" name="verify_nfsp_specific_segment_for_mini_reg_user" class="com.nfsp.NFSPSegmentTests"/>
+        <method signature="NFSPSegmentTests.verify_nfsp_specific_segment_for_silver_user()[pri:5, instance:com.nfsp.NFSPSegmentTests@9660f4e]" name="verify_nfsp_specific_segment_for_silver_user" class="com.nfsp.NFSPSegmentTests"/>
+        <method signature="NFSPSegmentTests.verify_nfsp_specific_segment_for_social_user()[pri:11, instance:com.nfsp.NFSPSegmentTests@9660f4e]" name="verify_nfsp_specific_segment_for_social_user" class="com.nfsp.NFSPSegmentTests"/>
+        <method signature="ContestEntryTests.verify_bmh_queue()[pri:13, instance:com.contestentry.ContestEntryTests@76707e36]" name="verify_bmh_queue" class="com.contestentry.ContestEntryTests"/>
+        <method signature="ContestEntryTests.verify_contest_entry_full_reg()[pri:1, instance:com.contestentry.ContestEntryTests@76707e36]" name="verify_contest_entry_full_reg" class="com.contestentry.ContestEntryTests"/>
+        <method signature="ContestEntryTests.verify_contest_entry_invalid_ck_on_admin_valid_on_url()[pri:9, instance:com.contestentry.ContestEntryTests@76707e36]" name="verify_contest_entry_invalid_ck_on_admin_valid_on_url" class="com.contestentry.ContestEntryTests"/>
+        <method signature="ContestEntryTests.verify_contest_entry_invalid_ck_on_url_valid_on_admin()[pri:10, instance:com.contestentry.ContestEntryTests@76707e36]" name="verify_contest_entry_invalid_ck_on_url_valid_on_admin" class="com.contestentry.ContestEntryTests"/>
+        <method signature="ContestEntryTests.verify_contest_entry_invalid_tc_on_url_valid_ck_on_admin()[pri:11, instance:com.contestentry.ContestEntryTests@76707e36]" name="verify_contest_entry_invalid_tc_on_url_valid_ck_on_admin" class="com.contestentry.ContestEntryTests"/>
+        <method signature="ContestEntryTests.verify_contest_entry_mini_reg()[pri:2, instance:com.contestentry.ContestEntryTests@76707e36]" name="verify_contest_entry_mini_reg" class="com.contestentry.ContestEntryTests"/>
+        <method signature="ContestEntryTests.verify_contest_entry_queue()[pri:12, instance:com.contestentry.ContestEntryTests@76707e36]" name="verify_contest_entry_queue" class="com.contestentry.ContestEntryTests"/>
+        <method signature="ContestEntryTests.verify_contest_entry_silver_user()[pri:3, instance:com.contestentry.ContestEntryTests@76707e36]" name="verify_contest_entry_silver_user" class="com.contestentry.ContestEntryTests"/>
+        <method signature="ContestEntryTests.verify_contest_entry_social_user()[pri:4, instance:com.contestentry.ContestEntryTests@76707e36]" name="verify_contest_entry_social_user" class="com.contestentry.ContestEntryTests"/>
+        <method signature="ContestEntryTests.verify_contest_entry_with_ck_without_tc_v()[pri:6, instance:com.contestentry.ContestEntryTests@76707e36]" name="verify_contest_entry_with_ck_without_tc_v" class="com.contestentry.ContestEntryTests"/>
+        <method signature="ContestEntryTests.verify_contest_entry_with_mulitple_ck()[pri:7, instance:com.contestentry.ContestEntryTests@76707e36]" name="verify_contest_entry_with_mulitple_ck" class="com.contestentry.ContestEntryTests"/>
+        <method signature="ContestEntryTests.verify_contest_entry_with_tc_v_without_ck()[pri:5, instance:com.contestentry.ContestEntryTests@76707e36]" name="verify_contest_entry_with_tc_v_without_ck" class="com.contestentry.ContestEntryTests"/>
+        <method signature="ContestEntryTests.verify_failed_contest_entry()[pri:8, instance:com.contestentry.ContestEntryTests@76707e36]" name="verify_failed_contest_entry" class="com.contestentry.ContestEntryTests"/>
+        <method signature="VideoTests.verify_ad_refresh_on_video_page()[pri:10, instance:com.miscellaneous.VideoTests@614ddd49]" name="verify_ad_refresh_on_video_page" class="com.miscellaneous.VideoTests"/>
+        <method signature="VideoTests.verify_ads_on_video_page()[pri:11, instance:com.miscellaneous.VideoTests@614ddd49]" name="verify_ads_on_video_page" class="com.miscellaneous.VideoTests"/>
+        <method signature="VideoTests.verify_video_details_on_video_log_for_full_reg()[pri:3, instance:com.miscellaneous.VideoTests@614ddd49]" name="verify_video_details_on_video_log_for_full_reg" class="com.miscellaneous.VideoTests"/>
+        <method signature="VideoTests.verify_video_details_on_video_log_for_mini_reg()[pri:4, instance:com.miscellaneous.VideoTests@614ddd49]" name="verify_video_details_on_video_log_for_mini_reg" class="com.miscellaneous.VideoTests"/>
+        <method signature="VideoTests.verify_video_details_on_video_log_for_silver_user()[pri:5, instance:com.miscellaneous.VideoTests@614ddd49]" name="verify_video_details_on_video_log_for_silver_user" class="com.miscellaneous.VideoTests"/>
+        <method signature="VideoTests.verify_video_details_on_video_log_for_social_user()[pri:6, instance:com.miscellaneous.VideoTests@614ddd49]" name="verify_video_details_on_video_log_for_social_user" class="com.miscellaneous.VideoTests"/>
+      </group> <!-- TABLET -->
+    </groups>
+    <test name="Regression03" duration-ms="4572520" started-at="2019-02-01T10:57:38Z" finished-at="2019-02-01T12:13:50Z">
+      <class name="com.miscellaneous.EcParameterTests">
+        <test-method status="PASS" signature="deleteBrowserCookies(java.lang.reflect.Method)[pri:0, instance:com.miscellaneous.EcParameterTests@3d99d22e]" name="deleteBrowserCookies" is-config="true" duration-ms="8558" started-at="2019-02-01T16:57:23Z" finished-at="2019-02-01T16:57:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.miscellaneous.EcParameterTests.verify_entry_message_on_latest_activity_tab() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteBrowserCookies -->
+        <test-method status="PASS" signature="verify_entry_message_on_latest_activity_tab()[pri:1, instance:com.miscellaneous.EcParameterTests@3d99d22e]" name="verify_entry_message_on_latest_activity_tab" duration-ms="109474" started-at="2019-02-01T16:57:31Z" description="Verify the Entry message in the Latest activity tab by passing Ec parameter in URL" finished-at="2019-02-01T16:59:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_entry_message_on_latest_activity_tab -->
+        <test-method status="PASS" signature="notify_method_completes(java.lang.reflect.Method)[pri:0, instance:com.miscellaneous.EcParameterTests@3d99d22e]" name="notify_method_completes" is-config="true" duration-ms="2" started-at="2019-02-01T16:59:21Z" finished-at="2019-02-01T16:59:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.miscellaneous.EcParameterTests.verify_entry_message_on_latest_activity_tab() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- notify_method_completes -->
+        <test-method status="PASS" signature="deleteBrowserCookies(java.lang.reflect.Method)[pri:0, instance:com.miscellaneous.EcParameterTests@3d99d22e]" name="deleteBrowserCookies" is-config="true" duration-ms="12465" started-at="2019-02-01T17:22:33Z" finished-at="2019-02-01T17:22:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.miscellaneous.EcParameterTests.verify_promotion_campaign_email() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteBrowserCookies -->
+        <test-method status="PASS" signature="verify_promotion_campaign_email()[pri:2, instance:com.miscellaneous.EcParameterTests@3d99d22e]" name="verify_promotion_campaign_email" duration-ms="150264" started-at="2019-02-01T17:22:46Z" description="Verify the Promotion campaign email&#039;s" finished-at="2019-02-01T17:25:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_promotion_campaign_email -->
+        <test-method status="PASS" signature="notify_method_completes(java.lang.reflect.Method)[pri:0, instance:com.miscellaneous.EcParameterTests@3d99d22e]" name="notify_method_completes" is-config="true" duration-ms="1" started-at="2019-02-01T17:25:16Z" finished-at="2019-02-01T17:25:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.miscellaneous.EcParameterTests.verify_promotion_campaign_email() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- notify_method_completes -->
+      </class> <!-- com.miscellaneous.EcParameterTests -->
+      <class name="com.lottery.LotteryTests">
+        <test-method status="PASS" signature="deleteBrowserCookies(java.lang.reflect.Method)[pri:0, instance:com.lottery.LotteryTests@3cef309d]" name="deleteBrowserCookies" is-config="true" duration-ms="17600" started-at="2019-02-01T16:55:31Z" finished-at="2019-02-01T16:55:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.lottery.LotteryTests.verify_lottery_page_unrecognized_user() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteBrowserCookies -->
+        <test-method status="PASS" signature="verify_lottery_page_unrecognized_user()[pri:1, instance:com.lottery.LotteryTests@3cef309d]" name="verify_lottery_page_unrecognized_user" duration-ms="94207" started-at="2019-02-01T16:55:49Z" description="Verify Lottery page links and navigations - Unrecognized user" finished-at="2019-02-01T16:57:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_lottery_page_unrecognized_user -->
+        <test-method status="PASS" signature="notify_method_completes(java.lang.reflect.Method)[pri:0, instance:com.lottery.LotteryTests@3cef309d]" name="notify_method_completes" is-config="true" duration-ms="0" started-at="2019-02-01T16:57:23Z" finished-at="2019-02-01T16:57:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.lottery.LotteryTests.verify_lottery_page_unrecognized_user() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- notify_method_completes -->
+        <test-method status="PASS" signature="deleteBrowserCookies(java.lang.reflect.Method)[pri:0, instance:com.lottery.LotteryTests@3cef309d]" name="deleteBrowserCookies" is-config="true" duration-ms="6974" started-at="2019-02-01T17:14:19Z" finished-at="2019-02-01T17:14:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.lottery.LotteryTests.verify_lottery_page_recognized_user() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteBrowserCookies -->
+        <test-method status="PASS" signature="verify_lottery_page_recognized_user()[pri:2, instance:com.lottery.LotteryTests@3cef309d]" name="verify_lottery_page_recognized_user" duration-ms="311698" started-at="2019-02-01T17:14:26Z" description="Verify Lottery page links and navigations - Recognized user" finished-at="2019-02-01T17:19:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_lottery_page_recognized_user -->
+        <test-method status="PASS" signature="notify_method_completes(java.lang.reflect.Method)[pri:0, instance:com.lottery.LotteryTests@3cef309d]" name="notify_method_completes" is-config="true" duration-ms="0" started-at="2019-02-01T17:19:38Z" finished-at="2019-02-01T17:19:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.lottery.LotteryTests.verify_lottery_page_recognized_user() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- notify_method_completes -->
+        <test-method status="PASS" signature="deleteBrowserCookies(java.lang.reflect.Method)[pri:0, instance:com.lottery.LotteryTests@3cef309d]" name="deleteBrowserCookies" is-config="true" duration-ms="15609" started-at="2019-02-01T17:25:16Z" finished-at="2019-02-01T17:25:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.lottery.LotteryTests.verify_ads_on_lottery_page() throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteBrowserCookies -->
+        <test-method status="PASS" signature="verify_ads_on_lottery_page()[pri:3, instance:com.lottery.LotteryTests@3cef309d]" name="verify_ads_on_lottery_page" duration-ms="229551" started-at="2019-02-01T17:25:31Z" description="Verify display of Lottery page Ad&#039;s" finished-at="2019-02-01T17:29:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_ads_on_lottery_page -->
+        <test-method status="PASS" signature="notify_method_completes(java.lang.reflect.Method)[pri:0, instance:com.lottery.LotteryTests@3cef309d]" name="notify_method_completes" is-config="true" duration-ms="11" started-at="2019-02-01T17:29:21Z" finished-at="2019-02-01T17:29:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.lottery.LotteryTests.verify_ads_on_lottery_page() throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- notify_method_completes -->
+      </class> <!-- com.lottery.LotteryTests -->
+      <class name="com.weather.WeatherTests">
+        <test-method status="PASS" signature="deleteBrowserCookies(java.lang.reflect.Method)[pri:0, instance:com.weather.WeatherTests@32709393]" name="deleteBrowserCookies" is-config="true" duration-ms="8795" started-at="2019-02-01T17:19:38Z" finished-at="2019-02-01T17:19:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.weather.WeatherTests.verify_hourly_forecast_details() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteBrowserCookies -->
+        <test-method status="PASS" signature="verify_hourly_forecast_details()[pri:2, instance:com.weather.WeatherTests@32709393]" name="verify_hourly_forecast_details" duration-ms="166333" started-at="2019-02-01T17:19:47Z" description="Verify the Hourly Forecast section details with Ad refresh" finished-at="2019-02-01T17:22:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_hourly_forecast_details -->
+        <test-method status="PASS" signature="notify_method_completes(java.lang.reflect.Method)[pri:0, instance:com.weather.WeatherTests@32709393]" name="notify_method_completes" is-config="true" duration-ms="0" started-at="2019-02-01T17:22:33Z" finished-at="2019-02-01T17:22:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.weather.WeatherTests.verify_hourly_forecast_details() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- notify_method_completes -->
+        <test-method status="PASS" signature="deleteBrowserCookies(java.lang.reflect.Method)[pri:0, instance:com.weather.WeatherTests@32709393]" name="deleteBrowserCookies" is-config="true" duration-ms="9839" started-at="2019-02-01T17:29:21Z" finished-at="2019-02-01T17:29:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.weather.WeatherTests.verify_daily_forecast_details() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteBrowserCookies -->
+        <test-method status="PASS" signature="verify_daily_forecast_details()[pri:3, instance:com.weather.WeatherTests@32709393]" name="verify_daily_forecast_details" duration-ms="180451" started-at="2019-02-01T17:29:31Z" description="Verify the Daily Forecast section details with Ad refresh" finished-at="2019-02-01T17:32:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_daily_forecast_details -->
+        <test-method status="PASS" signature="notify_method_completes(java.lang.reflect.Method)[pri:0, instance:com.weather.WeatherTests@32709393]" name="notify_method_completes" is-config="true" duration-ms="1" started-at="2019-02-01T17:32:31Z" finished-at="2019-02-01T17:32:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.weather.WeatherTests.verify_daily_forecast_details() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- notify_method_completes -->
+        <test-method status="PASS" signature="deleteBrowserCookies(java.lang.reflect.Method)[pri:0, instance:com.weather.WeatherTests@32709393]" name="deleteBrowserCookies" is-config="true" duration-ms="11587" started-at="2019-02-01T17:32:31Z" finished-at="2019-02-01T17:32:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.weather.WeatherTests.weather_climate_history() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteBrowserCookies -->
+        <test-method status="PASS" signature="weather_climate_history()[pri:4, instance:com.weather.WeatherTests@32709393]" name="weather_climate_history" duration-ms="154049" started-at="2019-02-01T17:32:43Z" description="Verify the Weather Climate history" finished-at="2019-02-01T17:35:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- weather_climate_history -->
+        <test-method status="PASS" signature="notify_method_completes(java.lang.reflect.Method)[pri:0, instance:com.weather.WeatherTests@32709393]" name="notify_method_completes" is-config="true" duration-ms="1" started-at="2019-02-01T17:35:17Z" finished-at="2019-02-01T17:35:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.weather.WeatherTests.weather_climate_history() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- notify_method_completes -->
+        <test-method status="PASS" signature="deleteBrowserCookies(java.lang.reflect.Method)[pri:0, instance:com.weather.WeatherTests@32709393]" name="deleteBrowserCookies" is-config="true" duration-ms="12688" started-at="2019-02-01T17:35:17Z" finished-at="2019-02-01T17:35:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.weather.WeatherTests.verify_ads_on_weather_page() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteBrowserCookies -->
+        <test-method status="PASS" signature="verify_ads_on_weather_page()[pri:5, instance:com.weather.WeatherTests@32709393]" name="verify_ads_on_weather_page" duration-ms="257122" started-at="2019-02-01T17:35:30Z" description="Verify display of Weather page Ad&#039;s" finished-at="2019-02-01T17:39:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_ads_on_weather_page -->
+        <test-method status="PASS" signature="notify_method_completes(java.lang.reflect.Method)[pri:0, instance:com.weather.WeatherTests@32709393]" name="notify_method_completes" is-config="true" duration-ms="0" started-at="2019-02-01T17:39:47Z" finished-at="2019-02-01T17:39:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.weather.WeatherTests.verify_ads_on_weather_page() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- notify_method_completes -->
+      </class> <!-- com.weather.WeatherTests -->
+      <class name="com.usertypes.MinireguserTests">
+        <test-method status="PASS" signature="deleteBrowserCookies(java.lang.reflect.Method)[pri:0, instance:com.usertypes.MinireguserTests@50b494a6]" name="deleteBrowserCookies" is-config="true" duration-ms="10345" started-at="2019-02-01T16:49:29Z" finished-at="2019-02-01T16:49:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.usertypes.MinireguserTests.verify_claim_button_on_all_pages_for_mini_reg_user() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteBrowserCookies -->
+        <test-method status="FAIL" signature="verify_claim_button_on_all_pages_for_mini_reg_user()[pri:1, instance:com.usertypes.MinireguserTests@50b494a6]" name="verify_claim_button_on_all_pages_for_mini_reg_user" duration-ms="327882" started-at="2019-02-01T16:49:39Z" description="Verify the Claim button on all pages for the Mini Reg user" finished-at="2019-02-01T16:55:07Z">
+          <exception class="org.openqa.selenium.ScriptTimeoutException">
+            <message>
+              <![CDATA[timeout
+  (Session info: chrome=68.0.3440.84)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 200.15 seconds
+Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 17:00:58'
+System info: host: '207-254-10-175', ip: '207.254.10.175', os.name: 'windows', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab), userDataDir=C:\Windows\proxy\scoped_dir8420_12431}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=68.0.3440.84, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: c5803ccc561a76fd6547de07e72e11dc
+Command duration or timeout: 0 milliseconds]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ScriptTimeoutException: timeout
+  (Session info: chrome=68.0.3440.84)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 200.15 seconds
+Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 17:00:58'
+System info: host: '207-254-10-175', ip: '207.254.10.175', os.name: 'windows', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab), userDataDir=C:\Windows\proxy\scoped_dir8420_12431}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=68.0.3440.84, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: c5803ccc561a76fd6547de07e72e11dc
+Command duration or timeout: 0 milliseconds
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:489)
+	at com.util.WrapperFunctions.button(WrapperFunctions.java:926)
+	at com.pageobjects.HomePage.click_first_video_link(HomePage.java:518)
+	at com.usertypes.MinireguserTests.verify_claim_button_on_all_pages_for_mini_reg_user(MinireguserTests.java:52)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.remote.ScreenshotException: Screen shot has been taken
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:140)
+	... 29 more
+Caused by: org.openqa.selenium.TimeoutException: timeout
+  (Session info: chrome=68.0.3440.84)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 200.15 seconds
+Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 17:00:58'
+System info: host: '207-254-10-175', ip: '207.254.10.175', os.name: 'windows', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab), userDataDir=C:\Windows\proxy\scoped_dir8420_12431}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=68.0.3440.84, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: c5803ccc561a76fd6547de07e72e11dc
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'VSANKAR2', ip: '10.37.0.236', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_191'
+Driver info: driver.version: EventFiringWebDriver
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:577)
+	at sun.reflect.GeneratedMethodAccessor36.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:103)
+	at com.sun.proxy.$Proxy1.executeScript(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.executeScript(EventFiringWebDriver.java:217)
+	at org.openqa.selenium.remote.server.handler.ExecuteScript.call(ExecuteScript.java:54)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:176)
+	... 3 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ScriptTimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_claim_button_on_all_pages_for_mini_reg_user -->
+        <test-method status="PASS" signature="notify_method_completes(java.lang.reflect.Method)[pri:0, instance:com.usertypes.MinireguserTests@50b494a6]" name="notify_method_completes" is-config="true" duration-ms="1" started-at="2019-02-01T16:55:31Z" finished-at="2019-02-01T16:55:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.usertypes.MinireguserTests.verify_claim_button_on_all_pages_for_mini_reg_user() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- notify_method_completes -->
+      </class> <!-- com.usertypes.MinireguserTests -->
+      <class name="com.miscellaneous.OurPicksTests">
+        <test-method status="PASS" signature="deleteBrowserCookies(java.lang.reflect.Method)[pri:0, instance:com.miscellaneous.OurPicksTests@49fc609f]" name="deleteBrowserCookies" is-config="true" duration-ms="7734" started-at="2019-02-01T17:39:47Z" finished-at="2019-02-01T17:39:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.miscellaneous.OurPicksTests.verify_ads_on_homepage() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteBrowserCookies -->
+        <test-method status="PASS" signature="verify_ads_on_homepage()[pri:5, instance:com.miscellaneous.OurPicksTests@49fc609f]" name="verify_ads_on_homepage" duration-ms="234421" started-at="2019-02-01T17:39:55Z" description="Verify display of HomePage Ad&#039;s" finished-at="2019-02-01T17:43:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_ads_on_homepage -->
+        <test-method status="PASS" signature="notify_method_completes(java.lang.reflect.Method)[pri:0, instance:com.miscellaneous.OurPicksTests@49fc609f]" name="notify_method_completes" is-config="true" duration-ms="0" started-at="2019-02-01T17:43:49Z" finished-at="2019-02-01T17:43:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.miscellaneous.OurPicksTests.verify_ads_on_homepage() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- notify_method_completes -->
+      </class> <!-- com.miscellaneous.OurPicksTests -->
+      <class name="com.miscellaneous.ErrorHandlingTests">
+        <test-method status="PASS" signature="deleteBrowserCookies(java.lang.reflect.Method)[pri:0, instance:com.miscellaneous.ErrorHandlingTests@cd2dae5]" name="deleteBrowserCookies" is-config="true" duration-ms="9446" started-at="2019-02-01T16:59:21Z" finished-at="2019-02-01T16:59:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.miscellaneous.ErrorHandlingTests.verify_error_msg_cache_content_on_pages() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteBrowserCookies -->
+        <test-method status="FAIL" signature="verify_error_msg_cache_content_on_pages()[pri:1, instance:com.miscellaneous.ErrorHandlingTests@cd2dae5]" name="verify_error_msg_cache_content_on_pages" duration-ms="527463" started-at="2019-02-01T16:59:30Z" description="Verify the 404 Error message by passing invalid configs and params" finished-at="2019-02-01T17:08:18Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[By.id: art_state LISTBOX NOT FOUND. TEST FAILED.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: By.id: art_state LISTBOX NOT FOUND. TEST FAILED.
+	at org.testng.Assert.fail(Assert.java:94)
+	at com.util.WrapperFunctions.selectByVisibleText(WrapperFunctions.java:822)
+	at com.pageobjects.JoomlaConfigPage.publish_article(JoomlaConfigPage.java:162)
+	at com.miscellaneous.ErrorHandlingTests.verify_error_msg_cache_content_on_pages(ErrorHandlingTests.java:249)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_error_msg_cache_content_on_pages -->
+        <test-method status="PASS" signature="notify_method_completes(java.lang.reflect.Method)[pri:0, instance:com.miscellaneous.ErrorHandlingTests@cd2dae5]" name="notify_method_completes" is-config="true" duration-ms="1" started-at="2019-02-01T17:08:23Z" finished-at="2019-02-01T17:08:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.miscellaneous.ErrorHandlingTests.verify_error_msg_cache_content_on_pages() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- notify_method_completes -->
+        <test-method status="PASS" signature="deleteBrowserCookies(java.lang.reflect.Method)[pri:0, instance:com.miscellaneous.ErrorHandlingTests@cd2dae5]" name="deleteBrowserCookies" is-config="true" duration-ms="11770" started-at="2019-02-01T17:08:23Z" finished-at="2019-02-01T17:08:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.miscellaneous.ErrorHandlingTests.verify_error_msg_on_fpcontent_down() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteBrowserCookies -->
+        <test-method status="FAIL" signature="verify_error_msg_on_fpcontent_down()[pri:1, instance:com.miscellaneous.ErrorHandlingTests@cd2dae5]" name="verify_error_msg_on_fpcontent_down" duration-ms="146191" started-at="2019-02-01T17:08:34Z" description="Verify the Error Hadnling message" finished-at="2019-02-01T17:11:01Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [gnbukihnxrcgnmnxhxgliwgqqzpiph] but found [sorry to break the news, but this page is no longer available.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [gnbukihnxrcgnmnxhxgliwgqqzpiph] but found [sorry to break the news, but this page is no longer available.]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at com.util.WrapperFunctions.assertEqualsIgnoreCase(WrapperFunctions.java:1581)
+	at com.miscellaneous.ErrorHandlingTests.verify_error_msg_on_fpcontent_down(ErrorHandlingTests.java:88)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_error_msg_on_fpcontent_down -->
+        <test-method status="PASS" signature="notify_method_completes(java.lang.reflect.Method)[pri:0, instance:com.miscellaneous.ErrorHandlingTests@cd2dae5]" name="notify_method_completes" is-config="true" duration-ms="1" started-at="2019-02-01T17:11:03Z" finished-at="2019-02-01T17:11:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.miscellaneous.ErrorHandlingTests.verify_error_msg_on_fpcontent_down() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- notify_method_completes -->
+      </class> <!-- com.miscellaneous.ErrorHandlingTests -->
+      <class name="com.usertypes.SilveruserTests">
+        <test-method status="PASS" signature="setup(org.testng.ITestContext)[pri:0, instance:com.usertypes.SilveruserTests@6ebc05a6]" name="setup" is-config="true" duration-ms="22343" started-at="2019-02-01T16:27:38Z" finished-at="2019-02-01T16:28:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@e0937c7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="deleteBrowserCookies(java.lang.reflect.Method)[pri:0, instance:com.usertypes.SilveruserTests@6ebc05a6]" name="deleteBrowserCookies" is-config="true" duration-ms="23999" started-at="2019-02-01T16:28:00Z" finished-at="2019-02-01T16:28:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.usertypes.SilveruserTests.verify_claim_button_on_all_pages_for_silver_user() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteBrowserCookies -->
+        <test-method status="PASS" signature="verify_claim_button_on_all_pages_for_silver_user()[pri:1, instance:com.usertypes.SilveruserTests@6ebc05a6]" name="verify_claim_button_on_all_pages_for_silver_user" duration-ms="718891" started-at="2019-02-01T16:28:24Z" description="Verify the Claim button for Silver user on all the pages" finished-at="2019-02-01T16:40:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_claim_button_on_all_pages_for_silver_user -->
+        <test-method status="PASS" signature="notify_method_completes(java.lang.reflect.Method)[pri:0, instance:com.usertypes.SilveruserTests@6ebc05a6]" name="notify_method_completes" is-config="true" duration-ms="0" started-at="2019-02-01T16:40:23Z" finished-at="2019-02-01T16:40:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.usertypes.SilveruserTests.verify_claim_button_on_all_pages_for_silver_user() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- notify_method_completes -->
+        <test-method status="PASS" signature="close()[pri:0, instance:com.usertypes.SilveruserTests@6ebc05a6]" name="close" is-config="true" duration-ms="1396" started-at="2019-02-01T17:43:49Z" finished-at="2019-02-01T17:43:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- com.usertypes.SilveruserTests -->
+      <class name="com.usertypes.FBUserTests">
+        <test-method status="PASS" signature="deleteBrowserCookies(java.lang.reflect.Method)[pri:0, instance:com.usertypes.FBUserTests@6e6c3152]" name="deleteBrowserCookies" is-config="true" duration-ms="12374" started-at="2019-02-01T16:40:23Z" finished-at="2019-02-01T16:40:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.usertypes.FBUserTests.verify_claim_button_on_all_pages_for_social_user() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteBrowserCookies -->
+        <test-method status="PASS" signature="verify_claim_button_on_all_pages_for_social_user()[pri:1, instance:com.usertypes.FBUserTests@6e6c3152]" name="verify_claim_button_on_all_pages_for_social_user" duration-ms="533124" started-at="2019-02-01T16:40:35Z" description="Verify the Claim button for Social user on all the pages" finished-at="2019-02-01T16:49:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_claim_button_on_all_pages_for_social_user -->
+        <test-method status="PASS" signature="notify_method_completes(java.lang.reflect.Method)[pri:0, instance:com.usertypes.FBUserTests@6e6c3152]" name="notify_method_completes" is-config="true" duration-ms="1" started-at="2019-02-01T16:49:29Z" finished-at="2019-02-01T16:49:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.usertypes.FBUserTests.verify_claim_button_on_all_pages_for_social_user() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- notify_method_completes -->
+        <test-method status="PASS" signature="deleteBrowserCookies(java.lang.reflect.Method)[pri:0, instance:com.usertypes.FBUserTests@6e6c3152]" name="deleteBrowserCookies" is-config="true" duration-ms="14997" started-at="2019-02-01T17:11:03Z" finished-at="2019-02-01T17:11:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.usertypes.FBUserTests.verify_the_registration_form_for_social_user() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteBrowserCookies -->
+        <test-method status="PASS" signature="verify_the_registration_form_for_social_user()[pri:2, instance:com.usertypes.FBUserTests@6e6c3152]" name="verify_the_registration_form_for_social_user" duration-ms="181724" started-at="2019-02-01T17:11:18Z" description="Verify the Registration form field validation for Social user" finished-at="2019-02-01T17:14:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_the_registration_form_for_social_user -->
+        <test-method status="PASS" signature="notify_method_completes(java.lang.reflect.Method)[pri:0, instance:com.usertypes.FBUserTests@6e6c3152]" name="notify_method_completes" is-config="true" duration-ms="0" started-at="2019-02-01T17:14:19Z" finished-at="2019-02-01T17:14:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.usertypes.FBUserTests.verify_the_registration_form_for_social_user() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- notify_method_completes -->
+      </class> <!-- com.usertypes.FBUserTests -->
+    </test> <!-- Regression03 -->
+    <test name="Regression01" duration-ms="6893485" started-at="2019-02-01T10:57:38Z" finished-at="2019-02-01T12:52:31Z">
+      <class name="com.lightbox.SignInRegisterLightboxTests">
+        <test-method status="PASS" signature="deleteBrowserCookies(java.lang.reflect.Method)[pri:0, instance:com.lightbox.SignInRegisterLightboxTests@370736d9]" name="deleteBrowserCookies" is-config="true" duration-ms="9531" started-at="2019-02-01T16:52:56Z" finished-at="2019-02-01T16:53:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.lightbox.SignInRegisterLightboxTests.verify_register_lb_for_unrec_user() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteBrowserCookies -->
+        <test-method status="PASS" signature="verify_register_lb_for_unrec_user()[pri:1, instance:com.lightbox.SignInRegisterLightboxTests@370736d9]" name="verify_register_lb_for_unrec_user" duration-ms="266002" started-at="2019-02-01T16:53:05Z" description="Verify the Register/Sign-In LightBox for UnRecognised user" finished-at="2019-02-01T16:57:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_register_lb_for_unrec_user -->
+        <test-method status="PASS" signature="notify_method_completes(java.lang.reflect.Method)[pri:0, instance:com.lightbox.SignInRegisterLightboxTests@370736d9]" name="notify_method_completes" is-config="true" duration-ms="0" started-at="2019-02-01T16:57:31Z" finished-at="2019-02-01T16:57:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.lightbox.SignInRegisterLightboxTests.verify_register_lb_for_unrec_user() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- notify_method_completes -->
+        <test-method status="PASS" signature="deleteBrowserCookies(java.lang.reflect.Method)[pri:0, instance:com.lightbox.SignInRegisterLightboxTests@370736d9]" name="deleteBrowserCookies" is-config="true" duration-ms="12463" started-at="2019-02-01T16:57:31Z" finished-at="2019-02-01T16:57:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.lightbox.SignInRegisterLightboxTests.verify_register_signin_lb_for_unrec_user_on_serp() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteBrowserCookies -->
+        <test-method status="PASS" signature="verify_register_signin_lb_for_unrec_user_on_serp()[pri:1, instance:com.lightbox.SignInRegisterLightboxTests@370736d9]" name="verify_register_signin_lb_for_unrec_user_on_serp" duration-ms="57038" started-at="2019-02-01T16:57:44Z" description="Verify the Register/Sign-In LightBox for UnRecognised user on SERP page" finished-at="2019-02-01T16:58:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_register_signin_lb_for_unrec_user_on_serp -->
+        <test-method status="PASS" signature="notify_method_completes(java.lang.reflect.Method)[pri:0, instance:com.lightbox.SignInRegisterLightboxTests@370736d9]" name="notify_method_completes" is-config="true" duration-ms="0" started-at="2019-02-01T16:58:41Z" finished-at="2019-02-01T16:58:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.lightbox.SignInRegisterLightboxTests.verify_register_signin_lb_for_unrec_user_on_serp() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- notify_method_completes -->
+        <test-method status="PASS" signature="deleteBrowserCookies(java.lang.reflect.Method)[pri:0, instance:com.lightbox.SignInRegisterLightboxTests@370736d9]" name="deleteBrowserCookies" is-config="true" duration-ms="8629" started-at="2019-02-01T17:22:31Z" finished-at="2019-02-01T17:22:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.lightbox.SignInRegisterLightboxTests.verify_signin_lb_for_unrec_user() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteBrowserCookies -->
+        <test-method status="PASS" signature="verify_signin_lb_for_unrec_user()[pri:2, instance:com.lightbox.SignInRegisterLightboxTests@370736d9]" name="verify_signin_lb_for_unrec_user" duration-ms="210274" started-at="2019-02-01T17:22:39Z" description="Verify the Register/Sign-In LightBox for UnRecognised user" finished-at="2019-02-01T17:26:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_signin_lb_for_unrec_user -->
+        <test-method status="PASS" signature="notify_method_completes(java.lang.reflect.Method)[pri:0, instance:com.lightbox.SignInRegisterLightboxTests@370736d9]" name="notify_method_completes" is-config="true" duration-ms="0" started-at="2019-02-01T17:26:09Z" finished-at="2019-02-01T17:26:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.lightbox.SignInRegisterLightboxTests.verify_signin_lb_for_unrec_user() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- notify_method_completes -->
+      </class> <!-- com.lightbox.SignInRegisterLightboxTests -->
+      <class name="com.lightbox.WelcomeLightBoxTests">
+        <test-method status="PASS" signature="deleteBrowserCookies(java.lang.reflect.Method)[pri:0, instance:com.lightbox.WelcomeLightBoxTests@6d7b4f4c]" name="deleteBrowserCookies" is-config="true" duration-ms="20100" started-at="2019-02-01T16:33:21Z" finished-at="2019-02-01T16:33:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.lightbox.WelcomeLightBoxTests.verify_welcome_lb_for_rec_user() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteBrowserCookies -->
+        <test-method status="PASS" signature="verify_welcome_lb_for_rec_user()[pri:1, instance:com.lightbox.WelcomeLightBoxTests@6d7b4f4c]" name="verify_welcome_lb_for_rec_user" duration-ms="285114" started-at="2019-02-01T16:33:41Z" description="Verify the Welcome LightBox for Recognised User" finished-at="2019-02-01T16:38:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_welcome_lb_for_rec_user -->
+        <test-method status="PASS" signature="notify_method_completes(java.lang.reflect.Method)[pri:0, instance:com.lightbox.WelcomeLightBoxTests@6d7b4f4c]" name="notify_method_completes" is-config="true" duration-ms="1" started-at="2019-02-01T16:38:26Z" finished-at="2019-02-01T16:38:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.lightbox.WelcomeLightBoxTests.verify_welcome_lb_for_rec_user() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- notify_method_completes -->
+        <test-method status="PASS" signature="deleteBrowserCookies(java.lang.reflect.Method)[pri:0, instance:com.lightbox.WelcomeLightBoxTests@6d7b4f4c]" name="deleteBrowserCookies" is-config="true" duration-ms="13393" started-at="2019-02-01T17:05:15Z" finished-at="2019-02-01T17:05:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.lightbox.WelcomeLightBoxTests.verify_welcome_lb_for_mini_reg_user() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteBrowserCookies -->
+        <test-method status="PASS" signature="verify_welcome_lb_for_mini_reg_user()[pri:2, instance:com.lightbox.WelcomeLightBoxTests@6d7b4f4c]" name="verify_welcome_lb_for_mini_reg_user" duration-ms="230121" started-at="2019-02-01T17:05:28Z" description="Verify the Welcome LightBox for Mini Reg User" finished-at="2019-02-01T17:09:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_welcome_lb_for_mini_reg_user -->
+        <test-method status="PASS" signature="notify_method_completes(java.lang.reflect.Method)[pri:0, instance:com.lightbox.WelcomeLightBoxTests@6d7b4f4c]" name="notify_method_completes" is-config="true" duration-ms="0" started-at="2019-02-01T17:09:18Z" finished-at="2019-02-01T17:09:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.lightbox.WelcomeLightBoxTests.verify_welcome_lb_for_mini_reg_user() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- notify_method_completes -->
+        <test-method status="PASS" signature="deleteBrowserCookies(java.lang.reflect.Method)[pri:0, instance:com.lightbox.WelcomeLightBoxTests@6d7b4f4c]" name="deleteBrowserCookies" is-config="true" duration-ms="7980" started-at="2019-02-01T17:34:15Z" finished-at="2019-02-01T17:34:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.lightbox.WelcomeLightBoxTests.verify_welcome_lb_for_silver_user() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteBrowserCookies -->
+        <test-method status="PASS" signature="verify_welcome_lb_for_silver_user()[pri:3, instance:com.lightbox.WelcomeLightBoxTests@6d7b4f4c]" name="verify_welcome_lb_for_silver_user" duration-ms="255741" started-at="2019-02-01T17:34:23Z" description="Verify the Welcome LightBox for Silver User" finished-at="2019-02-01T17:38:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_welcome_lb_for_silver_user -->
+        <test-method status="PASS" signature="notify_method_completes(java.lang.reflect.Method)[pri:0, instance:com.lightbox.WelcomeLightBoxTests@6d7b4f4c]" name="notify_method_completes" is-config="true" duration-ms="0" started-at="2019-02-01T17:38:39Z" finished-at="2019-02-01T17:38:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.lightbox.WelcomeLightBoxTests.verify_welcome_lb_for_silver_user() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- notify_method_completes -->
+        <test-method status="PASS" signature="deleteBrowserCookies(java.lang.reflect.Method)[pri:0, instance:com.lightbox.WelcomeLightBoxTests@6d7b4f4c]" name="deleteBrowserCookies" is-config="true" duration-ms="18012" started-at="2019-02-01T17:55:23Z" finished-at="2019-02-01T17:55:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.lightbox.WelcomeLightBoxTests.verify_welcome_lb_for_social_user() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteBrowserCookies -->
+        <test-method status="PASS" signature="verify_welcome_lb_for_social_user()[pri:4, instance:com.lightbox.WelcomeLightBoxTests@6d7b4f4c]" name="verify_welcome_lb_for_social_user" duration-ms="260709" started-at="2019-02-01T17:55:41Z" description="Verify the Welcome LightBox for Social User" finished-at="2019-02-01T18:00:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_welcome_lb_for_social_user -->
+        <test-method status="PASS" signature="notify_method_completes(java.lang.reflect.Method)[pri:0, instance:com.lightbox.WelcomeLightBoxTests@6d7b4f4c]" name="notify_method_completes" is-config="true" duration-ms="0" started-at="2019-02-01T18:00:02Z" finished-at="2019-02-01T18:00:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.lightbox.WelcomeLightBoxTests.verify_welcome_lb_for_social_user() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- notify_method_completes -->
+      </class> <!-- com.lightbox.WelcomeLightBoxTests -->
+      <class name="com.search.SearchTests">
+        <test-method status="PASS" signature="setup(org.testng.ITestContext)[pri:0, instance:com.search.SearchTests@4e9ba398]" name="setup" is-config="true" duration-ms="26290" started-at="2019-02-01T16:27:38Z" finished-at="2019-02-01T16:28:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@745e6d95]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="deleteBrowserCookies(java.lang.reflect.Method)[pri:0, instance:com.search.SearchTests@4e9ba398]" name="deleteBrowserCookies" is-config="true" duration-ms="23120" started-at="2019-02-01T16:28:04Z" finished-at="2019-02-01T16:28:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.search.SearchTests.verify_search_box_redirection() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteBrowserCookies -->
+        <test-method status="PASS" signature="verify_search_box_redirection()[pri:1, instance:com.search.SearchTests@4e9ba398]" name="verify_search_box_redirection" duration-ms="293338" started-at="2019-02-01T16:28:27Z" description="Verify the Search Box redirection URL by altering in the Joomla admin" finished-at="2019-02-01T16:33:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_search_box_redirection -->
+        <test-method status="PASS" signature="notify_method_completes(java.lang.reflect.Method)[pri:0, instance:com.search.SearchTests@4e9ba398]" name="notify_method_completes" is-config="true" duration-ms="0" started-at="2019-02-01T16:33:21Z" finished-at="2019-02-01T16:33:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.search.SearchTests.verify_search_box_redirection() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- notify_method_completes -->
+        <test-method status="PASS" signature="deleteBrowserCookies(java.lang.reflect.Method)[pri:0, instance:com.search.SearchTests@4e9ba398]" name="deleteBrowserCookies" is-config="true" duration-ms="16470" started-at="2019-02-01T17:03:10Z" finished-at="2019-02-01T17:03:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.search.SearchTests.verify_serp_pagination_carousel_shopping() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteBrowserCookies -->
+        <test-method status="PASS" signature="verify_serp_pagination_carousel_shopping()[pri:2, instance:com.search.SearchTests@4e9ba398]" name="verify_serp_pagination_carousel_shopping" duration-ms="108144" started-at="2019-02-01T17:03:27Z" description="Verify the Serp page Pagination links, Shopping carousel and In-line shopping Ads" finished-at="2019-02-01T17:05:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_serp_pagination_carousel_shopping -->
+        <test-method status="PASS" signature="notify_method_completes(java.lang.reflect.Method)[pri:0, instance:com.search.SearchTests@4e9ba398]" name="notify_method_completes" is-config="true" duration-ms="0" started-at="2019-02-01T17:05:15Z" finished-at="2019-02-01T17:05:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.search.SearchTests.verify_serp_pagination_carousel_shopping() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- notify_method_completes -->
+        <test-method status="PASS" signature="deleteBrowserCookies(java.lang.reflect.Method)[pri:0, instance:com.search.SearchTests@4e9ba398]" name="deleteBrowserCookies" is-config="true" duration-ms="8330" started-at="2019-02-01T17:28:54Z" finished-at="2019-02-01T17:29:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.search.SearchTests.verify_inhouse_ads() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteBrowserCookies -->
+        <test-method status="PASS" signature="verify_inhouse_ads()[pri:3, instance:com.search.SearchTests@4e9ba398]" name="verify_inhouse_ads" duration-ms="312677" started-at="2019-02-01T17:29:02Z" description="Verify the In House Ads on SERP page" finished-at="2019-02-01T17:34:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_inhouse_ads -->
+        <test-method status="PASS" signature="notify_method_completes(java.lang.reflect.Method)[pri:0, instance:com.search.SearchTests@4e9ba398]" name="notify_method_completes" is-config="true" duration-ms="0" started-at="2019-02-01T17:34:15Z" finished-at="2019-02-01T17:34:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.search.SearchTests.verify_inhouse_ads() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- notify_method_completes -->
+        <test-method status="PASS" signature="deleteBrowserCookies(java.lang.reflect.Method)[pri:0, instance:com.search.SearchTests@4e9ba398]" name="deleteBrowserCookies" is-config="true" duration-ms="8118" started-at="2019-02-01T17:52:43Z" finished-at="2019-02-01T17:52:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.search.SearchTests.verify_collapse_search_box_rec_user() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteBrowserCookies -->
+        <test-method status="PASS" signature="verify_collapse_search_box_rec_user()[pri:4, instance:com.search.SearchTests@4e9ba398]" name="verify_collapse_search_box_rec_user" duration-ms="151637" started-at="2019-02-01T17:52:51Z" description="Verify the Collapse Search box on all the Site Pages for Recognised User" finished-at="2019-02-01T17:55:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_collapse_search_box_rec_user -->
+        <test-method status="PASS" signature="notify_method_completes(java.lang.reflect.Method)[pri:0, instance:com.search.SearchTests@4e9ba398]" name="notify_method_completes" is-config="true" duration-ms="0" started-at="2019-02-01T17:55:23Z" finished-at="2019-02-01T17:55:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.search.SearchTests.verify_collapse_search_box_rec_user() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- notify_method_completes -->
+        <test-method status="PASS" signature="deleteBrowserCookies(java.lang.reflect.Method)[pri:0, instance:com.search.SearchTests@4e9ba398]" name="deleteBrowserCookies" is-config="true" duration-ms="15896" started-at="2019-02-01T18:09:53Z" finished-at="2019-02-01T18:10:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.search.SearchTests.verify_collapse_search_box_unrec_user() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteBrowserCookies -->
+        <test-method status="PASS" signature="verify_collapse_search_box_unrec_user()[pri:5, instance:com.search.SearchTests@4e9ba398]" name="verify_collapse_search_box_unrec_user" duration-ms="50588" started-at="2019-02-01T18:10:09Z" description="Verify the Collapse Search box on all the Site Pages for UnRecognised User" finished-at="2019-02-01T18:11:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_collapse_search_box_unrec_user -->
+        <test-method status="PASS" signature="notify_method_completes(java.lang.reflect.Method)[pri:0, instance:com.search.SearchTests@4e9ba398]" name="notify_method_completes" is-config="true" duration-ms="1" started-at="2019-02-01T18:11:00Z" finished-at="2019-02-01T18:11:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.search.SearchTests.verify_collapse_search_box_unrec_user() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- notify_method_completes -->
+        <test-method status="PASS" signature="deleteBrowserCookies(java.lang.reflect.Method)[pri:0, instance:com.search.SearchTests@4e9ba398]" name="deleteBrowserCookies" is-config="true" duration-ms="10658" started-at="2019-02-01T18:15:57Z" finished-at="2019-02-01T18:16:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.search.SearchTests.verify_openx_banner_rec_user() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteBrowserCookies -->
+        <test-method status="PASS" signature="verify_openx_banner_rec_user()[pri:6, instance:com.search.SearchTests@4e9ba398]" name="verify_openx_banner_rec_user" duration-ms="121031" started-at="2019-02-01T18:16:08Z" description="Verify the OpenX banner on all the Site Pages for Recognised User" finished-at="2019-02-01T18:18:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_openx_banner_rec_user -->
+        <test-method status="PASS" signature="notify_method_completes(java.lang.reflect.Method)[pri:0, instance:com.search.SearchTests@4e9ba398]" name="notify_method_completes" is-config="true" duration-ms="1" started-at="2019-02-01T18:18:09Z" finished-at="2019-02-01T18:18:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.search.SearchTests.verify_openx_banner_rec_user() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- notify_method_completes -->
+        <test-method status="PASS" signature="deleteBrowserCookies(java.lang.reflect.Method)[pri:0, instance:com.search.SearchTests@4e9ba398]" name="deleteBrowserCookies" is-config="true" duration-ms="15447" started-at="2019-02-01T18:18:09Z" finished-at="2019-02-01T18:18:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.search.SearchTests.verify_openx_banner_unrec_user() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteBrowserCookies -->
+        <test-method status="PASS" signature="verify_openx_banner_unrec_user()[pri:7, instance:com.search.SearchTests@4e9ba398]" name="verify_openx_banner_unrec_user" duration-ms="28646" started-at="2019-02-01T18:18:24Z" description="Verify the OpenX banner and search box on all the Site Pages for UnRecognised User" finished-at="2019-02-01T18:18:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_openx_banner_unrec_user -->
+        <test-method status="PASS" signature="deleteBrowserCookies(java.lang.reflect.Method)[pri:0, instance:com.search.SearchTests@4e9ba398]" name="deleteBrowserCookies" is-config="true" duration-ms="7937" started-at="2019-02-01T18:18:53Z" finished-at="2019-02-01T18:19:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.search.SearchTests.verify_tokens_for_consecutive_search_for_same_keyword() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteBrowserCookies -->
+        <test-method status="PASS" signature="notify_method_completes(java.lang.reflect.Method)[pri:0, instance:com.search.SearchTests@4e9ba398]" name="notify_method_completes" is-config="true" duration-ms="0" started-at="2019-02-01T18:18:53Z" finished-at="2019-02-01T18:18:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.search.SearchTests.verify_openx_banner_unrec_user() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- notify_method_completes -->
+        <test-method status="PASS" signature="verify_tokens_for_consecutive_search_for_same_keyword()[pri:8, instance:com.search.SearchTests@4e9ba398]" name="verify_tokens_for_consecutive_search_for_same_keyword" duration-ms="208364" started-at="2019-02-01T18:19:01Z" description="Verify the Token amount for consecutive search for the same keyword" finished-at="2019-02-01T18:22:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_tokens_for_consecutive_search_for_same_keyword -->
+        <test-method status="PASS" signature="close()[pri:0, instance:com.search.SearchTests@4e9ba398]" name="close" is-config="true" duration-ms="1936" started-at="2019-02-01T18:22:29Z" finished-at="2019-02-01T18:22:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method status="PASS" signature="notify_method_completes(java.lang.reflect.Method)[pri:0, instance:com.search.SearchTests@4e9ba398]" name="notify_method_completes" is-config="true" duration-ms="0" started-at="2019-02-01T18:22:29Z" finished-at="2019-02-01T18:22:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.search.SearchTests.verify_tokens_for_consecutive_search_for_same_keyword() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- notify_method_completes -->
+      </class> <!-- com.search.SearchTests -->
+      <class name="com.lightbox.HighRiskLightboxTests">
+        <test-method status="PASS" signature="get_nfsp_from_admin()[pri:0, instance:com.lightbox.HighRiskLightboxTests@527740a2]" name="get_nfsp_from_admin" is-config="true" duration-ms="41315" started-at="2019-02-01T16:38:26Z" finished-at="2019-02-01T16:39:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- get_nfsp_from_admin -->
+        <test-method status="PASS" signature="reset_daily_count_of_default_user()[pri:0, instance:com.lightbox.HighRiskLightboxTests@527740a2]" name="reset_daily_count_of_default_user" is-config="true" duration-ms="502" started-at="2019-02-01T16:39:07Z" finished-at="2019-02-01T16:39:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reset_daily_count_of_default_user -->
+        <test-method status="PASS" signature="deleteBrowserCookies(java.lang.reflect.Method)[pri:0, instance:com.lightbox.HighRiskLightboxTests@527740a2]" name="deleteBrowserCookies" is-config="true" duration-ms="25915" started-at="2019-02-01T16:39:08Z" finished-at="2019-02-01T16:39:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.lightbox.HighRiskLightboxTests.verify_rapid_lb_for_rec_user() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteBrowserCookies -->
+        <test-method status="PASS" signature="verify_rapid_lb_for_rec_user()[pri:1, instance:com.lightbox.HighRiskLightboxTests@527740a2]" name="verify_rapid_lb_for_rec_user" duration-ms="251956" started-at="2019-02-01T16:39:34Z" description="Verify the Rapid Search LightBox for Recognised User" finished-at="2019-02-01T16:43:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_rapid_lb_for_rec_user -->
+        <test-method status="PASS" signature="notify_method_completes(java.lang.reflect.Method)[pri:0, instance:com.lightbox.HighRiskLightboxTests@527740a2]" name="notify_method_completes" is-config="true" duration-ms="0" started-at="2019-02-01T16:43:46Z" finished-at="2019-02-01T16:43:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.lightbox.HighRiskLightboxTests.verify_rapid_lb_for_rec_user() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- notify_method_completes -->
+        <test-method status="PASS" signature="deleteBrowserCookies(java.lang.reflect.Method)[pri:0, instance:com.lightbox.HighRiskLightboxTests@527740a2]" name="deleteBrowserCookies" is-config="true" duration-ms="15681" started-at="2019-02-01T17:09:18Z" finished-at="2019-02-01T17:09:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.lightbox.HighRiskLightboxTests.verify_25th_search_lb() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteBrowserCookies -->
+        <test-method status="PASS" signature="verify_25th_search_lb()[pri:2, instance:com.lightbox.HighRiskLightboxTests@527740a2]" name="verify_25th_search_lb" duration-ms="242136" started-at="2019-02-01T17:09:34Z" description="Verify the 26th Maximum Search LightBox for Recognised User" finished-at="2019-02-01T17:13:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_25th_search_lb -->
+        <test-method status="PASS" signature="notify_method_completes(java.lang.reflect.Method)[pri:0, instance:com.lightbox.HighRiskLightboxTests@527740a2]" name="notify_method_completes" is-config="true" duration-ms="0" started-at="2019-02-01T17:13:36Z" finished-at="2019-02-01T17:13:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.lightbox.HighRiskLightboxTests.verify_25th_search_lb() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- notify_method_completes -->
+        <test-method status="PASS" signature="deleteBrowserCookies(java.lang.reflect.Method)[pri:0, instance:com.lightbox.HighRiskLightboxTests@527740a2]" name="deleteBrowserCookies" is-config="true" duration-ms="14873" started-at="2019-02-01T17:38:39Z" finished-at="2019-02-01T17:38:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.lightbox.HighRiskLightboxTests.verify_40th_search_lb() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteBrowserCookies -->
+        <test-method status="PASS" signature="verify_40th_search_lb()[pri:3, instance:com.lightbox.HighRiskLightboxTests@527740a2]" name="verify_40th_search_lb" duration-ms="205656" started-at="2019-02-01T17:38:54Z" description="Verify the 40th Maximum Search LightBox for Recognised User" finished-at="2019-02-01T17:42:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_40th_search_lb -->
+        <test-method status="PASS" signature="notify_method_completes(java.lang.reflect.Method)[pri:0, instance:com.lightbox.HighRiskLightboxTests@527740a2]" name="notify_method_completes" is-config="true" duration-ms="0" started-at="2019-02-01T17:42:19Z" finished-at="2019-02-01T17:42:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.lightbox.HighRiskLightboxTests.verify_40th_search_lb() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- notify_method_completes -->
+        <test-method status="PASS" signature="deleteBrowserCookies(java.lang.reflect.Method)[pri:0, instance:com.lightbox.HighRiskLightboxTests@527740a2]" name="deleteBrowserCookies" is-config="true" duration-ms="15964" started-at="2019-02-01T18:00:02Z" finished-at="2019-02-01T18:00:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.lightbox.HighRiskLightboxTests.verify_75th_search_lb() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteBrowserCookies -->
+        <test-method status="PASS" signature="verify_75th_search_lb()[pri:4, instance:com.lightbox.HighRiskLightboxTests@527740a2]" name="verify_75th_search_lb" duration-ms="213738" started-at="2019-02-01T18:00:18Z" description="Verify the 75th Maximum Search LightBox for Recognised User" finished-at="2019-02-01T18:03:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_75th_search_lb -->
+        <test-method status="PASS" signature="notify_method_completes(java.lang.reflect.Method)[pri:0, instance:com.lightbox.HighRiskLightboxTests@527740a2]" name="notify_method_completes" is-config="true" duration-ms="0" started-at="2019-02-01T18:03:51Z" finished-at="2019-02-01T18:03:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.lightbox.HighRiskLightboxTests.verify_75th_search_lb() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- notify_method_completes -->
+        <test-method status="PASS" signature="deleteBrowserCookies(java.lang.reflect.Method)[pri:0, instance:com.lightbox.HighRiskLightboxTests@527740a2]" name="deleteBrowserCookies" is-config="true" duration-ms="8092" started-at="2019-02-01T18:11:00Z" finished-at="2019-02-01T18:11:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.lightbox.HighRiskLightboxTests.verify_500th_search_lb() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteBrowserCookies -->
+        <test-method status="PASS" signature="verify_500th_search_lb()[pri:5, instance:com.lightbox.HighRiskLightboxTests@527740a2]" name="verify_500th_search_lb" duration-ms="289405" started-at="2019-02-01T18:11:08Z" description="Verify the 500th Search LightBox for Recognised User" finished-at="2019-02-01T18:15:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_500th_search_lb -->
+        <test-method status="PASS" signature="notify_method_completes(java.lang.reflect.Method)[pri:0, instance:com.lightbox.HighRiskLightboxTests@527740a2]" name="notify_method_completes" is-config="true" duration-ms="0" started-at="2019-02-01T18:15:57Z" finished-at="2019-02-01T18:15:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.lightbox.HighRiskLightboxTests.verify_500th_search_lb() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- notify_method_completes -->
+      </class> <!-- com.lightbox.HighRiskLightboxTests -->
+      <class name="com.lightbox.OptinLightboxTests">
+        <test-method status="PASS" signature="deleteBrowserCookies(java.lang.reflect.Method)[pri:0, instance:com.lightbox.OptinLightboxTests@13a5fe33]" name="deleteBrowserCookies" is-config="true" duration-ms="8606" started-at="2019-02-01T16:43:46Z" finished-at="2019-02-01T16:43:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.lightbox.OptinLightboxTests.verify_optin_lb_for_full_reg_user() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteBrowserCookies -->
+        <test-method status="PASS" signature="verify_optin_lb_for_full_reg_user()[pri:1, instance:com.lightbox.OptinLightboxTests@13a5fe33]" name="verify_optin_lb_for_full_reg_user" duration-ms="294530" started-at="2019-02-01T16:43:54Z" description="Verify the Optin LightBox for Full Reg. User" finished-at="2019-02-01T16:48:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_optin_lb_for_full_reg_user -->
+        <test-method status="PASS" signature="notify_method_completes(java.lang.reflect.Method)[pri:0, instance:com.lightbox.OptinLightboxTests@13a5fe33]" name="notify_method_completes" is-config="true" duration-ms="0" started-at="2019-02-01T16:48:49Z" finished-at="2019-02-01T16:48:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.lightbox.OptinLightboxTests.verify_optin_lb_for_full_reg_user() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- notify_method_completes -->
+        <test-method status="FAIL" signature="verify_optin_lb_for_mini_reg_user()[pri:2, instance:com.lightbox.OptinLightboxTests@13a5fe33]" name="verify_optin_lb_for_mini_reg_user" duration-ms="304480" started-at="2019-02-01T17:13:36Z" description="Verify the Optin LightBox for Mini Reg. User" finished-at="2019-02-01T17:18:41Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at ru.yandex.qatools.ashot.shooting.ViewportPastingDecorator.getFullHeight(ViewportPastingDecorator.java:67)
+	at ru.yandex.qatools.ashot.shooting.ViewportPastingDecorator.getScreenshot(ViewportPastingDecorator.java:41)
+	at ru.yandex.qatools.ashot.shooting.ViewportPastingDecorator.getScreenshot(ViewportPastingDecorator.java:35)
+	at ru.yandex.qatools.ashot.AShot.takeScreenshot(AShot.java:145)
+	at com.util.ReporterListener.getScreenShot(ReporterListener.java:269)
+	at com.util.ReporterListener.onTestFailure(ReporterListener.java:236)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1691)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1675)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:700)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_optin_lb_for_mini_reg_user -->
+        <test-method status="PASS" signature="deleteBrowserCookies(java.lang.reflect.Method)[pri:0, instance:com.lightbox.OptinLightboxTests@13a5fe33]" name="deleteBrowserCookies" is-config="true" duration-ms="10288" started-at="2019-02-01T17:13:36Z" finished-at="2019-02-01T17:13:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.lightbox.OptinLightboxTests.verify_optin_lb_for_mini_reg_user() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteBrowserCookies -->
+        <test-method status="FAIL" signature="verify_optin_lb_for_mini_reg_user()[pri:2, instance:com.lightbox.OptinLightboxTests@13a5fe33]" name="verify_optin_lb_for_mini_reg_user" duration-ms="283161" started-at="2019-02-01T17:13:46Z" description="Verify the Optin LightBox for Mini Reg. User" finished-at="2019-02-01T17:18:30Z">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[An unknown server-side error occurred while processing the command. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'VSANKAR2', ip: '10.37.0.236', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.40.565498 (ea082db3280dd6..., userDataDir: C:\Windows\proxy\scoped_dir...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 68.0.3440.75, webStorageEnabled: true, webdriver.remote.sessionid: 5344f9ffb996293a8ad7aecef2d...}
+Session ID: 5344f9ffb996293a8ad7aecef2ddc6b15d0ddf89]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'VSANKAR2', ip: '10.37.0.236', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.40.565498 (ea082db3280dd6..., userDataDir: C:\Windows\proxy\scoped_dir...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 68.0.3440.75, webStorageEnabled: true, webdriver.remote.sessionid: 5344f9ffb996293a8ad7aecef2d...}
+Session ID: 5344f9ffb996293a8ad7aecef2ddc6b15d0ddf89
+	at sun.reflect.GeneratedConstructorAccessor30.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions.deleteAllCookies(RemoteWebDriver.java:694)
+	at com.util.WrapperFunctions.delete_session_cookies(WrapperFunctions.java:2390)
+	at com.lightbox.OptinLightboxTests.verify_optin_lb_for_mini_reg_user(OptinLightboxTests.java:87)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_optin_lb_for_mini_reg_user -->
+        <test-method status="PASS" signature="deleteBrowserCookies(java.lang.reflect.Method)[pri:0, instance:com.lightbox.OptinLightboxTests@13a5fe33]" name="deleteBrowserCookies" is-config="true" duration-ms="18071" started-at="2019-02-01T17:42:19Z" finished-at="2019-02-01T17:42:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.lightbox.OptinLightboxTests.verify_optin_lb_for_social_user() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteBrowserCookies -->
+        <test-method status="PASS" signature="verify_optin_lb_for_social_user()[pri:3, instance:com.lightbox.OptinLightboxTests@13a5fe33]" name="verify_optin_lb_for_social_user" duration-ms="149840" started-at="2019-02-01T17:42:37Z" description="Verify the Optin LightBox for Social User" finished-at="2019-02-01T17:45:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_optin_lb_for_social_user -->
+        <test-method status="PASS" signature="notify_method_completes(java.lang.reflect.Method)[pri:0, instance:com.lightbox.OptinLightboxTests@13a5fe33]" name="notify_method_completes" is-config="true" duration-ms="0" started-at="2019-02-01T17:45:07Z" finished-at="2019-02-01T17:45:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.lightbox.OptinLightboxTests.verify_optin_lb_for_social_user() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- notify_method_completes -->
+        <test-method status="PASS" signature="deleteBrowserCookies(java.lang.reflect.Method)[pri:0, instance:com.lightbox.OptinLightboxTests@13a5fe33]" name="deleteBrowserCookies" is-config="true" duration-ms="11632" started-at="2019-02-01T18:03:51Z" finished-at="2019-02-01T18:04:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.lightbox.OptinLightboxTests.verify_optin_lb_for_silver_user() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteBrowserCookies -->
+        <test-method status="PASS" signature="verify_optin_lb_for_silver_user()[pri:4, instance:com.lightbox.OptinLightboxTests@13a5fe33]" name="verify_optin_lb_for_silver_user" duration-ms="350267" started-at="2019-02-01T18:04:03Z" description="Verify the Optin LightBox for Silver User" finished-at="2019-02-01T18:09:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_optin_lb_for_silver_user -->
+        <test-method status="PASS" signature="notify_method_completes(java.lang.reflect.Method)[pri:0, instance:com.lightbox.OptinLightboxTests@13a5fe33]" name="notify_method_completes" is-config="true" duration-ms="0" started-at="2019-02-01T18:09:53Z" finished-at="2019-02-01T18:09:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.lightbox.OptinLightboxTests.verify_optin_lb_for_silver_user() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- notify_method_completes -->
+      </class> <!-- com.lightbox.OptinLightboxTests -->
+      <class name="com.lightbox.CompleteRegistrationLightboxTests">
+        <test-method status="PASS" signature="deleteBrowserCookies(java.lang.reflect.Method)[pri:0, instance:com.lightbox.CompleteRegistrationLightboxTests@3108bc]" name="deleteBrowserCookies" is-config="true" duration-ms="14732" started-at="2019-02-01T16:48:49Z" finished-at="2019-02-01T16:49:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.lightbox.CompleteRegistrationLightboxTests.verify_complete_registration_lb_for_mini_reg() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteBrowserCookies -->
+        <test-method status="PASS" signature="verify_complete_registration_lb_for_mini_reg()[pri:1, instance:com.lightbox.CompleteRegistrationLightboxTests@3108bc]" name="verify_complete_registration_lb_for_mini_reg" duration-ms="232202" started-at="2019-02-01T16:49:03Z" description="Verify the Complete Registration LightBox for Mini Reg User" finished-at="2019-02-01T16:52:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_complete_registration_lb_for_mini_reg -->
+        <test-method status="PASS" signature="notify_method_completes(java.lang.reflect.Method)[pri:0, instance:com.lightbox.CompleteRegistrationLightboxTests@3108bc]" name="notify_method_completes" is-config="true" duration-ms="0" started-at="2019-02-01T16:52:56Z" finished-at="2019-02-01T16:52:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.lightbox.CompleteRegistrationLightboxTests.verify_complete_registration_lb_for_mini_reg() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- notify_method_completes -->
+        <test-method status="PASS" signature="deleteBrowserCookies(java.lang.reflect.Method)[pri:0, instance:com.lightbox.CompleteRegistrationLightboxTests@3108bc]" name="deleteBrowserCookies" is-config="true" duration-ms="13434" started-at="2019-02-01T17:19:10Z" finished-at="2019-02-01T17:19:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.lightbox.CompleteRegistrationLightboxTests.verify_complete_registration_lb_for_silver_user() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteBrowserCookies -->
+        <test-method status="PASS" signature="verify_complete_registration_lb_for_silver_user()[pri:2, instance:com.lightbox.CompleteRegistrationLightboxTests@3108bc]" name="verify_complete_registration_lb_for_silver_user" duration-ms="187154" started-at="2019-02-01T17:19:23Z" description="Verify the Complete Registration LightBox for Silver User" finished-at="2019-02-01T17:22:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_complete_registration_lb_for_silver_user -->
+        <test-method status="PASS" signature="notify_method_completes(java.lang.reflect.Method)[pri:0, instance:com.lightbox.CompleteRegistrationLightboxTests@3108bc]" name="notify_method_completes" is-config="true" duration-ms="0" started-at="2019-02-01T17:22:31Z" finished-at="2019-02-01T17:22:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.lightbox.CompleteRegistrationLightboxTests.verify_complete_registration_lb_for_silver_user() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- notify_method_completes -->
+        <test-method status="PASS" signature="deleteBrowserCookies(java.lang.reflect.Method)[pri:0, instance:com.lightbox.CompleteRegistrationLightboxTests@3108bc]" name="deleteBrowserCookies" is-config="true" duration-ms="11901" started-at="2019-02-01T17:45:07Z" finished-at="2019-02-01T17:45:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.lightbox.CompleteRegistrationLightboxTests.verify_complete_registration_lb_for_social_user() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteBrowserCookies -->
+        <test-method status="PASS" signature="verify_complete_registration_lb_for_social_user()[pri:3, instance:com.lightbox.CompleteRegistrationLightboxTests@3108bc]" name="verify_complete_registration_lb_for_social_user" duration-ms="228324" started-at="2019-02-01T17:45:19Z" description="Verify the Complete Registration LightBox for Social User" finished-at="2019-02-01T17:49:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_complete_registration_lb_for_social_user -->
+        <test-method status="PASS" signature="notify_method_completes(java.lang.reflect.Method)[pri:0, instance:com.lightbox.CompleteRegistrationLightboxTests@3108bc]" name="notify_method_completes" is-config="true" duration-ms="0" started-at="2019-02-01T17:49:07Z" finished-at="2019-02-01T17:49:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.lightbox.CompleteRegistrationLightboxTests.verify_complete_registration_lb_for_social_user() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- notify_method_completes -->
+      </class> <!-- com.lightbox.CompleteRegistrationLightboxTests -->
+      <class name="com.nfsp.NFSPTests">
+        <test-method status="PASS" signature="get_nfsp_from_admin()[pri:0, instance:com.nfsp.NFSPTests@5f9d02cb]" name="get_nfsp_from_admin" is-config="true" duration-ms="234218" started-at="2019-02-01T16:58:41Z" finished-at="2019-02-01T17:02:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- get_nfsp_from_admin -->
+        <test-method status="PASS" signature="deleteBrowserCookies(java.lang.reflect.Method)[pri:0, instance:com.nfsp.NFSPTests@5f9d02cb]" name="deleteBrowserCookies" is-config="true" duration-ms="16946" started-at="2019-02-01T17:02:35Z" finished-at="2019-02-01T17:02:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.nfsp.NFSPTests.verify_nfsp_after_5_search_for_unrec_user() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteBrowserCookies -->
+        <test-method status="FAIL" signature="verify_nfsp_after_5_search_for_unrec_user()[pri:1, instance:com.nfsp.NFSPTests@5f9d02cb]" name="verify_nfsp_after_5_search_for_unrec_user" duration-ms="10877" started-at="2019-02-01T17:02:52Z" description="Verify the NFSP value for UnRecognised User after 6 search" finished-at="2019-02-01T17:03:03Z">
+          <exception class="java.lang.NumberFormatException">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NumberFormatException: null
+	at java.lang.Integer.parseInt(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at com.nfsp.NFSPTests.verify_nfsp_after_5_search_for_unrec_user(NFSPTests.java:110)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NumberFormatException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_nfsp_after_5_search_for_unrec_user -->
+        <test-method status="PASS" signature="notify_method_completes(java.lang.reflect.Method)[pri:0, instance:com.nfsp.NFSPTests@5f9d02cb]" name="notify_method_completes" is-config="true" duration-ms="0" started-at="2019-02-01T17:03:10Z" finished-at="2019-02-01T17:03:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.nfsp.NFSPTests.verify_nfsp_after_5_search_for_unrec_user() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- notify_method_completes -->
+        <test-method status="PASS" signature="deleteBrowserCookies(java.lang.reflect.Method)[pri:0, instance:com.nfsp.NFSPTests@5f9d02cb]" name="deleteBrowserCookies" is-config="true" duration-ms="14120" started-at="2019-02-01T17:26:09Z" finished-at="2019-02-01T17:26:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.nfsp.NFSPTests.verify_default_nfsp_for_rec_user() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteBrowserCookies -->
+        <test-method status="PASS" signature="verify_default_nfsp_for_rec_user()[pri:2, instance:com.nfsp.NFSPTests@5f9d02cb]" name="verify_default_nfsp_for_rec_user" duration-ms="150493" started-at="2019-02-01T17:26:24Z" description="Verify the default NFSP value for Recognised User" finished-at="2019-02-01T17:28:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_default_nfsp_for_rec_user -->
+        <test-method status="PASS" signature="notify_method_completes(java.lang.reflect.Method)[pri:0, instance:com.nfsp.NFSPTests@5f9d02cb]" name="notify_method_completes" is-config="true" duration-ms="0" started-at="2019-02-01T17:28:54Z" finished-at="2019-02-01T17:28:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.nfsp.NFSPTests.verify_default_nfsp_for_rec_user() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- notify_method_completes -->
+        <test-method status="PASS" signature="deleteBrowserCookies(java.lang.reflect.Method)[pri:0, instance:com.nfsp.NFSPTests@5f9d02cb]" name="deleteBrowserCookies" is-config="true" duration-ms="9238" started-at="2019-02-01T17:49:07Z" finished-at="2019-02-01T17:49:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.nfsp.NFSPTests.verify_nfsp_for_rec_user_after_27_search() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteBrowserCookies -->
+        <test-method status="FAIL" signature="verify_nfsp_for_rec_user_after_27_search()[pri:3, instance:com.nfsp.NFSPTests@5f9d02cb]" name="verify_nfsp_for_rec_user_after_27_search" duration-ms="196424" started-at="2019-02-01T17:49:17Z" description="Verify the NFSP for Recognised User after 27th search" finished-at="2019-02-01T17:52:33Z">
+          <exception class="java.lang.NumberFormatException">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NumberFormatException: null
+	at java.lang.Integer.parseInt(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at com.nfsp.NFSPTests.verify_nfsp_for_rec_user_after_27_search(NFSPTests.java:183)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NumberFormatException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_nfsp_for_rec_user_after_27_search -->
+        <test-method status="PASS" signature="notify_method_completes(java.lang.reflect.Method)[pri:0, instance:com.nfsp.NFSPTests@5f9d02cb]" name="notify_method_completes" is-config="true" duration-ms="1" started-at="2019-02-01T17:52:43Z" finished-at="2019-02-01T17:52:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.nfsp.NFSPTests.verify_nfsp_for_rec_user_after_27_search() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- notify_method_completes -->
+      </class> <!-- com.nfsp.NFSPTests -->
+    </test> <!-- Regression01 -->
+  </suite> <!-- RegressionSuiteForDesktopAndTablet -->
+</testng-results>
