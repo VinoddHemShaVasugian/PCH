@@ -1,0 +1,114 @@
+<html>
+<head>
+<title>stories.sw.uninav.uninav</title>
+<style type="text/css" media="all">
+@import url( "./style/jbehave-core.css" );
+</style>
+</head>
+<body>
+ 
+<script type="syntaxhighlighter" class="brush: xml"><![CDATA[
+<story path="stories/sw/uninav/uninav.story" title="">
+<narrative keyword="Narrative:">
+  <inOrderTo keyword="In order to">verify the rewards update in the uninav</inOrderTo>
+  <asA keyword="As a">user</asA>
+  <iWantTo keyword="I want to">check rewards redeem and levelup playnow button 
+
+@TestingType Sanity Regression
+@TestCaseId RT-04307</iWantTo>
+</narrative>
+<scenario keyword="Scenario:" title="Create the full reg user and verify the rewards update">
+<step outcome="successful">Given Register a user with the Optins</step>
+<step outcome="failed" keyword="FAILED">Then Click on redeem tokens icon<failure>org.openqa.selenium.NoSuchElementException: Expected condition failed: waiting for By.cssSelector: a.uninav__token-center-alltime__redeem uninav__redeem-toggle to be displayed (tried for 25 second(s) with 100 milliseconds interval)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;VSANKAR2&apos;, ip: &apos;10.37.0.97&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.2&apos;
+Driver info: driver.version: unknown</failure></step>
+<failure>org.openqa.selenium.NoSuchElementException: Expected condition failed: waiting for By.cssSelector: a.uninav__token-center-alltime__redeem uninav__redeem-toggle to be displayed (tried for 25 second(s) with 100 milliseconds interval)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;VSANKAR2&apos;, ip: &apos;10.37.0.97&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.2&apos;
+Driver info: driver.version: unknown
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.throwNoSuchElementExceptionWithCauseIfPresent(WebElementFacadeImpl.java:923)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.checkPresenceOfWebElement(WebElementFacadeImpl.java:896)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilVisible(WebElementFacadeImpl.java:903)
+	at com.pch.automation.pages.HeaderAndUninavPage.verifyRedeemPagenavigation(HeaderAndUninavPage.java:421)
+	at com.pch.automation.steps.sw.UninavSteps.onclickRedeemToken(UninavSteps.java:12)
+	at com.pch.automation.steps.sw.UninavSteps$$EnhancerByCGLIB$$668fac1a.CGLIB$onclickRedeemToken$1(&lt;generated&gt;)
+	at com.pch.automation.steps.sw.UninavSteps$$EnhancerByCGLIB$$668fac1a$$FastClassByCGLIB$$a9a80a44.invoke(&lt;generated&gt;)
+	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:478)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:463)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:438)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:179)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:166)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:72)
+	at com.pch.automation.steps.sw.UninavSteps$$EnhancerByCGLIB$$668fac1a.onclickRedeemToken(&lt;generated&gt;)
+	at com.pch.automation.stepdefinitions.sw.UninavScenarioSteps.verifyRedeemTokensFunctionality(UninavScenarioSteps.java:17)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:790)
+	at org.jbehave.core.embedder.PerformableTree$FineSoFar.run(PerformableTree.java:349)
+...</failure>
+</scenario>
+<scenario keyword="Scenario:" title="verify the info pages">
+<step outcome="successful">Given Register a user with the Optins</step>
+<step outcome="failed" keyword="FAILED">Then verify the infopages<failure>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.linkText: About PCHSearch&amp;Win (tried for 25 second(s) with 500 milliseconds interval)</failure></step>
+<failure>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.linkText: About PCHSearch&amp;Win (tried for 25 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at net.serenitybdd.core.pages.RenderedPageObjectView.waitForPresenceOf(RenderedPageObjectView.java:188)
+	at net.serenitybdd.core.pages.PageObject.waitForRenderedElementsToBePresent(PageObject.java:343)
+	at com.pch.automation.pages.sw.HomePage.jsClick(HomePage.java:78)
+	at com.pch.automation.pages.HeaderAndUninavPage.verifyinfopages(HeaderAndUninavPage.java:425)
+	at com.pch.automation.steps.sw.UninavSteps.infoPage(UninavSteps.java:23)
+	at com.pch.automation.steps.sw.UninavSteps$$EnhancerByCGLIB$$668fac1a.CGLIB$infoPage$2(&lt;generated&gt;)
+	at com.pch.automation.steps.sw.UninavSteps$$EnhancerByCGLIB$$668fac1a$$FastClassByCGLIB$$a9a80a44.invoke(&lt;generated&gt;)
+	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:478)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:463)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:438)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:179)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:166)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:72)
+	at com.pch.automation.steps.sw.UninavSteps$$EnhancerByCGLIB$$668fac1a.infoPage(&lt;generated&gt;)
+	at com.pch.automation.stepdefinitions.sw.UninavScenarioSteps.verifyinfopageNavigation(UninavScenarioSteps.java:27)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:790)
+	at org.jbehave.core.embedder.PerformableTree$FineSoFar.run(PerformableTree.java:349)
+...</failure>
+</scenario>
+<scenario keyword="Scenario:" title="verify the uninav for guest user
+@TestCaseId RT-04343">
+<step outcome="successful">Given Goto Search and Win Site</step>
+<step outcome="successful">Then Verify the uninav for guest user</step>
+</scenario>
+</story>
+
+]]></script>
+</body>
+<!--  SyntaxHighlighter resources:  should be included at end of body -->
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shCore.css"/>
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shThemeRDark.css"/>
+<script language="javascript" src="./js/sh-3.0.83/shCore.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushBash.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushCss.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushDiff.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushGroovy.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJava.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJScript.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPlain.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPython.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushRuby.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushScala.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushXml.js"></script>
+<script language="javascript" src="./js/shBrushBdd.js"></script>
+<script type="text/javascript">
+    SyntaxHighlighter.defaults['gutter'] = false;
+    SyntaxHighlighter.defaults['toolbar'] = false;    
+    SyntaxHighlighter.all();
+</script>
+</html>

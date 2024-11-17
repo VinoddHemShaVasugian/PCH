@@ -1,0 +1,10 @@
+##############E################
+### SAMPLE STG Configuration ##
+###############E###############
+
+# URL
+SampleUrl=https://search2.stg.pch.com
+SampleAPIUrl=http://centralservices.stg.pch.com
+
+#DB
+SampleConnectionString=jdbc:sqlserver://<serverURL>;databaseName=<dbname>;user=<username>;password=<password>;SelectMethod=cursor;

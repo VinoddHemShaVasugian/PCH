@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tokenBalance>
+   <header>
+      <version>1.0</version>
+      <businessUnitId>34</businessUnitId>
+      <deviceId>1919</deviceId>
+      <encryption>
+         <type>MD5</type>
+         <key>${MD5KEY}</key>
+      </encryption>
+   </header>
+   <tokenBalanceInformation>
+      <businessUnit>
+         <id>34</id>
+      </businessUnit>
+      <deviceType>DESKTOP</deviceType>
+      <user>
+         <email>${email}</email>
+         <globalMemberToken>09159e7a-9c19-4f9d-820a-60d3336f8384</globalMemberToken>
+      </user>
+   </tokenBalanceInformation>
+</tokenBalance>
+

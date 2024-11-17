@@ -1,0 +1,102 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Search N Win Regression Suite" preserve-order="true"
+	thread-count="1">
+
+	<listeners>
+		<!-- <listener class-name="com.pch.search.utilities.CustomListener" /> -->
+		<listener class-name="com.pch.search.utilities.ReporterListener" />
+		<listener class-name="com.pch.search.utilities.PriorityListener" />
+	</listeners>
+	<parameter name="logLevel" value="" /> <!--This parameter can be used to generate more logs while debugging, use 
+		value="DEBUG" -->
+	<parameter name="SeleniumGrid" value="no" /> <!-- Yes\No -->
+	<parameter name="browserVersion" value="" />
+	<parameter name="hubURL" value="http://localhost:4444/wd/hub" />
+
+	<parameter name="appName" value="SearchAndWin" />
+	<parameter name="environment" value="stg" />
+
+	<parameter name="remoteUrl" value="" />
+	<parameter name="retryCount" value="1" />
+	<parameter name="networkLatencyTuner" value="1.0" />
+
+	<parameter name="joomlaUserName" value="kcheguri" />
+	<parameter name="joomlaPassword" value="pch1234" />
+
+	<parameter name="sqlServerjdbc"
+		value="jdbc:sqlserver://qshareddb02:1433;databaseName=" />
+	<parameter name="sqlServerUsername" value="QA" />
+	<parameter name="sqlServerPassword" value="qa2008" />
+
+	<!-- <parameter name="mySqlJdbc" value="jdbc:mysql://10.1.1.198:3306/" /> --> <!-- QA -->
+	<parameter name="mySqlJdbc" value="jdbc:mysql://10.79.9.13:3306/" /> <!-- STG -->
+	<parameter name="mySqlUsername" value="SearchAutomation" />
+	<parameter name="mySqlPassword" value="SearchAutomation" />
+	
+	<test name="D1" preserve-order="true">
+	<parameter name="device" value="Desktop" />
+		<parameter name="browserName" value="chrome" />
+		<classes>
+		    <class name="com.pch.sw.tests.nfsp.SearchAlgoOnlyResultsTests" >
+		    <methods>
+			    <include name="testAlgoOnlyResults_DesktopGuestUser" />
+			</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="D2" preserve-order="true">
+	<parameter name="device" value="Desktop" />
+		<parameter name="browserName" value="chrome" />
+		<classes>
+		    <class name="com.pch.sw.tests.nfsp.SearchAlgoOnlyResultsTests" >
+		    <methods>
+			    <include name="testAlgoOnlyResults_DesktopRegisteredUser" />
+			</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="T1" preserve-order="true">
+	<parameter name="device" value="tablet" />
+		<parameter name="browserName" value="CHROME_IPAD" />
+		<classes>
+		    <class name="com.pch.sw.tests.nfsp.SearchAlgoOnlyResultsTests" >
+		    <methods>
+			    <include name="testAlgoOnlyResults_TabletGuestUser" />
+			</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="T2" preserve-order="true">
+	<parameter name="device" value="tablet" />
+		<parameter name="browserName" value="CHROME_IPAD" />
+		<classes>
+		    <class name="com.pch.sw.tests.nfsp.SearchAlgoOnlyResultsTests" >
+		    <methods>
+			    <include name="testAlgoOnlyResults_TabletRegisteredUser" />
+			</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="M1" preserve-order="true">
+	<parameter name="device" value="mobile" />
+		<parameter name="browserName" value="chrome_ios" />
+		<classes>
+		    <class name="com.pch.sw.tests.nfsp.SearchAlgoOnlyResultsTests" >
+		    <methods>
+			    <include name="testAlgoOnlyResults_MobileGuestUser" />
+			</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="M2" preserve-order="true">
+	<parameter name="device" value="mobile" />
+		<parameter name="browserName" value="chrome_ios" />
+		<classes>
+		    <class name="com.pch.sw.tests.nfsp.SearchAlgoOnlyResultsTests" >
+		    <methods>
+			    <include name="testAlgoOnlyResults_MobileRegisteredUser" />
+			</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

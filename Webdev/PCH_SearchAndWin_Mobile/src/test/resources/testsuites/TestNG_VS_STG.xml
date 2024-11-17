@@ -1,0 +1,58 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Regression Suite_stg" parallel="tests" thread-count="3">
+
+	<listeners>
+		<listener class-name="com.pch.search.utilities.CustomListener" />
+	</listeners>
+
+	<parameter name="logLevel" value="debug" />
+
+	<parameter name="SeleniumGrid" value="no" /> <!-- Yes\No -->
+	<!-- <parameter name="browserName" value="chrome" /> internet explorer\chrome\firefox -->
+	<parameter name="browserVersion" value="" />
+	<parameter name="hubURL" value="http://localhost:4444/wd/hub" />
+
+	<parameter name="appName" value="SearchAndWin" />
+	<parameter name="environment" value="stg" />
+
+	<parameter name="remoteUrl" value="" />
+	<parameter name="retryCount" value="1" />
+	<parameter name="networkLatencyTuner" value="1.0" />
+
+	<parameter name="joomlaUserName" value="dreddy" />
+	<parameter name="joomlaPassword" value="pch1234" />
+
+	<parameter name="IWEUserName" value="dreddy" />
+	<parameter name="IWEPassword" value="Dreddy1" />
+
+	<parameter name="sqlServerjdbc"
+		value="jdbc:sqlserver://qshareddb02:1433;databaseName=" />
+	<parameter name="sqlServerUsername" value="QA" />
+	<parameter name="sqlServerPassword" value="qa2008" />
+
+	<parameter name="mySqlJdbc" value="jdbc:mysql://10.79.9.13:3306/" />    <!-- for STG -->
+
+	<parameter name="mySqlUsername" value="vsingh" />
+	<parameter name="mySqlPassword" value="vsingh4189" />
+
+
+
+	<parameter name="browserName" value="firefox" />
+	<parameter name="device" value=""/>
+
+	<!--************************* This is for Claim tokens package ************************* -->
+	<test name="Test_shopping"
+		preserve-order="true">
+
+		<classes>
+			
+			<class name="com.pch.sw.tests.claimTokens.AnniversaryTokenAwardTests">
+			<methods><include name="testAnniversary_Scenario1"></include></methods></class>
+		
+			
+		</classes>
+	</test>
+
+	
+
+</suite>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="2" failures="0" name="Uninav" skipped="0" tests="3" time="413.35" timestamp="2020-12-31 10:08:01"><testcase name="Create the full reg user and verify the rewards update"><error message="Expected condition failed: waiting for By.cssSelector: a.uninav__token-center-alltime__redeem uninav__redeem-toggle to be displayed (tried for 25 second(s) with 100 milliseconds interval)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'VSANKAR2', ip: '10.37.0.97', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.2'&#10;Driver info: driver.version: unknown" type="org.openqa.selenium.NoSuchElementException">Expected condition failed: waiting for By.cssSelector: a.uninav__token-center-alltime__redeem uninav__redeem-toggle to be displayed (tried for 25 second(s) with 100 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'VSANKAR2', ip: '10.37.0.97', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.2'
+Driver info: driver.version: unknown</error><system-err>Expected condition failed: waiting for By.cssSelector: a.uninav__token-center-alltime__redeem uninav__redeem-toggle to be displayed (tried for 25 second(s) with 100 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'VSANKAR2', ip: '10.37.0.97', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.2'
+Driver info: driver.version: unknown&#13;
+com.pch.automation.pages.HeaderAndUninavPage.verifyRedeemPagenavigation(HeaderAndUninavPage.java:421)&#13;
+com.pch.automation.steps.sw.UninavSteps.onclickRedeemToken(UninavSteps.java:12)&#13;
+com.pch.automation.stepdefinitions.sw.UninavScenarioSteps.verifyRedeemTokensFunctionality(UninavScenarioSteps.java:17)&#13;
+</system-err></testcase><testcase name="verify the info pages"><error message="Expected condition failed: waiting for presence of element located by: By.linkText: About PCHSearch&amp;Win (tried for 25 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException">Expected condition failed: waiting for presence of element located by: By.linkText: About PCHSearch&amp;Win (tried for 25 second(s) with 500 milliseconds interval)</error><system-err>Expected condition failed: waiting for presence of element located by: By.linkText: About PCHSearch&amp;Win (tried for 25 second(s) with 500 milliseconds interval)&#13;
+com.pch.automation.pages.sw.HomePage.jsClick(HomePage.java:78)&#13;
+com.pch.automation.pages.HeaderAndUninavPage.verifyinfopages(HeaderAndUninavPage.java:425)&#13;
+com.pch.automation.steps.sw.UninavSteps.infoPage(UninavSteps.java:23)&#13;
+com.pch.automation.stepdefinitions.sw.UninavScenarioSteps.verifyinfopageNavigation(UninavScenarioSteps.java:27)&#13;
+</system-err></testcase><testcase name="verify the uninav for guest user&#13;&#10;@TestCaseId RT-04343"/></testsuite>

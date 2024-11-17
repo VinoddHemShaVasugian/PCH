@@ -1,0 +1,10 @@
+##############################
+### SAMPLE CI Configuration ##
+##############################
+
+# URL
+SampleUrl=https://search2.ci.pch.com
+SampleAPIUrl=http://centralservices.ci.pch.com
+
+#DB
+SampleConnectionString=jdbc:sqlserver://<serverURL>;databaseName=<dbname>;user=<username>;password=<password>;SelectMethod=cursor;

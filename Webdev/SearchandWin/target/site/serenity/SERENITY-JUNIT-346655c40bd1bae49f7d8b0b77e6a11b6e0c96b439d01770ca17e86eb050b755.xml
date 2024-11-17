@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="4" name="Contest entry" skipped="0" tests="6" time="698.21" timestamp="2020-02-24 02:03:06"><testcase name="Verify Registration and First search contest entry for Fully registered user"><failure message="Expected enabled element was not enabled" type="net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException">Expected enabled element was not enabled</failure><system-err>Expected enabled element was not enabled&#13;
+com.pch.automation.pages.sw.HomePage.search(HomePage.java:30)&#13;
+com.pch.automation.steps.SerpSteps.searchAndVerifySERPPage(SerpSteps.java:30)&#13;
+com.pch.automation.stepdefinitions.SerpScenarioSteps.searchAndVerifySERPPage(SerpScenarioSteps.java:53)&#13;
+</system-err></testcase><testcase name="Verify Registration and First search contest entry for mini reg user"><failure message="Expected enabled element was not enabled" type="net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException">Expected enabled element was not enabled</failure><system-err>Expected enabled element was not enabled&#13;
+com.pch.automation.pages.sw.HomePage.search(HomePage.java:30)&#13;
+com.pch.automation.steps.SerpSteps.searchAndVerifySERPPage(SerpSteps.java:30)&#13;
+com.pch.automation.stepdefinitions.SerpScenarioSteps.searchAndVerifySERPPage(SerpScenarioSteps.java:53)&#13;
+</system-err></testcase><testcase name="Verify Registration and First search contest entry for silver user"/><testcase name="Verify Registration and First search contest entry for social user"><failure message="Expected enabled element was not enabled" type="net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException">Expected enabled element was not enabled</failure><system-err>Expected enabled element was not enabled&#13;
+com.pch.automation.pages.sw.HomePage.search(HomePage.java:30)&#13;
+com.pch.automation.steps.SerpSteps.searchAndVerifySERPPage(SerpSteps.java:30)&#13;
+com.pch.automation.stepdefinitions.SerpScenarioSteps.searchAndVerifySERPPage(SerpScenarioSteps.java:53)&#13;
+</system-err></testcase><testcase name="Verify when user makes multiple searches with different contest entry"><failure message="Expected enabled element was not enabled" type="net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException">Expected enabled element was not enabled</failure><system-err>Expected enabled element was not enabled&#13;
+com.pch.automation.pages.sw.HomePage.search(HomePage.java:30)&#13;
+com.pch.automation.steps.SerpSteps.searchAndVerifySERPPage(SerpSteps.java:30)&#13;
+com.pch.automation.stepdefinitions.SerpScenarioSteps.searchAndVerifySERPPage(SerpScenarioSteps.java:53)&#13;
+</system-err></testcase><testcase name="Verify failed contest entries"/></testsuite>

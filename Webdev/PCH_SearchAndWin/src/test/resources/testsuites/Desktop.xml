@@ -1,0 +1,89 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="SearchNWinDesktopRegressionSuite" preserve-order="true"
+	thread-count="1">
+
+	<listeners>
+		<listener class-name="com.pch.search.utilities.ReporterListener" />
+		<listener class-name="com.pch.search.utilities.PriorityListener" />
+	</listeners>
+	<parameter name="logLevel" value="" /> <!--This parameter can be used to generate more logs while debugging, use 
+		value="DEBUG" -->
+	<parameter name="SeleniumGrid" value="no" /> <!-- Yes\No -->
+	<parameter name="browserVersion" value="" />
+	<parameter name="hubURL" value="http://localhost:4444/wd/hub" />
+
+	<parameter name="appName" value="SearchAndWin" />
+	<parameter name="environment" value="stg" />
+
+	<parameter name="IWEUserName" value="mperumal" />
+	<parameter name="IWEPassword" value="Winter2017" />
+
+	<parameter name="remoteUrl" value="" />
+	<parameter name="retryCount" value="1" />
+	<parameter name="networkLatencyTuner" value="1.0" />
+
+	<parameter name="joomlaUserName" value="kcheguri" />
+	<parameter name="joomlaPassword" value="pch1234" />
+
+	<parameter name="sqlServerjdbc"
+		value="jdbc:sqlserver://qshareddb02:1433;databaseName=" />
+	<parameter name="sqlServerUsername" value="QA" />
+	<parameter name="sqlServerPassword" value="qa2008" />
+
+	<!-- <parameter name="mySqlJdbc" value="jdbc:mysql://10.1.1.198:3306/" /> --> <!-- QA -->
+	<parameter name="mySqlJdbc" value="jdbc:mysql://10.79.9.13:3306/" /> <!-- STG -->
+	<parameter name="mySqlUsername" value="SearchAutomation" />
+	<parameter name="mySqlPassword" value="SearchAutomation" />
+	<parameter name="browserName" value="chrome" />
+	<parameter name="device" value="Desktop" />
+
+	<test name="Regression" preserve-order="true">
+		<classes> <!-- Claim Tokens Test Scripts -->
+			<class name="com.pch.sw.tests.claimTokens.AnniversaryTokenAwardTests" />
+			<class name="com.pch.sw.tests.claimTokens.BirthdayTokenAwardTests" />
+			<class name="com.pch.sw.tests.claimTokens.ConsecutiveVisitsTokensTests" />
+			<!-- Login Test Scripts -->
+			<class name="com.pch.sw.tests.login.FBUserValidationTests" />
+			<class name="com.pch.sw.tests.login.ForgotPasswordTests" />
+			<class name="com.pch.sw.tests.login.MiniRegUserValidationTests" />
+			<class name="com.pch.sw.tests.login.OptinUserValidationTests" />
+			<class name="com.pch.sw.tests.login.SearchRegPageUserRegistrationTests" />
+			<class name="com.pch.sw.tests.login.SilverUserValidationTests" />
+			<!-- MISC Test Scripts -->
+			<class
+				name="com.pch.sw.tests.misc.AwardTokensWhenFollowingLinkOrSegIDTests" />
+			<class name="com.pch.sw.tests.misc.EdialogAndComScoreTagsTests" />
+			<class name="com.pch.sw.tests.misc.HeaderContentFromHomePage" />
+			<class name="com.pch.sw.tests.misc.HeaderFooterValidationTests" />
+			<class name="com.pch.sw.tests.misc.PredictiveSearchTests" />
+			<class name="com.pch.sw.tests.misc.RemoveWelcomeMessage" />
+			<class name="com.pch.sw.tests.misc.SearchSERPTests" />
+			<class name="com.pch.sw.tests.misc.TokensForWatchingVideoTests" />
+			<class
+				name="com.pch.sw.tests.misc.CaptureAdvertiseSourceForSearchLogTests" />
+
+			<class name="com.pch.sw.tests.misc.EcParameterThroughEmailTests" />
+			<class name="com.pch.sw.tests.misc.FBLikeButtonTests" />
+
+			<class name="com.pch.sw.tests.misc.HighActivityVideoHighRiskSegmentTests" />
+
+			<class name="com.pch.sw.tests.misc.SuperPrizeTests" />
+			<class name="com.pch.sw.tests.misc.VideoForSpecificUsersTests" />
+			<!-- <class name="com.pch.sw.tests.misc.UserContestEntryForRegisteringFromDesktopTests" 
+				/> <class name="com.pch.sw.tests.misc.DifferentiateGuidedSearchOnActivityLog" 
+				/> <class name="com.pch.sw.tests.misc.SearchActivityLogTests" /> NFSP Test 
+				Scripts -->
+			<class name="com.pch.sw.tests.nfsp.SearchAlgoOnlyResultsTests" />
+			<class name="com.pch.sw.tests.nfsp.SearchNFSPTests" />
+			<!-- Shopping Test Scripts -->
+			<class
+				name="com.pch.sw.tests.shopping.ControlShoppingResultsByDeviceTests" />
+			<class name="com.pch.sw.tests.shopping.ShoppingPagesTests" />
+			<!-- Search HR Rules Test Scripts -->
+			<class name="com.pch.sw.tests.searchHrRules.SearchCountsTests" />
+			<class name="com.pch.sw.tests.searchHrRules.SearchHighRiskRulesTests" />
+			<!-- IWE Test Scripts -->
+			<class name="com.pch.sw.tests.iwe.ReconfigureIWEDevicesTest" />
+		</classes>
+	</test>
+</suite>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Contest entry" skipped="0" tests="1" time="132.52" timestamp="2020-02-21 09:14:01"><testcase name="Verify Registration and First search contest entry for Fully registered user"><failure message="Expected enabled element was not enabled" type="net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException">Expected enabled element was not enabled</failure><system-err>Expected enabled element was not enabled&#13;
+com.pch.automation.pages.sw.HomePage.search(HomePage.java:30)&#13;
+com.pch.automation.steps.SerpSteps.searchAndVerifySERPPage(SerpSteps.java:30)&#13;
+com.pch.automation.stepdefinitions.SerpScenarioSteps.searchAndVerifySERPPage(SerpScenarioSteps.java:53)&#13;
+</system-err></testcase></testsuite>

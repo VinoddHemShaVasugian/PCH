@@ -1,0 +1,25 @@
+[0320/203512.345:ERROR:file_io.cc(89)] ReadExactly: expected 36, observed 0
+[0320/204743.803:ERROR:file_io.cc(89)] ReadExactly: expected 36, observed 0
+[0503/171118.621:ERROR:file_io.cc(89)] ReadExactly: expected 36, observed 0
+[0503/171211.797:ERROR:file_io.cc(89)] ReadExactly: expected 36, observed 0
+[0503/181445.952:ERROR:file_io.cc(89)] ReadExactly: expected 36, observed 0
+[0503/183040.181:ERROR:file_io.cc(89)] ReadExactly: expected 36, observed 0
+[0503/185056.332:ERROR:file_io.cc(89)] ReadExactly: expected 36, observed 0
+[0503/191509.795:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0503/191509.858:ERROR:exception_snapshot_win.cc(98)] thread ID 744 not found in process
+[0503/200925.092:ERROR:file_io.cc(89)] ReadExactly: expected 36, observed 0
+[0503/203944.555:ERROR:file_io.cc(89)] ReadExactly: expected 36, observed 0
+[0503/204000.706:ERROR:file_io.cc(89)] ReadExactly: expected 36, observed 0
+[0505/221657.571:ERROR:file_io.cc(89)] ReadExactly: expected 36, observed 0
+[0505/222425.752:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0505/222425.754:ERROR:exception_snapshot_win.cc(98)] thread ID 3556 not found in process
+[0505/222425.755:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: An attempt was made to access an exiting process. (0xc000010a)
+[0506/200645.183:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0506/200645.191:ERROR:exception_snapshot_win.cc(98)] thread ID 7608 not found in process
+[0612/135730.213:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0612/135730.219:ERROR:exception_snapshot_win.cc(98)] thread ID 10556 not found in process
+[0612/191705.758:ERROR:process_info.cc(329)] VirtualQueryEx: Access is denied. (0x5)
+[0612/191705.779:ERROR:process_info.cc(556)] ReadMemoryInfo failed
+[0612/191705.779:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: An attempt was made to access an exiting process. (0xc000010a)
+[0617/155427.571:ERROR:file_io.cc(89)] ReadExactly: expected 36, observed 0
+[0617/231143.687:ERROR:file_io.cc(89)] ReadExactly: expected 36, observed 0

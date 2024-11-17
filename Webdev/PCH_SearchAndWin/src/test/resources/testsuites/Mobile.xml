@@ -1,0 +1,57 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Regression Suite" parallel="tests" thread-count="4">
+
+	<listeners>
+		<listener class-name="com.pch.search.utilities.CustomListener" />
+	</listeners>
+
+	<parameter name="SeleniumGrid" value="no" /> <!-- Yes\No -->
+   <!-- <parameter name="browserName" value="chrome" />  internet explorer\chrome\firefox -->
+    <parameter name="browserVersion" value="" />
+    <parameter name="hubURL" value="http://localhost:4444/wd/hub" />
+
+	<parameter name="appName" value="SearchAndWin" />
+	<parameter name="environment" value="qa" />
+<!--	<parameter name="environment" value="stg" />-->
+
+	<parameter name="remoteUrl" value="" />
+	<parameter name="retryCount" value="1" />
+	<parameter name="networkLatencyTuner" value="1.0" />
+
+	<parameter name="joomlaUserName" value="vkatamreddy" /> <!--QA-->
+<!--	<parameter name="joomlaUserName" value="dreddy" />-->	<!--stg-->
+	<parameter name="joomlaPassword" value="pch1234" />
+
+	<parameter name="sqlServerjdbc" value="jdbc:sqlserver://qshareddb02:1433;databaseName=" />
+	<parameter name="sqlServerUsername" value="QA" />
+<!--	<parameter name="sqlServerUsername" value="STG" />-->
+	<parameter name="sqlServerPassword" value="qa2008" />
+
+	<parameter name="logLevel" value="DEBUG" /> <!--This parameter can be used to generate more logs while debugging, use value="DEBUG" -->
+		
+	<parameter name="mySqlJdbc" value="jdbc:mysql://10.1.1.198:3306/" />
+<!--	<parameter name="mySqlUsername" value="vsingh" />-->
+<!-- 	<parameter name="mySqlPassword" value="vsingh4189" />-->
+	<parameter name="mySqlUsername" value="vkatamreddy" />
+	<parameter name="mySqlPassword" value="vkatamreddy4209" />
+
+<test name="testing">
+	<!--<parameter name="browserName" value="chrome" />-->
+		<parameter name="browserName" value="CHROME_IOS" />
+		<parameter name="device" value="Mobile"/>
+<!--		<parameter name="device" value="Desktop"/>-->
+		
+<!--		<parameter name="browserName" value="firefox" />-->
+<!--		<parameter name="browserName" value="internet explorer" />-->
+
+	
+  	<groups>
+      <run>
+        <include name="Mobile"/>
+      </run>
+    </groups>
+    <classes>
+       <class name="com.pch.sw.tests.guidedSearch.GuidedSearchLayouts"/>
+    </classes>
+  </test>
+  </suite>

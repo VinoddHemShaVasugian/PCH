@@ -1,0 +1,312 @@
+<html>
+<head>
+<title>stories.quiz.contestentry.ContestEntry</title>
+<style type="text/css" media="all">
+@import url( "./style/jbehave-core.css" );
+</style>
+</head>
+<body>
+ 
+<script type="syntaxhighlighter" class="brush: xml"><![CDATA[
+<story path="stories/quiz/contestentry/ContestEntry.story" title="">
+<meta>
+<property keyword="@" name="TestingType" value="Regression"/>
+</meta>
+<narrative keyword="Narrative:">
+  <inOrderTo keyword="In order to">verify contest entry</inOrderTo>
+  <asA keyword="As a">Tester</asA>
+  <iWantTo keyword="I want to">retrive the contest entry for Quiz comletion from Joomla admin and complete any quiz.
+
+Meta:
+@TestingType Regression</iWantTo>
+</narrative>
+<lifecycle keyword="Lifecycle:">
+<after keyword="After:">
+<scope keyword="Scope:" value="STORY">
+<outcome keyword="Outcome:" value="ANY">
+<step>Given Login to the Quiz Admin</step>
+<step>And Do a search for an article &apos;config-contest-entry-api-client&apos;</step>
+<step>And Modify the field by its key name &apos;contestEntryApiUri&apos; with the given value &apos;http://cs.{env}.pch.com/EntryApi&apos;</step>
+<step>And User redirect to the quiz application &apos;ConfigurationClearCache&apos;</step>
+</outcome>
+</scope>
+</after>
+</lifecycle>
+<givenStories keyword="GivenStories:">
+<givenStory parameters="{}">stories/quiz/jm/QuizAdmin.story#{id:ContestKeys}</givenStory>
+</givenStories>
+<story path="stories/quiz/jm/QuizAdmin.story" title="">
+<meta>
+<property keyword="@" name="TestingType" value="Sanity Regression"/>
+</meta>
+<narrative keyword="Narrative:">
+  <inOrderTo keyword="In order to">verify the Quiz functionality</inOrderTo>
+  <asA keyword="As a">user</asA>
+  <iWantTo keyword="I want to">modify/retrieve the value from the Quiz joomla admin application
+
+Meta:
+@TestingType Sanity Regression</iWantTo>
+</narrative>
+<scenario keyword="Scenario:" title="Retrive the values from Contest Key article">
+<meta>
+<property keyword="@" name="id" value="ContestKeys"/>
+</meta>
+<step outcome="pending" keyword="PENDING">Given Login to the Quiz Admin</step>
+<step outcome="pending" keyword="PENDING">And Get the field value by its label name based on article &apos;Contest Keys / QUIZ / Complete&apos;,&apos;Contest Key&apos;</step>
+<pendingMethod>@Given(&quot;Login to the Quiz Admin&quot;)
+@Pending
+public void givenLoginToTheQuizAdmin() {
+  // PENDING
+}
+</pendingMethod>
+<pendingMethod>@Given(&quot;Get the field value by its label name based on article &apos;Contest Keys / QUIZ / Complete&apos;,&apos;Contest Key&apos;&quot;)
+@Pending
+public void givenGetTheFieldValueByItsLabelNameBasedOnArticleContestKeysQUIZCompleteContestKey() {
+  // PENDING
+}
+</pendingMethod>
+</scenario>
+</story>
+<scenario keyword="Scenario:" title="Verify quiz completion contest entry for Fully registered user in Quiz tab">
+<meta>
+<property keyword="@" name="TestingType" value="Sanity"/>
+</meta>
+<step outcome="pending" keyword="PENDING">Given Register a user with the Optins</step>
+<step outcome="pending" keyword="PENDING">When Navigate to Trending quiz page</step>
+<step outcome="pending" keyword="PENDING">Then Play quiz and Verify GOS page</step>
+<step outcome="pending" keyword="PENDING">And Verify contest entry &apos;Contest Keys / QUIZ / Complete&apos;,&apos;Contest Key&apos; for organic user</step>
+<pendingMethod>@Given(&quot;Register a user with the Optins&quot;)
+@Pending
+public void givenRegisterAUserWithTheOptins() {
+  // PENDING
+}
+</pendingMethod>
+<pendingMethod>@When(&quot;Navigate to Trending quiz page&quot;)
+@Pending
+public void whenNavigateToTrendingQuizPage() {
+  // PENDING
+}
+</pendingMethod>
+<pendingMethod>@Then(&quot;Play quiz and Verify GOS page&quot;)
+@Pending
+public void thenPlayQuizAndVerifyGOSPage() {
+  // PENDING
+}
+</pendingMethod>
+<pendingMethod>@Then(&quot;Verify contest entry &apos;Contest Keys / QUIZ / Complete&apos;,&apos;Contest Key&apos; for organic user&quot;)
+@Pending
+public void thenVerifyContestEntryContestKeysQUIZCompleteContestKeyForOrganicUser() {
+  // PENDING
+}
+</pendingMethod>
+</scenario>
+<scenario keyword="Scenario:" title="Verify failed contest entries for Quiz tab">
+<givenStories keyword="GivenStories:">
+<givenStory parameters="{}">stories/quiz/jm/QuizAdmin.story#{id:ContestEntryAPI}</givenStory>
+</givenStories>
+<story path="stories/quiz/jm/QuizAdmin.story" title="">
+<meta>
+<property keyword="@" name="TestingType" value="Sanity Regression"/>
+</meta>
+<narrative keyword="Narrative:">
+  <inOrderTo keyword="In order to">verify the Quiz functionality</inOrderTo>
+  <asA keyword="As a">user</asA>
+  <iWantTo keyword="I want to">modify/retrieve the value from the Quiz joomla admin application
+
+Meta:
+@TestingType Sanity Regression</iWantTo>
+</narrative>
+<scenario keyword="Scenario:" title="Retrive and modify the values from config-contest-entry-api-client article">
+<meta>
+<property keyword="@" name="id" value="ContestEntryAPI"/>
+</meta>
+<step outcome="pending" keyword="PENDING">Given Login to the Quiz Admin</step>
+<step outcome="pending" keyword="PENDING">And Do a search for an article &apos;config-contest-entry-api-client&apos;</step>
+<step outcome="pending" keyword="PENDING">And Get the field value by its key name &apos;contestEntryApiUri&apos;</step>
+<step outcome="pending" keyword="PENDING">And Modify the field by its key name &apos;contestEntryApiUri&apos; with the given value &apos;http://cs.{env}.pch.c/EntryApi&apos;</step>
+<step outcome="pending" keyword="PENDING">And User redirect to the quiz application &apos;ConfigurationClearCache&apos;</step>
+<pendingMethod>@Given(&quot;Login to the Quiz Admin&quot;)
+@Pending
+public void givenLoginToTheQuizAdmin() {
+  // PENDING
+}
+</pendingMethod>
+<pendingMethod>@Given(&quot;Do a search for an article &apos;config-contest-entry-api-client&apos;&quot;)
+@Pending
+public void givenDoASearchForAnArticleconfigcontestentryapiclient() {
+  // PENDING
+}
+</pendingMethod>
+<pendingMethod>@Given(&quot;Get the field value by its key name &apos;contestEntryApiUri&apos;&quot;)
+@Pending
+public void givenGetTheFieldValueByItsKeyNamecontestEntryApiUri() {
+  // PENDING
+}
+</pendingMethod>
+<pendingMethod>@Given(&quot;Modify the field by its key name &apos;contestEntryApiUri&apos; with the given value &apos;http://cs.{env}.pch.c/EntryApi&apos;&quot;)
+@Pending
+public void givenModifyTheFieldByItsKeyNamecontestEntryApiUriWithTheGivenValuehttpcsenvpchcEntryApi() {
+  // PENDING
+}
+</pendingMethod>
+<pendingMethod>@Given(&quot;User redirect to the quiz application &apos;ConfigurationClearCache&apos;&quot;)
+@Pending
+public void givenUserRedirectToTheQuizApplicationConfigurationClearCache() {
+  // PENDING
+}
+</pendingMethod>
+</scenario>
+</story>
+<step outcome="pending" keyword="PENDING">Given Register a fully registered user through RF and login to the site</step>
+<step outcome="pending" keyword="PENDING">When Navigate to Trending quiz page</step>
+<step outcome="pending" keyword="PENDING">Then Play quiz and Verify GOS page</step>
+<step outcome="pending" keyword="PENDING">And Verify the failed contest entry record details with status as &apos;0&apos;</step>
+<step outcome="pending" keyword="PENDING">And User redirect to the quiz application &apos;ProcessContestEntry&apos;</step>
+<step outcome="pending" keyword="PENDING">And Verify the failed contest entry record details with status as &apos;1&apos;</step>
+<step outcome="pending" keyword="PENDING">And Login to the Quiz Admin</step>
+<step outcome="pending" keyword="PENDING">And Do a search for an article &apos;config-contest-entry-api-client&apos;</step>
+<step outcome="pending" keyword="PENDING">And Modify the field by its key name &apos;contestEntryApiUri&apos; with the given value &apos;http://cs.{env}.pch.com/EntryApi&apos;</step>
+<step outcome="pending" keyword="PENDING">And User redirect to the quiz application &apos;ConfigurationClearCache&apos;</step>
+<step outcome="pending" keyword="PENDING">And User redirect to the quiz application &apos;ProcessContestEntry&apos;</step>
+<step outcome="pending" keyword="PENDING">And Verify the absence of the failed contest entry record</step>
+<step outcome="pending" keyword="PENDING">And User redirect to the quiz tab</step>
+<step outcome="pending" keyword="PENDING">And Verify contest entry &apos;Contest Keys / QUIZ / Complete&apos;,&apos;Contest Key&apos;</step>
+<pendingMethod>@Given(&quot;Register a fully registered user through RF and login to the site&quot;)
+@Pending
+public void givenRegisterAFullyRegisteredUserThroughRFAndLoginToTheSite() {
+  // PENDING
+}
+</pendingMethod>
+<pendingMethod>@When(&quot;Navigate to Trending quiz page&quot;)
+@Pending
+public void whenNavigateToTrendingQuizPage() {
+  // PENDING
+}
+</pendingMethod>
+<pendingMethod>@Then(&quot;Play quiz and Verify GOS page&quot;)
+@Pending
+public void thenPlayQuizAndVerifyGOSPage() {
+  // PENDING
+}
+</pendingMethod>
+<pendingMethod>@Then(&quot;Verify the failed contest entry record details with status as &apos;0&apos;&quot;)
+@Pending
+public void thenVerifyTheFailedContestEntryRecordDetailsWithStatusAs0() {
+  // PENDING
+}
+</pendingMethod>
+<pendingMethod>@Then(&quot;User redirect to the quiz application &apos;ProcessContestEntry&apos;&quot;)
+@Pending
+public void thenUserRedirectToTheQuizApplicationProcessContestEntry() {
+  // PENDING
+}
+</pendingMethod>
+<pendingMethod>@Then(&quot;Verify the failed contest entry record details with status as &apos;1&apos;&quot;)
+@Pending
+public void thenVerifyTheFailedContestEntryRecordDetailsWithStatusAs1() {
+  // PENDING
+}
+</pendingMethod>
+<pendingMethod>@Then(&quot;Login to the Quiz Admin&quot;)
+@Pending
+public void thenLoginToTheQuizAdmin() {
+  // PENDING
+}
+</pendingMethod>
+<pendingMethod>@Then(&quot;Do a search for an article &apos;config-contest-entry-api-client&apos;&quot;)
+@Pending
+public void thenDoASearchForAnArticleconfigcontestentryapiclient() {
+  // PENDING
+}
+</pendingMethod>
+<pendingMethod>@Then(&quot;Modify the field by its key name &apos;contestEntryApiUri&apos; with the given value &apos;http://cs.{env}.pch.com/EntryApi&apos;&quot;)
+@Pending
+public void thenModifyTheFieldByItsKeyNamecontestEntryApiUriWithTheGivenValuehttpcsenvpchcomEntryApi() {
+  // PENDING
+}
+</pendingMethod>
+<pendingMethod>@Then(&quot;User redirect to the quiz application &apos;ConfigurationClearCache&apos;&quot;)
+@Pending
+public void thenUserRedirectToTheQuizApplicationConfigurationClearCache() {
+  // PENDING
+}
+</pendingMethod>
+<pendingMethod>@Then(&quot;User redirect to the quiz application &apos;ProcessContestEntry&apos;&quot;)
+@Pending
+public void thenUserRedirectToTheQuizApplicationProcessContestEntry() {
+  // PENDING
+}
+</pendingMethod>
+<pendingMethod>@Then(&quot;Verify the absence of the failed contest entry record&quot;)
+@Pending
+public void thenVerifyTheAbsenceOfTheFailedContestEntryRecord() {
+  // PENDING
+}
+</pendingMethod>
+<pendingMethod>@Then(&quot;User redirect to the quiz tab&quot;)
+@Pending
+public void thenUserRedirectToTheQuizTab() {
+  // PENDING
+}
+</pendingMethod>
+<pendingMethod>@Then(&quot;Verify contest entry &apos;Contest Keys / QUIZ / Complete&apos;,&apos;Contest Key&apos;&quot;)
+@Pending
+public void thenVerifyContestEntryContestKeysQUIZCompleteContestKey() {
+  // PENDING
+}
+</pendingMethod>
+</scenario>
+<step outcome="pending" keyword="PENDING">Given Login to the Quiz Admin</step>
+<step outcome="pending" keyword="PENDING">And Do a search for an article &apos;config-contest-entry-api-client&apos;</step>
+<step outcome="pending" keyword="PENDING">And Modify the field by its key name &apos;contestEntryApiUri&apos; with the given value &apos;http://cs.{env}.pch.com/EntryApi&apos;</step>
+<step outcome="pending" keyword="PENDING">And User redirect to the quiz application &apos;ConfigurationClearCache&apos;</step>
+<pendingMethod>@Given(&quot;Login to the Quiz Admin&quot;)
+@Pending
+public void givenLoginToTheQuizAdmin() {
+  // PENDING
+}
+</pendingMethod>
+<pendingMethod>@Given(&quot;Do a search for an article &apos;config-contest-entry-api-client&apos;&quot;)
+@Pending
+public void givenDoASearchForAnArticleconfigcontestentryapiclient() {
+  // PENDING
+}
+</pendingMethod>
+<pendingMethod>@Given(&quot;Modify the field by its key name &apos;contestEntryApiUri&apos; with the given value &apos;http://cs.{env}.pch.com/EntryApi&apos;&quot;)
+@Pending
+public void givenModifyTheFieldByItsKeyNamecontestEntryApiUriWithTheGivenValuehttpcsenvpchcomEntryApi() {
+  // PENDING
+}
+</pendingMethod>
+<pendingMethod>@Given(&quot;User redirect to the quiz application &apos;ConfigurationClearCache&apos;&quot;)
+@Pending
+public void givenUserRedirectToTheQuizApplicationConfigurationClearCache() {
+  // PENDING
+}
+</pendingMethod>
+</story>
+
+]]></script>
+</body>
+<!--  SyntaxHighlighter resources:  should be included at end of body -->
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shCore.css"/>
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shThemeRDark.css"/>
+<script language="javascript" src="./js/sh-3.0.83/shCore.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushBash.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushCss.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushDiff.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushGroovy.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJava.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJScript.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPlain.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPython.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushRuby.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushScala.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushXml.js"></script>
+<script language="javascript" src="./js/shBrushBdd.js"></script>
+<script type="text/javascript">
+    SyntaxHighlighter.defaults['gutter'] = false;
+    SyntaxHighlighter.defaults['toolbar'] = false;    
+    SyntaxHighlighter.all();
+</script>
+</html>

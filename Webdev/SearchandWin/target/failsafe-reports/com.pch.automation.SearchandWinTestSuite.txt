@@ -1,0 +1,21 @@
+-------------------------------------------------------------------------------
+Test set: com.pch.automation.SearchandWinTestSuite
+-------------------------------------------------------------------------------
+Tests run: 9, Failures: 0, Errors: 1, Skipped: 2, Time elapsed: 197.548 s <<< FAILURE! - in com.pch.automation.SearchandWinTestSuite
+com.pch.automation.stepdefinitions.SerpScenarioSteps.When Do a search and Verify SERP page  Time elapsed: 25.931 s  <<< ERROR!
+net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException: Expected enabled element was not enabled
+	at com.pch.automation.stepdefinitions.SerpScenarioSteps.searchAndVerifySERPPage(SerpScenarioSteps.java:53)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for By.name: q to be enabled (tried for 25 second(s) with 100 milliseconds interval)
+	at com.pch.automation.stepdefinitions.SerpScenarioSteps.searchAndVerifySERPPage(SerpScenarioSteps.java:53)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"*[name='q']"}
+  (Session info: chrome=80.0.3987.116)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'VSANKAR2', ip: '10.37.0.97', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.116, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\vsankar\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:52291}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept}
+Session ID: c3455c6b8be6883a56839abc47e6b91d
+*** Element info: {Using=name, value=q}
+	at com.pch.automation.stepdefinitions.SerpScenarioSteps.searchAndVerifySERPPage(SerpScenarioSteps.java:53)
+

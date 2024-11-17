@@ -1,0 +1,76 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Regression Suite" parallel="tests" thread-count="3">
+
+	<listeners>
+		<listener class-name="com.pch.search.utilities.CustomListener" />
+	</listeners>
+	
+	<parameter name="logLevel" value="" /> <!--This parameter can be used to generate more logs while debugging, use 
+		value="DEBUG" -->
+	<parameter name="SeleniumGrid" value="no" /> <!-- Yes\No -->
+	<parameter name="browserVersion" value="" />
+	<parameter name="hubURL" value="http://localhost:4444/wd/hub" />
+
+	<parameter name="appName" value="SearchAndWin" />
+	<parameter name="environment" value="qa" />
+
+	<parameter name="remoteUrl" value="" />
+	<parameter name="retryCount" value="1" />
+	<parameter name="networkLatencyTuner" value="1.0" />
+
+	<parameter name="joomlaUserName" value="kcheguri" />
+	<parameter name="joomlaPassword" value="pch1234" />
+	 
+	<!-- QA SQL Connection Parms -->
+	<parameter name="sqlServerjdbc" value="jdbc:sqlserver://qshareddb02:1433;databaseName=" />
+ 	<parameter name="sqlServerUsername" value="kcheguri" />
+ 	<parameter name="sqlServerPassword" value="Testing3" />
+ 	<parameter name="SqlDataBase" value="PCHDotCom" />
+ 	 	 
+ 	<!-- STG SQL Connection Parms -->
+  	<!-- <parameter name="sqlServerjdbc"  value="jdbc:sqlserver://sshareddb01.pchoso.com:1433;databaseName=" />
+ 	<parameter name="sqlServerUsername" value="QA" />
+ 	<parameter name="sqlServerPassword" value="qa2008" />
+ 	<parameter name="SqlDataBase" value="PCHDotCom" /> -->
+ 	
+ 	
+	<parameter name="mySqlJdbc" value="jdbc:mysql://10.1.1.198:3306/" /> <!-- QA -->
+	<!-- <parameter name="mySqlJdbc" value="jdbc:mysql://10.79.9.13:3306/" /> --> <!-- STG -->
+	<parameter name="mySqlUsername" value="SearchAutomation" />
+	<parameter name="mySqlPassword" value="SearchAutomation" />
+	
+	<test name="Chrome">
+		<parameter name="browserName" value="ie" />
+		<parameter name="device" value="" />
+		<classes>
+		    <class name="com.pch.sw.tests.guidedSearch.GuidedSearchBackgroundImageTests" >
+		    <methods>
+			    <include name="unRecBGimage" />
+			</methods>
+			</class>
+		</classes>
+	</test>
+	<!-- 
+	<test name="Edge">
+		<parameter name="browserName" value="ie" />
+		<parameter name="device" value="" />
+		<classes>
+		    <class name="com.pch.sw.tests.guidedSearch.GuidedSearchBackgroundImageTests" >
+		    <methods>
+			    <include name="unRecBGimage" />
+			</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Firefox">
+		<parameter name="browserName" value="ie" />
+		<parameter name="device" value="" />
+		<classes>
+		    <class name="com.pch.sw.tests.guidedSearch.GuidedSearchBackgroundImageTests" >
+		    <methods>
+			    <include name="unRecBGimage" />
+			</methods>
+			</class>
+		</classes>
+	</test> -->
+</suite>

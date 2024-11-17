@@ -1,0 +1,284 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Regression Suite_stg" parallel="tests" thread-count="12">
+
+
+	<listeners>
+		<listener class-name="com.pch.search.utilities.CustomListener" />
+	</listeners>
+
+	<parameter name="logLevel" value="" />
+
+	<parameter name="SeleniumGrid" value="yes" /> <!-- Yes\No -->
+	<!-- <parameter name="browserName" value="chrome" /> internet explorer\chrome\firefox -->
+	<parameter name="browserVersion" value="" />
+	<parameter name="hubURL" value="http://localhost:4444/wd/hub" />
+
+	<parameter name="appName" value="SearchAndWin" />
+	<parameter name="environment" value="stg" />
+
+	<parameter name="remoteUrl" value="" />
+	<parameter name="retryCount" value="1" />
+	<parameter name="networkLatencyTuner" value="1.0" />
+
+	<parameter name="joomlaUserName" value="dreddy" />
+	<parameter name="joomlaPassword" value="pch1234" />
+
+	<parameter name="IWEUserName" value="dreddy" />
+	<parameter name="IWEPassword" value="Dreddy1" />
+
+	<parameter name="sqlServerjdbc"
+		value="jdbc:sqlserver://qshareddb02:1433;databaseName=" />
+	<parameter name="sqlServerUsername" value="QA" />
+	<parameter name="sqlServerPassword" value="qa2008" />
+
+	<parameter name="mySqlJdbc" value="jdbc:mysql://10.79.9.13:3306/" />    <!-- for STG -->
+
+	<parameter name="mySqlUsername" value="vsingh" />
+	<parameter name="mySqlPassword" value="vsingh4189" />
+
+
+
+	<!--************************* This is for Desktop ************************* -->
+
+
+	<!--************************* This is for Claim tokens package ************************* -->
+	<test name="Test_claimTokens_AnniversaryTokenAwardTests"
+		preserve-order="true">
+		<parameter name="browserName" value="chrome" />
+		<parameter name="device" value="Desktop" />
+		<classes>
+			<class name="com.pch.sw.tests.claimTokens.AnniversaryTokenAwardTests">
+			</class>
+		</classes>
+	</test>
+
+	<test name="Test_claimTokens_BirthdayTokenAwardTests"
+		preserve-order="true">
+		<parameter name="browserName" value="chrome" />
+		<parameter name="device" value="Desktop" />
+		<classes>
+			<class name="com.pch.sw.tests.claimTokens.BirthdayTokenAwardTests">
+			</class>
+		</classes>
+	</test>
+
+	<test name="Test_claimTokens_ConsecutiveVisitsTokensTests"
+		preserve-order="true">
+		<parameter name="browserName" value="chrome" />
+		<parameter name="device" value="Desktop" />
+		<classes>
+			<class name="com.pch.sw.tests.claimTokens.ConsecutiveVisitsTokensTests">
+			</class>
+		</classes>
+	</test>
+
+	<!--******************** This is for IWE package********************** -->
+	<!-- <test name="Test_IWE_ReconfigureIWEDevicesTest" preserve-order="true"> 
+		<classes> <class name="com.pch.sw.tests.iwe.ReconfigureIWEDevicesTest"> </class> 
+		</classes> </test> -->
+	<!--************************* This is for Login package ************************* -->
+	<test name="Test_Login_FBUserValidationTests" preserve-order="true">
+		<parameter name="browserName" value="chrome" />
+		<parameter name="device" value="Desktop" />
+		<classes>
+			<class name="com.pch.sw.tests.login.FBUserValidationTests">
+			</class>
+		</classes>
+	</test>
+	<test name="Test_Login_ForgotPasswordTests" preserve-order="true">
+		<parameter name="browserName" value="chrome" />
+		<parameter name="device" value="Desktop" />
+		<classes>
+			<class name="com.pch.sw.tests.login.ForgotPasswordTests">
+			</class>
+		</classes>
+	</test>
+	<test name="Test_Login_MiniRegUserValidationTests" preserve-order="true">
+		<parameter name="browserName" value="chrome" />
+		<parameter name="device" value="Desktop" />
+		<classes>
+			<class name="com.pch.sw.tests.login.MiniRegUserValidationTests">
+			</class>
+		</classes>
+	</test>
+	<test name="Test_Login_OptinUserValidationTests" preserve-order="true">
+		<parameter name="browserName" value="chrome" />
+		<parameter name="device" value="Desktop" />
+		<classes>
+			<class name="com.pch.sw.tests.login.OptinUserValidationTests">
+			</class>
+		</classes>
+	</test>
+	<test name="Test_Login_SearchRegPageUserRegistrationTests"
+		preserve-order="true">
+		<parameter name="browserName" value="chrome" />
+		<parameter name="device" value="Desktop" />
+		<classes>
+			<class name="com.pch.sw.tests.login.SearchRegPageUserRegistrationTests">
+			</class>
+		</classes>
+	</test>
+	<test name="Test_Login_SilverUserValidationTests" preserve-order="true">
+		<parameter name="browserName" value="chrome" />
+		<parameter name="device" value="Desktop" />
+		<classes>
+			<class name="com.pch.sw.tests.login.SilverUserValidationTests">
+			</class>
+		</classes>
+	</test>
+
+	<!--************************* This is for Misc package ************************* -->
+	<test name="Test_Misc_AwardTokensWhenFollowingLinkOrSegIDTests"
+		preserve-order="true">
+		<parameter name="browserName" value="chrome" />
+		<parameter name="device" value="Desktop" />
+		<classes>
+			<class
+				name="com.pch.sw.tests.misc.AwardTokensWhenFollowingLinkOrSegIDTests">
+			</class>
+		</classes>
+	</test>
+	<test name="Test_Misc_EcParameterThroughEmailTests"
+		preserve-order="true">
+		<parameter name="browserName" value="chrome" />
+		<parameter name="device" value="Desktop" />
+		<classes>
+			<class name="com.pch.sw.tests.misc.EcParameterThroughEmailTests">
+			</class>
+		</classes>
+	</test>
+	<test name="Test_Misc_EdialogAndComScoreTagsTests" preserve-order="true">
+		<parameter name="device" value="Desktop" />
+		<parameter name="browserName" value="chrome" />
+		<classes>
+			<class name="com.pch.sw.tests.misc.EdialogAndComScoreTagsTests">
+			</class>
+		</classes>
+	</test>
+	<test name="Test_Misc_GuidedSearchPresentationTests"
+		preserve-order="true">
+		<parameter name="browserName" value="chrome" />
+		<parameter name="device" value="Desktop" />
+		<classes>
+			<class name="com.pch.sw.tests.misc.GuidedSearchPresentationTests">
+			</class>
+		</classes>
+	</test>
+	<test name="Test_Misc_HeaderContentFromHomePage" preserve-order="true">
+		<parameter name="browserName" value="chrome" />
+		<parameter name="device" value="Desktop" />
+		<classes>
+			<class name="com.pch.sw.tests.misc.HeaderContentFromHomePage">
+			</class>
+		</classes>
+	</test>
+	<test name="Test_Misc_HeaderFooterValidationTests" preserve-order="true">
+		<parameter name="browserName" value="chrome" />
+		<parameter name="device" value="Desktop" />
+		<classes>
+			<class name="com.pch.sw.tests.misc.HeaderFooterValidationTests">
+			</class>
+		</classes>
+	</test>
+	<test name="Test_Misc_HighActivityVideoHighRiskSegmentTests"
+		preserve-order="true">
+		<parameter name="browserName" value="chrome" />
+		<parameter name="device" value="Desktop" />
+		<classes>
+			<class name="com.pch.sw.tests.misc.HighActivityVideoHighRiskSegmentTests">
+			</class>
+		</classes>
+	</test>
+
+	<test name="Test_Misc_PredictiveSearchTests" preserve-order="true">
+		<parameter name="browserName" value="chrome" />
+		<parameter name="device" value="Desktop" />
+		<classes>
+			<class name="com.pch.sw.tests.misc.PredictiveSearchTests">
+			</class>
+		</classes>
+	</test>
+	<test name="Test_Misc_RemoveWelcomeMessage" preserve-order="true">
+		<parameter name="browserName" value="chrome" />
+		<parameter name="device" value="Desktop" />
+		<classes>
+			<class name="com.pch.sw.tests.misc.RemoveWelcomeMessage">
+			</class>
+		</classes>
+	</test>
+	<test name="Test_Misc_SearchSERPTests" preserve-order="true">
+		<parameter name="browserName" value="chrome" />
+		<parameter name="device" value="Desktop" />
+		<classes>
+			<class name="com.pch.sw.tests.misc.SearchSERPTests">
+			</class>
+		</classes>
+	</test>
+	<test name="Test_Misc_SuperPrizeTests" preserve-order="true">
+		<parameter name="browserName" value="chrome" />
+		<parameter name="device" value="Desktop" />
+		<classes>
+			<class name="com.pch.sw.tests.misc.SuperPrizeTests">
+			</class>
+		</classes>
+	</test>
+	<test name="Test_Misc_TokensForWatchingVideoTests" preserve-order="true">
+		<parameter name="browserName" value="chrome" />
+		<parameter name="device" value="Desktop" />
+		<classes>
+			<class name="com.pch.sw.tests.misc.TokensForWatchingVideoTests">
+			</class>
+		</classes>
+	</test>
+	<test name="Test_Misc_VideoForSpecificUsersTests" preserve-order="true">
+		<parameter name="browserName" value="chrome" />
+		<parameter name="device" value="Desktop" />
+		<classes>
+			<class name="com.pch.sw.tests.misc.VideoForSpecificUsersTests">
+			</class>
+		</classes>
+	</test>
+
+	<!--************************* This is for HR Rules package ************************* -->
+	<test name="Test_HrRules_SearchCountsTests" preserve-order="true">
+		<parameter name="browserName" value="chrome" />
+		<parameter name="device" value="Desktop" />
+		<classes>
+			<class name="com.pch.sw.tests.searchHrRules.SearchCountsTests">
+			</class>
+		</classes>
+	</test>
+	<test name="Test_HrRules_SearchHighRiskRulesTests" preserve-order="true">
+		<parameter name="browserName" value="chrome" />
+		<parameter name="device" value="Desktop" />
+		<classes>
+			<class name="com.pch.sw.tests.searchHrRules.SearchHighRiskRulesTests">
+			</class>
+		</classes>
+	</test>
+
+
+	<!--************************* This is for Shopping package ************************* -->
+	<test name="Test_Shopping_ControlShoppingResultsByDeviceTests"
+		preserve-order="true">
+		<parameter name="browserName" value="chrome" />
+		<parameter name="device" value="Desktop" />
+		<classes>
+			<class
+				name="com.pch.sw.tests.shopping.ControlShoppingResultsByDeviceTests">
+			</class>
+		</classes>
+	</test>
+	<test name="Test_Shopping_ShoppingPagesTests" preserve-order="true">
+		<parameter name="browserName" value="chrome" />
+		<parameter name="device" value="Desktop" />
+		<classes>
+			<class name="com.pch.sw.tests.shopping.ShoppingPagesTests">
+			</class>
+		</classes>
+	</test>
+
+
+	
+</suite>

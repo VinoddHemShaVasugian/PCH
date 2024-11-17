@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.pch.search.utilities.Users>	
+	
+	<randomUser>
+		<title>Mr.</title>
+		<firstname>Random</firstname>
+		<middlename></middlename>
+		<lastname>Random</lastname>
+		<street>101 Channel Drive</street>
+		<building></building>
+		<city>Port Washington</city>
+		<state>New York</state>
+		<statecode>NY</statecode>
+		<country>United States</country>
+		<countrycode>US</countrycode>
+		<zip>11050</zip>
+		<phone>5160000000</phone>
+		<email>Random</email>
+		<dob_Month>May</dob_Month>
+		<dob_Day>24</dob_Day>
+		<dob_Year>1980</dob_Year>
+		<password>testing</password>
+		<adminuser>kcheguri</adminuser>
+		<adminpassword>pch1234</adminpassword>
+	</randomUser>
+	
+	<randomUnsubscribedUser>
+		<title>Mr.</title>
+		<firstname>Random</firstname>
+		<middlename></middlename>
+		<lastname>Random</lastname>
+		<street>101 Channel Drive</street>
+		<building></building>
+		<city>Port Washington</city>
+		<state>New York</state>
+		<statecode>NY</statecode>
+		<country>United States</country>
+		<countrycode>US</countrycode>
+		<zip>11050</zip>
+		<phone>5160000000</phone>
+		<email>Random</email>
+		<dob_Month>May</dob_Month>
+		<dob_Day>24</dob_Day>
+		<dob_Year>1980</dob_Year>
+		<password>testing</password>
+		<adminuser>kcheguri</adminuser>
+		<adminpassword>pch1234</adminpassword>
+		
+		<keepSignedIn>N</keepSignedIn>
+		<SearchSubscription>N</SearchSubscription>
+		<pchDotComSubscription>N</pchDotComSubscription>
+		
+	</randomUnsubscribedUser>
+	
+	<registeredUser>
+		<title>Mr.</title>
+		<firstname>New</firstname>
+		<middlename></middlename>
+		<lastname>Testers</lastname>
+		<street>382 Channel Dr</street>
+		<building></building>
+		<city>Port Washington</city>
+		<state>New York</state>
+		<statecode>NY</statecode>
+		<country>United States</country>
+		<countrycode>US</countrycode>
+		<zip>11050</zip>
+		<phone>5160000000</phone>
+		<email>newtester@pchmail.com</email>
+		<password>pass0001</password>
+		<adminuser>kcheguri</adminuser>
+		<adminpassword>pch1234</adminpassword>
+	</registeredUser>
+	
+	
+</com.pch.search.utilities.Users>

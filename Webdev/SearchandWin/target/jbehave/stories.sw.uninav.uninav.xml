@@ -1,0 +1,10 @@
+<story path="stories/sw/uninav/uninav.story" title="">
+<narrative keyword="Narrative:">
+  <inOrderTo keyword="In order to">verify the rewards update in the uninav</inOrderTo>
+  <asA keyword="As a">user</asA>
+  <iWantTo keyword="I want to">check rewards redeem and levelup playnow button 
+
+@TestingType Sanity Regression
+@TestCaseId RT-04307</iWantTo>
+</narrative>
+<scenario keyword="Scenario:" title="Create the full reg user and verify the rewards update">

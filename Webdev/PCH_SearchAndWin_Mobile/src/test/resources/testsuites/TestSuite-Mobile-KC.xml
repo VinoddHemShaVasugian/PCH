@@ -1,0 +1,62 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Regression Suite" parallel="tests" thread-count="1">
+
+	<listeners>
+		<listener class-name="com.pch.search.utilities.CustomListener" />
+	</listeners>
+	
+	<parameter name="logLevel" value="" /> <!--This parameter can be used to generate more logs while debugging, use 
+		value="DEBUG" -->
+	<parameter name="SeleniumGrid" value="no" /> <!-- Yes\No -->
+	<parameter name="browserVersion" value="" />
+	<parameter name="hubURL" value="http://localhost:4444/wd/hub" />
+
+	<parameter name="appName" value="SearchAndWin" />
+	<parameter name="environment" value="stg" />
+
+	<parameter name="remoteUrl" value="" />
+	<parameter name="retryCount" value="1" />
+	<parameter name="networkLatencyTuner" value="1.0" />
+
+	<parameter name="joomlaUserName" value="kcheguri" />
+	<parameter name="joomlaPassword" value="pch1234" />
+	 
+	<!-- QA SQL Connection Parms -->
+	<!-- <parameter name="sqlServerjdbc" value="jdbc:sqlserver://qshareddb02:1433;databaseName=" />
+ 	<parameter name="sqlServerUsername" value="kcheguri" />
+ 	<parameter name="sqlServerPassword" value="Testing3" />
+ 	<parameter name="SqlDataBase" value="PCHDotCom" /> -->
+ 	 	 
+ 	<!-- STG SQL Connection Parms -->
+  	<parameter name="sqlServerjdbc"  value="jdbc:sqlserver://sshareddb01.pchoso.com:1433;databaseName=" />
+ 	<parameter name="sqlServerUsername" value="QA" />
+ 	<parameter name="sqlServerPassword" value="qa2008" />
+ 	<parameter name="SqlDataBase" value="PCHDotCom" />
+ 	
+ 	
+	<!-- <parameter name="mySqlJdbc" value="jdbc:mysql://10.1.1.198:3306/" /> --> <!-- QA -->
+	<parameter name="mySqlJdbc" value="jdbc:mysql://10.79.9.13:3306/" /> <!-- STG -->
+	<parameter name="mySqlUsername" value="SearchAutomation" />
+	<parameter name="mySqlPassword" value="SearchAutomation" />
+	
+	<test name="Guided Search">
+		<parameter name="browserName" value="chrome_ios" />
+		<parameter name="device" value="mobile" />
+		<classes>
+		    <class name="com.pch.sw.tests.guidedSearch.GuidedSearchBackgroundImageTests" />
+		    <class name="com.pch.sw.tests.guidedSearch.GuidedSearchBannerTests" />
+		    <class name="com.pch.sw.tests.guidedSearch.GuidedSearchConditionsTests" />
+		    <class name="com.pch.sw.tests.guidedSearch.GuidedSearchFooterTests" />
+		    <class name="com.pch.sw.tests.guidedSearch.GuidedSearchLogoTests" />
+		    <class name="com.pch.sw.tests.guidedSearch.GuidedSearchNFSPTests" />
+		    <class name="com.pch.sw.tests.guidedSearch.GuidedSearchNoOfElementsTests" />
+		    <class name="com.pch.sw.tests.guidedSearch.GuidedSearchPublishUpAndDown" />
+		    <class name="com.pch.sw.tests.guidedSearch.GuidedSearchSearchBoxTests" />
+		    <class name="com.pch.sw.tests.guidedSearch.GuidedSearchSegmentationTests" />
+		    <!-- <methods>
+			    <include name="" />
+			</methods>
+			</class> -->
+		</classes>
+	</test>
+</suite>

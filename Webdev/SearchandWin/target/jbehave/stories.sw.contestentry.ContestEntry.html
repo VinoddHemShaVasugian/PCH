@@ -1,0 +1,254 @@
+<div class="story">
+<h1></h1>
+<div class="path">stories/sw/contestentry/ContestEntry.story</div>
+<div class="meta">
+<div class="keyword">Meta:</div>
+<div class="property">@TestCaseId RT-04283</div>
+<div class="property">@TestingType Regression</div>
+</div>
+<div class="narrative"><h2>Narrative:</h2>
+<div class="element inOrderTo"><span class="keyword inOrderTo">In order to</span> verify contest entry</div>
+<div class="element asA"><span class="keyword asA">As a</span> Tester</div>
+<div class="element iWantTo"><span class="keyword iWantTo">I want to</span> retrive the contest entry for registration and first search in Joomla admin
+
+Meta:
+@TestCaseId RT-04283
+@TestingType Regression</div>
+</div>
+<div class="lifecycle"><h2>Lifecycle:</h2>
+<div class="after"><h3>After:</h3>
+<div class="scope"><h3>Scope: STORY</h3>
+<div class="outcome"><h3>Outcome: ANY</h3>
+<div class="step">Given Login to the Search Admin</div>
+<div class="step">And Do a search for an article 'config-contest-entry-api-client'</div>
+<div class="step">And Modify the field by its key name 'contestEntryApiUri' with the given value 'http://cs.{env}.pch.com/EntryApi'</div>
+<div class="step">And User redirect to the Search application 'ClearCache'</div>
+</div>
+</div>
+</div>
+</div>
+<div class="givenStories">GivenStories:
+<div class="givenStory">stories/sw/jm/SearchAdmin.story#{id:ContestKeys} {}</div>
+</div>
+<div class="story">
+<h1></h1>
+<div class="path">stories/sw/jm/SearchAdmin.story</div>
+<div class="meta">
+<div class="keyword">Meta:</div>
+<div class="property">@TestingType Sanity Regression</div>
+</div>
+<div class="narrative"><h2>Narrative:</h2>
+<div class="element inOrderTo"><span class="keyword inOrderTo">In order to</span> verify the SW functionality</div>
+<div class="element asA"><span class="keyword asA">As a</span> user</div>
+<div class="element iWantTo"><span class="keyword iWantTo">I want to</span> modify/retrieve the value from the Search joomla admin application
+
+Meta:
+@TestingType Sanity Regression</div>
+</div>
+<div class="scenario">
+<h2>Scenario: Retrive the values from Contest Key article</h2>
+<div class="meta">
+<div class="keyword">Meta:</div>
+<div class="property">@id ContestKeys</div>
+</div>
+<div class="step successful">Given Login to the Search Admin</div>
+<div class="step successful">And Get the field value by its label name based on article 'Contest Keys / Search / Registration','Contest Key'</div>
+<div class="step successful">And Get the field value by its label name based on article 'Contest Keys / Search / FirstSearch','Contest Key'</div>
+</div>
+</div>
+<div class="scenario">
+<h2>Scenario: Verify Registration and First search contest entry for Fully registered user</h2>
+<div class="meta">
+<div class="keyword">Meta:</div>
+<div class="property">@TestingType Sanity</div>
+</div>
+<div class="step successful">Given Register a user with the Optins</div>
+<div class="step failed">When Do a search and Verify SERP page <span class="keyword failed">(FAILED)</span><br/><span class="message failed">net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException: Expected enabled element was not enabled</span></div>
+<div class="step notPerformed">Then Verify contest entry 'Contest Keys / Search / Registration','Contest Key' for organic user <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">And Verify contest entry 'Contest Keys / Search / FirstSearch','Contest Key' for organic user <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<pre class="failure">net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException: Expected enabled element was not enabled
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilEnabled(WebElementFacadeImpl.java:1005)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilElementAvailable(WebElementFacadeImpl.java:837)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.type(WebElementFacadeImpl.java:718)
+	at net.serenitybdd.core.pages.PageObject.typeInto(PageObject.java:540)
+	at com.pch.automation.pages.sw.HomePage.search(HomePage.java:30)
+	at com.pch.automation.steps.SerpSteps.searchAndVerifySERPPage(SerpSteps.java:30)
+	at com.pch.automation.steps.SerpSteps$$EnhancerByCGLIB$$9e96b1f9.CGLIB$searchAndVerifySERPPage$9(&lt;generated&gt;)
+	at com.pch.automation.steps.SerpSteps$$EnhancerByCGLIB$$9e96b1f9$$FastClassByCGLIB$$426b3372.invoke(&lt;generated&gt;)
+	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:478)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:463)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:438)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:179)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:166)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:72)
+	at com.pch.automation.steps.SerpSteps$$EnhancerByCGLIB$$9e96b1f9.searchAndVerifySERPPage(&lt;generated&gt;)
+	at com.pch.automation.stepdefinitions.SerpScenarioSteps.searchAndVerifySERPPage(SerpScenarioSteps.java:53)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:790)
+	at org.jbehave.core.embedder.PerformableTree$FineSoFar.run(PerformableTree.java:349)
+...</pre>
+</div>
+<div class="scenario">
+<h2>Scenario: Verify Registration and First search contest entry for mini reg user</h2>
+<div class="step successful">Given Register a mini registered user through RF and login to the site</div>
+<div class="step successful">Then Do complete registration to become full reg user from Mini Reg user</div>
+<div class="step failed">And Do a search and Verify SERP page <span class="keyword failed">(FAILED)</span><br/><span class="message failed">net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException: Expected enabled element was not enabled</span></div>
+<div class="step notPerformed">And Verify contest entry 'Contest Keys / Search / Registration','Contest Key' <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">And Verify contest entry 'Contest Keys / Search / FirstSearch','Contest Key' <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<pre class="failure">net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException: Expected enabled element was not enabled
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilEnabled(WebElementFacadeImpl.java:1005)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilElementAvailable(WebElementFacadeImpl.java:837)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.type(WebElementFacadeImpl.java:718)
+	at net.serenitybdd.core.pages.PageObject.typeInto(PageObject.java:540)
+	at com.pch.automation.pages.sw.HomePage.search(HomePage.java:30)
+	at com.pch.automation.steps.SerpSteps.searchAndVerifySERPPage(SerpSteps.java:30)
+	at com.pch.automation.steps.SerpSteps$$EnhancerByCGLIB$$9e96b1f9.CGLIB$searchAndVerifySERPPage$9(&lt;generated&gt;)
+	at com.pch.automation.steps.SerpSteps$$EnhancerByCGLIB$$9e96b1f9$$FastClassByCGLIB$$426b3372.invoke(&lt;generated&gt;)
+	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:478)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:463)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:438)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:179)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:166)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:72)
+	at com.pch.automation.steps.SerpSteps$$EnhancerByCGLIB$$9e96b1f9.searchAndVerifySERPPage(&lt;generated&gt;)
+	at com.pch.automation.stepdefinitions.SerpScenarioSteps.searchAndVerifySERPPage(SerpScenarioSteps.java:53)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:790)
+	at org.jbehave.core.embedder.PerformableTree$FineSoFar.run(PerformableTree.java:349)
+...</pre>
+</div>
+<div class="scenario">
+<h2>Scenario: Verify Registration and First search contest entry for silver user</h2>
+<div class="step successful">Given Register a silver user through RF and login to the site</div>
+<div class="step successful">Then Do complete registration to become fully registered user from Silver User</div>
+<div class="step successful">And Do a search and Verify SERP page</div>
+<div class="step successful">And Verify contest entry 'Contest Keys / Search / FirstSearch','Contest Key'</div>
+</div>
+<div class="scenario">
+<h2>Scenario: Verify Registration and First search contest entry for social user</h2>
+<div class="step successful">Given Register a social user through RF and login to the site</div>
+<div class="step successful">Then Complete registration to become full reg user from social reg user</div>
+<div class="step failed">And Do a search and Verify SERP page <span class="keyword failed">(FAILED)</span><br/><span class="message failed">net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException: Expected enabled element was not enabled</span></div>
+<div class="step notPerformed">And Verify contest entry 'Contest Keys / Search / FirstSearch','Contest Key' <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<pre class="failure">net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException: Expected enabled element was not enabled
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilEnabled(WebElementFacadeImpl.java:1005)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilElementAvailable(WebElementFacadeImpl.java:837)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.type(WebElementFacadeImpl.java:718)
+	at net.serenitybdd.core.pages.PageObject.typeInto(PageObject.java:540)
+	at com.pch.automation.pages.sw.HomePage.search(HomePage.java:30)
+	at com.pch.automation.steps.SerpSteps.searchAndVerifySERPPage(SerpSteps.java:30)
+	at com.pch.automation.steps.SerpSteps$$EnhancerByCGLIB$$9e96b1f9.CGLIB$searchAndVerifySERPPage$9(&lt;generated&gt;)
+	at com.pch.automation.steps.SerpSteps$$EnhancerByCGLIB$$9e96b1f9$$FastClassByCGLIB$$426b3372.invoke(&lt;generated&gt;)
+	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:478)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:463)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:438)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:179)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:166)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:72)
+	at com.pch.automation.steps.SerpSteps$$EnhancerByCGLIB$$9e96b1f9.searchAndVerifySERPPage(&lt;generated&gt;)
+	at com.pch.automation.stepdefinitions.SerpScenarioSteps.searchAndVerifySERPPage(SerpScenarioSteps.java:53)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:790)
+	at org.jbehave.core.embedder.PerformableTree$FineSoFar.run(PerformableTree.java:349)
+...</pre>
+</div>
+<div class="scenario">
+<h2>Scenario: Verify when user makes multiple searches with different contest entry</h2>
+<div class="step successful">Given Register a user with the Optins</div>
+<div class="step failed">When Do a search and Verify SERP page <span class="keyword failed">(FAILED)</span><br/><span class="message failed">net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException: Expected enabled element was not enabled</span></div>
+<div class="step notPerformed">Then User redirect to the Search application 'ck=BZ999' <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">And Do a search and Verify SERP page <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">And User redirect to the Search application 'ck=PP123' <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">And Do a search and Verify SERP page <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">And Verify contest entry 'BZ999' for organic user <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">And Verify contest entry 'PP123' for organic user <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<pre class="failure">net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException: Expected enabled element was not enabled
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilEnabled(WebElementFacadeImpl.java:1005)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilElementAvailable(WebElementFacadeImpl.java:837)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.type(WebElementFacadeImpl.java:718)
+	at net.serenitybdd.core.pages.PageObject.typeInto(PageObject.java:540)
+	at com.pch.automation.pages.sw.HomePage.search(HomePage.java:30)
+	at com.pch.automation.steps.SerpSteps.searchAndVerifySERPPage(SerpSteps.java:30)
+	at com.pch.automation.steps.SerpSteps$$EnhancerByCGLIB$$9e96b1f9.CGLIB$searchAndVerifySERPPage$9(&lt;generated&gt;)
+	at com.pch.automation.steps.SerpSteps$$EnhancerByCGLIB$$9e96b1f9$$FastClassByCGLIB$$426b3372.invoke(&lt;generated&gt;)
+	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:478)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:463)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:438)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:179)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:166)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:72)
+	at com.pch.automation.steps.SerpSteps$$EnhancerByCGLIB$$9e96b1f9.searchAndVerifySERPPage(&lt;generated&gt;)
+	at com.pch.automation.stepdefinitions.SerpScenarioSteps.searchAndVerifySERPPage(SerpScenarioSteps.java:53)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:790)
+	at org.jbehave.core.embedder.PerformableTree$FineSoFar.run(PerformableTree.java:349)
+...</pre>
+</div>
+<div class="scenario">
+<h2>Scenario: Verify failed contest entries</h2>
+<div class="givenStories">GivenStories:
+<div class="givenStory">stories/sw/jm/SearchAdmin.story#{id:ContestEntryAPI} {}</div>
+</div>
+<div class="story">
+<h1></h1>
+<div class="path">stories/sw/jm/SearchAdmin.story</div>
+<div class="meta">
+<div class="keyword">Meta:</div>
+<div class="property">@TestingType Sanity Regression</div>
+</div>
+<div class="narrative"><h2>Narrative:</h2>
+<div class="element inOrderTo"><span class="keyword inOrderTo">In order to</span> verify the SW functionality</div>
+<div class="element asA"><span class="keyword asA">As a</span> user</div>
+<div class="element iWantTo"><span class="keyword iWantTo">I want to</span> modify/retrieve the value from the Search joomla admin application
+
+Meta:
+@TestingType Sanity Regression</div>
+</div>
+<div class="scenario">
+<h2>Scenario: Retrive and modify the values from config-contest-entry-api-client article</h2>
+<div class="meta">
+<div class="keyword">Meta:</div>
+<div class="property">@id ContestEntryAPI</div>
+</div>
+<div class="step successful">Given Login to the Search Admin</div>
+<div class="step successful">And Do a search for an article 'config-contest-entry-api-client'</div>
+<div class="step successful">And Get the field value by its key name 'contestEntryApiUri'</div>
+<div class="step successful">And Modify the field by its key name 'contestEntryApiUri' with the given value 'http://centralservices.{env}/'</div>
+<div class="step successful">And User redirect to the Search application 'ClearCache'</div>
+</div>
+</div>
+<div class="step successful">Given Register a fully registered user through RF and login to the site</div>
+<div class="step successful">When Do a search and Verify SERP page</div>
+<div class="step successful">Then Verify the failed contest entry record details with status as '0'</div>
+<div class="step successful">And User redirect to the Search application 'ProcessContestEntry'</div>
+<div class="step successful">And Verify the failed contest entry record details with status as '1'</div>
+<div class="step successful">And Login to the Search Admin</div>
+<div class="step successful">And Do a search for an article 'config-contest-entry-api-client'</div>
+<div class="step successful">And Modify the field by its key name 'contestEntryApiUri' with the given value 'http://cs.{env}.pch.com/EntryApi'</div>
+<div class="step successful">And User redirect to the Search application 'ClearCache'</div>
+<div class="step successful">And User redirect to the Search application 'ProcessContestEntry'</div>
+<div class="step successful">And Verify the absence of the failed contest entry record</div>
+<div class="step successful">And User redirect to the Search application</div>
+<div class="step successful">And Verify contest entry 'Contest Keys / Search / FirstSearch','Contest Key'</div>
+</div>
+<div class="step successful">Given Login to the Search Admin</div>
+<div class="step successful">And Do a search for an article 'config-contest-entry-api-client'</div>
+<div class="step successful">And Modify the field by its key name 'contestEntryApiUri' with the given value 'http://cs.{env}.pch.com/EntryApi'</div>
+<div class="step successful">And User redirect to the Search application 'ClearCache'</div>
+</div>

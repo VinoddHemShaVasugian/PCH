@@ -1,0 +1,94 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="SearchNWinMobileRegressionSuite" preserve-order="true"
+	thread-count="1">
+	<listeners>
+		<!-- <listener class-name="com.pch.search.utilities.CustomListener" /> -->
+		<listener class-name="com.pch.search.utilities.ReporterListener" />
+		<listener class-name="com.pch.search.utilities.PriorityListener" />
+	</listeners>
+
+	<parameter name="SeleniumGrid" value="no" />
+	<!-- Yes\No -->
+	<!-- <parameter name="browserName" value="chrome" /> internet explorer\chrome\firefox -->
+	<parameter name="browserVersion" value="" />
+	<parameter name="hubURL" value="http://localhost:4444/wd/hub" />
+
+	<parameter name="appName" value="SearchAndWin" />
+	<parameter name="environment" value="stg" />
+	<!-- <parameter name="environment" value="stg" /> -->
+
+	<parameter name="remoteUrl" value="" />
+	<parameter name="retryCount" value="1" />
+	<parameter name="networkLatencyTuner" value="1.0" />
+
+	<parameter name="joomlaUserName" value="npoojari" />
+	<parameter name="joomlaPassword" value="pch123" />
+
+	<parameter name="sqlServerjdbc"
+		value="jdbc:sqlserver://qshareddb02:1433;databaseName=" />
+	<parameter name="sqlServerUsername" value="QA" />
+	<!-- <parameter name="sqlServerUsername" value="STG" /> -->
+	<parameter name="sqlServerPassword" value="qa2008" />
+
+	<parameter name="logLevel" value="DEBUG" />
+	<!--This parameter can be used to generate more logs while debugging, use 
+		value="DEBUG" -->
+
+	<parameter name="IWEUserName" value="mperumal" />
+	<parameter name="IWEPassword" value="Winter2017" />
+
+	<parameter name="OamUserName" value="classic%5Cmambati" />
+	<parameter name="OamPassword" value="Spring2013" />
+
+	<!--<parameter name="mySqlJdbc" value="jdbc:mysql://10.1.1.198:3306/" /> 
+		QA -->
+	<parameter name="mySqlJdbc" value="jdbc:mysql://10.79.9.13:3306/" />
+	<!-- STG -->
+	<parameter name="mySqlUsername" value="SearchAutomation" />
+	<parameter name="mySqlPassword" value="SearchAutomation" />
+	<parameter name="browserName" value="iphone" />
+	<parameter name="BrowserStack" value="no" />
+	<parameter name="BrowserStack_Username" value="dushyanth3" />
+	<parameter name="BrowserStack_Access_key" value="yiALqskzhmWYVEmxgzLo" />
+	<parameter name="device" value="Mobile" />
+
+	<test name="Sanity" preserve-order="true">
+		<classes>
+			<class name="com.pch.sw.tests.login.SilverUserValidationTests">
+				<methods>
+					<include name="testSilverUserCreatesPasswordMobile" />
+				</methods>
+			</class>
+			<class name="com.pch.sw.tests.login.MiniRegUserValidationTests">
+				<methods>
+					<include name="testMiniRegUserCompleteRegistration" />
+				</methods>
+			</class>
+			<class name="com.pch.sw.tests.searchHrRules.SearchHighRiskRulesTests" />
+			<class name="com.pch.sw.tests.nfsp.SearchAlgoOnlyResultsTests" />
+			<class name="com.pch.sw.tests.claimTokens.ConsecutiveVisitTokensMobile">
+				<methods>
+					<include name="ConsecutiveVisit_Day1" />
+				</methods>
+			</class>
+			<!--<class name="com.pch.sw.tests.misc.HeaderContentFromHomePage"/> <class 
+				name="com.pch.sw.tests.misc.HeaderFooterValidationTests"/> -->
+			<class name="com.pch.sw.tests.login.OptinUserValidationTests">
+				<methods>
+					<include name="testOptinLightbox" />
+				</methods>
+			</class>
+			<class
+				name="com.pch.sw.tests.misc.AwardTokensWhenFollowingLinkOrSegIDTests">
+				<methods>
+					<include name="testLinkPromotion" />
+				</methods>
+			</class>
+			<class name="com.pch.sw.tests.misc.SearchActivityLogTests">
+				<methods>
+					<include name="verifyContestOam_tool" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>
