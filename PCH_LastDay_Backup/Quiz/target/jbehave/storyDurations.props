@@ -1,6 +1,0 @@
-#org.jbehave.core.embedder.StoryManager
-#Mon Sep 27 19:29:15 IST 2021
-total=3000
-threadAverage=3000
-threads=1
-stories/quiz/contestentry/ContestEntry.story=3000
