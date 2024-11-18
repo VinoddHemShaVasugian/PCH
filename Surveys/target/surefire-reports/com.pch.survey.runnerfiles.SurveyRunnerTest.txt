@@ -1,0 +1,114 @@
+-------------------------------------------------------------------------------
+Test set: com.pch.survey.runnerfiles.SurveyRunnerTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 0, Errors: 4, Skipped: 0, Time elapsed: 1,294.332 sec <<< FAILURE!
+1 Verify the Token Titan inactive badge is displayed on the badges page for the "full reg" usertype(Title of your feature)  Time elapsed: 426.567 sec  <<< ERROR!
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <svg data-v-2c84ebc9="" tabindex="-1" class="badge-container__toggle" width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg" style="opacity: 1;">...</svg> is not clickable at point (519, 450). Other element would receive the click: <path data-v-2c84ebc9="" d="M17.8572 2.14282L2.14288 17.8571" stroke="#BABABA" stroke-width="3" stroke-linecap="round"></path>
+  (Session info: chrome=128.0.6613.138)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.20.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4c0b0c282ae1b5be9ead68092d7bc87a, clickElement {id=f.C770A88BA182DE0EA422497EE8796E9E.d.8C4C4B9E2EA0CF971C3E9D9EC8447733.e.138}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\vsankar\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51198}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51198/devtoo..., se:cdpVersion: 128.0.6613.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[[[ChromeDriver: chrome on windows (4c0b0c282ae1b5be9ead68092d7bc87a)] -> xpath: //*[text()='Influencer Pro']/parent::div[@class='badge-container']]] -> css selector: svg.badge-container__toggle]
+Session ID: 4c0b0c282ae1b5be9ead68092d7bc87a
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at com.pch.survey.pages.surveytab.BadgesPage.clickInfoIcon(BadgesPage.java:29)
+	at com.pch.survey.stepdefinitions.surveytab.BadgesStepDefinitions.verifyBadgesInfoText(BadgesStepDefinitions.java:90)
+	at ?.I verify info text on "Influencer Pro" badge(classpath:features/test.feature:24)
+
+1 Verify the Token Titan inactive badge is displayed on the badges page for the "guest" usertype(Title of your feature)  Time elapsed: 399.011 sec  <<< ERROR!
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <svg data-v-2c84ebc9="" tabindex="-1" class="badge-container__toggle" width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg" style="opacity: 1;">...</svg> is not clickable at point (519, 450). Other element would receive the click: <path data-v-2c84ebc9="" d="M17.8572 2.14282L2.14288 17.8571" stroke="#BABABA" stroke-width="3" stroke-linecap="round"></path>
+  (Session info: chrome=128.0.6613.138)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.20.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2d92c07da476d1fd6a8dadb795d36abe, clickElement {id=f.394F23CDC3492ABC3090B1FD4D90DFD2.d.58B5FE248CB4B79968A44D5A87C91ACE.e.46}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\vsankar\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52188}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52188/devtoo..., se:cdpVersion: 128.0.6613.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[[[ChromeDriver: chrome on windows (2d92c07da476d1fd6a8dadb795d36abe)] -> xpath: //*[text()='Influencer Pro']/parent::div[@class='badge-container']]] -> css selector: svg.badge-container__toggle]
+Session ID: 2d92c07da476d1fd6a8dadb795d36abe
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at com.pch.survey.pages.surveytab.BadgesPage.clickInfoIcon(BadgesPage.java:29)
+	at com.pch.survey.stepdefinitions.surveytab.BadgesStepDefinitions.verifyBadgesInfoText(BadgesStepDefinitions.java:90)
+	at ?.I verify info text on "Influencer Pro" badge(classpath:features/test.feature:24)
+
+1 Verify the Token Titan inactive badge is displayed on the badges page for the "mini reg" usertype(Title of your feature)  Time elapsed: 261.139 sec  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@class='uninav__token-center-alltime__tokens-amount uninav__token-balance__amount']"}
+  (Session info: chrome=128.0.6613.138)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.20.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4bfc65a0469c8f6ef1879fad47c65d04, findElement {using=xpath, value=//*[@class='uninav__token-center-alltime__tokens-amount uninav__token-balance__amount']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\vsankar\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53211}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53211/devtoo..., se:cdpVersion: 128.0.6613.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4bfc65a0469c8f6ef1879fad47c65d04
+	at jdk.internal.reflect.GeneratedConstructorAccessor23.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at com.pch.survey.pages.surveytab.SurveyMainPage.getTokenAmtText(SurveyMainPage.java:297)
+	at com.pch.survey.stepdefinitions.surveytab.SurveyPageStepDefinitions.verifyAwardedTokenAmt(SurveyPageStepDefinitions.java:300)
+	at ?.I verify awarded token amount "titanTokenBadgeTokenAmt"(classpath:features/test.feature:17)
+
+1 Verify the Token Titan inactive badge is displayed on the badges page for the "silver" usertype(Title of your feature)  Time elapsed: 198.709 sec  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#pw"}
+  (Session info: chrome=128.0.6613.138)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.20.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0ce404ad2a6354384d60bd097e1de707, findElement {using=id, value=pw}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\vsankar\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53858}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53858/devtoo..., se:cdpVersion: 128.0.6613.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0ce404ad2a6354384d60bd097e1de707
+	at jdk.internal.reflect.GeneratedConstructorAccessor23.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at com.pch.survey.pages.accounts.CreatePasswordPage.completeSurveyForSilverUser(CreatePasswordPage.java:65)
+	at com.pch.survey.stepdefinitions.profilebuilder.BasicProfileStepDefinitions.answerBasicProfileQuestions(BasicProfileStepDefinitions.java:40)
+	at ?.I answer all basic profile questions as a "silver" user(classpath:features/test.feature:12)
+

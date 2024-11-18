@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="4" failures="0" name="com.pch.survey.runnerfiles.SurveyRunnerTest" time="1,285.426" errors="4" skipped="0">
+  <properties>
+    <property name="jansi.mode" value="strip"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="java.vm.version" value="11.0.20.1+1-LTS"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Microsoft\jdk-11.0.20.101-hotspot\bin"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\vsankar\Desktop\Vinoth\Automation\Eclipse\Workspaces\Surveys\pchsurveys"/>
+    <property name="java.vm.vendor" value="Microsoft"/>
+    <property name="java.vendor.url" value="https://www.microsoft.com"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=";"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Users\vsankar\Desktop\Vinoth\Automation\Eclipse\Workspaces\Surveys\pchsurveys"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="java.runtime.version" value="11.0.20.1+1-LTS"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\vsankar\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="classworlds.conf" value="C:\Users\vsankar\Desktop\Vinoth\Automation\Eclipse\Workspaces\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf2298275848425828214.tmp"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Microsoft\jdk-11.0.20.101-hotspot\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Microsoft/jdk-11.0.20.101-hotspot/bin/server;C:/Program Files/Microsoft/jdk-11.0.20.101-hotspot/bin;C:\Program Files\Microsoft\jdk-11.0.20.101-hotspot\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Users\vsankar\Desktop\Codeception\Installation\php;C:\Users\vsankar\Desktop\Codeception\Installation\Apache24;C:\Program Files\Git\cmd;C:\Users\vsankar\Desktop\Vinoth\Automation\Jenkins\Maven\apache-maven-3.6.0-bin\apache-maven-3.6.0\bin;C:\Program Files\PuTTY\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\ProgramData\chocolatey\bin;C:\Program Files\Java\jdk-11\bin;C:\Program Files\nodejs\;C:\Program Files\Java\jdk-11\bin\;C:\Users\vsankar\Desktop\Vinoth\Performance Testing\scala3-3.3.1\scala3-3.3.1\bin;C:\Users\vsankar\Desktop\Vinoth\Performance Testing\gatling\bin\;C:\Program Files (x86)\Citrix\HDX\bin\;C:\Program Files\Citrix\HDX\bin\;C:\Program Files\Citrix\Virtual Desktop Agent\;C:\Users\vsankar\Desktop\Codeception\Installation\Storm\PhpStorm 2018.3.2\bin;;C:\Users\vsankar\AppData\Local\Microsoft\WindowsApps;;C:\Program Files\JetBrains\PyCharm Community Edition 2021.1\bin;;C:\Users\vsankar\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.1.3\bin;;C:\Users\vsankar\AppData\Roaming\npm;C:\Users\vsankar\AppData\Local\Coursier\data\bin;C:\Program Files (x86)\BrowserStackLocal\;C:\Users\vsankar\eclipse\jee-2021-06\eclipse;;."/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="55.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="user.home" value="C:\Users\vsankar"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="user.name" value="vsankar"/>
+    <property name="java.class.path" value="C:\Users\vsankar\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_1.18.3.20220227-1319\jars\plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B test"/>
+    <property name="java.home" value="C:\Program Files\Microsoft\jdk-11.0.20.101-hotspot"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="11.0.20.1"/>
+    <property name="java.vendor" value="Microsoft"/>
+    <property name="java.specification.maintenance.version" value="2"/>
+    <property name="maven.home" value="C:\Users\vsankar\Desktop\Vinoth\Automation\Eclipse\Workspaces\Surveys\pchsurveys\EMBEDDED"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.version.date" value="2023-08-24"/>
+    <property name="java.vendor.url.bug" value="https://github.com/microsoft/openjdk/issues"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="java.vendor.version" value="Microsoft-8297088"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase classname="Title of your feature" name="1 Verify the Token Titan inactive badge is displayed on the badges page for the &quot;full reg&quot; usertype" time="426.567">
+    <error message="element click intercepted: Element &lt;svg data-v-2c84ebc9=&quot;&quot; tabindex=&quot;-1&quot; class=&quot;badge-container__toggle&quot; width=&quot;21&quot; height=&quot;20&quot; viewBox=&quot;0 0 21 20&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; style=&quot;opacity: 1;&quot;&gt;...&lt;/svg&gt; is not clickable at point (519, 450). Other element would receive the click: &lt;path data-v-2c84ebc9=&quot;&quot; d=&quot;M17.8572 2.14282L2.14288 17.8571&quot; stroke=&quot;#BABABA&quot; stroke-width=&quot;3&quot; stroke-linecap=&quot;round&quot;&gt;&lt;/path&gt;
+  (Session info: chrome=128.0.6613.138)
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.20.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4c0b0c282ae1b5be9ead68092d7bc87a, clickElement {id=f.C770A88BA182DE0EA422497EE8796E9E.d.8C4C4B9E2EA0CF971C3E9D9EC8447733.e.138}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\vsankar\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51198}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51198/devtoo..., se:cdpVersion: 128.0.6613.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[[[ChromeDriver: chrome on windows (4c0b0c282ae1b5be9ead68092d7bc87a)] -&gt; xpath: //*[text()=&apos;Influencer Pro&apos;]/parent::div[@class=&apos;badge-container&apos;]]] -&gt; css selector: svg.badge-container__toggle]
+Session ID: 4c0b0c282ae1b5be9ead68092d7bc87a" type="org.openqa.selenium.ElementClickInterceptedException">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;svg data-v-2c84ebc9=&quot;&quot; tabindex=&quot;-1&quot; class=&quot;badge-container__toggle&quot; width=&quot;21&quot; height=&quot;20&quot; viewBox=&quot;0 0 21 20&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; style=&quot;opacity: 1;&quot;&gt;...&lt;/svg&gt; is not clickable at point (519, 450). Other element would receive the click: &lt;path data-v-2c84ebc9=&quot;&quot; d=&quot;M17.8572 2.14282L2.14288 17.8571&quot; stroke=&quot;#BABABA&quot; stroke-width=&quot;3&quot; stroke-linecap=&quot;round&quot;&gt;&lt;/path&gt;
+  (Session info: chrome=128.0.6613.138)
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.20.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4c0b0c282ae1b5be9ead68092d7bc87a, clickElement {id=f.C770A88BA182DE0EA422497EE8796E9E.d.8C4C4B9E2EA0CF971C3E9D9EC8447733.e.138}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\vsankar\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51198}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51198/devtoo..., se:cdpVersion: 128.0.6613.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[[[ChromeDriver: chrome on windows (4c0b0c282ae1b5be9ead68092d7bc87a)] -&gt; xpath: //*[text()=&apos;Influencer Pro&apos;]/parent::div[@class=&apos;badge-container&apos;]]] -&gt; css selector: svg.badge-container__toggle]
+Session ID: 4c0b0c282ae1b5be9ead68092d7bc87a
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at com.pch.survey.pages.surveytab.BadgesPage.clickInfoIcon(BadgesPage.java:29)
+	at com.pch.survey.stepdefinitions.surveytab.BadgesStepDefinitions.verifyBadgesInfoText(BadgesStepDefinitions.java:90)
+	at ✽.I verify info text on &quot;Influencer Pro&quot; badge(classpath:features/test.feature:24)
+</error>
+    <system-out>
+@Desktop @Mobile @Regression @Sanity
+Scenario Outline: 1 Verify the Token Titan inactive badge is displayed on the badges page for the &quot;full reg&quot; usertype &amp;#27;[90m# features/test.feature:29&amp;#27;[0m
+********&apos;ENVIRONMENT Details taken from Baseapp config property file&apos;********
+********&apos;QA ENVIRONMENT&apos;********
+********&apos;Tests running in QA ENVIRONMENT &apos;********
+from system BROWSER   null
+from system DEVICE_TYPE    null
+from system DRIVER_TYPE    null
+from system OS   null
+from system OS_VERSION   null
+from system DEVICE_NAME   null
+********************        Creating new  Driver *********************************
+Tests Running in feature : test.feature
+Test Start for Scenario : 1 Verify the Token Titan inactive badge is displayed on the badges page for the &quot;full reg&quot; usertype
+serviceUrl = http://cs.qa.pch.com/rfapi_v10/api/consumerauthtoken/create
+requestJSON = {&quot;Password&quot;:&quot;ucz99ArNWdWGedbT&quot;}
+Api-OriginatingSystem-Name :CSAUTOMATION
+Api-Consumer-Name :CSAUTOMATION
+jsonResponse = 
+Api-Consumer-Auth-Token = eyJhbGciOiJBMTI4S1ciLCJlbmMiOiJBMTI4Q0JDLUhTMjU2IiwidHlwIjoiSldUIiwiY3R5IjoiSldUIn0.zgO9Kr_589lcAoeKXVc-6ofCwezsgggTFzfQkUukV_3t6PWBke0lRA.0MmI-Q2qB-mkqafgvHewgA.SbRAD2Sjn0vQS-vh_KpZ81kVhQURZlsdFpDIunaj6T6N6i6YNBSIcrQUn4WCmFuNqmVMteRF-vuP2UpA-jqLFlya_YZ_y1cnKqotwvLmkFEbG6eE9PQbTxervaQ5n4uWbratuEYrTCDOfqdvbIWZiyQV0yhJaZVNrRIVV4q5VpjELVgwyb7IUBsYlG3nXxn5wj1mA3HKXYxmcfC9CShky5hbs6dxNctCMUnyqBD3WPDQL5zOU_O0WGYS0AkvEmBjozwTHM3LVuMIiDe4QRlAjQ.xORfGNkS1MXQpeg8BTn6WQ
+MobileAuthTicket = null
+serviceUrl = http://cs.qa.pch.com/rfapi_v10/api/registration/registermember
+requestJSON = {&quot;Source&quot;:{&quot;TrackingToken&quot;:&quot;1537BF0D-C67B-44E7-91EA-3F0C004AEEDB&quot;,&quot;CblCode&quot;:&quot;LOTTODEST&quot;,&quot;OriginatingUrl&quot;:&quot;http://centralservices.cqa.pch.com/RFApi_V9/Svc/TestPage.aspx&quot;,&quot;ForeignSource&quot;:null,&quot;MediaChannel&quot;:&quot;ACQ&quot;,&quot;EmailSubCode&quot;:null,&quot;EmailVendorId&quot;:null,&quot;EmailPackageId&quot;:null,&quot;EmailModuleId&quot;:null,&quot;SessionToken&quot;:null,&quot;PageTypeCode&quot;:null},&quot;IpAddress&quot;:{&quot;ServerIp&quot;:&quot;24.193.86.57&quot;,&quot;ClientIp&quot;:&quot;24.193.86.57&quot;},&quot;Client&quot;:{&quot;UserAgentId&quot;:&quot;555555&quot;,&quot;DeviceType&quot;:&quot;DESKTOP&quot;,&quot;ExperienceDeviceType&quot;:&quot;EXPDESKTOP&quot;},&quot;Fields&quot;:[{&quot;FieldCode&quot;:11,&quot;FieldValue&quot;:&quot;Mr.&quot;},{&quot;FieldCode&quot;:12,&quot;FieldValue&quot;:&quot;BKuXUSLrVzMkgAk&quot;},{&quot;FieldCode&quot;:13,&quot;FieldValue&quot;:&quot;KldsoJpHolZWlZM&quot;},{&quot;FieldCode&quot;:14,&quot;FieldValue&quot;:&quot;300 Jericho Quadrangle&quot;},{&quot;FieldCode&quot;:15,&quot;FieldValue&quot;:&quot;Dept 300&quot;},{&quot;FieldCode&quot;:16,&quot;FieldValue&quot;:&quot;Jericho&quot;},{&quot;FieldCode&quot;:17,&quot;FieldValue&quot;:&quot;NY&quot;},{&quot;FieldCode&quot;:18,&quot;FieldValue&quot;:&quot;11753&quot;},{&quot;FieldCode&quot;:19,&quot;FieldValue&quot;:&quot;USA&quot;},{&quot;FieldCode&quot;:20,&quot;FieldValue&quot;:&quot;pchEngineer5c448057.09.23.24@pchmail.com&quot;},{&quot;FieldCode&quot;:21,&quot;FieldValue&quot;:&quot;pchEngineer5c448057.09.23.24@pchmail.com&quot;},{&quot;FieldCode&quot;:24,&quot;FieldValue&quot;:&quot;04/13/1980&quot;},{&quot;FieldCode&quot;:22,&quot;FieldValue&quot;:&quot;Pch123&quot;},{&quot;FieldCode&quot;:23,&quot;FieldValue&quot;:&quot;Pch123&quot;}],&quot;RegistrationValidationOption&quot;:{&quot;AddressValidation&quot;:true,&quot;DeliveryPointValidation&quot;:true,&quot;EmailValidation&quot;:true},&quot;SkipEmailValidation&quot;:{&quot;ErrorCode&quot;:null,&quot;Email&quot;:&quot;&quot;},&quot;SubscriptionData&quot;:{&quot;SubscriptionCodes&quot;:[]},&quot;ConfirmUrl&quot;:&quot;http://www.lotto.pch.com&quot;}
+Api-Consumer-AuthToken :eyJhbGciOiJBMTI4S1ciLCJlbmMiOiJBMTI4Q0JDLUhTMjU2IiwidHlwIjoiSldUIiwiY3R5IjoiSldUIn0.zgO9Kr_589lcAoeKXVc-6ofCwezsgggTFzfQkUukV_3t6PWBke0lRA.0MmI-Q2qB-mkqafgvHewgA.SbRAD2Sjn0vQS-vh_KpZ81kVhQURZlsdFpDIunaj6T6N6i6YNBSIcrQUn4WCmFuNqmVMteRF-vuP2UpA-jqLFlya_YZ_y1cnKqotwvLmkFEbG6eE9PQbTxervaQ5n4uWbratuEYrTCDOfqdvbIWZiyQV0yhJaZVNrRIVV4q5VpjELVgwyb7IUBsYlG3nXxn5wj1mA3HKXYxmcfC9CShky5hbs6dxNctCMUnyqBD3WPDQL5zOU_O0WGYS0AkvEmBjozwTHM3LVuMIiDe4QRlAjQ.xORfGNkS1MXQpeg8BTn6WQ
+Api-OriginatingSystem-Name :CSAUTOMATION
+Api-Consumer-Name :CSAUTOMATION
+jsonResponse = {  &quot;MemberDetailStatusResponse&quot;: {    &quot;MemberDetailResponse&quot;: {      &quot;OnlineAccountToken&quot;: &quot;07801578-298c-4090-bd15-8b37f45f1549&quot;,      &quot;GlobalMemberToken&quot;: &quot;07801578-298c-4090-bd15-8b37f45f1549&quot;,      &quot;StreamNumber&quot;: 8,      &quot;SubscriberRandomIdA&quot;: 89,      &quot;SubscriberRandomIdB&quot;: 749,      &quot;Title&quot;: &quot;Mr.&quot;,      &quot;Gender&quot;: &quot;&quot;,      &quot;FirstName&quot;: &quot;BKuXUSLrVzMkgAk&quot;,      &quot;LastName&quot;: &quot;KldsoJpHolZWlZM&quot;,      &quot;GuestName&quot;: &quot;Guest6887815&quot;,      &quot;AddressId&quot;: 1808767,      &quot;AddressLine1&quot;: &quot;300 Jericho Quadrangle&quot;,      &quot;AddressLine2&quot;: &quot;Dept 300&quot;,      &quot;City&quot;: &quot;Jericho&quot;,      &quot;State&quot;: &quot;NY&quot;,      &quot;ZipCode&quot;: &quot;11753&quot;,      &quot;Zip2&quot;: &quot;75&quot;,      &quot;Zip4&quot;: &quot;2712&quot;,      &quot;CarrierRoute&quot;: &quot;C018&quot;,      &quot;CountryCode&quot;: &quot;USA&quot;,      &quot;Email&quot;: &quot;pchengineer5c448057.09.23.24@pchmail.com&quot;,      &quot;EmailHash&quot;: &quot;8c94bad68e5ace39621f1e9efa5f6ef6689f155b569e4dc13cdd2f2f2b4317c4&quot;,      &quot;DateOfBirth&quot;: &quot;04/13/1980&quot;,      &quot;ScreenName&quot;: &quot;&quot;,      &quot;FirstEverRegDate&quot;: &quot;\/Date(1727093743773-0400)\/&quot;,      &quot;AddressStatusCode&quot;: &quot;VALIDOK&quot;,      &quot;NameStatusCode&quot;: &quot;VALIDOK&quot;,      &quot;EmailStatusCode&quot;: &quot;VALIDOK&quot;,      &quot;IsNameAddressIncomplete&quot;: false,      &quot;IsTestAccount&quot;: true,      &quot;IsPasswordPresent&quot;: true,      &quot;IsPrimaryAddressPresent&quot;: true,      &quot;IsNonPrimaryAddressId&quot;: false,      &quot;IsAutoSignOnOk&quot;: true,      &quot;EligibleSubCode&quot;: &quot;PCHEXC&quot;,      &quot;MatchCode&quot;: &quot;3504225KLDSJER300 BU  &quot;,      &quot;CustId&quot;: 0,      &quot;OnlineExperienceCode&quot;: &quot;PCHEXC&quot;,      &quot;OnlineFileStatusCode&quot;: 11    },    &quot;RegistrationStatusResponses&quot;: [      {        &quot;IsNewUser&quot;: true,        &quot;DateCreated&quot;: &quot;\/Date(1727093743773-0400)\/&quot;,        &quot;IsEverRegistered&quot;: true,        &quot;CblCode&quot;: &quot;LOTTODEST&quot;      }    ],    &quot;SubscriptionStatusResponses&quot;: [      {        &quot;SubscriptionCode&quot;: &quot;LOTTO&quot;,        &quot;EligibleSubscriptionCode&quot;: &quot;LOTTO&quot;,        &quot;IsEverSubscribed&quot;: false,        &quot;IsMailable&quot;: false,        &quot;CurrentEmailOptInStatusCode&quot;: 11      }    ],    &quot;Preferences&quot;: null  },  &quot;ValidationResponses&quot;: {    &quot;IsValid&quot;: true,    &quot;IsSkip&quot;: false,    &quot;FieldOrDatabaseValidationResponse&quot;: {      &quot;StatusResponse&quot;: {        &quot;Code&quot;: 82,        &quot;Message&quot;: &quot;&quot;      },      &quot;Responses&quot;: null,      &quot;FailureFieldCodes&quot;: null    },    &quot;AddressValidationResponse&quot;: {      &quot;StatusResponse&quot;: {        &quot;Code&quot;: 82,        &quot;Message&quot;: &quot;&quot;      },      &quot;Responses&quot;: null,      &quot;FailureFieldCodes&quot;: null    },    &quot;EmailValidationResponse&quot;: {      &quot;StatusResponse&quot;: {        &quot;Code&quot;: 82,        &quot;Message&quot;: &quot;&quot;      },      &quot;Responses&quot;: [        {          &quot;FieldCode&quot;: 20,          &quot;Code&quot;: 2032,          &quot;Message&quot;: &quot;&quot;        }      ],      &quot;FailureFieldCodes&quot;: null    },    &quot;AddressSuggestions&quot;: [      {        &quot;Address&quot;: {          &quot;AddressLine1&quot;: &quot;300 Jericho Quadrangle&quot;,          &quot;AddressLine2&quot;: &quot;Dept 300&quot;,          &quot;AddressComment&quot;: &quot;&quot;,          &quot;City&quot;: &quot;Jericho&quot;,          &quot;State&quot;: &quot;NY&quot;,          &quot;ZipCode&quot;: &quot;11753&quot;,          &quot;Zip2&quot;: &quot;75&quot;,          &quot;Zip4&quot;: &quot;2712&quot;,          &quot;CarrierRoute&quot;: &quot;C018&quot;        }      }    ],    &quot;EmailSuggestions&quot;: null  }}
+Api-Consumer-Auth-Token = null
+MobileAuthTicket = null
+https://survey.qa.pch.com/pchsurveys/?em=pchengineer5c448057.09.23.24@pchmail.com&amp;e=07801578-298c-4090-bd15-8b37f45f1549
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mI land on the Surveys Page as a &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;full reg&quot;&amp;#27;[0m&amp;#27;[32m user&amp;#27;[0m                                                               &amp;#27;[90m# com.pch.survey.stepdefinitions.CommonStepDefinitions.givenNewUsersLandingOnSurveyPage(java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32mI close the Take a Tour popup&amp;#27;[0m                                                                                  &amp;#27;[90m# com.pch.survey.stepdefinitions.surveytab.SurveyPageStepDefinitions.givenIClosetakeATour()&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI navigates to Badges page&amp;#27;[0m                                                                                      &amp;#27;[90m# com.pch.survey.stepdefinitions.surveytab.PersonalAchievmentSectionStepDefinitions.navigatesToPersonalAchievementspage()&amp;#27;[0m
+  &amp;#27;[32mThen &amp;#27;[0m&amp;#27;[32mI verify &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;Token Titan&quot;&amp;#27;[0m&amp;#27;[32m badge is locked&amp;#27;[0m                                                                         &amp;#27;[90m# com.pch.survey.stepdefinitions.surveytab.BadgesStepDefinitions.verifyBadgeLockedStatus(java.lang.String)&amp;#27;[0m
+Navigating to url  https://offers.qa.pch.com/survey?mid=Auto_SurveyToken_6L
+navigateToMid Survey landing page URL:https://offers.qa.pch.com/survey/profile/basic?msk=PK5NM4P54I-bc820935e88651f821ebe2f462351d36
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI navigates to survey &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&apos;Auto_SurveyToken_6L&apos;&amp;#27;[0m                                                                     &amp;#27;[90m# com.pch.survey.stepdefinitions.surveytab.SurveyPageStepDefinitions.givenImNavigatesToMid(java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI answer all basic profile questions as a &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;full reg&quot;&amp;#27;[0m&amp;#27;[32m user&amp;#27;[0m                                                       &amp;#27;[90m# com.pch.survey.stepdefinitions.profilebuilder.BasicProfileStepDefinitions.answerBasicProfileQuestions(java.lang.String)&amp;#27;[0m
+Survey landing page URL:https://www.samplicio.us/s/default.aspx?sid=a39a0dde-fd97-487a-80b4-ef3f10279c94&amp;pid=07801578-298c-4090-bd15-8b37f45f1549&amp;clid=9&amp;mid=PK5NM4P54I-bc820935e88651f821ebe2f462351d36&amp;loi=15&amp;cpi=0.5&amp;sensitive_data=true&amp;42=44&amp;43=1&amp;45=11753&amp;7064=4&amp;2189=15&amp;113=16&amp;47=15&amp;hash=ED_wyzmTAM76yYeYem4vsC_K_-U
+serviceUrl = https://offers.qa.pch.com/api/get-survey-end-url
+requestJSON = { &quot;mode&quot;: &quot;custom&quot;,&quot;environment&quot;: &quot;qa&quot;, &quot;endStatus&quot;: &quot;incomplete&quot;,&quot;url&quot;: &quot;https://www.samplicio.us/s/default.aspx?sid=a39a0dde-fd97-487a-80b4-ef3f10279c94&amp;pid=07801578-298c-4090-bd15-8b37f45f1549&amp;clid=9&amp;mid=PK5NM4P54I-bc820935e88651f821ebe2f462351d36&amp;loi=15&amp;cpi=0.5&amp;sensitive_data=true&amp;42=44&amp;43=1&amp;45=11753&amp;7064=4&amp;2189=15&amp;113=16&amp;47=15&amp;hash=ED_wyzmTAM76yYeYem4vsC_K_-U&quot;}
+jsonResponse = {&quot;success&quot;:true,&quot;message&quot;:&quot;Survey end url fetch successfully&quot;,&quot;data&quot;:&quot;https:\/\/offers.qa.pch.com\/surveyincomplete?test_user=1&amp;mid=PK5NM4P54I-bc820935e88651f821ebe2f462351d36&amp;pid=07801578-298c-4090-bd15-8b37f45f1549&amp;sur=-1&amp;642=6&amp;723=15&amp;724=5&amp;26691=22&amp;48741=1&amp;650=8&amp;639=4&amp;hash=6DFEvN47mnPJI6ftAU_fIoaykQk&quot;}
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI generate the survey endpoint url with &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&apos;incomplete&apos;&amp;#27;[0m&amp;#27;[32m status&amp;#27;[0m                                                     &amp;#27;[90m# com.pch.survey.stepdefinitions.OffersEventsStepDefinitions.whenGeneratedSurveyURL(java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI call the survey endpoint url&amp;#27;[0m                                                                                  &amp;#27;[90m# com.pch.survey.stepdefinitions.OffersEventsStepDefinitions.whenCompleteSurveyUsingCompleteURl()&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI navigates to Badges page&amp;#27;[0m                                                                                      &amp;#27;[90m# com.pch.survey.stepdefinitions.surveytab.PersonalAchievmentSectionStepDefinitions.navigatesToPersonalAchievementspage()&amp;#27;[0m
+  &amp;#27;[32mThen &amp;#27;[0m&amp;#27;[32mI verify &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;Token Titan&quot;&amp;#27;[0m&amp;#27;[32m badge is unlocked&amp;#27;[0m                                                                       &amp;#27;[90m# com.pch.survey.stepdefinitions.surveytab.BadgesStepDefinitions.verifyBadgeUnlockedStatus(java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI verify awarded token amount &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;titanTokenBadgeTokenAmt&quot;&amp;#27;[0m                                                         &amp;#27;[90m# com.pch.survey.stepdefinitions.surveytab.SurveyPageStepDefinitions.verifyAwardedTokenAmt(java.lang.String)&amp;#27;[0m
+Navigating to url  https://offers.qa.pch.com/survey?mid=Auto_SurveyToken_6L
+navigateToMid Survey landing page URL:https://www.samplicio.us/s/default.aspx?sid=a39a0dde-fd97-487a-80b4-ef3f10279c94&amp;pid=07801578-298c-4090-bd15-8b37f45f1549&amp;clid=9&amp;mid=PK5NM4P54I-605eb407907d6381b7247a4dea086ecb&amp;loi=15&amp;cpi=0.5&amp;sensitive_data=true&amp;42=44&amp;43=1&amp;45=11753&amp;7064=4&amp;2189=15&amp;113=16&amp;47=15&amp;642=6&amp;26691=22&amp;hash=sQ6IlIb9MayPhOrtdIIxT8h2p_k
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI navigates to survey &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&apos;Auto_SurveyToken_6L&apos;&amp;#27;[0m                                                                     &amp;#27;[90m# com.pch.survey.stepdefinitions.surveytab.SurveyPageStepDefinitions.givenImNavigatesToMid(java.lang.String)&amp;#27;[0m
+Survey landing page URL:https://www.samplicio.us/s/default.aspx?sid=a39a0dde-fd97-487a-80b4-ef3f10279c94&amp;pid=07801578-298c-4090-bd15-8b37f45f1549&amp;clid=9&amp;mid=PK5NM4P54I-605eb407907d6381b7247a4dea086ecb&amp;loi=15&amp;cpi=0.5&amp;sensitive_data=true&amp;42=44&amp;43=1&amp;45=11753&amp;7064=4&amp;2189=15&amp;113=16&amp;47=15&amp;642=6&amp;26691=22&amp;hash=sQ6IlIb9MayPhOrtdIIxT8h2p_k
+serviceUrl = https://offers.qa.pch.com/api/get-survey-end-url
+requestJSON = { &quot;mode&quot;: &quot;custom&quot;,&quot;environment&quot;: &quot;qa&quot;, &quot;endStatus&quot;: &quot;complete&quot;,&quot;url&quot;: &quot;https://www.samplicio.us/s/default.aspx?sid=a39a0dde-fd97-487a-80b4-ef3f10279c94&amp;pid=07801578-298c-4090-bd15-8b37f45f1549&amp;clid=9&amp;mid=PK5NM4P54I-605eb407907d6381b7247a4dea086ecb&amp;loi=15&amp;cpi=0.5&amp;sensitive_data=true&amp;42=44&amp;43=1&amp;45=11753&amp;7064=4&amp;2189=15&amp;113=16&amp;47=15&amp;642=6&amp;26691=22&amp;hash=sQ6IlIb9MayPhOrtdIIxT8h2p_k&quot;}
+jsonResponse = {&quot;success&quot;:true,&quot;message&quot;:&quot;Survey end url fetch successfully&quot;,&quot;data&quot;:&quot;https:\/\/offers.qa.pch.com\/surveycomplete?test_user=1&amp;mid=PK5NM4P54I-605eb407907d6381b7247a4dea086ecb&amp;pid=07801578-298c-4090-bd15-8b37f45f1549&amp;sur=5538442&amp;c=3&amp;163473=3&amp;7064=1&amp;30396=2&amp;93521=-3105&amp;137451=5&amp;749=14&amp;61200=7&amp;hash=6CowhaAgsYokGLOTRy2oR31IS5g&quot;}
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI generate the survey endpoint url with &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&apos;complete&apos;&amp;#27;[0m&amp;#27;[32m status&amp;#27;[0m                                                       &amp;#27;[90m# com.pch.survey.stepdefinitions.OffersEventsStepDefinitions.whenGeneratedSurveyURL(java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI call the survey endpoint url&amp;#27;[0m                                                                                  &amp;#27;[90m# com.pch.survey.stepdefinitions.OffersEventsStepDefinitions.whenCompleteSurveyUsingCompleteURl()&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI navigates to Badges page&amp;#27;[0m                                                                                      &amp;#27;[90m# com.pch.survey.stepdefinitions.surveytab.PersonalAchievmentSectionStepDefinitions.navigatesToPersonalAchievementspage()&amp;#27;[0m
+  &amp;#27;[32mThen &amp;#27;[0m&amp;#27;[32mI verify &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;Token Titan Gold&quot;&amp;#27;[0m&amp;#27;[32m badge is unlocked&amp;#27;[0m                                                                  &amp;#27;[90m# com.pch.survey.stepdefinitions.surveytab.BadgesStepDefinitions.verifyBadgeUnlockedStatus(java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI verify awarded token amount &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;titanTokenGoldBadgeTokenAmt&quot;&amp;#27;[0m                                                     &amp;#27;[90m# com.pch.survey.stepdefinitions.surveytab.SurveyPageStepDefinitions.verifyAwardedTokenAmt(java.lang.String)&amp;#27;[0m
+  &amp;#27;[31mAnd &amp;#27;[0m&amp;#27;[31mI verify info text on &amp;#27;[0m&amp;#27;[31m&amp;#27;[1m&quot;Influencer Pro&quot;&amp;#27;[0m&amp;#27;[31m badge&amp;#27;[0m                                                                    &amp;#27;[90m# com.pch.survey.stepdefinitions.surveytab.BadgesStepDefinitions.verifyBadgesInfoText(java.lang.String)&amp;#27;[0m
+      &amp;#27;[31morg.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;svg data-v-2c84ebc9=&quot;&quot; tabindex=&quot;-1&quot; class=&quot;badge-container__toggle&quot; width=&quot;21&quot; height=&quot;20&quot; viewBox=&quot;0 0 21 20&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; style=&quot;opacity: 1;&quot;&gt;...&lt;/svg&gt; is not clickable at point (519, 450). Other element would receive the click: &lt;path data-v-2c84ebc9=&quot;&quot; d=&quot;M17.8572 2.14282L2.14288 17.8571&quot; stroke=&quot;#BABABA&quot; stroke-width=&quot;3&quot; stroke-linecap=&quot;round&quot;&gt;&lt;/path&gt;
+  (Session info: chrome=128.0.6613.138)
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.20.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4c0b0c282ae1b5be9ead68092d7bc87a, clickElement {id=f.C770A88BA182DE0EA422497EE8796E9E.d.8C4C4B9E2EA0CF971C3E9D9EC8447733.e.138}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\vsankar\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51198}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51198/devtoo..., se:cdpVersion: 128.0.6613.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[[[ChromeDriver: chrome on windows (4c0b0c282ae1b5be9ead68092d7bc87a)] -&gt; xpath: //*[text()=&apos;Influencer Pro&apos;]/parent::div[@class=&apos;badge-container&apos;]]] -&gt; css selector: svg.badge-container__toggle]
+Session ID: 4c0b0c282ae1b5be9ead68092d7bc87a
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at com.pch.survey.pages.surveytab.BadgesPage.clickInfoIcon(BadgesPage.java:29)
+	at com.pch.survey.stepdefinitions.surveytab.BadgesStepDefinitions.verifyBadgesInfoText(BadgesStepDefinitions.java:90)
+	at âœ½.I verify info text on &quot;Influencer Pro&quot; badge(classpath:features/test.feature:24)
+&amp;#27;[0m
+******************  Closing driver
+</system-out>
+    <system-err>Sep 23, 2024 5:45:38 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 128, returning the closest version; found: 125; Please update to a Selenium version that supports CDP version 128
+</system-err>
+  </testcase>
+  <testcase classname="Title of your feature" name="1 Verify the Token Titan inactive badge is displayed on the badges page for the &quot;guest&quot; usertype" time="399.011">
+    <error message="element click intercepted: Element &lt;svg data-v-2c84ebc9=&quot;&quot; tabindex=&quot;-1&quot; class=&quot;badge-container__toggle&quot; width=&quot;21&quot; height=&quot;20&quot; viewBox=&quot;0 0 21 20&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; style=&quot;opacity: 1;&quot;&gt;...&lt;/svg&gt; is not clickable at point (519, 450). Other element would receive the click: &lt;path data-v-2c84ebc9=&quot;&quot; d=&quot;M17.8572 2.14282L2.14288 17.8571&quot; stroke=&quot;#BABABA&quot; stroke-width=&quot;3&quot; stroke-linecap=&quot;round&quot;&gt;&lt;/path&gt;
+  (Session info: chrome=128.0.6613.138)
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.20.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2d92c07da476d1fd6a8dadb795d36abe, clickElement {id=f.394F23CDC3492ABC3090B1FD4D90DFD2.d.58B5FE248CB4B79968A44D5A87C91ACE.e.46}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\vsankar\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52188}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52188/devtoo..., se:cdpVersion: 128.0.6613.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[[[ChromeDriver: chrome on windows (2d92c07da476d1fd6a8dadb795d36abe)] -&gt; xpath: //*[text()=&apos;Influencer Pro&apos;]/parent::div[@class=&apos;badge-container&apos;]]] -&gt; css selector: svg.badge-container__toggle]
+Session ID: 2d92c07da476d1fd6a8dadb795d36abe" type="org.openqa.selenium.ElementClickInterceptedException">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;svg data-v-2c84ebc9=&quot;&quot; tabindex=&quot;-1&quot; class=&quot;badge-container__toggle&quot; width=&quot;21&quot; height=&quot;20&quot; viewBox=&quot;0 0 21 20&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; style=&quot;opacity: 1;&quot;&gt;...&lt;/svg&gt; is not clickable at point (519, 450). Other element would receive the click: &lt;path data-v-2c84ebc9=&quot;&quot; d=&quot;M17.8572 2.14282L2.14288 17.8571&quot; stroke=&quot;#BABABA&quot; stroke-width=&quot;3&quot; stroke-linecap=&quot;round&quot;&gt;&lt;/path&gt;
+  (Session info: chrome=128.0.6613.138)
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.20.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2d92c07da476d1fd6a8dadb795d36abe, clickElement {id=f.394F23CDC3492ABC3090B1FD4D90DFD2.d.58B5FE248CB4B79968A44D5A87C91ACE.e.46}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\vsankar\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52188}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52188/devtoo..., se:cdpVersion: 128.0.6613.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[[[ChromeDriver: chrome on windows (2d92c07da476d1fd6a8dadb795d36abe)] -&gt; xpath: //*[text()=&apos;Influencer Pro&apos;]/parent::div[@class=&apos;badge-container&apos;]]] -&gt; css selector: svg.badge-container__toggle]
+Session ID: 2d92c07da476d1fd6a8dadb795d36abe
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at com.pch.survey.pages.surveytab.BadgesPage.clickInfoIcon(BadgesPage.java:29)
+	at com.pch.survey.stepdefinitions.surveytab.BadgesStepDefinitions.verifyBadgesInfoText(BadgesStepDefinitions.java:90)
+	at ✽.I verify info text on &quot;Influencer Pro&quot; badge(classpath:features/test.feature:24)
+</error>
+    <system-out>
+@Desktop @Mobile @Regression
+Scenario Outline: 1 Verify the Token Titan inactive badge is displayed on the badges page for the &quot;guest&quot; usertype &amp;#27;[90m# features/test.feature:33&amp;#27;[0m
+********************        Creating new  Driver *********************************
+Tests Running in feature : test.feature
+Test Start for Scenario : 1 Verify the Token Titan inactive badge is displayed on the badges page for the &quot;guest&quot; usertype
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mI land on the Surveys Page as a &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;guest&quot;&amp;#27;[0m&amp;#27;[32m user&amp;#27;[0m                                                               &amp;#27;[90m# com.pch.survey.stepdefinitions.CommonStepDefinitions.givenNewUsersLandingOnSurveyPage(java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32mI close the Take a Tour popup&amp;#27;[0m                                                                               &amp;#27;[90m# com.pch.survey.stepdefinitions.surveytab.SurveyPageStepDefinitions.givenIClosetakeATour()&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI navigates to Badges page&amp;#27;[0m                                                                                   &amp;#27;[90m# com.pch.survey.stepdefinitions.surveytab.PersonalAchievmentSectionStepDefinitions.navigatesToPersonalAchievementspage()&amp;#27;[0m
+  &amp;#27;[32mThen &amp;#27;[0m&amp;#27;[32mI verify &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;Token Titan&quot;&amp;#27;[0m&amp;#27;[32m badge is locked&amp;#27;[0m                                                                      &amp;#27;[90m# com.pch.survey.stepdefinitions.surveytab.BadgesStepDefinitions.verifyBadgeLockedStatus(java.lang.String)&amp;#27;[0m
+Navigating to url  https://offers.qa.pch.com/survey?mid=Auto_SurveyToken_6L
+navigateToMid Survey landing page URL:https://offers.qa.pch.com/survey/profile/basic?msk=PK5NM4P54I-506d158837051afd11f760fb15116800
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI navigates to survey &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&apos;Auto_SurveyToken_6L&apos;&amp;#27;[0m                                                                  &amp;#27;[90m# com.pch.survey.stepdefinitions.surveytab.SurveyPageStepDefinitions.givenImNavigatesToMid(java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI answer all basic profile questions as a &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;guest&quot;&amp;#27;[0m&amp;#27;[32m user&amp;#27;[0m                                                       &amp;#27;[90m# com.pch.survey.stepdefinitions.profilebuilder.BasicProfileStepDefinitions.answerBasicProfileQuestions(java.lang.String)&amp;#27;[0m
+Survey landing page URL:https://www.samplicio.us/s/default.aspx?sid=a39a0dde-fd97-487a-80b4-ef3f10279c94&amp;pid=56c365fc-0a8c-4135-9890-c4ba06f6b715&amp;clid=9&amp;mid=PK5NM4P54I-506d158837051afd11f760fb15116800&amp;loi=15&amp;cpi=0.5&amp;sensitive_data=true&amp;42=25&amp;43=1&amp;45=11753&amp;7064=4&amp;2189=15&amp;113=16&amp;47=15&amp;hash=Jqg-GD7pl1ob0aSI9T5aL7LLLdk
+serviceUrl = https://offers.qa.pch.com/api/get-survey-end-url
+requestJSON = { &quot;mode&quot;: &quot;custom&quot;,&quot;environment&quot;: &quot;qa&quot;, &quot;endStatus&quot;: &quot;incomplete&quot;,&quot;url&quot;: &quot;https://www.samplicio.us/s/default.aspx?sid=a39a0dde-fd97-487a-80b4-ef3f10279c94&amp;pid=56c365fc-0a8c-4135-9890-c4ba06f6b715&amp;clid=9&amp;mid=PK5NM4P54I-506d158837051afd11f760fb15116800&amp;loi=15&amp;cpi=0.5&amp;sensitive_data=true&amp;42=25&amp;43=1&amp;45=11753&amp;7064=4&amp;2189=15&amp;113=16&amp;47=15&amp;hash=Jqg-GD7pl1ob0aSI9T5aL7LLLdk&quot;}
+jsonResponse = {&quot;success&quot;:true,&quot;message&quot;:&quot;Survey end url fetch successfully&quot;,&quot;data&quot;:&quot;https:\/\/offers.qa.pch.com\/surveyincomplete?test_user=1&amp;mid=PK5NM4P54I-506d158837051afd11f760fb15116800&amp;pid=56c365fc-0a8c-4135-9890-c4ba06f6b715&amp;sur=-1&amp;93518=1&amp;638=3&amp;758=5&amp;137510=3&amp;137464=3&amp;157547=-3105&amp;74875=3&amp;hash=S8G4ro2A6l6oZ23qH-orlbiFJIQ&quot;}
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI generate the survey endpoint url with &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&apos;incomplete&apos;&amp;#27;[0m&amp;#27;[32m status&amp;#27;[0m                                                  &amp;#27;[90m# com.pch.survey.stepdefinitions.OffersEventsStepDefinitions.whenGeneratedSurveyURL(java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI call the survey endpoint url&amp;#27;[0m                                                                               &amp;#27;[90m# com.pch.survey.stepdefinitions.OffersEventsStepDefinitions.whenCompleteSurveyUsingCompleteURl()&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI navigates to Badges page&amp;#27;[0m                                                                                   &amp;#27;[90m# com.pch.survey.stepdefinitions.surveytab.PersonalAchievmentSectionStepDefinitions.navigatesToPersonalAchievementspage()&amp;#27;[0m
+  &amp;#27;[32mThen &amp;#27;[0m&amp;#27;[32mI verify &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;Token Titan&quot;&amp;#27;[0m&amp;#27;[32m badge is unlocked&amp;#27;[0m                                                                    &amp;#27;[90m# com.pch.survey.stepdefinitions.surveytab.BadgesStepDefinitions.verifyBadgeUnlockedStatus(java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI verify awarded token amount &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;titanTokenBadgeTokenAmt&quot;&amp;#27;[0m                                                      &amp;#27;[90m# com.pch.survey.stepdefinitions.surveytab.SurveyPageStepDefinitions.verifyAwardedTokenAmt(java.lang.String)&amp;#27;[0m
+Navigating to url  https://offers.qa.pch.com/survey?mid=Auto_SurveyToken_6L
+navigateToMid Survey landing page URL:https://www.samplicio.us/s/default.aspx?sid=a39a0dde-fd97-487a-80b4-ef3f10279c94&amp;pid=56c365fc-0a8c-4135-9890-c4ba06f6b715&amp;clid=9&amp;mid=PK5NM4P54I-4bc154349f4616d8ad7d16f47a2bb539&amp;loi=15&amp;cpi=0.5&amp;sensitive_data=true&amp;42=25&amp;43=1&amp;45=11753&amp;7064=4&amp;2189=15&amp;113=16&amp;47=15&amp;93518=1&amp;hash=YdV2sqCs5QFQzDBUoBQQ3uyUN8Q
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI navigates to survey &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&apos;Auto_SurveyToken_6L&apos;&amp;#27;[0m                                                                  &amp;#27;[90m# com.pch.survey.stepdefinitions.surveytab.SurveyPageStepDefinitions.givenImNavigatesToMid(java.lang.String)&amp;#27;[0m
+Survey landing page URL:https://www.samplicio.us/s/default.aspx?sid=a39a0dde-fd97-487a-80b4-ef3f10279c94&amp;pid=56c365fc-0a8c-4135-9890-c4ba06f6b715&amp;clid=9&amp;mid=PK5NM4P54I-4bc154349f4616d8ad7d16f47a2bb539&amp;loi=15&amp;cpi=0.5&amp;sensitive_data=true&amp;42=25&amp;43=1&amp;45=11753&amp;7064=4&amp;2189=15&amp;113=16&amp;47=15&amp;93518=1&amp;hash=YdV2sqCs5QFQzDBUoBQQ3uyUN8Q
+serviceUrl = https://offers.qa.pch.com/api/get-survey-end-url
+requestJSON = { &quot;mode&quot;: &quot;custom&quot;,&quot;environment&quot;: &quot;qa&quot;, &quot;endStatus&quot;: &quot;complete&quot;,&quot;url&quot;: &quot;https://www.samplicio.us/s/default.aspx?sid=a39a0dde-fd97-487a-80b4-ef3f10279c94&amp;pid=56c365fc-0a8c-4135-9890-c4ba06f6b715&amp;clid=9&amp;mid=PK5NM4P54I-4bc154349f4616d8ad7d16f47a2bb539&amp;loi=15&amp;cpi=0.5&amp;sensitive_data=true&amp;42=25&amp;43=1&amp;45=11753&amp;7064=4&amp;2189=15&amp;113=16&amp;47=15&amp;93518=1&amp;hash=YdV2sqCs5QFQzDBUoBQQ3uyUN8Q&quot;}
+jsonResponse = {&quot;success&quot;:true,&quot;message&quot;:&quot;Survey end url fetch successfully&quot;,&quot;data&quot;:&quot;https:\/\/offers.qa.pch.com\/surveycomplete?test_user=1&amp;mid=PK5NM4P54I-4bc154349f4616d8ad7d16f47a2bb539&amp;pid=56c365fc-0a8c-4135-9890-c4ba06f6b715&amp;sur=4860929&amp;c=3&amp;137454=7&amp;749=13&amp;634=1&amp;741=5&amp;61322=-3105&amp;61442=4&amp;725=19&amp;hash=wbE5P1FGdHOEAlDpJCfyVJ8okqg&quot;}
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI generate the survey endpoint url with &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&apos;complete&apos;&amp;#27;[0m&amp;#27;[32m status&amp;#27;[0m                                                    &amp;#27;[90m# com.pch.survey.stepdefinitions.OffersEventsStepDefinitions.whenGeneratedSurveyURL(java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI call the survey endpoint url&amp;#27;[0m                                                                               &amp;#27;[90m# com.pch.survey.stepdefinitions.OffersEventsStepDefinitions.whenCompleteSurveyUsingCompleteURl()&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI navigates to Badges page&amp;#27;[0m                                                                                   &amp;#27;[90m# com.pch.survey.stepdefinitions.surveytab.PersonalAchievmentSectionStepDefinitions.navigatesToPersonalAchievementspage()&amp;#27;[0m
+  &amp;#27;[32mThen &amp;#27;[0m&amp;#27;[32mI verify &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;Token Titan Gold&quot;&amp;#27;[0m&amp;#27;[32m badge is unlocked&amp;#27;[0m                                                               &amp;#27;[90m# com.pch.survey.stepdefinitions.surveytab.BadgesStepDefinitions.verifyBadgeUnlockedStatus(java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI verify awarded token amount &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;titanTokenGoldBadgeTokenAmt&quot;&amp;#27;[0m                                                  &amp;#27;[90m# com.pch.survey.stepdefinitions.surveytab.SurveyPageStepDefinitions.verifyAwardedTokenAmt(java.lang.String)&amp;#27;[0m
+  &amp;#27;[31mAnd &amp;#27;[0m&amp;#27;[31mI verify info text on &amp;#27;[0m&amp;#27;[31m&amp;#27;[1m&quot;Influencer Pro&quot;&amp;#27;[0m&amp;#27;[31m badge&amp;#27;[0m                                                                 &amp;#27;[90m# com.pch.survey.stepdefinitions.surveytab.BadgesStepDefinitions.verifyBadgesInfoText(java.lang.String)&amp;#27;[0m
+      &amp;#27;[31morg.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;svg data-v-2c84ebc9=&quot;&quot; tabindex=&quot;-1&quot; class=&quot;badge-container__toggle&quot; width=&quot;21&quot; height=&quot;20&quot; viewBox=&quot;0 0 21 20&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; style=&quot;opacity: 1;&quot;&gt;...&lt;/svg&gt; is not clickable at point (519, 450). Other element would receive the click: &lt;path data-v-2c84ebc9=&quot;&quot; d=&quot;M17.8572 2.14282L2.14288 17.8571&quot; stroke=&quot;#BABABA&quot; stroke-width=&quot;3&quot; stroke-linecap=&quot;round&quot;&gt;&lt;/path&gt;
+  (Session info: chrome=128.0.6613.138)
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.20.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2d92c07da476d1fd6a8dadb795d36abe, clickElement {id=f.394F23CDC3492ABC3090B1FD4D90DFD2.d.58B5FE248CB4B79968A44D5A87C91ACE.e.46}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\vsankar\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52188}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52188/devtoo..., se:cdpVersion: 128.0.6613.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[[[ChromeDriver: chrome on windows (2d92c07da476d1fd6a8dadb795d36abe)] -&gt; xpath: //*[text()=&apos;Influencer Pro&apos;]/parent::div[@class=&apos;badge-container&apos;]]] -&gt; css selector: svg.badge-container__toggle]
+Session ID: 2d92c07da476d1fd6a8dadb795d36abe
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at com.pch.survey.pages.surveytab.BadgesPage.clickInfoIcon(BadgesPage.java:29)
+	at com.pch.survey.stepdefinitions.surveytab.BadgesStepDefinitions.verifyBadgesInfoText(BadgesStepDefinitions.java:90)
+	at âœ½.I verify info text on &quot;Influencer Pro&quot; badge(classpath:features/test.feature:24)
+&amp;#27;[0m
+******************  Closing driver
+</system-out>
+    <system-err>Sep 23, 2024 5:52:33 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 128, returning the closest version; found: 125; Please update to a Selenium version that supports CDP version 128
+</system-err>
+  </testcase>
+  <testcase classname="Title of your feature" name="1 Verify the Token Titan inactive badge is displayed on the badges page for the &quot;mini reg&quot; usertype" time="261.139">
+    <error message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@class=&apos;uninav__token-center-alltime__tokens-amount uninav__token-balance__amount&apos;]&quot;}
+  (Session info: chrome=128.0.6613.138)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.20.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4bfc65a0469c8f6ef1879fad47c65d04, findElement {using=xpath, value=//*[@class=&apos;uninav__token-center-alltime__tokens-amount uninav__token-balance__amount&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\vsankar\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53211}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53211/devtoo..., se:cdpVersion: 128.0.6613.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4bfc65a0469c8f6ef1879fad47c65d04" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@class=&apos;uninav__token-center-alltime__tokens-amount uninav__token-balance__amount&apos;]&quot;}
+  (Session info: chrome=128.0.6613.138)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.20.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4bfc65a0469c8f6ef1879fad47c65d04, findElement {using=xpath, value=//*[@class=&apos;uninav__token-center-alltime__tokens-amount uninav__token-balance__amount&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\vsankar\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53211}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53211/devtoo..., se:cdpVersion: 128.0.6613.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4bfc65a0469c8f6ef1879fad47c65d04
+	at jdk.internal.reflect.GeneratedConstructorAccessor23.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at com.pch.survey.pages.surveytab.SurveyMainPage.getTokenAmtText(SurveyMainPage.java:297)
+	at com.pch.survey.stepdefinitions.surveytab.SurveyPageStepDefinitions.verifyAwardedTokenAmt(SurveyPageStepDefinitions.java:300)
+	at ✽.I verify awarded token amount &quot;titanTokenBadgeTokenAmt&quot;(classpath:features/test.feature:17)
+</error>
+    <system-out>
+@Desktop @Mobile @Regression
+Scenario Outline: 1 Verify the Token Titan inactive badge is displayed on the badges page for the &quot;mini reg&quot; usertype &amp;#27;[90m# features/test.feature:34&amp;#27;[0m
+********************        Creating new  Driver *********************************
+Tests Running in feature : test.feature
+Test Start for Scenario : 1 Verify the Token Titan inactive badge is displayed on the badges page for the &quot;mini reg&quot; usertype
+serviceUrl = http://cs.qa.pch.com/rfapi_v10/api/consumerauthtoken/create
+requestJSON = {&quot;Password&quot;:&quot;ucz99ArNWdWGedbT&quot;}
+Api-OriginatingSystem-Name :CSAUTOMATION
+Api-Consumer-Name :CSAUTOMATION
+jsonResponse = 
+Api-Consumer-Auth-Token = eyJhbGciOiJBMTI4S1ciLCJlbmMiOiJBMTI4Q0JDLUhTMjU2IiwidHlwIjoiSldUIiwiY3R5IjoiSldUIn0.m41xoqCfATmVMxnk1JerXKSJkRZW5cr8xPgfqI1pSxRRQ3iiwnR_-A.HlB7g2SlwgyMOVWSiQYsHQ.53f7jVX6gZgqaNuLkOgeyTarIVlChoq6mPKUlEz1oyMBFxX7wXwpwcGn7w6HGdLqg31-bfzqswfURn-Kd8kj-y9IDNznE_4MP888UU_xIExsuHgH55NMpFfdCp2mruaUhEj6KJUP58Ud1VUJlKSzwF7ztYUFvj-5CX03W_DY-FP6fstubRLcNEr_T9mpMaFt2_esib_DC4kvrCwA7TyG1ZPdYw0HqLIz2gX_jA6XFA9ZJYRMso9Y05Mq_dWPwYfVSVXGAoYnzrcWn0_p_wYN_g.-uFpZzcvMqrVJ1TTN3BjbQ
+MobileAuthTicket = null
+serviceUrl = http://cs.qa.pch.com/rfapi_v10/api/registration/miniregistermember
+requestJSON = {&quot;Source&quot;:{&quot;TrackingToken&quot;:null,&quot;CblCode&quot;:&quot;LOTTOAPP&quot;,&quot;OriginatingUrl&quot;:&quot;http://centralservices.cqa.pch.com/RFApi_V9/Svc/TestPage.aspx&quot;,&quot;ForeignSource&quot;:null,&quot;MediaChannel&quot;:&quot;ACQ&quot;,&quot;EmailSubCode&quot;:null,&quot;EmailVendorId&quot;:null,&quot;EmailPackageId&quot;:null,&quot;EmailModuleId&quot;:null,&quot;SessionToken&quot;:null,&quot;PageTypeCode&quot;:null},&quot;IpAddress&quot;:{&quot;ServerIp&quot;:&quot;24.193.86.57&quot;,&quot;ClientIp&quot;:&quot;24.193.86.57&quot;},&quot;Client&quot;:{&quot;UserAgentId&quot;:&quot;555555&quot;,&quot;DeviceType&quot;:&quot;DESKTOP&quot;,&quot;ExperienceDeviceType&quot;:&quot;EXPDESKTOP&quot;},&quot;Fields&quot;:[{&quot;FieldCode&quot;:20,&quot;FieldValue&quot;:&quot;pchEngineerd34e6d00.09.23.24@pchmail.com&quot;},{&quot;FieldCode&quot;:22,&quot;FieldValue&quot;:&quot;Pch123&quot;}],&quot;RegistrationValidationOption&quot;:{&quot;AddressValidation&quot;:false,&quot;DeliveryPointValidation&quot;:false,&quot;EmailValidation&quot;:true},&quot;SkipEmailValidation&quot;:{&quot;ErrorCode&quot;:null,&quot;Email&quot;:null}}
+Api-Consumer-AuthToken :eyJhbGciOiJBMTI4S1ciLCJlbmMiOiJBMTI4Q0JDLUhTMjU2IiwidHlwIjoiSldUIiwiY3R5IjoiSldUIn0.m41xoqCfATmVMxnk1JerXKSJkRZW5cr8xPgfqI1pSxRRQ3iiwnR_-A.HlB7g2SlwgyMOVWSiQYsHQ.53f7jVX6gZgqaNuLkOgeyTarIVlChoq6mPKUlEz1oyMBFxX7wXwpwcGn7w6HGdLqg31-bfzqswfURn-Kd8kj-y9IDNznE_4MP888UU_xIExsuHgH55NMpFfdCp2mruaUhEj6KJUP58Ud1VUJlKSzwF7ztYUFvj-5CX03W_DY-FP6fstubRLcNEr_T9mpMaFt2_esib_DC4kvrCwA7TyG1ZPdYw0HqLIz2gX_jA6XFA9ZJYRMso9Y05Mq_dWPwYfVSVXGAoYnzrcWn0_p_wYN_g.-uFpZzcvMqrVJ1TTN3BjbQ
+Api-OriginatingSystem-Name :CSAUTOMATION
+Api-Consumer-Name :CSAUTOMATION
+jsonResponse = {  &quot;MemberDetailStatusResponse&quot;: {    &quot;MemberDetailResponse&quot;: {      &quot;OnlineAccountToken&quot;: &quot;12327b5f-e960-4e04-844f-10f2253b1b99&quot;,      &quot;GlobalMemberToken&quot;: &quot;12327b5f-e960-4e04-844f-10f2253b1b99&quot;,      &quot;StreamNumber&quot;: 1,      &quot;SubscriberRandomIdA&quot;: 941,      &quot;SubscriberRandomIdB&quot;: 718,      &quot;Title&quot;: &quot;&quot;,      &quot;Gender&quot;: &quot;&quot;,      &quot;FirstName&quot;: &quot;&quot;,      &quot;LastName&quot;: &quot;&quot;,      &quot;GuestName&quot;: &quot;Guest6887820&quot;,      &quot;AddressId&quot;: 0,      &quot;AddressLine1&quot;: &quot;&quot;,      &quot;AddressLine2&quot;: &quot;&quot;,      &quot;City&quot;: &quot;&quot;,      &quot;State&quot;: &quot;&quot;,      &quot;ZipCode&quot;: &quot;&quot;,      &quot;Zip2&quot;: &quot;&quot;,      &quot;Zip4&quot;: &quot;&quot;,      &quot;CarrierRoute&quot;: &quot;&quot;,      &quot;CountryCode&quot;: &quot;&quot;,      &quot;Email&quot;: &quot;pchengineerd34e6d00.09.23.24@pchmail.com&quot;,      &quot;EmailHash&quot;: &quot;3f0f2fcd08554893f6b7d5bc534331a22f23116582909c76b66f2436938dcf3b&quot;,      &quot;DateOfBirth&quot;: &quot;&quot;,      &quot;ScreenName&quot;: &quot;&quot;,      &quot;FirstEverRegDate&quot;: &quot;\/Date(1727094546910-0400)\/&quot;,      &quot;AddressStatusCode&quot;: &quot;&quot;,      &quot;NameStatusCode&quot;: &quot;&quot;,      &quot;EmailStatusCode&quot;: &quot;VALIDOK&quot;,      &quot;IsNameAddressIncomplete&quot;: false,      &quot;IsTestAccount&quot;: true,      &quot;IsPasswordPresent&quot;: true,      &quot;IsPrimaryAddressPresent&quot;: false,      &quot;IsNonPrimaryAddressId&quot;: false,      &quot;IsAutoSignOnOk&quot;: true,      &quot;EligibleSubCode&quot;: &quot;PCHEXC&quot;,      &quot;MatchCode&quot;: &quot;&quot;,      &quot;CustId&quot;: 0,      &quot;OnlineExperienceCode&quot;: &quot;PCHEXC&quot;,      &quot;OnlineFileStatusCode&quot;: 0    },    &quot;RegistrationStatusResponses&quot;: [      {        &quot;IsNewUser&quot;: true,        &quot;DateCreated&quot;: &quot;\/Date(1727094546910-0400)\/&quot;,        &quot;IsEverRegistered&quot;: true,        &quot;CblCode&quot;: &quot;LOTTOAPP&quot;      }    ],    &quot;SubscriptionStatusResponses&quot;: null,    &quot;Preferences&quot;: null  },  &quot;ValidationResponses&quot;: {    &quot;IsValid&quot;: true,    &quot;IsSkip&quot;: false,    &quot;FieldOrDatabaseValidationResponse&quot;: {      &quot;StatusResponse&quot;: {        &quot;Code&quot;: 82,        &quot;Message&quot;: &quot;&quot;      },      &quot;Responses&quot;: null,      &quot;FailureFieldCodes&quot;: null    },    &quot;AddressValidationResponse&quot;: null,    &quot;EmailValidationResponse&quot;: {      &quot;StatusResponse&quot;: {        &quot;Code&quot;: 82,        &quot;Message&quot;: &quot;&quot;      },      &quot;Responses&quot;: [        {          &quot;FieldCode&quot;: 20,          &quot;Code&quot;: 2032,          &quot;Message&quot;: &quot;&quot;        }      ],      &quot;FailureFieldCodes&quot;: null    },    &quot;AddressSuggestions&quot;: null,    &quot;EmailSuggestions&quot;: null  }}
+Api-Consumer-Auth-Token = null
+MobileAuthTicket = null
+https://survey.qa.pch.com/pchsurveys/?em=pchengineerd34e6d00.09.23.24@pchmail.com&amp;e=12327b5f-e960-4e04-844f-10f2253b1b99
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mI land on the Surveys Page as a &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;mini reg&quot;&amp;#27;[0m&amp;#27;[32m user&amp;#27;[0m                                                               &amp;#27;[90m# com.pch.survey.stepdefinitions.CommonStepDefinitions.givenNewUsersLandingOnSurveyPage(java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32mI close the Take a Tour popup&amp;#27;[0m                                                                                  &amp;#27;[90m# com.pch.survey.stepdefinitions.surveytab.SurveyPageStepDefinitions.givenIClosetakeATour()&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI navigates to Badges page&amp;#27;[0m                                                                                      &amp;#27;[90m# com.pch.survey.stepdefinitions.surveytab.PersonalAchievmentSectionStepDefinitions.navigatesToPersonalAchievementspage()&amp;#27;[0m
+  &amp;#27;[32mThen &amp;#27;[0m&amp;#27;[32mI verify &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;Token Titan&quot;&amp;#27;[0m&amp;#27;[32m badge is locked&amp;#27;[0m                                                                         &amp;#27;[90m# com.pch.survey.stepdefinitions.surveytab.BadgesStepDefinitions.verifyBadgeLockedStatus(java.lang.String)&amp;#27;[0m
+Navigating to url  https://offers.qa.pch.com/survey?mid=Auto_SurveyToken_6L
+navigateToMid Survey landing page URL:https://offers.qa.pch.com/survey/profile/basic?msk=PK5NM4P54I-2ff1122e2a274716fc1a783449c924d2
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI navigates to survey &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&apos;Auto_SurveyToken_6L&apos;&amp;#27;[0m                                                                     &amp;#27;[90m# com.pch.survey.stepdefinitions.surveytab.SurveyPageStepDefinitions.givenImNavigatesToMid(java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI answer all basic profile questions as a &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;mini reg&quot;&amp;#27;[0m&amp;#27;[32m user&amp;#27;[0m                                                       &amp;#27;[90m# com.pch.survey.stepdefinitions.profilebuilder.BasicProfileStepDefinitions.answerBasicProfileQuestions(java.lang.String)&amp;#27;[0m
+Survey landing page URL:https://www.samplicio.us/s/default.aspx?sid=a39a0dde-fd97-487a-80b4-ef3f10279c94&amp;pid=12327b5f-e960-4e04-844f-10f2253b1b99&amp;clid=9&amp;mid=PK5NM4P54I-2ff1122e2a274716fc1a783449c924d2&amp;loi=15&amp;cpi=0.5&amp;sensitive_data=true&amp;45=&amp;7064=4&amp;2189=15&amp;113=16&amp;47=15&amp;hash=GH6igQfD4ugb8Az-RDHNkO6G5KE
+serviceUrl = https://offers.qa.pch.com/api/get-survey-end-url
+requestJSON = { &quot;mode&quot;: &quot;custom&quot;,&quot;environment&quot;: &quot;qa&quot;, &quot;endStatus&quot;: &quot;incomplete&quot;,&quot;url&quot;: &quot;https://www.samplicio.us/s/default.aspx?sid=a39a0dde-fd97-487a-80b4-ef3f10279c94&amp;pid=12327b5f-e960-4e04-844f-10f2253b1b99&amp;clid=9&amp;mid=PK5NM4P54I-2ff1122e2a274716fc1a783449c924d2&amp;loi=15&amp;cpi=0.5&amp;sensitive_data=true&amp;45=&amp;7064=4&amp;2189=15&amp;113=16&amp;47=15&amp;hash=GH6igQfD4ugb8Az-RDHNkO6G5KE&quot;}
+jsonResponse = {&quot;success&quot;:true,&quot;message&quot;:&quot;Survey end url fetch successfully&quot;,&quot;data&quot;:&quot;https:\/\/offers.qa.pch.com\/surveyincomplete?test_user=1&amp;mid=PK5NM4P54I-2ff1122e2a274716fc1a783449c924d2&amp;pid=12327b5f-e960-4e04-844f-10f2253b1b99&amp;sur=-1&amp;61678=6&amp;641=3&amp;105016=3&amp;93517=4&amp;47=7&amp;730=2&amp;137461=7&amp;hash=_FwJWC4KquSXkg-zI-8DoIEzPwU&quot;}
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI generate the survey endpoint url with &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&apos;incomplete&apos;&amp;#27;[0m&amp;#27;[32m status&amp;#27;[0m                                                     &amp;#27;[90m# com.pch.survey.stepdefinitions.OffersEventsStepDefinitions.whenGeneratedSurveyURL(java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI call the survey endpoint url&amp;#27;[0m                                                                                  &amp;#27;[90m# com.pch.survey.stepdefinitions.OffersEventsStepDefinitions.whenCompleteSurveyUsingCompleteURl()&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI navigates to Badges page&amp;#27;[0m                                                                                      &amp;#27;[90m# com.pch.survey.stepdefinitions.surveytab.PersonalAchievmentSectionStepDefinitions.navigatesToPersonalAchievementspage()&amp;#27;[0m
+  &amp;#27;[32mThen &amp;#27;[0m&amp;#27;[32mI verify &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;Token Titan&quot;&amp;#27;[0m&amp;#27;[32m badge is unlocked&amp;#27;[0m                                                                       &amp;#27;[90m# com.pch.survey.stepdefinitions.surveytab.BadgesStepDefinitions.verifyBadgeUnlockedStatus(java.lang.String)&amp;#27;[0m
+  &amp;#27;[31mAnd &amp;#27;[0m&amp;#27;[31mI verify awarded token amount &amp;#27;[0m&amp;#27;[31m&amp;#27;[1m&quot;titanTokenBadgeTokenAmt&quot;&amp;#27;[0m                                                         &amp;#27;[90m# com.pch.survey.stepdefinitions.surveytab.SurveyPageStepDefinitions.verifyAwardedTokenAmt(java.lang.String)&amp;#27;[0m
+      &amp;#27;[31morg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@class=&apos;uninav__token-center-alltime__tokens-amount uninav__token-balance__amount&apos;]&quot;}
+  (Session info: chrome=128.0.6613.138)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.20.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4bfc65a0469c8f6ef1879fad47c65d04, findElement {using=xpath, value=//*[@class=&apos;uninav__token-center-alltime__tokens-amount uninav__token-balance__amount&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\vsankar\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53211}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53211/devtoo..., se:cdpVersion: 128.0.6613.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4bfc65a0469c8f6ef1879fad47c65d04
+	at jdk.internal.reflect.GeneratedConstructorAccessor23.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at com.pch.survey.pages.surveytab.SurveyMainPage.getTokenAmtText(SurveyMainPage.java:297)
+	at com.pch.survey.stepdefinitions.surveytab.SurveyPageStepDefinitions.verifyAwardedTokenAmt(SurveyPageStepDefinitions.java:300)
+	at âœ½.I verify awarded token amount &quot;titanTokenBadgeTokenAmt&quot;(classpath:features/test.feature:17)
+&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI navigates to survey &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&apos;Auto_SurveyToken_6L&apos;&amp;#27;[0m                                                                     &amp;#27;[90m# com.pch.survey.stepdefinitions.surveytab.SurveyPageStepDefinitions.givenImNavigatesToMid(java.lang.String)&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI generate the survey endpoint url with &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&apos;complete&apos;&amp;#27;[0m&amp;#27;[36m status&amp;#27;[0m                                                       &amp;#27;[90m# com.pch.survey.stepdefinitions.OffersEventsStepDefinitions.whenGeneratedSurveyURL(java.lang.String)&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI call the survey endpoint url&amp;#27;[0m                                                                                  &amp;#27;[90m# com.pch.survey.stepdefinitions.OffersEventsStepDefinitions.whenCompleteSurveyUsingCompleteURl()&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI navigates to Badges page&amp;#27;[0m                                                                                      &amp;#27;[90m# com.pch.survey.stepdefinitions.surveytab.PersonalAchievmentSectionStepDefinitions.navigatesToPersonalAchievementspage()&amp;#27;[0m
+  &amp;#27;[36mThen &amp;#27;[0m&amp;#27;[36mI verify &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&quot;Token Titan Gold&quot;&amp;#27;[0m&amp;#27;[36m badge is unlocked&amp;#27;[0m                                                                  &amp;#27;[90m# com.pch.survey.stepdefinitions.surveytab.BadgesStepDefinitions.verifyBadgeUnlockedStatus(java.lang.String)&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI verify awarded token amount &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&quot;titanTokenGoldBadgeTokenAmt&quot;&amp;#27;[0m                                                     &amp;#27;[90m# com.pch.survey.stepdefinitions.surveytab.SurveyPageStepDefinitions.verifyAwardedTokenAmt(java.lang.String)&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI verify info text on &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&quot;Influencer Pro&quot;&amp;#27;[0m&amp;#27;[36m badge&amp;#27;[0m                                                                    &amp;#27;[90m# com.pch.survey.stepdefinitions.surveytab.BadgesStepDefinitions.verifyBadgesInfoText(java.lang.String)&amp;#27;[0m
+******************  Closing driver
+</system-out>
+    <system-err>Sep 23, 2024 5:59:06 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 128, returning the closest version; found: 125; Please update to a Selenium version that supports CDP version 128
+</system-err>
+  </testcase>
+  <testcase classname="Title of your feature" name="1 Verify the Token Titan inactive badge is displayed on the badges page for the &quot;silver&quot; usertype" time="198.709">
+    <error message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#pw&quot;}
+  (Session info: chrome=128.0.6613.138)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.20.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0ce404ad2a6354384d60bd097e1de707, findElement {using=id, value=pw}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\vsankar\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53858}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53858/devtoo..., se:cdpVersion: 128.0.6613.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0ce404ad2a6354384d60bd097e1de707" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#pw&quot;}
+  (Session info: chrome=128.0.6613.138)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.20.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0ce404ad2a6354384d60bd097e1de707, findElement {using=id, value=pw}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\vsankar\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53858}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53858/devtoo..., se:cdpVersion: 128.0.6613.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0ce404ad2a6354384d60bd097e1de707
+	at jdk.internal.reflect.GeneratedConstructorAccessor23.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at com.pch.survey.pages.accounts.CreatePasswordPage.completeSurveyForSilverUser(CreatePasswordPage.java:65)
+	at com.pch.survey.stepdefinitions.profilebuilder.BasicProfileStepDefinitions.answerBasicProfileQuestions(BasicProfileStepDefinitions.java:40)
+	at ✽.I answer all basic profile questions as a &quot;silver&quot; user(classpath:features/test.feature:12)
+</error>
+    <system-out>
+@Desktop @Mobile @Regression
+Scenario Outline: 1 Verify the Token Titan inactive badge is displayed on the badges page for the &quot;silver&quot; usertype &amp;#27;[90m# features/test.feature:35&amp;#27;[0m
+********************        Creating new  Driver *********************************
+Tests Running in feature : test.feature
+Test Start for Scenario : 1 Verify the Token Titan inactive badge is displayed on the badges page for the &quot;silver&quot; usertype
+serviceUrl = http://cs.qa.pch.com/rfapi_v10/api/consumerauthtoken/create
+requestJSON = {&quot;Password&quot;:&quot;ucz99ArNWdWGedbT&quot;}
+Api-OriginatingSystem-Name :CSAUTOMATION
+Api-Consumer-Name :CSAUTOMATION
+jsonResponse = 
+Api-Consumer-Auth-Token = eyJhbGciOiJBMTI4S1ciLCJlbmMiOiJBMTI4Q0JDLUhTMjU2IiwidHlwIjoiSldUIiwiY3R5IjoiSldUIn0.nQPyKuhB19ZMkc5jLQ0LCus__NliMjgwi3NLruQyvOsjnhCNITjtgQ.P-g5SLfZzhZysU6Z_X3PJA.bDAhC3GKe4QRyVHJ-iw6hc_5Wyzv3vQ0PDUvVtM0ZVb8uBViNXh8D3-55HmtA18D2TRS8vJZmD4fOVfQES0vlbPF8IhM8QCTAEYfJCJ9smxKSM3c13IeUTWcQgOTvQV9OV_KoSkMZ95fw6YNmfIx-HJ3hfNZfTQfyZRFEMo-Lu854Rim83_u_9dFiQlsM3Pkn4yiZ1uTa5XuLwC-J_C6jn3s3kUsBZmHJja0909wTfHteWqsnlBiXNOGiQvol30LsJCbONbQYFwSRpaZrWUFSw.LEf4t9ENGs1vdiKrvCnHoA
+MobileAuthTicket = null
+serviceUrl = http://cs.qa.pch.com/rfapi_v10/api/registration/setmember
+requestJSON = {&quot;Source&quot;:{&quot;TrackingToken&quot;:null,&quot;CblCode&quot;:&quot;LOTTODEST&quot;,&quot;OriginatingUrl&quot;:&quot;http://centralservices.cqa.pch.com/RFApi_V9/Svc/TestPage.aspx&quot;,&quot;ForeignSource&quot;:null,&quot;MediaChannel&quot;:&quot;ACQ&quot;,&quot;EmailSubCode&quot;:null,&quot;EmailVendorId&quot;:null,&quot;EmailPackageId&quot;:null,&quot;EmailModuleId&quot;:null,&quot;SessionToken&quot;:null,&quot;PageTypeCode&quot;:null},&quot;IpAddress&quot;:{&quot;ServerIp&quot;:&quot;24.193.86.57&quot;,&quot;ClientIp&quot;:&quot;24.193.86.57&quot;},&quot;Client&quot;:{&quot;UserAgentId&quot;:&quot;555555&quot;,&quot;DeviceType&quot;:&quot;DESKTOP&quot;,&quot;ExperienceDeviceType&quot;:&quot;EXPDESKTOP&quot;},&quot;Fields&quot;:[{&quot;FieldCode&quot;:11,&quot;FieldValue&quot;:&quot;Mr.&quot;},{&quot;FieldCode&quot;:12,&quot;FieldValue&quot;:&quot;MPgXpxzzdqgSxTb&quot;},{&quot;FieldCode&quot;:13,&quot;FieldValue&quot;:&quot;RbCHBKdxZvuOhwA&quot;},{&quot;FieldCode&quot;:14,&quot;FieldValue&quot;:&quot;300 Jericho Quadrangle&quot;},{&quot;FieldCode&quot;:15,&quot;FieldValue&quot;:&quot;Dept 300&quot;},{&quot;FieldCode&quot;:16,&quot;FieldValue&quot;:&quot;Jericho&quot;},{&quot;FieldCode&quot;:17,&quot;FieldValue&quot;:&quot;NY&quot;},{&quot;FieldCode&quot;:18,&quot;FieldValue&quot;:&quot;11753&quot;},{&quot;FieldCode&quot;:19,&quot;FieldValue&quot;:&quot;USA&quot;},{&quot;FieldCode&quot;:20,&quot;FieldValue&quot;:&quot;pchEngineerd8c77484.09.23.24@pchmail.com&quot;},{&quot;FieldCode&quot;:21,&quot;FieldValue&quot;:&quot;pchEngineerd8c77484.09.23.24@pchmail.com&quot;},{&quot;FieldCode&quot;:24,&quot;FieldValue&quot;:&quot;04/13/1980&quot;}],&quot;RegistrationValidationOption&quot;:{&quot;AddressValidation&quot;:true,&quot;DeliveryPointValidation&quot;:true,&quot;EmailValidation&quot;:true},&quot;SkipEmailValidation&quot;:{&quot;ErrorCode&quot;:null,&quot;Email&quot;:null},&quot;SubscriptionData&quot;:{&quot;SubscriptionCodes&quot;:[]}}
+Api-Consumer-AuthToken :eyJhbGciOiJBMTI4S1ciLCJlbmMiOiJBMTI4Q0JDLUhTMjU2IiwidHlwIjoiSldUIiwiY3R5IjoiSldUIn0.nQPyKuhB19ZMkc5jLQ0LCus__NliMjgwi3NLruQyvOsjnhCNITjtgQ.P-g5SLfZzhZysU6Z_X3PJA.bDAhC3GKe4QRyVHJ-iw6hc_5Wyzv3vQ0PDUvVtM0ZVb8uBViNXh8D3-55HmtA18D2TRS8vJZmD4fOVfQES0vlbPF8IhM8QCTAEYfJCJ9smxKSM3c13IeUTWcQgOTvQV9OV_KoSkMZ95fw6YNmfIx-HJ3hfNZfTQfyZRFEMo-Lu854Rim83_u_9dFiQlsM3Pkn4yiZ1uTa5XuLwC-J_C6jn3s3kUsBZmHJja0909wTfHteWqsnlBiXNOGiQvol30LsJCbONbQYFwSRpaZrWUFSw.LEf4t9ENGs1vdiKrvCnHoA
+Api-OriginatingSystem-Name :CSAUTOMATION
+Api-Consumer-Name :CSAUTOMATION
+jsonResponse = {  &quot;MemberDetailStatusResponse&quot;: {    &quot;MemberDetailResponse&quot;: {      &quot;OnlineAccountToken&quot;: &quot;fc3a2f54-ab37-42ab-b302-95af919fde79&quot;,      &quot;GlobalMemberToken&quot;: &quot;fc3a2f54-ab37-42ab-b302-95af919fde79&quot;,      &quot;StreamNumber&quot;: 3,      &quot;SubscriberRandomIdA&quot;: 714,      &quot;SubscriberRandomIdB&quot;: 725,      &quot;Title&quot;: &quot;Mr.&quot;,      &quot;Gender&quot;: &quot;&quot;,      &quot;FirstName&quot;: &quot;MPgXpxzzdqgSxTb&quot;,      &quot;LastName&quot;: &quot;RbCHBKdxZvuOhwA&quot;,      &quot;GuestName&quot;: &quot;Guest6887822&quot;,      &quot;AddressId&quot;: 1808769,      &quot;AddressLine1&quot;: &quot;300 Jericho Quadrangle&quot;,      &quot;AddressLine2&quot;: &quot;Dept 300&quot;,      &quot;City&quot;: &quot;Jericho&quot;,      &quot;State&quot;: &quot;NY&quot;,      &quot;ZipCode&quot;: &quot;11753&quot;,      &quot;Zip2&quot;: &quot;75&quot;,      &quot;Zip4&quot;: &quot;2712&quot;,      &quot;CarrierRoute&quot;: &quot;C018&quot;,      &quot;CountryCode&quot;: &quot;USA&quot;,      &quot;Email&quot;: &quot;pchengineerd8c77484.09.23.24@pchmail.com&quot;,      &quot;EmailHash&quot;: &quot;4afb4818f62008f76a8488f23efe39c91a228bb507c0f1b94b6ce4743b6c4eb2&quot;,      &quot;DateOfBirth&quot;: &quot;04/13/1980&quot;,      &quot;ScreenName&quot;: &quot;&quot;,      &quot;FirstEverRegDate&quot;: &quot;\/Date(1727094808987-0400)\/&quot;,      &quot;AddressStatusCode&quot;: &quot;VALIDOK&quot;,      &quot;NameStatusCode&quot;: &quot;VALIDOK&quot;,      &quot;EmailStatusCode&quot;: &quot;VALIDOK&quot;,      &quot;IsNameAddressIncomplete&quot;: false,      &quot;IsTestAccount&quot;: true,      &quot;IsPasswordPresent&quot;: false,      &quot;IsPrimaryAddressPresent&quot;: true,      &quot;IsNonPrimaryAddressId&quot;: false,      &quot;IsAutoSignOnOk&quot;: true,      &quot;EligibleSubCode&quot;: &quot;PCHEXC&quot;,      &quot;MatchCode&quot;: &quot;3504225RBCHJER300 MG  &quot;,      &quot;CustId&quot;: 0,      &quot;OnlineExperienceCode&quot;: &quot;PCHEXC&quot;,      &quot;OnlineFileStatusCode&quot;: 11    },    &quot;RegistrationStatusResponses&quot;: [      {        &quot;IsNewUser&quot;: true,        &quot;DateCreated&quot;: &quot;\/Date(1727094808987-0400)\/&quot;,        &quot;IsEverRegistered&quot;: true,        &quot;CblCode&quot;: &quot;LOTTODEST&quot;      }    ],    &quot;SubscriptionStatusResponses&quot;: [      {        &quot;SubscriptionCode&quot;: &quot;LOTTO&quot;,        &quot;EligibleSubscriptionCode&quot;: &quot;LOTTO&quot;,        &quot;IsEverSubscribed&quot;: false,        &quot;IsMailable&quot;: false,        &quot;CurrentEmailOptInStatusCode&quot;: 11      }    ],    &quot;Preferences&quot;: null  },  &quot;ValidationResponses&quot;: {    &quot;IsValid&quot;: true,    &quot;IsSkip&quot;: false,    &quot;FieldOrDatabaseValidationResponse&quot;: {      &quot;StatusResponse&quot;: {        &quot;Code&quot;: 82,        &quot;Message&quot;: &quot;&quot;      },      &quot;Responses&quot;: null,      &quot;FailureFieldCodes&quot;: null    },    &quot;AddressValidationResponse&quot;: {      &quot;StatusResponse&quot;: {        &quot;Code&quot;: 82,        &quot;Message&quot;: &quot;&quot;      },      &quot;Responses&quot;: null,      &quot;FailureFieldCodes&quot;: null    },    &quot;EmailValidationResponse&quot;: {      &quot;StatusResponse&quot;: {        &quot;Code&quot;: 82,        &quot;Message&quot;: &quot;&quot;      },      &quot;Responses&quot;: [        {          &quot;FieldCode&quot;: 20,          &quot;Code&quot;: 2032,          &quot;Message&quot;: &quot;&quot;        }      ],      &quot;FailureFieldCodes&quot;: null    },    &quot;AddressSuggestions&quot;: [      {        &quot;Address&quot;: {          &quot;AddressLine1&quot;: &quot;300 Jericho Quadrangle&quot;,          &quot;AddressLine2&quot;: &quot;Dept 300&quot;,          &quot;AddressComment&quot;: &quot;&quot;,          &quot;City&quot;: &quot;Jericho&quot;,          &quot;State&quot;: &quot;NY&quot;,          &quot;ZipCode&quot;: &quot;11753&quot;,          &quot;Zip2&quot;: &quot;75&quot;,          &quot;Zip4&quot;: &quot;2712&quot;,          &quot;CarrierRoute&quot;: &quot;C018&quot;        }      }    ],    &quot;EmailSuggestions&quot;: null  }}
+Api-Consumer-Auth-Token = null
+MobileAuthTicket = null
+https://survey.qa.pch.com/pchsurveys/?em=pchengineerd8c77484.09.23.24@pchmail.com&amp;e=fc3a2f54-ab37-42ab-b302-95af919fde79
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mI land on the Surveys Page as a &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;silver&quot;&amp;#27;[0m&amp;#27;[32m user&amp;#27;[0m                                                               &amp;#27;[90m# com.pch.survey.stepdefinitions.CommonStepDefinitions.givenNewUsersLandingOnSurveyPage(java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32mI close the Take a Tour popup&amp;#27;[0m                                                                                &amp;#27;[90m# com.pch.survey.stepdefinitions.surveytab.SurveyPageStepDefinitions.givenIClosetakeATour()&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI navigates to Badges page&amp;#27;[0m                                                                                    &amp;#27;[90m# com.pch.survey.stepdefinitions.surveytab.PersonalAchievmentSectionStepDefinitions.navigatesToPersonalAchievementspage()&amp;#27;[0m
+  &amp;#27;[32mThen &amp;#27;[0m&amp;#27;[32mI verify &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;Token Titan&quot;&amp;#27;[0m&amp;#27;[32m badge is locked&amp;#27;[0m                                                                       &amp;#27;[90m# com.pch.survey.stepdefinitions.surveytab.BadgesStepDefinitions.verifyBadgeLockedStatus(java.lang.String)&amp;#27;[0m
+Navigating to url  https://offers.qa.pch.com/survey?mid=Auto_SurveyToken_6L
+navigateToMid Survey landing page URL:https://offers.qa.pch.com/survey/profile/basic?msk=PK5NM4P54I-a65d005b3bfe633d34f35e57cc6f315f
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI navigates to survey &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&apos;Auto_SurveyToken_6L&apos;&amp;#27;[0m                                                                   &amp;#27;[90m# com.pch.survey.stepdefinitions.surveytab.SurveyPageStepDefinitions.givenImNavigatesToMid(java.lang.String)&amp;#27;[0m
+  &amp;#27;[31mAnd &amp;#27;[0m&amp;#27;[31mI answer all basic profile questions as a &amp;#27;[0m&amp;#27;[31m&amp;#27;[1m&quot;silver&quot;&amp;#27;[0m&amp;#27;[31m user&amp;#27;[0m                                                       &amp;#27;[90m# com.pch.survey.stepdefinitions.profilebuilder.BasicProfileStepDefinitions.answerBasicProfileQuestions(java.lang.String)&amp;#27;[0m
+      &amp;#27;[31morg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#pw&quot;}
+  (Session info: chrome=128.0.6613.138)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.20.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0ce404ad2a6354384d60bd097e1de707, findElement {using=id, value=pw}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\vsankar\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53858}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53858/devtoo..., se:cdpVersion: 128.0.6613.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0ce404ad2a6354384d60bd097e1de707
+	at jdk.internal.reflect.GeneratedConstructorAccessor23.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at com.pch.survey.pages.accounts.CreatePasswordPage.completeSurveyForSilverUser(CreatePasswordPage.java:65)
+	at com.pch.survey.stepdefinitions.profilebuilder.BasicProfileStepDefinitions.answerBasicProfileQuestions(BasicProfileStepDefinitions.java:40)
+	at âœ½.I answer all basic profile questions as a &quot;silver&quot; user(classpath:features/test.feature:12)
+&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI generate the survey endpoint url with &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&apos;incomplete&apos;&amp;#27;[0m&amp;#27;[36m status&amp;#27;[0m                                                   &amp;#27;[90m# com.pch.survey.stepdefinitions.OffersEventsStepDefinitions.whenGeneratedSurveyURL(java.lang.String)&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI call the survey endpoint url&amp;#27;[0m                                                                                &amp;#27;[90m# com.pch.survey.stepdefinitions.OffersEventsStepDefinitions.whenCompleteSurveyUsingCompleteURl()&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI navigates to Badges page&amp;#27;[0m                                                                                    &amp;#27;[90m# com.pch.survey.stepdefinitions.surveytab.PersonalAchievmentSectionStepDefinitions.navigatesToPersonalAchievementspage()&amp;#27;[0m
+  &amp;#27;[36mThen &amp;#27;[0m&amp;#27;[36mI verify &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&quot;Token Titan&quot;&amp;#27;[0m&amp;#27;[36m badge is unlocked&amp;#27;[0m                                                                     &amp;#27;[90m# com.pch.survey.stepdefinitions.surveytab.BadgesStepDefinitions.verifyBadgeUnlockedStatus(java.lang.String)&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI verify awarded token amount &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&quot;titanTokenBadgeTokenAmt&quot;&amp;#27;[0m                                                       &amp;#27;[90m# com.pch.survey.stepdefinitions.surveytab.SurveyPageStepDefinitions.verifyAwardedTokenAmt(java.lang.String)&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI navigates to survey &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&apos;Auto_SurveyToken_6L&apos;&amp;#27;[0m                                                                   &amp;#27;[90m# com.pch.survey.stepdefinitions.surveytab.SurveyPageStepDefinitions.givenImNavigatesToMid(java.lang.String)&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI generate the survey endpoint url with &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&apos;complete&apos;&amp;#27;[0m&amp;#27;[36m status&amp;#27;[0m                                                     &amp;#27;[90m# com.pch.survey.stepdefinitions.OffersEventsStepDefinitions.whenGeneratedSurveyURL(java.lang.String)&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI call the survey endpoint url&amp;#27;[0m                                                                                &amp;#27;[90m# com.pch.survey.stepdefinitions.OffersEventsStepDefinitions.whenCompleteSurveyUsingCompleteURl()&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI navigates to Badges page&amp;#27;[0m                                                                                    &amp;#27;[90m# com.pch.survey.stepdefinitions.surveytab.PersonalAchievmentSectionStepDefinitions.navigatesToPersonalAchievementspage()&amp;#27;[0m
+  &amp;#27;[36mThen &amp;#27;[0m&amp;#27;[36mI verify &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&quot;Token Titan Gold&quot;&amp;#27;[0m&amp;#27;[36m badge is unlocked&amp;#27;[0m                                                                &amp;#27;[90m# com.pch.survey.stepdefinitions.surveytab.BadgesStepDefinitions.verifyBadgeUnlockedStatus(java.lang.String)&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI verify awarded token amount &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&quot;titanTokenGoldBadgeTokenAmt&quot;&amp;#27;[0m                                                   &amp;#27;[90m# com.pch.survey.stepdefinitions.surveytab.SurveyPageStepDefinitions.verifyAwardedTokenAmt(java.lang.String)&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI verify info text on &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&quot;Influencer Pro&quot;&amp;#27;[0m&amp;#27;[36m badge&amp;#27;[0m                                                                  &amp;#27;[90m# com.pch.survey.stepdefinitions.surveytab.BadgesStepDefinitions.verifyBadgesInfoText(java.lang.String)&amp;#27;[0m
+******************  Closing driver
+</system-out>
+    <system-err>Sep 23, 2024 6:03:28 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 128, returning the closest version; found: 125; Please update to a Selenium version that supports CDP version 128
+</system-err>
+  </testcase>
+</testsuite>
